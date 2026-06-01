@@ -1,0 +1,10 @@
+---
+title: "Materiali"
+listing:
+  type: table
+  contents: materiali
+  sort: "filename"
+  fields: [title]
+---
+
+<br>

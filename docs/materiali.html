@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Labs – Summer School | Meta-Analisi</title>
+<title>Materiali – Summer School | Meta-Analisi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -155,15 +155,11 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./quiz.html"> 
-<span class="menu-text">Mentimeter</span></a>
+<span class="menu-text">Sondaggio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./slides.html"> 
-<span class="menu-text">Slides</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./labs.html" aria-current="page"> 
-<span class="menu-text">Labs</span></a>
+    <a class="nav-link active" href="./materiali.html" aria-current="page"> 
+<span class="menu-text">Materiali</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./setup.html"> 
@@ -197,7 +193,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Labs</h1>
+<h1 class="title">Materiali</h1>
 </div>
 
 
@@ -214,7 +210,7 @@ window.Quarto = {
 </header>
 
 
-<p>In questa sezione sono raccolti i tutorial pratici.</p>
+<p><br></p>
 
 
 
@@ -226,12 +222,6 @@ window.Quarto = {
     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">Order By</option>
       <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
       <option value="listing-title-sort" data-direction="asc">
         Title
       </option>
@@ -250,27 +240,20 @@ window.Quarto = {
 <a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
 </th>
 
-<th>
-Subtitle
-</th>
-
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-
 </tr>
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-date-sort="1780264800000" data-listing-file-modified-sort="1780316741460" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16" data-listing-word-count-sort="3026" data-listing-title-sort="Basi RStudio" data-listing-filename-sort="01-rstudio-basics.qmd">
+<tr data-index="0" data-listing-file-modified-sort="1780334930861" data-listing-reading-time-sort="5" data-listing-word-count-sort="968" data-listing-title-sort="Systematic Review: un'introduzione" data-listing-filename-sort="01-systematic-review-intro.qmd">
 <td>
-<a href="./labs/01-rstudio-basics.html" class="title listing-title">Basi RStudio</a>
+<a href="./materiali/01-systematic-review-intro.html" class="title listing-title">Systematic Review: un’introduzione</a>
 </td>
+
+</tr>
+
+<tr data-index="1" data-listing-file-modified-sort="1780332479770" data-listing-reading-time-sort="16" data-listing-word-count-sort="3022" data-listing-title-sort="Basi di RStudio" data-listing-filename-sort="02-rstudio-basics.qmd">
 <td>
-<span class="listing-subtitle">Scuola Estiva Meta-Analisi - Cagliari 2026</span>
-</td>
-<td>
-<span class="listing-date">Jun 1, 2026</span>
+<a href="./materiali/02-rstudio-basics.html" class="title listing-title">Basi di RStudio</a>
 </td>
 
 </tr>

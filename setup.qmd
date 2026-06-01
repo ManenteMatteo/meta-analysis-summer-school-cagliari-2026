@@ -1,18 +1,23 @@
 ---
 title: "Setup"
-subtitle: "Preparare RStudio per i laboratori"
+subtitle: "Preparare RStudio per eseguire i codici"
 ---
 
-# Software richiesti
+<br>
 
-Per seguire i laboratori è consigliato avere installato:
+## Software richiesti
+
+Per eseguire i codici delle lezioni è consigliato avere installato:
 
 - R
-- RStudio
-- Quarto
-- un browser aggiornato
 
-# Pacchetti R
+- RStudio
+
+- Quarto
+
+<br>
+
+## Pacchetti R
 
 Eseguire questo codice una sola volta:
 
@@ -34,19 +39,11 @@ library(tidyverse)
 library(readxl)
 ```
 
-# Workflow consigliato
+<br>
+
+## Workflow consigliato
 
 1. Aprire il file `.Rproj`.
-2. Non usare `setwd()` se il progetto è già aperto correttamente.
 3. Tenere dati, script e output in cartelle ordinate.
 4. Salvare il codice, non il workspace `.RData`.
 
-# Renderizzare il sito
-
-Dal terminale o dalla scheda Terminal di RStudio:
-
-```bash
-quarto render
-```
-
-Il sito renderizzato verrà creato nella cartella `docs/`, pronta per GitHub Pages.

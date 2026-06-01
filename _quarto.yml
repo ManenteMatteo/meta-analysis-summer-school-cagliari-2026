@@ -20,11 +20,9 @@ website:
       - href: index.qmd
         text: Home
       - href: quiz.qmd
-        text: Mentimeter
-      - href: slides.qmd
-        text: Slides
-      - href: labs.qmd
-        text: Labs
+        text: Sondaggio
+      - href: materiali.qmd
+        text: Materiali
       - href: setup.qmd
         text: Setup
       - href: resources.qmd

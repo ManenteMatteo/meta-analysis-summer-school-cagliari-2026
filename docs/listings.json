@@ -1,14 +1,9 @@
 [
   {
-    "listing": "/slides.html",
+    "listing": "/materiali.html",
     "items": [
-      "/slides/01-systematic-review.html"
-    ]
-  },
-  {
-    "listing": "/labs.html",
-    "items": [
-      "/labs/01-rstudio-basics.html"
+      "/materiali/01-systematic-review-intro.html",
+      "/materiali/02-rstudio-basics.html"
     ]
   }
 ]

@@ -3,14 +3,18 @@ title: "Risorse utili"
 subtitle: "Link, linee guida e strumenti"
 ---
 
-# Systematic review
+<br> 
+
+## Systematic review
 
 - PRISMA: reporting delle systematic review
 - PROSPERO: registrazione dei protocolli
 - Cochrane Handbook: riferimento metodologico
 - PICO: formulazione della domanda di ricerca
 
-# Database bibliografici
+<br> 
+
+## Database bibliografici
 
 - PubMed
 - Web of Science
@@ -18,19 +22,26 @@ subtitle: "Link, linee guida e strumenti"
 - PsycINFO
 - Google Scholar, con cautela e strategia esplicita
 
-# Letteratura grigia
+
+<br> 
+
+## Letteratura grigia
 
 - Grey Matters
 - GreyNet
 - tesi, report tecnici, preprint, atti di conferenza
 
-# R e meta-analisi
+<br> 
+
+## Meta-analisi in R
 
 - `metafor`: package R per meta-analisi
 - RStudio Projects: gestione ordinata dei materiali
 - Quarto: documenti riproducibili, siti e slide
 
-# Tools per il workflow
+<br> 
+
+## Tools per il workflow
 
 - Covidence: screening ed estrazione dati
 - Zotero: gestione bibliografica

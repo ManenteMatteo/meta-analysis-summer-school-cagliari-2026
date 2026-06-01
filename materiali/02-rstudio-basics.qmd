@@ -1,9 +1,6 @@
 ---
-title: "Basi RStudio"
-subtitle: "Scuola Estiva Meta-Analisi - Cagliari 2026"
+title: "Basi di RStudio"
 author: "Matteo Manente"
-date: today
-date-format: "DD MMMM YYYY"
 embed-resources: true
 format: 
   html:
@@ -64,7 +61,7 @@ Prima di iniziare, prendiamo familiarità con le leggi fondamentali di RStudio:
 
 3.  **Runnare il codice**: Per far eseguire a R un comando, dovete posizionarvi sulla riga e premere `Ctrl + Enter` (su Windows) o `Cmd + Enter` (su Mac).
 
-4.  **Commenti**: In R tutto ciò che viene dopo `#` è un commento, cioè una parte di codice che non verrà eseguita.
+4. **Commenti**: In R tutto ciò che viene dopo `#` è un commento, cioè una parte di codice che non verrà eseguita.
 :::
 
 ------------------------------------------------------------------------
@@ -383,7 +380,7 @@ df_soggetti[ , 3]  # L'età di tutti gli soggetti
 
 ```
 
-#### **IL SIMBOLO DEL DOLLARO: \$**
+#### **IL SIMBOLO DEL DOLLARO: \$** 
 
 Nei data frame, possiamo chiamare una colonna direttamente per NOME usando '\$'. È molto più sicuro e intuitivo dei numeri di colonna.
 
@@ -597,6 +594,7 @@ boxplot(
 )
 ```
 
+
 ------------------------------------------------------------------------
 
 # 9. Pacchetti
@@ -638,13 +636,14 @@ All'interno dei pacchetti ci sono diverse **funzioni**, che a loro volta richied
 
 In `metafor`, ad esempio, per svolgere una meta-analisi con la funzione `rma` dobbiamo sempre specificare i seguenti **argomenti**:
 
--   `data` = ... \| con il nome del **dataframe di partenza** (`data.meta`)
+- `data` = ... | con il nome del **dataframe di partenza** (`data.meta`)
 
--   `yi` = ... \| con il vettore del dataframe contenente gli **effect size**
+- `yi` = ... | con il vettore del dataframe contenente gli **effect size**
 
--   `vi`= ... \| con il vettore del dataframe contenente le **varianze** di ciascun efect size
+- `vi`= ... | con il vettore del dataframe contenente le **varianze** di ciascun efect size 
 
-<br>
+
+<br> 
 
 ### Meta-Analisi: Esempio
 
@@ -657,3 +656,6 @@ res <- rma(yi = yi,           # Vettore con effect size
 summary(res)
 
 ```
+
+
+

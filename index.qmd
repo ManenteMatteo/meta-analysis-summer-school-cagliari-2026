@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "Scuola Estiva sulle Meta-Analisi | Cagliari 2026" 
 subtitle: "Materiali didattici: Systematic Review, Basi RStudio, pacchetto `metafor`"
 
 institute: "University of Padova"
@@ -7,59 +7,57 @@ author:
   - name: "Matteo Manente"
 ---
 
-# Course
+<br>
 
-Questo sito raccoglie i materiali per le lezioni introduttive della Summer School sulle Meta-Analisi.
+## Informazioni
 
-L'obiettivo è fornire una base pratica per passare da una domanda di ricerca a una sintesi sistematica della letteratura, fino alla gestione dei dati in R e all'introduzione alle meta-analisi con `metafor`.
+Questo sito raccoglie i materiali per le lezioni introduttive della Summer School sulle Meta-Analisi relative a:
 
-<center>
+-   **Systematic Review**
 
-{{< qrcode https://github.com/manente-matteo/meta-analysis-summer-school >}}
-</br>
-*QR code pointing to the GitHub repository*
+-   **Basi di R & RStudio**
 
-</center>
+-   **Introduzione al pacchetto `metafor`**
 
-## Struttura del corso
+<br>
 
-::: {.grid}
-::: {.g-col-4}
-### [Quiz introduttivo](quiz.qmd)
+L'obiettivo è fornire una base pratica per passare da una **domanda di ricerca**, passando attraverso una **sintesi sistematica della letteratura**, fino ad arrivare alla **gestione dei dati in R** e al calcolo di una **meta-analisi** con `metafor`.
 
-Domande Mentimeter per conoscere il gruppo e calibrare il livello della lezione.
+<center>![](github_qr.png){width="275"} </br> *Repository GitHub per scaricare tutti codici*</center>
+
+
+<br> 
+
+## Contenuti
+
+:::::: grid
+::: g-col-4
+### [Sondaggio](quiz.qmd)
+
+Alcune domande per conoscerci meglio.
 :::
 
-::: {.g-col-4}
-### [Slides](slides.qmd)
+::: g-col-4
+### [Materiali](materiali.qmd)
 
-Introduzione alle systematic review e al loro rapporto con le meta-analisi.
+Introduzione alle systematic review & Tutorial RStudio
 :::
 
-::: {.g-col-4}
-### [Labs](labs.qmd)
+::: g-col-4
+### [Risorse](resources.qmd)
 
-Tutorial pratici su RStudio, dati, grafici e prime analisi con `metafor`.
+Risorse utili per condurre Systematic Review/Meta-Analisi
 :::
-:::
 
-## Messaggio chiave
+::::::
 
-Una meta-analisi non nasce nel vuoto: deve poggiare su una systematic review trasparente, pre-registrata e replicabile.
+<br>
 
-## Getting started
+## Per iniziare
 
 Per usare i materiali in locale:
 
-1. scaricare o clonare il repository;
-2. aprire il file `.Rproj` in RStudio;
-3. installare i pacchetti indicati nella pagina [Setup](setup.qmd);
-4. aprire i file `.qmd` dei laboratori e seguire il codice passo passo.
-
-## Materiali principali
-
-- [Quiz rompighiaccio](quiz.qmd)
-- [Slides introduttive](slides.qmd)
-- [Tutorial e laboratori](labs.qmd)
-- [Setup tecnico](setup.qmd)
-- [Risorse utili](resources.qmd)
+1.  scaricare il repository GitHub;
+2.  aprire il file `.Rproj` in RStudio;
+3.  installare i pacchetti indicati nella pagina [Setup](setup.qmd);
+4.  aprire i file `.qmd` dei tutorial e seguire il codice passo passo.
