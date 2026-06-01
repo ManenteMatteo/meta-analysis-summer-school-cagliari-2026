@@ -1,0 +1,210 @@
+---
+title: "Introduzione alle Systematic Review"
+subtitle: "Summer School sulle Meta-Analisi"
+author: "Matteo Manente"
+date: today
+date-format: "DD MMMM YYYY"
+format:
+  revealjs:
+    theme: [simple, ../assets/slides.scss]
+    slide-number: true
+    chalkboard: true
+    transition: fade
+    incremental: false
+    toc: false
+editor: visual
+---
+
+## 1. Perché partire da qui?
+
+- Prima di fare nuova ricerca, dobbiamo sapere cosa esiste già
+- La letteratura cresce più velocemente della nostra capacità di leggerla
+- Singoli studi possono essere fragili, incompleti o contraddittori
+- Le systematic review aiutano a trasformare molti studi in evidenza utilizzabile
+
+---
+
+## 2. L'hook: il problema dell'abbondanza
+
+- Ogni giorno vengono pubblicati moltissimi nuovi articoli
+- È difficile seguire tutto, anche in un'area molto specifica
+- Il rischio è selezionare solo gli studi più visibili o più coerenti con le nostre idee
+- Una review sistematica serve a ridurre questo rischio
+
+---
+
+## 3. Perché fare una systematic review?
+
+- Riassumere lo stato attuale delle conoscenze
+- Capire se una domanda ha già una risposta abbastanza solida
+- Identificare risultati coerenti, contraddizioni e lacune
+- Informare nuove ricerche, pratica clinica, policy e linee guida
+
+---
+
+## 4. Quando è particolarmente utile?
+
+- Quando molti studi rispondono a domande simili
+- Quando i risultati sembrano discordanti
+- Quando si vuole progettare un nuovo studio o trial
+- Quando una decisione pratica richiede una sintesi affidabile
+
+> **Domanda al gruppo:** prima di iniziare un nuovo studio, controllate sempre se esiste già una review recente?
+
+---
+
+## 5. Systematic review vs narrative review
+
+| Narrative review | Systematic review |
+|---|---|
+| Selezione spesso non esplicita | Criteri di inclusione espliciti |
+| Metodo meno standardizzato | Metodo trasparente e replicabile |
+| Più rischio di cherry picking | Minore rischio di selezione arbitraria |
+| Utile per discussioni teoriche | Utile per sintesi strutturate dell'evidenza |
+
+---
+
+## 6. Che cos'è una systematic review?
+
+- È una sintesi strutturata della ricerca esistente
+- Parte da una domanda di ricerca chiara
+- Usa metodi espliciti per cercare, selezionare e valutare gli studi
+- Valuta il rischio di bias degli studi inclusi
+- Produce una sintesi trasparente e riproducibile
+
+---
+
+## 7. Cosa permette di fare?
+
+- Riassumere lo stato della conoscenza in un campo
+- Rispondere a domande non affrontabili con un singolo studio
+- Identificare gap, problemi e priorità future
+- Valutare teorie, meccanismi e spiegazioni
+- Produrre evidenza utile per ricercatori, clinici e decisori
+
+---
+
+## 8. Systematic review e meta-analisi
+
+- Una meta-analisi è una sintesi quantitativa dei risultati
+- Una meta-analisi dovrebbe sempre poggiare su una systematic review
+- La review definisce quali studi entrano nell'analisi
+- La meta-analisi stima quanto è grande, preciso e variabile un effetto
+- Senza review sistematica, aumenta il rischio di bias e cherry picking
+
+---
+
+## 9. Non tutte le review sono uguali
+
+- **Systematic review:** risponde a una domanda specifica con metodo replicabile
+- **Scoping review:** mappa un'area ampia e identifica concetti o lacune
+- **Meta-analisi:** combina quantitativamente effect sizes comparabili
+- **Umbrella review:** sintetizza risultati da più systematic review/meta-analisi
+
+---
+
+## 10. I passaggi principali
+
+1. Definire la domanda di ricerca
+2. Scrivere e preregistrare il protocollo
+3. Cercare gli studi in modo sistematico
+4. Selezionare gli studi con criteri espliciti
+5. Estrarre dati, valutare bias e sintetizzare i risultati
+
+---
+
+## 11. La domanda di ricerca: PICO
+
+- **P** = Population / partecipanti
+- **I** = Intervention / esposizione / predittore
+- **C** = Comparison / gruppo di controllo
+- **O** = Outcome / esito principale
+- Aiuta a trasformare un tema generale in una domanda analizzabile
+
+---
+
+## 12. Linee guida e strumenti essenziali
+
+- **PRISMA:** standard per reporting e flow diagram
+- **PROSPERO:** registro per protocolli di review
+- **Cochrane Handbook:** riferimento metodologico centrale
+- **Covidence:** supporto per screening ed estrazione dati
+- **GRADE:** valutazione della certezza complessiva dell'evidenza
+
+---
+
+## 13. Protocollo e preregistrazione
+
+- Definiscono in anticipo domanda, criteri e metodi
+- Riducono il rischio di decisioni post-hoc
+- Rendono trasparenti eventuali deviazioni dal piano iniziale
+- Aiutano a distinguere analisi confermative ed esplorative
+
+---
+
+## 14. Il team di review
+
+- Idealmente almeno 3--4 persone
+- Due reviewer indipendenti per screening ed estrazione dati
+- Un terzo reviewer o supervisore per risolvere disaccordi
+- Competenze utili: contenuto, metodo, statistica, ricerca bibliografica
+
+---
+
+## 15. Dove cercare gli studi?
+
+- **PubMed / MEDLINE:** biomedicina e salute
+- **Web of Science:** database multidisciplinare
+- **Scopus:** ampia copertura bibliografica
+- Database disciplinari specifici, se rilevanti
+- La scelta dipende dalla domanda di ricerca
+
+---
+
+## 16. Search query e operatori booleani
+
+- **AND:** restringe la ricerca
+- **OR:** amplia la ricerca con sinonimi
+- **NOT:** esclude termini non pertinenti
+- Virgolette: cercano una frase esatta
+- Troncamento: recupera varianti della stessa radice
+
+Esempio: `("post-traumatic stress" OR PTSD) AND (EMDR OR "eye movement desensitization")`
+
+---
+
+## 17. Letteratura grigia
+
+- Include report, tesi, preprint, registri, atti di conferenze
+- Riduce il rischio di publication bias
+- È utile quando gli studi pubblicati sono pochi o selezionati
+- Fonti possibili: Grey Matters, GreyNet, registri di trial, OSF, preprint server
+
+---
+
+## 18. Screening e selezione degli studi
+
+- Prima si leggono titolo e abstract
+- Poi si valutano i full text potenzialmente eleggibili
+- Le decisioni dovrebbero essere indipendenti e documentate
+- Il flow diagram PRISMA mostra quanti studi vengono inclusi o esclusi
+
+---
+
+## 19. Data extraction e risk of bias
+
+- Si estraggono caratteristiche di studio, campione, intervento ed esiti
+- L'estrazione dovrebbe seguire un modulo predefinito
+- Covidence può aiutare a gestire screening ed estrazione dati
+- Il risk of bias valuta la credibilità interna degli studi inclusi
+- La qualità degli studi influenza la fiducia nei risultati
+
+---
+
+## 20. Dal risultato all'evidenza
+
+- GRADE valuta la certezza complessiva dell'evidenza
+- Non basta chiedere: “l'effetto è significativo?”
+- Bisogna chiedere: “quanto possiamo fidarci di questa evidenza?”
+- Messaggio chiave: una buona meta-analisi nasce da una buona systematic review
+- Metodo, trasparenza e preregistrazione riducono bias e cherry picking

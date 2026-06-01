@@ -1,0 +1,9 @@
+---
+title: "Questionario introduttivo"
+---
+
+<br>
+
+## Mentimeter
+
+<center>![](quiz_qr.png){width="370"}</center>

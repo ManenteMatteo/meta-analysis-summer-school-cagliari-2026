@@ -1,0 +1,659 @@
+---
+title: "Basi RStudio"
+subtitle: "Scuola Estiva Meta-Analisi - Cagliari 2026"
+author: "Matteo Manente"
+date: today
+date-format: "DD MMMM YYYY"
+embed-resources: true
+format: 
+  html:
+    theme: cosmo
+    toc: true
+    toc-title: "Indice"
+    toc-location: left
+    number-sections: false
+    highlight-style: github
+---
+
+# Lo Scenario
+
+Immaginiamo di avere un dataset reale raccolto su 85 studenti/esse di scuole superiori.
+
+Abbiamo misurato:
+
+-   Età
+-   Genere
+-   Reddito della famiglia
+-   Stress scolastico
+-   Depressione
+
+**DOMANDA DI RICERCA:** *"Esiste una correlazione tra lo stress scolastico e i sintomi depressivi?"*
+
+------------------------------------------------------------------------
+
+# Spoiler: Il punto di arrivo
+
+Non preoccupatevi di capire questo blocco ora, serve solo per mostrarvi cosa sarete in grado di fare con 4 semplici righe di codice alla fine del corso!
+
+```{r}
+
+
+# 1. Diciamo a R di leggere il nostro file dati (importiamo i dati)
+dat <- read.csv("data/dat_scuole.csv")
+
+# 2. Creiamo un grafico a dispersione per visualizzare la relazione
+plot(x = dat$stress_scolastico, y = dat$depressione)
+
+# 3. Chiediamo il valore esatto della correlazione (r di Pearson)
+cor(dat$depressione, dat$stress_scolastico)
+
+# 4. Facciamo il test statistico completo per vedere se è significativa (p-value)
+cor.test(dat$depressione, dat$stress_scolastico)
+```
+
+------------------------------------------------------------------------
+
+::: callout-warning
+## Le "Regole" di R:
+
+Prima di iniziare, prendiamo familiarità con le leggi fondamentali di RStudio:
+
+1.  **I Decimali**: R parla inglese. Si usa il PUNTO `.`, non la virgola `,`! *(es. 3.14)*
+
+2.  **Case Sensitive**: R è pignolo e distingue tra maiuscole e minuscole. `Età` è diverso da `età` o `ETA`.
+
+3.  **Runnare il codice**: Per far eseguire a R un comando, dovete posizionarvi sulla riga e premere `Ctrl + Enter` (su Windows) o `Cmd + Enter` (su Mac).
+
+4.  **Commenti**: In R tutto ciò che viene dopo `#` è un commento, cioè una parte di codice che non verrà eseguita.
+:::
+
+------------------------------------------------------------------------
+
+# 1. Workspace & Environment
+
+Immaginate la *Working Directory* come la **"Stanza"** in cui state lavorando, e l'*Environment* come la vostra **"Scrivania"**.
+
+```{r}
+# Dove ci troviamo ora nel computer? (Qual è la nostra stanza?)
+getwd()     
+
+```
+
+```{r}
+#| eval: false
+
+# Cambiare stanza (Impostare la cartella in cui abbiamo salvato i dati)
+# setwd("C:/Percorso/Della/Vostra/Cartella") 
+
+```
+
+```{r}
+# Cosa c'è attualmente sulla nostra scrivania? (Lista degli oggetti in memoria)
+ls()              
+
+# Fare pulizia! Buttiamo via tutto per fare ordine
+rm(list=ls())     
+```
+
+### Il Workflow Ideale
+
+Per non perdere mai i vostri dati, seguite sempre questi passaggi:
+
+0.  Aprire **Rstudio**
+
+1.  Creare un **RProject** - cubo in alto a sinistra (Per dire a R: "Lavoreremo in questa cartella").
+
+2.  Aprire uno Script (`File > New File > R Script` o `Quarto Document`) per scrivere il codice.
+
+3.  Caricare eventuali pacchetti con `library()` e scrivere il codice.
+
+4.  **Salvataggio**: Quando chiudiamo RStudio, ci chiederà se salvare il workspace (`.RData`). <br> **Meglio rispondere: NO**. Vogliamo salvare solo lo Script (le "istruzioni"), non i risultati temporanei.
+
+    -   *Tip: Andate in Tools \> Global Options \> General \> "Save workspace to .RData on exit" = "Never".*
+
+5.  Close Project (in alto a destra)
+
+------------------------------------------------------------------------
+
+# 2. R come Calcolatrice
+
+R può fare tutto quello che fa una calcolatrice scientifica.
+
+```{r}
+# Operazioni di base
+2 + 2         # somma 
+10 - 3        # sottrazione 
+4 * 5         # moltiplicazione 
+20 / 4        # divisione 
+2^3           # elevazione a potenza  
+sqrt(4)       # radice quadrata 
+abs(-10)      # valore assoluto 
+
+# Domanda logica: Cosa restituisce se gli chiedo "5 è maggiore di 3?"
+5 > 3         # R ci risponderà: TRUE (Vero)
+5 < 3         # R ci risponderà: FALSE (Falso)
+```
+
+## Applichiamo la matematica ai dati reali
+
+Come calcolare la media dell'età dei nostri 85 partecipanti?
+
+*Assicuratevi di avere il file 'dat_scuole.csv' nella stessa cartella del vostro progetto.*
+
+```{r}
+
+
+# Importiamo il dataset nel nostro ambiente chiamandolo 'dat'
+dat <- read.csv("data/dat_scuole.csv")
+
+# O in alternativa (se file Excel)
+library(readxl)
+dat <- read_xlsx("data/dat_scuole.xlsx")
+
+# Visualizziamolo come fosse un foglio Excel
+# View(dat)
+
+# La media: METODO MANUALE (formula: somma dei valori diviso N)
+dat$eta           # Il simbolo '$' ci permette di estrarre solo la colonna 'eta'
+sum(dat$eta)      # Sommiamo tutte le 85 età
+length(dat$eta)   # Contiamo quante età ci sono (il nostro 'N')
+
+sum(dat$eta) / length(dat$eta)  # Ecco la nostra media calcolata a mano!
+
+# METODO VELOCE (Usando le funzioni interne di R)
+mean(dat$eta)     # Media
+var(dat$eta)      # Varianza
+sd(dat$eta)       # Deviazione Standard
+```
+
+------------------------------------------------------------------------
+
+# 3. Oggetti
+
+In R, se facciamo un calcolo, il risultato appare nella Console e scompare. Per conservarlo sulla nostra "scrivania" dobbiamo metterlo dentro un **OGGETTO** (come fosse una scatola) e attaccarci un'etichetta.
+
+L'operatore di assegnazione è la freccia `<-` *(tasto rapido: Alt + trattino)*.
+
+```{r}
+
+
+x <- 5          # Prendo il 5 e lo metto nell'oggetto 'x'
+y <- 10 - 3     # Calcolo 10-3 (7) e lo metto nell'oggetto 'y'
+x + y           # Ora posso fare calcoli usando direttamente le scatole!
+
+# Salviamo i risultati veri dei nostri dati
+eta_media <- mean(dat$eta)          
+eta_dev_standard <- sd(dat$eta)     
+
+# Domanda: Cosa succede se ora scrivo solo 'eta_media'?
+eta_media       # R apre la scatola e ci mostra cosa c'è dentro!
+
+
+# Creiamo un oggetto 'nome' e mettiamoci dentro il nome "Marco"
+
+# Se scriviamo così: nome <- Marco 
+# Cosa succede?
+
+
+# Quando vogliamo inserire del TESTO (variabili di tipo 'character'), 
+# DOBBIAMO USARE LE VIRGOLETTE "".
+
+nome1 <- "Marco"        # Ora funziona! R capisce che è una parola.
+```
+
+::: callout-note
+## Testo vs Oggetti
+
+Se volete salvare una parola (una variabile *character*), **dovete usare le virgolette `""`**. Se scrivete `nome <- Marco` senza virgolette, R cercherà un oggetto (una scatola) che si chiama Marco, e vi darà errore (`object 'Marco' not found`). La sintassi corretta è: `nome1 <- "Marco"`.
+:::
+
+------------------------------------------------------------------------
+
+# 4. Vettori
+
+Un **VETTORE** è un oggetto che contiene PIÙ valori dello STESSO TIPO (o tutti numeri, o tutti nomi). La funzione base per creare un vettore è `c()` che sta per *combine*.
+
+```{r}
+# Vettore di testo (character)
+nomi <- c("Giulia", "Sofia", "Luca", "Andrea")
+nomi
+
+# Vettore numerico
+num <- c(4, 7, 1009, 5.3)
+num
+```
+
+```{r}
+
+# Possiamo anche estrarre un'intera colonna dal nostro dataset 
+# e farla diventare un vettore a sé stante:
+depressione <- dat$depressione
+depressione
+
+```
+
+Possiamo anche generare vettori automaticamente per simulare dati. Usiamo la funzione `sample()` per pescare lettere a caso o creare ID numerici:
+
+```{r}
+# La parola 'LETTERS' (tutto maiuscolo) è un oggetto già presente in R 
+# che contiene tutto l'alfabeto.
+LETTERS
+
+# Usiamo la funzione sample() per "pescare" da questo alfabeto a caso.
+iniziali <- sample(
+  x = LETTERS,           # Da dove peschiamo? (Dalle lettere dell'alfabeto)
+  size = 85,             # Quante estrazioni facciamo? (85, come i nostri studenti)
+  replace = TRUE         # Estrazione CON re-inserimento (replace = TRUE). 
+  # È essenziale: essendoci solo 26 lettere e 85 studenti, 
+  # le lettere DEVONO potersi ripetere!
+)
+
+iniziali                 # Ecco il nostro vettore di 85 iniziali!
+
+
+# Ora vogliamo creare un ID (codice identificativo) numerico e segreto 
+# a 3 cifre per ogni partecipante.
+
+id_random <- sample(
+  x = 100:999,           # Popolazione: tutti i numeri da 100 a 999
+  size = 85,             # Quanti ID ci servono? 85
+  replace = FALSE        # Estrazione SENZA re-inserimento (replace = FALSE).
+  # Molto importante: ogni studente deve avere un ID UNICO. 
+  # Vietati i doppioni!
+)
+
+id_random
+```
+
+------------------------------------------------------------------------
+
+# 5. Matrici
+
+Mentre un vettore ha una sola dimensione, una **MATRICE** è una tabella a due dimensioni (righe e colonne).
+
+**ATTENZIONE:** le matrici possono contenere un SOLO TIPO di dato. Se mescoliamo numeri e testo, R trasformerà tutto in testo!
+
+```{r}
+# 1. Prepariamo dei dati finti (4 studenti x 3 variabili)
+valori_studenti <- c(16, 16, 19, 18,        # Età
+                     4.64, 6.94, 5.33, 5.96,# Stress
+                     5.18, 4.20, 3.65, 4.04)# Depressione
+
+valori_studenti # R ce li mostra come una singola sequenza di 12 numeri
+
+# 2. Trasformiamo il vettore in una matrice
+# Usiamo la funzione matrix() dicendo a R quante righe e colonne vogliamo
+matrice_dati <- matrix(valori_studenti, nrow = 4, ncol = 3)
+
+matrice_dati
+
+# Cosa è successo? R ha preso i 12 numeri e ha riempito la tabella 
+# "dall'alto verso il basso", colonna per colonna. 
+# Colonna 1 = Età, Colonna 2 = Stress, Colonna 3 = Depressione.
+
+# Se volessimo riempire la matrice riga per riga (da sinistra a destra), 
+# dovremmo usare l'argomento 'byrow = TRUE':
+matrice_riga <- matrix(valori_studenti, nrow = 4, ncol = 3, byrow = TRUE)
+matrice_riga # Nota come i dati ora sono posizionati diversamente!
+
+
+# 3. Assegniamo nomi a righe e colonne per orientarci
+colnames(matrice_dati) <- c("Eta", "Stress", "Depressione")
+rownames(matrice_dati) <- c("Studente_1", "Studente_2", "Studente_3", "Studente_4")
+
+matrice_dati
+```
+
+### Navigare e modificare le matrici
+
+In R, le parentesi quadre `[ ]` servono per estrarre. La regola è sempre: `[RIGA , COLONNA]`.
+
+```{r}
+# Estrazione
+matrice_dati[3, 2]     # Stress (colonna 2) dello Studente 3 (riga 3)
+matrice_dati[2, ]      # Profilo completo dello Studente 2 (tutta la riga)
+matrice_dati[ , 3]     # Tutti i punteggi di Depressione (tutta la colonna)
+
+# Modifica (Correggiamo l'età dello Studente 4)
+matrice_dati[4, 1] <- 19
+
+# Eliminazione (Il segno '-' esclude)
+matrice_dati[-1, ]     # Matrice senza lo Studente 1
+```
+
+### Unire matrici e vettori
+
+```{r}
+# Arrivano 2 NUOVI STUDENTI (Unione per RIGA - rbind)
+nuovi_studenti <- matrix(c(17, 5.20, 4.10,   
+                           18, 6.80, 5.50),  
+                         nrow = 2, ncol = 3, byrow = TRUE)
+
+colnames(nuovi_studenti) <- c("Eta", "Stress", "Depressione")
+
+matrice_piu_soggetti <- rbind(matrice_dati, nuovi_studenti)
+
+matrice_piu_soggetti
+
+
+
+# Aggiungiamo 2 NUOVE VARIABILI (Unione per COLONNA - cbind)
+nuove_variabili <- matrix(c(6.5, 7.2,    
+                            4.1, 8.5,    
+                            5.8, 6.0,    
+                            7.9, 4.5),   
+                          nrow = 4, ncol = 2, byrow = TRUE)
+colnames(nuove_variabili) <- c("Ansia", "Autostima")
+
+matrice_piu_variabili <- cbind(matrice_dati, nuove_variabili)
+
+matrice_piu_variabili
+```
+
+------------------------------------------------------------------------
+
+# 6. Data Frame
+
+Il **Data Frame** è la classica tabella a cui siamo abituati in Excel. La grande differenza rispetto alle matrici è che qui **ogni colonna può contenere un tipo di dato diverso!**
+
+```{r}
+# Creazione di un piccolo Data Frame misto
+df_soggetti <- data.frame(
+  id = c(1, 2, 3, 4),
+  genere = c("F", "F", "M", "M"),
+  eta = c(18, 32, 57, 49),
+  stress = c(4.64, 6.94, 5.33, 5.96)
+)
+
+df_soggetti
+```
+
+### Esplorazione e Filtri
+
+Oltre a usare `[RIGA, COLONNA]`, nei Data Frame il nostro migliore amico è il simbolo **`$`**, che ci permette di richiamare le variabili direttamente per nome.
+
+```{r}
+
+# Selezione elementi
+
+# Regola base: funziona esattamente come le matrici con le parentesi quadre [RIGA, COLONNA]
+df_soggetti[2, 4]  # stress (colonna 4) dello soggetto 2 (riga 2)
+df_soggetti[3, ]   # Tutti i dati dello soggetto 3
+df_soggetti[ , 3]  # L'età di tutti gli soggetti
+
+```
+
+#### **IL SIMBOLO DEL DOLLARO: \$**
+
+Nei data frame, possiamo chiamare una colonna direttamente per NOME usando '\$'. È molto più sicuro e intuitivo dei numeri di colonna.
+
+```{r}
+df_soggetti$eta      # Estrae tutta la colonna 'eta'
+df_soggetti$stress   # Estrae tutta la colonna 'stress'
+```
+
+#### **Selezione con operatori logici (\<, \>, ==)**
+
+```{r}
+# Possiamo usare i fattori logici per "filtrare" i nostri partecipanti.
+# Quali soggetti hanno più di 50 anni?
+df_soggetti$eta >= 50
+
+# R ci risponde con TRUE o FALSE. Se inseriamo questa condizione nelle RIGHE,
+# R ci estrarrà solo i partecipanti per cui la condizione è TRUE:
+soggetti_over50 <- df_soggetti[df_soggetti$eta >= 50, ] 
+soggetti_over50
+
+
+# Estraiamo solo le femmine (nota il DOPPIO UGUALE '==' per dire "è esattamente uguale a")
+solo_femmine <- df_soggetti[df_soggetti$genere == "F", ]
+solo_femmine
+```
+
+### Operatori Booleani
+
+Possiamo utilizzare anche AND, OR e NOT per filtrare gli elementi del nostro dataframe
+
+-   AND = &
+
+-   OR = \|
+
+-   NOT = !
+
+```{r}
+# Selezioniamo tutti i soggetti maschi con più di 50 anni
+maschi_over50 <- df_soggetti[df_soggetti$genere == "M" & df_soggetti$eta >= 50, ]
+maschi_over50
+
+# Selezioniamo tutti i soggetti femmine o chi ha meno di 50 anni
+femmine_o_under50 <- df_soggetti[df_soggetti$genere == "F" | df_soggetti$eta <= 50, ]
+femmine_o_under50
+
+# Selezioniamo tutti i soggetti che NON hanno 18 anni
+no_18enni <- df_soggetti[df_soggetti$eta != 18, ]
+no_18enni
+
+
+# Selezioniamo il genere di chi ha livelli di stress tra 5.00 e 6.00
+stressati <- df_soggetti[df_soggetti$stress >= 5.00 & df_soggetti$stress <= 6.00, "genere"]
+stressati
+
+```
+
+### Modificare elementi
+
+```{r}
+# Usiamo il dollaro e l'indice per correggere un errore.
+# L'età dello soggetto 1 non è 18, ma 19!
+df_soggetti$eta[1] <- 19
+df_soggetti
+
+# Il genere del soggetto n. 2 è maschio, non femmina
+df_soggetti[2, "genere"] <- "M"
+df_soggetti
+
+# Vogliamo trasformare tutti i punteggi di stress aggiungendo 1 punto?
+df_soggetti$stress <- df_soggetti$stress + 1
+df_soggetti
+
+
+# Eliminare righe e colonne
+
+# Per eliminare una RIGA si usa il segno '-' come nelle matrici
+df_senza_sogg2 <- df_soggetti[-2, ] 
+df_senza_sogg2
+
+# Per eliminare una COLONNA, il trucco più usato in R è assegnarle il valore 'NULL' (vuoto)
+df_soggetti$id <- NULL 
+df_soggetti  # La colonna 'id' è sparita!
+```
+
+### Unire Data Frame
+
+```{r}
+# SCENARIO: Arriva un nuovo soggetto (Riga)
+nuovo_soggetto <- data.frame(
+  genere = "F", 
+  eta = 62, 
+  stress = 5.00
+)
+
+# rbind (Row Bind) - Uniamo sotto. 
+# ATTENZIONE: i nomi delle colonne devono essere IDENTICI!
+df_aggiornato <- rbind(df_soggetti, nuovo_soggetto)
+df_aggiornato
+
+# SCENARIO: Aggiungiamo il punteggio di "supporto_sociale" a tutti (Colonna)
+# Abbiamo 5 soggetti ora, quindi servono 5 punteggi
+punteggi_supporto_sociale <- c(3.5, 4.2, 2.1, 5.5, 4.0)
+
+# cbind (Column Bind) - Uniamo a destra.
+# In alternativa, si poteva fare anche: df_aggiornato$supporto_sociale <- punteggi_supporto_sociale
+df_completo <- cbind(df_aggiornato, supporto_sociale = punteggi_supporto_sociale)
+df_completo
+```
+
+### Funzioni utili
+
+```{r}
+nrow(df_soggetti)      # Numero di righe (quanti partecipanti abbiamo?)
+ncol(df_soggetti)      # Numero di colonne (quante variabili?)
+rownames(df_soggetti)  # Nomi delle righe (di default sono numeri progressivi)
+colnames(df_soggetti)  # Nomi delle colonne (le nostre variabili)
+
+# Le 4 funzioni "salva-vita" per esplorare dataset grandi:
+head(df_soggetti, 2)   # Mostra solo le prime 2 righe (la "testa" dei dati)
+tail(df_soggetti, 2)   # Mostra solo le ultime 2 righe (la "coda")
+str(df_soggetti)       # Mostra la STRUTTURA: ci dice il tipo di dato di ogni colonna
+summary(df_soggetti)   # Ci fa un RIASSUNTO statistico immediato (min, max, media, ecc.)
+```
+
+------------------------------------------------------------------------
+
+# 7. Statistica Descrittiva
+
+*Let's look at the data!* Esploriamo il nostro dataset `dat` che abbiamo importato all'inizio.
+
+```{r}
+
+
+# Sintesi generale del dataset (Min, Max, Medie, Quartili)
+summary(dat)
+
+# Variabilità (Deviazione Standard)
+sd(dat$stress_scolastico)
+sd(dat$depressione)
+
+# Frequenze Assolute (Variabili Categoriali)
+table(dat$genere)
+table(dat$reddito_famiglia)
+
+# Frequenze Relative Percentuali
+prop.table(table(dat$genere)) * 100
+```
+
+------------------------------------------------------------------------
+
+# 8. Visualizzazione dei Dati
+
+La scelta del grafico dipende dalla natura della variabile che stiamo analizzando.
+
+### 1. Variabili Categoriali (Grafico a Barre)
+
+Ricordate: `barplot()` ha bisogno della TABELLA delle frequenze, non della colonna grezza!
+
+```{r}
+
+barplot(
+  table(dat$genere),
+  main = "Distribuzione del Genere nel Campione", 
+  ylab = "Numero di studenti",                    
+  col = c("coral", "lightblue")                   
+)
+```
+
+### 2. Variabili Continue (Istogramma)
+
+Ci mostra la forma della distribuzione (es. curva a campana).
+
+```{r}
+
+hist(
+  dat$stress_scolastico,
+  main = "Distribuzione dei Punteggi di Stress",
+  xlab = "Livello di Stress",
+  col = "lightgreen"
+)
+```
+
+### 3. Due Variabili Continue (Scatterplot)
+
+Rispondiamo alla domanda di ricerca: c'è relazione tra stress e depressione?
+
+```{r}
+
+plot(
+  x = dat$stress_scolastico,
+  y = dat$depressione,
+  main = "Relazione tra Stress Scolastico e Depressione",
+  xlab = "Punteggio di Stress",
+  ylab = "Punteggio di Depressione",
+  col = "darkblue"
+)
+```
+
+### 4. Confrontare Gruppi (Boxplot)
+
+La sintassi di R usa la tilde **`~`** che si legge *"in funzione di"*.
+
+```{r}
+
+boxplot(
+  formula = dat$depressione ~ dat$genere,
+  main = "Livelli di Depressione per Genere",
+  ylab = "Punteggio di Depressione",
+  xlab = "Genere",
+  col = c("coral", "lightblue")
+)
+```
+
+------------------------------------------------------------------------
+
+# 9. Pacchetti
+
+Per molte funzioni è spesso necessario installare (solo la prima volta) e poi caricare (ogni volta) pacchetti specifici.
+
+Per le **meta-analisi**, ad esempio, si utilizza il pacchetto `metafor`.
+
+```{r}
+# install.packages() si usa una volta
+# install.packages("metafor")
+
+# library() si usa ogni volta che si apre una nuova sessione
+library(metafor)
+
+```
+
+<br>
+
+Ora installiamo e carichiamo un pacchetto (`psymetadata`) con all'interno diversi dataset già pronti per effettuare delle meta-analisi
+
+```{r}
+# Installazione pacchetto
+# install.packages("psymetadata")
+
+# Caricamento pacchetto
+library(psymetadata)
+
+# Carichiamo un dataset di esemio
+data.meta <- gamble2019
+
+```
+
+<br>
+
+### Funzioni & Argomenti
+
+All'interno dei pacchetti ci sono diverse **funzioni**, che a loro volta richiedono specfici **argomenti** per svolgere le operazioni.
+
+In `metafor`, ad esempio, per svolgere una meta-analisi con la funzione `rma` dobbiamo sempre specificare i seguenti **argomenti**:
+
+-   `data` = ... \| con il nome del **dataframe di partenza** (`data.meta`)
+
+-   `yi` = ... \| con il vettore del dataframe contenente gli **effect size**
+
+-   `vi`= ... \| con il vettore del dataframe contenente le **varianze** di ciascun efect size
+
+<br>
+
+### Meta-Analisi: Esempio
+
+```{r}
+res <- rma(yi = yi,           # Vettore con effect size
+           vi = vi,           # Vettore con varianze
+           data = data.meta)  # Dataframe di riferimento
+
+# Risultati
+summary(res)
+
+```

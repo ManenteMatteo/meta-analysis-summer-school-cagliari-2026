@@ -1,0 +1,10 @@
+---
+title: "Slides"
+listing:
+  type: table
+  contents: slides
+  sort: "filename"
+  fields: [title, subtitle, date]
+---
+
+In questa sezione sono raccolte le presentazioni del corso.

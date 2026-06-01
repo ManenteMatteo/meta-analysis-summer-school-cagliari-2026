@@ -1,0 +1,43 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - data/*.csv
+
+execute:
+  freeze: auto
+  execute-dir: project
+  warning: false
+  message: false
+
+website:
+  title: "Summer School | Meta-Analisi"
+  navbar:
+    background: "#355070"
+    foreground: "#ffffff"
+    search: true
+    left:
+      - href: index.qmd
+        text: Home
+      - href: quiz.qmd
+        text: Mentimeter
+      - href: slides.qmd
+        text: Slides
+      - href: labs.qmd
+        text: Labs
+      - href: setup.qmd
+        text: Setup
+      - href: resources.qmd
+        text: Risorse
+    right:
+      - icon: github
+        href: https://github.com/ManenteMatteo/meta-analysis-summer-school
+        aria-label: GitHub
+
+format:
+  html:
+    theme: [brite, assets/styles.scss]
+    toc: false
+    number-sections: false
+    highlight-style: github
+    code-copy: true
