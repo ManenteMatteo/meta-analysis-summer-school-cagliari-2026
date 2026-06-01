@@ -1,14 +1,14 @@
 [
   {
-    "listing": "/labs.html",
-    "items": [
-      "/labs/01-rstudio-basics.html"
-    ]
-  },
-  {
     "listing": "/slides.html",
     "items": [
       "/slides/01-systematic-review.html"
+    ]
+  },
+  {
+    "listing": "/labs.html",
+    "items": [
+      "/labs/01-rstudio-basics.html"
     ]
   }
 ]

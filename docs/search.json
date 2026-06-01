@@ -1,10 +1,59 @@
 [
   {
-    "objectID": "labs.html",
-    "href": "labs.html",
-    "title": "Labs",
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Risorse utili",
     "section": "",
-    "text": "In questa sezione sono raccolti i tutorial pratici.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nSubtitle\n\n\n\nDate\n\n\n\n\n\n\n\n\nBasi RStudio\n\n\nScuola Estiva Meta-Analisi - Cagliari 2026\n\n\nJun 1, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "Systematic review\n\nPRISMA: reporting delle systematic review\nPROSPERO: registrazione dei protocolli\nCochrane Handbook: riferimento metodologico\nPICO: formulazione della domanda di ricerca\n\n\n\nDatabase bibliografici\n\nPubMed\nWeb of Science\nScopus\nPsycINFO\nGoogle Scholar, con cautela e strategia esplicita\n\n\n\nLetteratura grigia\n\nGrey Matters\nGreyNet\ntesi, report tecnici, preprint, atti di conferenza\n\n\n\nR e meta-analisi\n\nmetafor: package R per meta-analisi\nRStudio Projects: gestione ordinata dei materiali\nQuarto: documenti riproducibili, siti e slide\n\n\n\nTools per il workflow\n\nCovidence: screening ed estrazione dati\nZotero: gestione bibliografica\nOSF: pre-registrazione e materiali aperti\nGitHub: codice e versionamento"
+  },
+  {
+    "objectID": "quiz.html#mentimeter",
+    "href": "quiz.html#mentimeter",
+    "title": "Questionario introduttivo",
+    "section": "Mentimeter",
+    "text": "Mentimeter"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Questo sito raccoglie i materiali per le lezioni introduttive della Summer School sulle Meta-Analisi.\nL’obiettivo è fornire una base pratica per passare da una domanda di ricerca a una sintesi sistematica della letteratura, fino alla gestione dei dati in R e all’introduzione alle meta-analisi con metafor.\n\n{{&lt; qrcode https://github.com/manente-matteo/meta-analysis-summer-school &gt;}}  QR code pointing to the GitHub repository\n\n\n\n\n\n\nDomande Mentimeter per conoscere il gruppo e calibrare il livello della lezione.\n\n\n\nIntroduzione alle systematic review e al loro rapporto con le meta-analisi.\n\n\n\nTutorial pratici su RStudio, dati, grafici e prime analisi con metafor.\n\n\n\n\n\nUna meta-analisi non nasce nel vuoto: deve poggiare su una systematic review trasparente, pre-registrata e replicabile.\n\n\n\nPer usare i materiali in locale:\n\nscaricare o clonare il repository;\naprire il file .Rproj in RStudio;\ninstallare i pacchetti indicati nella pagina Setup;\naprire i file .qmd dei laboratori e seguire il codice passo passo.\n\n\n\n\n\nQuiz rompighiaccio\nSlides introduttive\nTutorial e laboratori\nSetup tecnico\nRisorse utili"
+  },
+  {
+    "objectID": "index.html#struttura-del-corso",
+    "href": "index.html#struttura-del-corso",
+    "title": "Home",
+    "section": "",
+    "text": "Domande Mentimeter per conoscere il gruppo e calibrare il livello della lezione.\n\n\n\nIntroduzione alle systematic review e al loro rapporto con le meta-analisi.\n\n\n\nTutorial pratici su RStudio, dati, grafici e prime analisi con metafor."
+  },
+  {
+    "objectID": "index.html#messaggio-chiave",
+    "href": "index.html#messaggio-chiave",
+    "title": "Home",
+    "section": "",
+    "text": "Una meta-analisi non nasce nel vuoto: deve poggiare su una systematic review trasparente, pre-registrata e replicabile."
+  },
+  {
+    "objectID": "index.html#getting-started",
+    "href": "index.html#getting-started",
+    "title": "Home",
+    "section": "",
+    "text": "Per usare i materiali in locale:\n\nscaricare o clonare il repository;\naprire il file .Rproj in RStudio;\ninstallare i pacchetti indicati nella pagina Setup;\naprire i file .qmd dei laboratori e seguire il codice passo passo."
+  },
+  {
+    "objectID": "index.html#materiali-principali",
+    "href": "index.html#materiali-principali",
+    "title": "Home",
+    "section": "",
+    "text": "Quiz rompighiaccio\nSlides introduttive\nTutorial e laboratori\nSetup tecnico\nRisorse utili"
+  },
+  {
+    "objectID": "slides.html",
+    "href": "slides.html",
+    "title": "Slides",
+    "section": "",
+    "text": "In questa sezione sono raccolte le presentazioni del corso.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nSubtitle\n\n\n\nDate\n\n\n\n\n\n\n\n\nIntroduzione alle Systematic Review\n\n\nSummer School sulle Meta-Analisi\n\n\nJun 1, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "labs/01-rstudio-basics.html",
@@ -21,46 +70,11 @@
     "text": "Applichiamo la matematica ai dati reali\nCome calcolare la media dell’età dei nostri 85 partecipanti?\nAssicuratevi di avere il file ‘dat_scuole.csv’ nella stessa cartella del vostro progetto.\n\n# Importiamo il dataset nel nostro ambiente chiamandolo 'dat'\ndat &lt;- read.csv(\"data/dat_scuole.csv\")\n\n# O in alternativa (se file Excel)\nlibrary(readxl)\ndat &lt;- read_xlsx(\"data/dat_scuole.xlsx\")\n\n# Visualizziamolo come fosse un foglio Excel\n# View(dat)\n\n# La media: METODO MANUALE (formula: somma dei valori diviso N)\ndat$eta           # Il simbolo '$' ci permette di estrarre solo la colonna 'eta'\n\n [1] 16 16 19 18 17 18 18 16 14 16 15 17 15 19 17 16 19 15 19 14 19 14 17 16 17\n[26] 18 17 15 19 18 19 17 15 14 17 18 19 16 16 17 18 19 18 16 16 14 16 16 17 19\n[51] 18 19 18 19 16 16 16 17 19 18 18 16 18 16 15 18 18 16 18 19 14 14 14 15 16\n[76] 16 17 16 17 18 17 17 18 14 18\n\nsum(dat$eta)      # Sommiamo tutte le 85 età\n\n[1] 1430\n\nlength(dat$eta)   # Contiamo quante età ci sono (il nostro 'N')\n\n[1] 85\n\nsum(dat$eta) / length(dat$eta)  # Ecco la nostra media calcolata a mano!\n\n[1] 16.82353\n\n# METODO VELOCE (Usando le funzioni interne di R)\nmean(dat$eta)     # Media\n\n[1] 16.82353\n\nvar(dat$eta)      # Varianza\n\n[1] 2.408964\n\nsd(dat$eta)       # Deviazione Standard\n\n[1] 1.552084"
   },
   {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Risorse utili",
+    "objectID": "labs.html",
+    "href": "labs.html",
+    "title": "Labs",
     "section": "",
-    "text": "Systematic review\n\nPRISMA: reporting delle systematic review\nPROSPERO: registrazione dei protocolli\nCochrane Handbook: riferimento metodologico\nPICO: formulazione della domanda di ricerca\n\n\n\nDatabase bibliografici\n\nPubMed\nWeb of Science\nScopus\nPsycINFO\nGoogle Scholar, con cautela e strategia esplicita\n\n\n\nLetteratura grigia\n\nGrey Matters\nGreyNet\ntesi, report tecnici, preprint, atti di conferenza\n\n\n\nR e meta-analisi\n\nmetafor: package R per meta-analisi\nRStudio Projects: gestione ordinata dei materiali\nQuarto: documenti riproducibili, siti e slide\n\n\n\nTools per il workflow\n\nCovidence: screening ed estrazione dati\nZotero: gestione bibliografica\nOSF: pre-registrazione e materiali aperti\nGitHub: codice e versionamento"
-  },
-  {
-    "objectID": "quiz.html",
-    "href": "quiz.html",
-    "title": "Questionario introduttivo",
-    "section": "",
-    "text": "Mentimeter"
-  },
-  {
-    "objectID": "quiz.html#sequenza-consigliata",
-    "href": "quiz.html#sequenza-consigliata",
-    "title": "Quiz introduttivo",
-    "section": "",
-    "text": "#\nDomanda\nFormato Mentimeter\nObiettivo\n\n\n\n\n1\nIn una o due parole, qual è il vostro ambito di ricerca?\nWord cloud\nConoscere la varietà del gruppo\n\n\n2\nQual è la vostra esperienza con systematic review o meta-analisi?\nMultiple choice\nMappare l’esperienza pregressa\n\n\n3\nQuanto pensate che una review/meta-analisi possa essere utile per la vostra ricerca?\nScala 1–5\nCollegare il corso ai loro obiettivi\n\n\n4\nChe rapporto avete con R/RStudio?\nMultiple choice\nCalibrare il livello tecnico\n\n\n5\nQuanto vi sentite a vostro agio con R/RStudio?\nScala 1–5\nNormalizzare eventuali difficoltà\n\n\n6\nQual è la cosa che vi mette più in difficoltà quando usate R?\nWord cloud\nFar emergere bisogni pratici\n\n\n7\nAvete mai usato il pacchetto metafor?\nMultiple choice\nCapire da dove partire\n\n\n8\nAlla fine di queste lezioni, cosa vorreste saper fare concretamente?\nOpen-ended\nRaccogliere aspettative"
-  },
-  {
-    "objectID": "quiz.html#opzioni-suggerite",
-    "href": "quiz.html#opzioni-suggerite",
-    "title": "Quiz introduttivo",
-    "section": "",
-    "text": "Ne ho solo lette alcune\nHo collaborato a una systematic review\nHo collaborato a una meta-analisi\nNe ho condotta/scritta una in prima persona\nNe ho pubblicata almeno una\nNessuna esperienza diretta\n\n\n\n\n\nMai usato\nL’ho aperto qualche volta, ma non mi sento autonomo/a\nLo uso per analisi di base\nLo uso regolarmente\nLo uso anche per analisi avanzate o pacchetti specifici\n\n\n\n\n\nNo, mai\nL’ho visto nominare\nHo provato qualche funzione\nL’ho usato per una meta-analisi\nLo uso abbastanza regolarmente"
-  },
-  {
-    "objectID": "slides.html",
-    "href": "slides.html",
-    "title": "Slides",
-    "section": "",
-    "text": "In questa sezione sono raccolte le presentazioni del corso.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nSubtitle\n\n\n\nDate\n\n\n\n\n\n\n\n\nIntroduzione alle Systematic Review\n\n\nSummer School sulle Meta-Analisi\n\n\nJun 1, 2026\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "slides/01-systematic-review.html",
-    "href": "slides/01-systematic-review.html",
-    "title": "Introduzione alle Systematic Review",
-    "section": "",
-    "text": "Prima di fare nuova ricerca, dobbiamo sapere cosa esiste già\nLa letteratura cresce più velocemente della nostra capacità di leggerla\nSingoli studi possono essere fragili, incompleti o contraddittori\nLe systematic review aiutano a trasformare molti studi in evidenza utilizzabile"
+    "text": "In questa sezione sono raccolti i tutorial pratici.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nSubtitle\n\n\n\nDate\n\n\n\n\n\n\n\n\nBasi RStudio\n\n\nScuola Estiva Meta-Analisi - Cagliari 2026\n\n\nJun 1, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/01-systematic-review.html#perché-partire-da-qui",
@@ -208,47 +222,5 @@
     "title": "Setup",
     "section": "",
     "text": "Software richiesti\nPer seguire i laboratori è consigliato avere installato:\n\nR\nRStudio\nQuarto\nun browser aggiornato\n\n\n\nPacchetti R\nEseguire questo codice una sola volta:\n\ninstall.packages(c(\n  \"metafor\",\n  \"tidyverse\",\n  \"readxl\"\n))\n\nPoi, in ogni nuova sessione, caricare i pacchetti necessari:\n\nlibrary(metafor)\nlibrary(tidyverse)\nlibrary(readxl)\n\n\n\nWorkflow consigliato\n\nAprire il file .Rproj.\nNon usare setwd() se il progetto è già aperto correttamente.\nTenere dati, script e output in cartelle ordinate.\nSalvare il codice, non il workspace .RData.\n\n\n\nRenderizzare il sito\nDal terminale o dalla scheda Terminal di RStudio:\nquarto render\nIl sito renderizzato verrà creato nella cartella docs/, pronta per GitHub Pages."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
-    "section": "",
-    "text": "Questo sito raccoglie i materiali per le lezioni introduttive della Summer School sulle Meta-Analisi.\nL’obiettivo è fornire una base pratica per passare da una domanda di ricerca a una sintesi sistematica della letteratura, fino alla gestione dei dati in R e all’introduzione alle meta-analisi con metafor.\n\n{{&lt; qrcode https://github.com/manente-matteo/meta-analysis-summer-school &gt;}}  QR code pointing to the GitHub repository\n\n\n\n\n\n\nDomande Mentimeter per conoscere il gruppo e calibrare il livello della lezione.\n\n\n\nIntroduzione alle systematic review e al loro rapporto con le meta-analisi.\n\n\n\nTutorial pratici su RStudio, dati, grafici e prime analisi con metafor.\n\n\n\n\n\nUna meta-analisi non nasce nel vuoto: deve poggiare su una systematic review trasparente, pre-registrata e replicabile.\n\n\n\nPer usare i materiali in locale:\n\nscaricare o clonare il repository;\naprire il file .Rproj in RStudio;\ninstallare i pacchetti indicati nella pagina Setup;\naprire i file .qmd dei laboratori e seguire il codice passo passo.\n\n\n\n\n\nQuiz rompighiaccio\nSlides introduttive\nTutorial e laboratori\nSetup tecnico\nRisorse utili"
-  },
-  {
-    "objectID": "index.html#struttura-del-corso",
-    "href": "index.html#struttura-del-corso",
-    "title": "Home",
-    "section": "",
-    "text": "Domande Mentimeter per conoscere il gruppo e calibrare il livello della lezione.\n\n\n\nIntroduzione alle systematic review e al loro rapporto con le meta-analisi.\n\n\n\nTutorial pratici su RStudio, dati, grafici e prime analisi con metafor."
-  },
-  {
-    "objectID": "index.html#messaggio-chiave",
-    "href": "index.html#messaggio-chiave",
-    "title": "Home",
-    "section": "",
-    "text": "Una meta-analisi non nasce nel vuoto: deve poggiare su una systematic review trasparente, pre-registrata e replicabile."
-  },
-  {
-    "objectID": "index.html#getting-started",
-    "href": "index.html#getting-started",
-    "title": "Home",
-    "section": "",
-    "text": "Per usare i materiali in locale:\n\nscaricare o clonare il repository;\naprire il file .Rproj in RStudio;\ninstallare i pacchetti indicati nella pagina Setup;\naprire i file .qmd dei laboratori e seguire il codice passo passo."
-  },
-  {
-    "objectID": "index.html#materiali-principali",
-    "href": "index.html#materiali-principali",
-    "title": "Home",
-    "section": "",
-    "text": "Quiz rompighiaccio\nSlides introduttive\nTutorial e laboratori\nSetup tecnico\nRisorse utili"
-  },
-  {
-    "objectID": "quiz.html#mentimeter",
-    "href": "quiz.html#mentimeter",
-    "title": "Questionario introduttivo",
-    "section": "Mentimeter",
-    "text": "Mentimeter"
   }
 ]

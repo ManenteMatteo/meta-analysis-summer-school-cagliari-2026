@@ -31,7 +31,7 @@ website:
         text: Risorse
     right:
       - icon: github
-        href: https://github.com/ManenteMatteo/meta-analysis-summer-school
+        href: https://github.com/ManenteMatteo/meta-analysis-summer-school-cagliari-2026
         aria-label: GitHub
 
 format:
