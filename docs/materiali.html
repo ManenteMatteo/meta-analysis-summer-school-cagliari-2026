@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-type',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
       searchColumns: ["listing-title","listing-author"],
     };
@@ -240,34 +240,80 @@ window.Quarto = {
 <a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
 </th>
 
+<th>
+type
+</th>
+
 </tr>
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-file-modified-sort="1780395097800" data-listing-reading-time-sort="5" data-listing-word-count-sort="881" data-listing-title-sort="Systematic Review: Introduzione" data-listing-filename-sort="01-systematic-review-intro.qmd">
+<tr data-index="0" data-listing-file-modified-sort="1780404891974" data-listing-reading-time-sort="5" data-listing-word-count-sort="893" data-listing-title-sort="Systematic Review: Introduzione" data-listing-filename-sort="01-systematic-review-intro.qmd">
 <td>
 <a href="./materiali/01-systematic-review-intro.html" class="title listing-title">Systematic Review: Introduzione</a>
 </td>
+<td>
+<span class="listing-type">Slides</span>
+</td>
 
 </tr>
 
-<tr data-index="1" data-listing-file-modified-sort="1780332479770" data-listing-reading-time-sort="16" data-listing-word-count-sort="3022" data-listing-title-sort="Basi di RStudio" data-listing-filename-sort="02-rstudio-basics.qmd">
+<tr data-index="1" data-listing-file-modified-sort="1780404867344" data-listing-reading-time-sort="16" data-listing-word-count-sort="3022" data-listing-title-sort="Basi di RStudio" data-listing-filename-sort="02-rstudio-basics.qmd">
 <td>
 <a href="./materiali/02-rstudio-basics.html" class="title listing-title">Basi di RStudio</a>
 </td>
-
-</tr>
-
-<tr data-index="2" data-listing-file-modified-sort="1780393334785" data-listing-reading-time-sort="8" data-listing-word-count-sort="1581" data-listing-title-sort="Esercizi introduttivi a RStudio" data-listing-filename-sort="03-esercizi-introduttivi-rstudio.qmd">
 <td>
-<a href="./materiali/03-esercizi-introduttivi-rstudio.html" class="title listing-title">Esercizi introduttivi a RStudio</a>
+<span class="listing-type">Tutorial</span>
 </td>
 
 </tr>
 
-<tr data-index="3" data-listing-file-modified-sort="1780393848119" data-listing-reading-time-sort="1" data-listing-word-count-sort="15" data-listing-title-sort="Dataset scuole" data-listing-filename-sort="dat_scuole.qmd">
+<tr data-index="2" data-listing-file-modified-sort="1780404848909" data-listing-reading-time-sort="8" data-listing-word-count-sort="1581" data-listing-title-sort="Esercizi introduttivi a RStudio" data-listing-filename-sort="03-esercizi-introduttivi-rstudio.qmd">
 <td>
-<a href="./materiali/dat_scuole.html" class="title listing-title">Dataset scuole</a>
+<a href="./materiali/03-esercizi-introduttivi-rstudio.html" class="title listing-title">Esercizi introduttivi a RStudio</a>
+</td>
+<td>
+<span class="listing-type">Exercise</span>
+</td>
+
+</tr>
+
+<tr data-index="3" data-listing-file-modified-sort="1780404831373" data-listing-reading-time-sort="1" data-listing-word-count-sort="15" data-listing-title-sort="Dataset scuole" data-listing-filename-sort="04-dat_scuole.qmd">
+<td>
+<a href="./materiali/04-dat_scuole.html" class="title listing-title">Dataset scuole</a>
+</td>
+<td>
+<span class="listing-type">Dataset</span>
+</td>
+
+</tr>
+
+<tr data-index="4" data-listing-file-modified-sort="1780404765741" data-listing-reading-time-sort="7" data-listing-word-count-sort="1362" data-listing-title-sort="Esercizio Meta-Analisi: Math anxiety e achievement" data-listing-filename-sort="05-metafor-barroso2021.qmd">
+<td>
+<a href="./materiali/05-metafor-barroso2021.html" class="title listing-title">Esercizio Meta-Analisi: Math anxiety e achievement</a>
+</td>
+<td>
+<span class="listing-type">Exercise</span>
+</td>
+
+</tr>
+
+<tr data-index="5" data-listing-file-modified-sort="1780404792743" data-listing-reading-time-sort="7" data-listing-word-count-sort="1338" data-listing-title-sort="Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica" data-listing-filename-sort="06-metafor-maccann2020.qmd">
+<td>
+<a href="./materiali/06-metafor-maccann2020.html" class="title listing-title">Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica</a>
+</td>
+<td>
+<span class="listing-type">Exercise</span>
+</td>
+
+</tr>
+
+<tr data-index="6" data-listing-file-modified-sort="1780409775363" data-listing-reading-time-sort="2" data-listing-word-count-sort="334" data-listing-title-sort="Esercitazione finale" data-listing-filename-sort="esercitazione-finale-psicoterapia-depressione.qmd">
+<td>
+<a href="./materiali/esercitazione-finale-psicoterapia-depressione.html" class="title listing-title">Esercitazione finale</a>
+</td>
+<td>
+<span class="listing-type">Exercise</span>
 </td>
 
 </tr>

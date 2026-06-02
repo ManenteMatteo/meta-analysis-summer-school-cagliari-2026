@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Matteo Manente">
 
-<title>Scuola Estiva sulle Meta-Analisi | Cagliari 2026 – Summer School | Meta-Analisi</title>
+<title>Esercitazione finale – Summer School | Meta-Analisi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +20,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d1325f35be44b423e50f2f7c7e2cfee6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d1325f35be44b423e50f2f7c7e2cfee6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,14 +107,14 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Summer School | Meta-Analisi</span>
     </a>
   </div>
@@ -91,23 +125,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./quiz.html"> 
+    <a class="nav-link" href="../quiz.html"> 
 <span class="menu-text">Sondaggio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./materiali.html"> 
+    <a class="nav-link" href="../materiali.html"> 
 <span class="menu-text">Materiali</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./setup.html"> 
+    <a class="nav-link" href="../setup.html"> 
 <span class="menu-text">Setup</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
+    <a class="nav-link" href="../resources.html"> 
 <span class="menu-text">Risorse</span></a>
   </li>  
 </ul>
@@ -128,34 +162,37 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Indice</h2>
+   
+  <ul>
+  <li><a href="#materiali" id="toc-materiali" class="nav-link active" data-scroll-target="#materiali">Materiali</a></li>
+  <li><a href="#scenario" id="toc-scenario" class="nav-link" data-scroll-target="#scenario">Scenario</a></li>
+  <li><a href="#consegna" id="toc-consegna" class="nav-link" data-scroll-target="#consegna">Consegna</a></li>
+  <li><a href="#output-richiesto" id="toc-output-richiesto" class="nav-link" data-scroll-target="#output-richiesto">Output richiesto</a></li>
+  <li><a href="#per-iniziare" id="toc-per-iniziare" class="nav-link" data-scroll-target="#per-iniziare">Per iniziare</a></li>
+  <li><a href="#suggerimenti" id="toc-suggerimenti" class="nav-link" data-scroll-target="#suggerimenti">Suggerimenti</a>
+  <ul class="collapse">
+  <li><a href="#domande-guida" id="toc-domande-guida" class="nav-link" data-scroll-target="#domande-guida">Domande guida:</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Scuola Estiva sulle Meta-Analisi | Cagliari 2026</h1>
-<p class="subtitle lead">Materiali didattici: Systematic Review, Basi RStudio, pacchetto <code>metafor</code></p>
+<h1 class="title">Esercitazione finale</h1>
+<p class="subtitle lead">Meta-Analisi: Efficacia della Psicoterapia per la Depressione</p>
 </div>
 
 
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Author</div>
-  <div class="quarto-title-meta-heading">Affiliation</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author"><a href="https://manentematteo.github.io/">Matteo Manente</a> </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            University of Padova
-          </p>
-      </div>
-  </div>
 
 <div class="quarto-title-meta">
 
-      
+    
   
     
   </div>
@@ -166,50 +203,124 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><br></p>
-<section id="informazioni" class="level2">
-<h2 class="anchored" data-anchor-id="informazioni">Informazioni</h2>
-<p>Questo sito raccoglie i materiali per le lezioni introduttive della Summer School sulle Meta-Analisi relative a:</p>
-<ul>
-<li><p><strong>Systematic Review</strong></p></li>
-<li><p><strong>Basi di R &amp; RStudio</strong></p></li>
-<li><p><strong>Introduzione al pacchetto <code>metafor</code></strong></p></li>
-</ul>
+<p><strong>Durata prevista</strong>: 45 minuti</p>
 <p><br></p>
-<p>L’obiettivo è fornire una base pratica per passare da una <strong>domanda di ricerca</strong>, passando attraverso una <strong>sintesi sistematica della letteratura</strong>, fino ad arrivare alla <strong>gestione dei dati in R</strong> e al calcolo di una <strong>meta-analisi</strong> con <code>metafor</code>.</p>
-<center>
-<img src="images/github_qr.png" class="img-fluid" width="275"> <br> <em><a href="https://github.com/ManenteMatteo/meta-analysis-summer-school-cagliari-2026">Link alla Repository GitHub per scaricare tutti codici</a></em>
-</center>
+<p><strong>Obiettivo</strong>: analizzare un dataset di studi primari rispondendo alla seguente domanda di ricerca</p>
+<blockquote class="blockquote">
+<p><strong>La psicoterapia è efficace nel trattamento della depressione negli adulti?</strong></p>
+</blockquote>
 <p><br></p>
-</section>
-<section id="contenuti" class="level2">
-<h2 class="anchored" data-anchor-id="contenuti">Contenuti</h2>
-<div class="grid">
-<section id="sondaggio" class="level3 g-col-4">
-<h3 class="anchored" data-anchor-id="sondaggio"><a href="./quiz.html">Sondaggio</a></h3>
-<p>Alcune domande per conoscerci meglio.</p>
-</section>
-<section id="materiali" class="level3 g-col-4">
-<h3 class="anchored" data-anchor-id="materiali"><a href="./materiali.html">Materiali</a></h3>
-<p>Introduzione alle systematic review &amp; Tutorial RStudio</p>
-</section>
-<section id="risorse" class="level3 g-col-4">
-<h3 class="anchored" data-anchor-id="risorse"><a href="./resources.html">Risorse</a></h3>
-<p>Risorse utili per condurre Systematic Review/Meta-Analisi</p>
-</section>
+<p>Il dataset contiene studi che confrontano interventi psicoterapeutici con condizioni di controllo.</p>
+<p><br> <br></p>
+<section id="materiali" class="level2">
+<h2 class="anchored" data-anchor-id="materiali">Materiali</h2>
+<p>File per l’esercitazione.</p>
+<p><a href="../materiali/data/data_depression_therapy.csv" download="data_depression_therapy.csv" class="btn btn-primary"> Dataset CSV </a></p>
+<p><a href="../materiali/data/data_dictionary_protocol.pdf" download="data_dictionary_protocol.pdf" class="btn btn-secondary"> Data Dictionary &amp; Protocol </a></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<p><br></p>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Il data dictionary descrive le variabili del dataset e contiene alcune informazioni importanti per l’analisi.</p>
+</div>
+</div>
+<p><br> <br></p>
+</section>
+<section id="scenario" class="level2">
+<h2 class="anchored" data-anchor-id="scenario">Scenario</h2>
+<p>Avete a disposizione un dataset con effect size estratti da studi primari sulla psicoterapia per la depressione.</p>
+<p>Alcune informazioni importanti:</p>
+<ul>
+<li><p>ogni riga rappresenta un <strong>effect size</strong>;</p></li>
+<li><p>alcune pubblicazioni possono contribuire con <strong>più effect size</strong>;</p></li>
+<li><p>l’effect size è una <strong>Standardized Mean Difference</strong> calcolata in Hedges’ <em>g</em>;</p></li>
+<li><p>valori positivi indicano che la psicoterapia ha prodotto esiti migliori rispetto al controllo.</p></li>
+</ul>
+<p><br> <br></p>
+</section>
+<section id="consegna" class="level2">
+<h2 class="anchored" data-anchor-id="consegna">Consegna</h2>
+<p><strong>Effettuare una meta-analisi</strong> sul dataset per rispondere alla domanda:</p>
+<blockquote class="blockquote">
+<p><strong>La psicoterapia è efficace per trattare la depressione?</strong></p>
+</blockquote>
+<p>Avete piena libertà sulle scelte analitiche.</p>
+<p>Potete decidere, per esempio:</p>
+<ul>
+<li><p>quale modello stimare;</p></li>
+<li><p>come gestire studi con più effect size;</p></li>
+<li><p>se escludere o mantenere eventuali outlier;</p></li>
+<li><p>se considerare sottogruppi o moderatori;</p></li>
+<li><p>se controllare publication bias o studi influenti.</p></li>
+</ul>
+<p>Non esiste una sola risposta corretta: l’obiettivo è produrre una scelta analitica <strong>ragionevole</strong>.</p>
+<p><br> <br></p>
+</section>
+<section id="output-richiesto" class="level2">
+<h2 class="anchored" data-anchor-id="output-richiesto">Output richiesto</h2>
+<p>Al termine dei 45 minuti, dovrete riportare <strong>solo</strong> questi tre elementi:</p>
+<ol type="1">
+<li><p><strong>Effect size pooled</strong><br>
+Ad esempio: Hedges’ <em>g</em> = …</p></li>
+<li><p><strong>Intervallo di confidenza al 95%</strong><br>
+Ad esempio: 95% CI [ …, … ]</p></li>
+<li><p><strong>Una frase interpretativa semplice</strong><br>
+Ad esempio:<br>
+“La psicoterapia sembra essere efficace.”<br>
+“I risultati sono inconclusivi.”<br>
+“L’effetto è positivo, ma l’evidenza è eterogenea.”</p></li>
+</ol>
+<p><br> <br></p>
 </section>
 <section id="per-iniziare" class="level2">
 <h2 class="anchored" data-anchor-id="per-iniziare">Per iniziare</h2>
-<p>Per usare i materiali in locale:</p>
-<ol type="1">
-<li>scaricare il repository GitHub;</li>
-<li>aprire il file <code>.Rproj</code> in RStudio;</li>
-<li>installare i pacchetti indicati nella pagina <a href="./setup.html">Setup</a>;</li>
-<li>aprire i file <code>.qmd</code> dei tutorial e seguire il codice passo passo.</li>
-</ol>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(metafor)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"../materiali/data/data_depression_therapy.csv"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(dat)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(dat)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Quanti effect size?</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(dat)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Quanti studi unici?</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(<span class="fu">unique</span>(dat<span class="sc">$</span>study))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><br> <br></p>
+</section>
+<section id="suggerimenti" class="level2">
+<h2 class="anchored" data-anchor-id="suggerimenti">Suggerimenti</h2>
+<p>Prima di stimare il modello, controllate:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(dat<span class="sc">$</span>yi)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(dat<span class="sc">$</span>vi)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(dat<span class="sc">$</span>format)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(dat<span class="sc">$</span>diagnosis)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(dat<span class="sc">$</span>type)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(dat<span class="sc">$</span>control)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(dat<span class="sc">$</span>risk_of_bias)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<section id="domande-guida" class="level3">
+<h3 class="anchored" data-anchor-id="domande-guida">Domande guida:</h3>
+<ul>
+<li><p>Tutti gli effect size possono essere trattati come indipendenti?</p></li>
+<li><p>Il modello fixed-effect è plausibile?</p></li>
+<li><p>Quanto pesa l’eterogeneità?</p></li>
+<li><p>Ci sono studi o effect size influenti?</p></li>
+<li><p>Le conclusioni cambiano se fate scelte analitiche diverse?</p></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

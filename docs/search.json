@@ -53,56 +53,189 @@
     "href": "materiali.html",
     "title": "Materiali",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nSystematic Review: Introduzione\n\n\n\n\n\n\nBasi di RStudio\n\n\n\n\n\n\nEsercizi introduttivi a RStudio\n\n\n\n\n\n\nDataset scuole\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\ntype\n\n\n\n\n\n\n\n\nSystematic Review: Introduzione\n\n\nSlides\n\n\n\n\n\n\nBasi di RStudio\n\n\nTutorial\n\n\n\n\n\n\nEsercizi introduttivi a RStudio\n\n\nExercise\n\n\n\n\n\n\nDataset scuole\n\n\nDataset\n\n\n\n\n\n\nEsercizio Meta-Analisi: Math anxiety e achievement\n\n\nExercise\n\n\n\n\n\n\nEsercizio Meta-Analisi: Intelligenza emotiva e performance accademica\n\n\nExercise\n\n\n\n\n\n\nEsercitazione finale\n\n\nExercise\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html",
-    "href": "materiali/03-esercizi-introduttivi-rstudio.html",
-    "title": "Esercizi introduttivi a RStudio",
+    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html",
+    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html",
+    "title": "Esercitazione finale",
     "section": "",
-    "text": "Tip\n\n\n\nScrivete il codice direttamente sotto ciascuna consegna e lanciate le righe con Cmd + Enter su Mac o Ctrl + Enter su Windows."
+    "text": "Durata prevista: 45 minuti\nObiettivo: analizzare un dataset di studi primari rispondendo alla seguente domanda di ricerca\nIl dataset contiene studi che confrontano interventi psicoterapeutici con condizioni di controllo."
   },
   {
-    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#oggetti",
-    "href": "materiali/03-esercizi-introduttivi-rstudio.html#oggetti",
-    "title": "Esercizi introduttivi a RStudio",
-    "section": "1. Oggetti",
-    "text": "1. Oggetti\n\n# Crea un oggetto chiamato `punteggio_base` e assegnagli il valore 50 utilizzando l'operatore di assegnazione `&lt;-`.\n\n\n# Crea un secondo oggetto chiamato `moltiplicatore` e assegnagli il valore 2.5.\n\n\n# Moltiplica `punteggio_base` per `moltiplicatore` e salva il risultato in un nuovo oggetto chiamato `punteggio_totale`. Richiama l'oggetto per visualizzarne il contenuto.\n\n\n# R fa distinzione tra lettere maiuscole e minuscole (è *case-sensitive*). Prova a richiamare l'oggetto `Punteggio_base` (con la P maiuscola). Quale errore ti restituisce la console?\n\n\n# Sovrascrivi l'oggetto `punteggio_base` assegnandogli un nuovo valore pari a 75. \n\n\n# Dopo aver modificato il `punteggio_base`, richiama di nuovo `punteggio_totale`: il suo valore si è aggiornato in automatico o mostra ancora il vecchio risultato?\n  \n  \n# Controlla quali oggetti sono attualmente salvati nel tuo ambiente di lavoro (Environment) utilizzando la funzione `ls()`.\n\n\n# Usa la funzione `rm()` per eliminare l'oggetto `moltiplicatore` dal tuo ambiente di lavoro. Verifica con `ls()` che sia effettivamente scomparso."
+    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#materiali",
+    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#materiali",
+    "title": "Esercitazione finale",
+    "section": "Materiali",
+    "text": "Materiali\nFile per l’esercitazione.\n Dataset CSV \n Data Dictionary & Protocol \n\n\n\n\n\n\nNote\n\n\n\nIl data dictionary descrive le variabili del dataset e contiene alcune informazioni importanti per l’analisi."
   },
   {
-    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#vettori",
-    "href": "materiali/03-esercizi-introduttivi-rstudio.html#vettori",
-    "title": "Esercizi introduttivi a RStudio",
-    "section": "2. Vettori",
-    "text": "2. Vettori\n\n# Crea il vettore x contenente i numeri 4, 6, 12, 34, 8\n\n\n# Crea il vettore y contenente tutti i numeri pari compresi tra 1 e 25 (?seq())\n\n\n# Crea il vettore z contenente tutti i primi 10 multipli di 7 partendo da 13 (?seq())\n\n\n# Crea il vettore s in cui le lettere \"A\",\"B\" e \"C\" vengono ripetute nel medesimo ordine 4 volte (?rep())\n\n\n# Del vettore x seleziona il 2°, 3° e 5° elemento\n\n\n# Del vettore x seleziona i valori 34 e 4\n\n\n# Del vettore y seleziona tutti i valori minori di 13 o maggiori di 19\n\n\n# Del vettore z seleziona tutti i valori compresi tra 24 e 50\n\n\n# Del vettore s seleziona tutti gli elementi uguali ad \"A\"\n\n\n# Del vettore t seleziona tutti gli elementi diversi da \"B\"\n\n\n# Crea un nuovo vettore u identico a s ma dove le \"A\" sono sostituite con la lettera \"U\"\n\n\n# Elimina dal vettore z i valori 28 e 42\n\n\n# Crea il vettore j unendo i vettori x ed z.\n\n\n# Elimina gli ultimi tre elementi del vettore j e controlla che i vettori j e y abbiano la stessa lunghezza.\n\n\n# Calcola la somma tra i vettori j e y.\n\n\n# Moltiplica il vettore z per una costante k=3.\n\n\n# Calcola il prodotto tra i primi 10 elementi del vettore y ed il vettore z"
+    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#scenario",
+    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#scenario",
+    "title": "Esercitazione finale",
+    "section": "Scenario",
+    "text": "Scenario\nAvete a disposizione un dataset con effect size estratti da studi primari sulla psicoterapia per la depressione.\nAlcune informazioni importanti:\n\nogni riga rappresenta un effect size;\nalcune pubblicazioni possono contribuire con più effect size;\nl’effect size è una Standardized Mean Difference calcolata in Hedges’ g;\nvalori positivi indicano che la psicoterapia ha prodotto esiti migliori rispetto al controllo."
   },
   {
-    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#vettori-factor",
-    "href": "materiali/03-esercizi-introduttivi-rstudio.html#vettori-factor",
-    "title": "Esercizi introduttivi a RStudio",
-    "section": "2.1 Vettori factor",
-    "text": "2.1 Vettori factor\n\n# Crea la variabile categoriale genere così definita:\n  \n  ## [1] M F M F M F F F M\n  ## Levels: F M\n  \n\n\n# Rinomina i livelli della variabile genere rispettivamente in \"donne\" e \"uomini\".\n\n\n# Crea la variabile categoriale intervento così definita:\n  \n  ## [1] CBT         Psicanalisi CBT         Psicanalisi CBT         Psicanalisi\n  ## [7] Controllo   Controllo   CBT        \n  ## Levels: CBT Controllo Psicanalisi\n  \n\n# Correggi nella variabile intervento la 7° e 8° osservazione con la voce Farmaci.\n\n\n# Aggiungi alla variabile intervento le seguenti nuove osservazioni:\n  \n  ## [1] \"Farmaci\"   \"Controllo\" \"Farmaci\""
+    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#consegna",
+    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#consegna",
+    "title": "Esercitazione finale",
+    "section": "Consegna",
+    "text": "Consegna\nEffettuare una meta-analisi sul dataset per rispondere alla domanda:\n\nLa psicoterapia è efficace per trattare la depressione?\n\nAvete piena libertà sulle scelte analitiche.\nPotete decidere, per esempio:\n\nquale modello stimare;\ncome gestire studi con più effect size;\nse escludere o mantenere eventuali outlier;\nse considerare sottogruppi o moderatori;\nse controllare publication bias o studi influenti.\n\nNon esiste una sola risposta corretta: l’obiettivo è produrre una scelta analitica ragionevole."
   },
   {
-    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#matrici",
-    "href": "materiali/03-esercizi-introduttivi-rstudio.html#matrici",
-    "title": "Esercizi introduttivi a RStudio",
-    "section": "3. Matrici",
-    "text": "3. Matrici\n\n# Crea la matrice A così definita:\n  \n#   2 34 12 7 \n#  46 93 27 99 \n#  23 38 7  04\n\n\n# Crea la matrice B contenente tutti i primi 12 numeri dispari disposti su 4 righe e 3 colonne.\n\n\n# Crea la matrice C contenente i primi 12 multipli di 9 disposti su 3 righe e 4 colonne.\n\n\n# Crea la matrice D formata da 3 colonne in cui le lettere \"A\",\"B\" e \"C\" vengano ripetute 4 volte ciascuna rispettivamente nella prima, seconda e terza colonna.\n\n\n# Crea la matrice E formata da 3 righe in cui le lettere \"A\",\"B\" e \"C\" vengano ripetute 4 volte ciascuna rispettivamente nella prima, seconda e terza riga.\n\n\n# Utilizzando gli indici di riga e di colonna selziona il numero 27 della matrice A\n\n\n# Selziona gli elementi compresi tra la seconda e quarta riga, seconda e terza colonna della matrice B\n\n\n# Elimina dalla matrice C la terza riga e la terza colonna\n\n\n# Seleziona tutti gli elementi della seconda e terza riga della matrice B\n\n\n# Seleziona tutti gli elementi diversi da “B” appartenenti alla matrice D\n\n\n# Crea la matrice G unendo alla matrice A le prime due colonne della matrice C\n\n\n# Ridefinisci la matrice A eliminando la seconda colonna. Ridefinisci la matrice B eliminando la prima riga. Verifica che le matrici così ottenute abbiano la stessa dimensione.\n\n\n# Commenta i differenti risultati che otteniamo nelle operazioni A*B, B*A, A%*%B e B%*%A.\n\n\n# Assegna i seguenti nomi alle colonne e alle righe della matrice C: \"col_1\", \"col_2\", \"col_3\", \"col_4\", \"row_1\", \"row_2\", \"row_3\"."
+    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#output-richiesto",
+    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#output-richiesto",
+    "title": "Esercitazione finale",
+    "section": "Output richiesto",
+    "text": "Output richiesto\nAl termine dei 45 minuti, dovrete riportare solo questi tre elementi:\n\nEffect size pooled\nAd esempio: Hedges’ g = …\nIntervallo di confidenza al 95%\nAd esempio: 95% CI [ …, … ]\nUna frase interpretativa semplice\nAd esempio:\n“La psicoterapia sembra essere efficace.”\n“I risultati sono inconclusivi.”\n“L’effetto è positivo, ma l’evidenza è eterogenea.”"
   },
   {
-    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#dataframe",
-    "href": "materiali/03-esercizi-introduttivi-rstudio.html#dataframe",
-    "title": "Esercizi introduttivi a RStudio",
-    "section": "4. Dataframe",
-    "text": "4. Dataframe\nGli esercizi seguenti fanno riferimento al dataset dat_scuole.csv, disponibile nella sezione Materiali.\nÈ necessario aprire il progetto RStudio corretto o impostare la working directory nella cartella del progetto.\n\n# Importa il dataset \"dat_scuole.csv\" e salvalo in un oggetto chiamato `dat`.\n\n\n# Esplora la struttura del dataframe `dat` usando la funzione `str()`. Di che tipo di dato è la variabile *reddito*?\n  \n  \n# Ottieni un riassunto statistico di tutte le variabili presenti nel dataframe usando una singola funzione\n\n\n# Quanti partecipanti e quante variabili ci sono nel dataset?\n  \n  \n# Mostra a schermo solo le prime 5 righe e poi solo le ultime 3 righe del dataframe.\n\n\n# Utilizzando gli indici a parentesi quadre `[riga, colonna]`, seleziona l'età del 12° partecipante.\n\n\n# Seleziona l'intero profilo (tutta la riga) del 42° partecipante.\n\n\n# Estrai l'intera colonna *stress_scolastico* utilizzando il simbolo del dollaro `$`.\n\n\n# Crea un nuovo dataframe chiamato `campione_stressato` contenente solo i soggetti con un livello di *stress* maggiore di 10.\n\n\n# Crea un nuovo dataframe chiamato `maggiorenni_f` selezionando solo le partecipanti femmine con un'età superiore ai 18 anni.\n\n\n# Filtra il dataset originario `dat` selezionando tutti i soggetti che hanno un *reddito* \"Basso\" OPPURE un punteggio di *stress_scolastico* minore o uguale a 6.\n\n\n# Estrai solamente i punteggi di *depressione* di chi ha un *reddito* \"Alto\" (Attenzione: vogliamo estrarre una sola colonna a partire da una condizione sulle righe).\n\n\n# Elimina dal dataframe `dat` la colonna *id*, assegnandole il valore `NULL`, in quanto non è una variabile utile per le nostre analisi psicologiche.\n\n\n# C'è stato un errore di trascrizione! Modifica l'età del 2° soggetto (attualmente 16) impostandola a 18.\n\n\n# Elimina dal dataframe `dat` le prime 3 righe (soggetti 1, 2 e 3) e salva il risultato in un nuovo oggetto chiamato `dat_ridotto`.\n\n\n# Trasforma la colonna *depressione* del dataframe `dat` originale: abbassa tutti i punteggi sottraendo 1 punto a ciascun soggetto.\n\n\n# Crea un piccolo dataframe chiamato `nuovi_studenti` con le osservazioni di 2 nuovi soggetti (inventa tu i valori per genere, età, reddito, stress_scolastico e depressione). Unisci questo nuovo dataframe sotto a `dat` usando la funzione appropriata."
+    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#per-iniziare",
+    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#per-iniziare",
+    "title": "Esercitazione finale",
+    "section": "Per iniziare",
+    "text": "Per iniziare\n\nlibrary(metafor)\n\ndat &lt;- read.csv(\"../materiali/data/data_depression_therapy.csv\")\n\nstr(dat)\nhead(dat)\n\n# Quanti effect size?\nnrow(dat)\n\n# Quanti studi unici?\nlength(unique(dat$study))"
   },
   {
-    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#funzioni-utili",
-    "href": "materiali/03-esercizi-introduttivi-rstudio.html#funzioni-utili",
-    "title": "Esercizi introduttivi a RStudio",
-    "section": "5. Funzioni utili",
-    "text": "5. Funzioni utili\n\n5.1. Gestione del Workspace e Importazione\n\n# Usa la combinazione delle funzioni `rm()` e `ls()` con la sintassi `rm(list=ls())` per cancellare tutti gli oggetti dal tuo ambiente di lavoro (Environment).\n\n\n# Ipotizza di aver salvato i dati della lezione precedente in un file chiamato \"dati_lezione.RData\". Scrivi il comando usando `load()` per caricarlo nel tuo ambiente.\n\n\n# Usa la funzione `library()` per caricare il pacchetto necessario per leggere file Excel (ad esempio `readxl`) prima di importare i dati.\n\n\n# Importa il dataset `dat_scuole.csv` usando la funzione `read.csv()` e salvalo nell'oggetto `dati_csv`.\n\n\n# Importa il dataset chiamato `dat_scuole.xlsx` usando la funzione appropriata (es. `read_excel()` o `read.xlsx()`) e salvalo nell'oggetto `dati_excel`.\n\n\n# Usa la funzione `str()` sull'oggetto appena creato per ispezionarne la struttura interna. Quante variabili ci sono e di che tipo sono?\n\n\n\n\n5.2. Generazione e Manipolazione Dati\n\n# Genera un vettore chiamato `ansia_grezza` con i seguenti punteggi: `4.567`, `5.123`, `3.987`, `6.452`. \n\n\n# Usa la funzione `length()` per verificare quanti punteggi sono contenuti nel vettore `ansia_grezza`.\n\n\n# Sovrascrivi il vettore usando la funzione `round()` per arrotondare tutti i punteggi a 1 solo decimale.\n\n\n# Usa la funzione `seq()` per creare un vettore chiamato `id_soggetti` che contenga una sequenza numerica da 101 a 150.\n\n\n# Usa la funzione `rep()` per generare un vettore chiamato `condizione` in cui l'etichetta \"Trattamento\" e l'etichetta \"Controllo\" vengono ripetute ciascuna per 25 volte.\n\n\n# Usa `sample()` per estrarre casualmente 5 partecipanti (numeri da 1 a 50) per un'intervista qualitativa di follow-up, assicurandoti che lo stesso partecipante non possa essere estratto due volte (senza reinserimento).\n\n\n\n\n5.3. Funzioni Statistiche e Distribuzioni Normali\n\n# Simula i punteggi di un test di Estroversione per 1000 soggetti. Sapendo che il test ha una media normativa di 50 e una deviazione standard di 10, usa `rnorm()` per generare la distribuzione e salvala nell'oggetto `estroversione_simulata`.\n\n\n# Un soggetto ha ottenuto un punteggio di 35 nel test di Estroversione. Utilizzando `pnorm()`, calcola la probabilità di incontrare nella popolazione un soggetto con un punteggio uguale o inferiore al suo.\n\n\n# Vuoi selezionare solo i partecipanti che rientrano nel 5% superiore della distribuzione (il 95° percentile) per un training specifico. Usa `qnorm()` per scoprire quale punteggio esatto fa da soglia, sapendo sempre che la media è 50 e la deviazione standard è 10.\n\n\n# Usa la funzione `replicate()` per ripetere 4 volte l'operazione `sample(1:100, 10)`. Osserva l'output: che tipo di struttura dati ha generato R?\n\n\n# Usa la funzione `curve()` per disegnare la distribuzione normale del test di estroversione. *(Suggerimento: scrivi `dnorm(x, mean = 50, sd = 10)` come primo argomento, e imposta l'asse x da 20 a 80 usando i parametri `from` e `to`)*."
+    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#suggerimenti",
+    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#suggerimenti",
+    "title": "Esercitazione finale",
+    "section": "Suggerimenti",
+    "text": "Suggerimenti\nPrima di stimare il modello, controllate:\n\nsummary(dat$yi)\nsummary(dat$vi)\n\ntable(dat$format)\ntable(dat$diagnosis)\ntable(dat$type)\ntable(dat$control)\ntable(dat$risk_of_bias)\n\n\nDomande guida:\n\nTutti gli effect size possono essere trattati come indipendenti?\nIl modello fixed-effect è plausibile?\nQuanto pesa l’eterogeneità?\nCi sono studi o effect size influenti?\nLe conclusioni cambiano se fate scelte analitiche diverse?"
+  },
+  {
+    "objectID": "materiali/05-metafor-barroso2021.html#come-leggere-il-risultato",
+    "href": "materiali/05-metafor-barroso2021.html#come-leggere-il-risultato",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "Come leggere il risultato",
+    "text": "Come leggere il risultato\n\nLa stima media indica la relazione media tra ansia matematica e rendimento.\nUna correlazione negativa indica che maggiore ansia matematica tende ad associarsi a minore rendimento.\nL’intervallo di confidenza descrive l’incertezza sulla stima media.\ntau² e I² indicano quanta eterogeneità rimane tra gli studi.\n\n\n\n\n\n\n\nImportantDomanda interpretativa\n\n\n\nNon basta chiedere: l’effetto è statisticamente significativo?\nBisogna chiedere anche:\n\nquanto è grande l’effetto?\nquanto è incerto?\nquanto varia tra gli studi?\nl’effetto medio rappresenta bene la letteratura?"
+  },
+  {
+    "objectID": "materiali/05-metafor-barroso2021.html#interpretazione-1",
+    "href": "materiali/05-metafor-barroso2021.html#interpretazione-1",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "Interpretazione",
+    "text": "Interpretazione\nIl modello fixed-effect assume che tutti gli studi stimino lo stesso effetto vero.\nIl modello random-effects assume che gli effetti veri possano variare tra studi.\nNella maggior parte delle meta-analisi in psicologia, il modello random-effects è spesso più realistico, perché gli studi differiscono per campioni, strumenti, contesti e procedure."
+  },
+  {
+    "objectID": "materiali/05-metafor-barroso2021.html#cosa-osservare",
+    "href": "materiali/05-metafor-barroso2021.html#cosa-osservare",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "Cosa osservare",
+    "text": "Cosa osservare\n\nStudi con intervalli di confidenza più larghi hanno stime meno precise.\nStudi più grandi tendono ad avere intervalli più stretti.\nL’effetto pooled è la sintesi complessiva, ma non cancella la variabilità tra studi."
+  },
+  {
+    "objectID": "materiali/05-metafor-barroso2021.html#egger-type-regression-test",
+    "href": "materiali/05-metafor-barroso2021.html#egger-type-regression-test",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "Egger-type regression test",
+    "text": "Egger-type regression test\n\nregtest(\n  res,\n  model = \"rma\",\n  predictor = \"sei\"\n)"
+  },
+  {
+    "objectID": "materiali/05-metafor-barroso2021.html#interpretazione-cauta",
+    "href": "materiali/05-metafor-barroso2021.html#interpretazione-cauta",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "Interpretazione cauta",
+    "text": "Interpretazione cauta\nUn funnel plot asimmetrico può suggerire publication bias, ma non lo dimostra automaticamente.\nPossibili spiegazioni alternative:\n\neterogeneità reale;\nstudi piccoli di qualità diversa;\nstrumenti di misura diversi;\npopolazioni diverse;\nerrori di codifica o estrazione."
+  },
+  {
+    "objectID": "materiali/05-metafor-barroso2021.html#leave-one-out",
+    "href": "materiali/05-metafor-barroso2021.html#leave-one-out",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "Leave-one-out",
+    "text": "Leave-one-out\nVerifichiamo se il risultato dipende in modo eccessivo da un singolo studio.\n\nloo &lt;- leave1out(res)\nloo"
+  },
+  {
+    "objectID": "materiali/05-metafor-barroso2021.html#influence-diagnostics",
+    "href": "materiali/05-metafor-barroso2021.html#influence-diagnostics",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "Influence diagnostics",
+    "text": "Influence diagnostics\n\ninf &lt;- influence(res)\ninf\nplot(inf)"
+  },
+  {
+    "objectID": "materiali/05-metafor-barroso2021.html#domande-interpretative",
+    "href": "materiali/05-metafor-barroso2021.html#domande-interpretative",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "Domande interpretative",
+    "text": "Domande interpretative\n\nC’è uno studio che cambia molto la stima complessiva?\nCi sono studi particolarmente influenti?\nLe conclusioni sono stabili?"
+  },
+  {
+    "objectID": "materiali/05-metafor-barroso2021.html#interpretazione-3",
+    "href": "materiali/05-metafor-barroso2021.html#interpretazione-3",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "Interpretazione",
+    "text": "Interpretazione\nIl coefficiente di pub_year_c indica quanto cambia l’effect size medio per ogni anno di pubblicazione.\nSe il coefficiente è negativo, gli studi più recenti tendono a stimare effetti più negativi.\nSe il coefficiente è positivo, gli studi più recenti tendono a stimare effetti meno negativi o più positivi.\n\n\n\n\n\n\nWarningCautela\n\n\n\nLa meta-regressione è osservazionale.\nNon dimostra causalità e dovrebbe essere interpretata soprattutto come analisi esplorativa, a meno che il moderatore fosse pre-specificato nel protocollo."
+  },
+  {
+    "objectID": "materiali/06-metafor-maccann2020.html#come-leggere-il-risultato",
+    "href": "materiali/06-metafor-maccann2020.html#come-leggere-il-risultato",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
+    "section": "Come leggere il risultato",
+    "text": "Come leggere il risultato\n\nUna correlazione positiva indica che maggiore intelligenza emotiva tende ad associarsi a maggiore performance accademica.\nL’intervallo di confidenza indica l’incertezza sulla correlazione media.\ntau² e I² indicano quanta variabilità rimane tra studi.\nIl test Q valuta se l’eterogeneità osservata è maggiore di quanto atteso per solo errore di campionamento."
+  },
+  {
+    "objectID": "materiali/06-metafor-maccann2020.html#interpretazione-1",
+    "href": "materiali/06-metafor-maccann2020.html#interpretazione-1",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
+    "section": "Interpretazione",
+    "text": "Interpretazione\nIl modello fixed-effect assume un unico effetto vero.\nIl modello random-effects assume che l’effetto vero possa variare tra studi.\nPer dati psicologici raccolti in contesti diversi, il modello random-effects è spesso più plausibile."
+  },
+  {
+    "objectID": "materiali/06-metafor-maccann2020.html#cosa-osservare",
+    "href": "materiali/06-metafor-maccann2020.html#cosa-osservare",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
+    "section": "Cosa osservare",
+    "text": "Cosa osservare\n\nQuanto variano le stime tra studi?\nQuali studi hanno maggiore precisione?\nL’effetto pooled rappresenta bene tutti gli studi?"
+  },
+  {
+    "objectID": "materiali/06-metafor-maccann2020.html#interpretazione-2",
+    "href": "materiali/06-metafor-maccann2020.html#interpretazione-2",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
+    "section": "Interpretazione",
+    "text": "Interpretazione\nL’intervallo di confidenza descrive l’incertezza sull’effetto medio.\nIl prediction interval descrive la variabilità attesa degli effetti veri in studi futuri simili.\nSe il prediction interval è ampio, il campo è eterogeneo e l’effetto medio va interpretato con cautela."
+  },
+  {
+    "objectID": "materiali/06-metafor-maccann2020.html#egger-type-regression-test",
+    "href": "materiali/06-metafor-maccann2020.html#egger-type-regression-test",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
+    "section": "Egger-type regression test",
+    "text": "Egger-type regression test\n\nregtest(\n  res,\n  model = \"rma\",\n  predictor = \"sei\"\n)"
+  },
+  {
+    "objectID": "materiali/06-metafor-maccann2020.html#interpretazione-cauta",
+    "href": "materiali/06-metafor-maccann2020.html#interpretazione-cauta",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
+    "section": "Interpretazione cauta",
+    "text": "Interpretazione cauta\nL’Egger test valuta l’associazione tra dimensione dell’effetto e precisione dello studio.\nUn risultato significativo può indicare asimmetria del funnel plot, ma non dimostra automaticamente publication bias.\nPossibili spiegazioni alternative:\n\neterogeneità reale;\ndifferenze metodologiche;\ndifferenze nei campioni;\nstudi piccoli di qualità diversa;\ncoding decisions nella systematic review."
+  },
+  {
+    "objectID": "materiali/06-metafor-maccann2020.html#leave-one-out",
+    "href": "materiali/06-metafor-maccann2020.html#leave-one-out",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
+    "section": "Leave-one-out",
+    "text": "Leave-one-out\n\nloo &lt;- leave1out(res)\nloo"
+  },
+  {
+    "objectID": "materiali/06-metafor-maccann2020.html#influence-diagnostics",
+    "href": "materiali/06-metafor-maccann2020.html#influence-diagnostics",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
+    "section": "Influence diagnostics",
+    "text": "Influence diagnostics\n\ninf &lt;- influence(res)\ninf\nplot(inf)"
+  },
+  {
+    "objectID": "materiali/06-metafor-maccann2020.html#domande-interpretative",
+    "href": "materiali/06-metafor-maccann2020.html#domande-interpretative",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
+    "section": "Domande interpretative",
+    "text": "Domande interpretative\n\nCi sono studi molto influenti?\nLa stima media cambia molto rimuovendo uno studio alla volta?\nLe conclusioni sembrano robuste?"
+  },
+  {
+    "objectID": "materiali/06-metafor-maccann2020.html#interpretazione-3",
+    "href": "materiali/06-metafor-maccann2020.html#interpretazione-3",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
+    "section": "Interpretazione",
+    "text": "Interpretazione\nIl coefficiente del moderatore indica quanto cambia l’effect size medio al variare del moderatore.\nPer esempio:\n\nage_c: cambiamento dell’effect size per un anno in più di età media;\npub_year_c: cambiamento dell’effect size per un anno in più di pubblicazione.\n\n\n\n\n\n\n\nWarningCautela\n\n\n\nLa meta-regressione è un’analisi a livello di studio.\nNon permette inferenze causali individuali e può essere poco potente se il numero di studi è limitato o se il moderatore è misurato con errore."
   },
   {
     "objectID": "materiali/02-rstudio-basics.html",
@@ -238,8 +371,57 @@
     "text": "In sintesi\n\n\nLa letteratura cresce più velocemente della nostra capacità di leggerla\nLe Systematic Review aiutano a trasformare molti studi in una sintesi ordinata\nUna meta-analisi è valida solo quanto lo è la review su cui si basa\nMetodo, pre-registrazione e trasparenza proteggono da bias e cherry picking\nL’obiettivo finale è produrre evidenza utile per ricerca, pratica e decisioni"
   },
   {
-    "objectID": "materiali/dat_scuole.html",
-    "href": "materiali/dat_scuole.html",
+    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html",
+    "href": "materiali/03-esercizi-introduttivi-rstudio.html",
+    "title": "Esercizi introduttivi a RStudio",
+    "section": "",
+    "text": "Tip\n\n\n\nScrivete il codice direttamente sotto ciascuna consegna e lanciate le righe con Cmd + Enter su Mac o Ctrl + Enter su Windows."
+  },
+  {
+    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#oggetti",
+    "href": "materiali/03-esercizi-introduttivi-rstudio.html#oggetti",
+    "title": "Esercizi introduttivi a RStudio",
+    "section": "1. Oggetti",
+    "text": "1. Oggetti\n\n# Crea un oggetto chiamato `punteggio_base` e assegnagli il valore 50 utilizzando l'operatore di assegnazione `&lt;-`.\n\n\n# Crea un secondo oggetto chiamato `moltiplicatore` e assegnagli il valore 2.5.\n\n\n# Moltiplica `punteggio_base` per `moltiplicatore` e salva il risultato in un nuovo oggetto chiamato `punteggio_totale`. Richiama l'oggetto per visualizzarne il contenuto.\n\n\n# R fa distinzione tra lettere maiuscole e minuscole (è *case-sensitive*). Prova a richiamare l'oggetto `Punteggio_base` (con la P maiuscola). Quale errore ti restituisce la console?\n\n\n# Sovrascrivi l'oggetto `punteggio_base` assegnandogli un nuovo valore pari a 75. \n\n\n# Dopo aver modificato il `punteggio_base`, richiama di nuovo `punteggio_totale`: il suo valore si è aggiornato in automatico o mostra ancora il vecchio risultato?\n  \n  \n# Controlla quali oggetti sono attualmente salvati nel tuo ambiente di lavoro (Environment) utilizzando la funzione `ls()`.\n\n\n# Usa la funzione `rm()` per eliminare l'oggetto `moltiplicatore` dal tuo ambiente di lavoro. Verifica con `ls()` che sia effettivamente scomparso."
+  },
+  {
+    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#vettori",
+    "href": "materiali/03-esercizi-introduttivi-rstudio.html#vettori",
+    "title": "Esercizi introduttivi a RStudio",
+    "section": "2. Vettori",
+    "text": "2. Vettori\n\n# Crea il vettore x contenente i numeri 4, 6, 12, 34, 8\n\n\n# Crea il vettore y contenente tutti i numeri pari compresi tra 1 e 25 (?seq())\n\n\n# Crea il vettore z contenente tutti i primi 10 multipli di 7 partendo da 13 (?seq())\n\n\n# Crea il vettore s in cui le lettere \"A\",\"B\" e \"C\" vengono ripetute nel medesimo ordine 4 volte (?rep())\n\n\n# Del vettore x seleziona il 2°, 3° e 5° elemento\n\n\n# Del vettore x seleziona i valori 34 e 4\n\n\n# Del vettore y seleziona tutti i valori minori di 13 o maggiori di 19\n\n\n# Del vettore z seleziona tutti i valori compresi tra 24 e 50\n\n\n# Del vettore s seleziona tutti gli elementi uguali ad \"A\"\n\n\n# Del vettore t seleziona tutti gli elementi diversi da \"B\"\n\n\n# Crea un nuovo vettore u identico a s ma dove le \"A\" sono sostituite con la lettera \"U\"\n\n\n# Elimina dal vettore z i valori 28 e 42\n\n\n# Crea il vettore j unendo i vettori x ed z.\n\n\n# Elimina gli ultimi tre elementi del vettore j e controlla che i vettori j e y abbiano la stessa lunghezza.\n\n\n# Calcola la somma tra i vettori j e y.\n\n\n# Moltiplica il vettore z per una costante k=3.\n\n\n# Calcola il prodotto tra i primi 10 elementi del vettore y ed il vettore z"
+  },
+  {
+    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#vettori-factor",
+    "href": "materiali/03-esercizi-introduttivi-rstudio.html#vettori-factor",
+    "title": "Esercizi introduttivi a RStudio",
+    "section": "2.1 Vettori factor",
+    "text": "2.1 Vettori factor\n\n# Crea la variabile categoriale genere così definita:\n  \n  ## [1] M F M F M F F F M\n  ## Levels: F M\n  \n\n\n# Rinomina i livelli della variabile genere rispettivamente in \"donne\" e \"uomini\".\n\n\n# Crea la variabile categoriale intervento così definita:\n  \n  ## [1] CBT         Psicanalisi CBT         Psicanalisi CBT         Psicanalisi\n  ## [7] Controllo   Controllo   CBT        \n  ## Levels: CBT Controllo Psicanalisi\n  \n\n# Correggi nella variabile intervento la 7° e 8° osservazione con la voce Farmaci.\n\n\n# Aggiungi alla variabile intervento le seguenti nuove osservazioni:\n  \n  ## [1] \"Farmaci\"   \"Controllo\" \"Farmaci\""
+  },
+  {
+    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#matrici",
+    "href": "materiali/03-esercizi-introduttivi-rstudio.html#matrici",
+    "title": "Esercizi introduttivi a RStudio",
+    "section": "3. Matrici",
+    "text": "3. Matrici\n\n# Crea la matrice A così definita:\n  \n#   2 34 12 7 \n#  46 93 27 99 \n#  23 38 7  04\n\n\n# Crea la matrice B contenente tutti i primi 12 numeri dispari disposti su 4 righe e 3 colonne.\n\n\n# Crea la matrice C contenente i primi 12 multipli di 9 disposti su 3 righe e 4 colonne.\n\n\n# Crea la matrice D formata da 3 colonne in cui le lettere \"A\",\"B\" e \"C\" vengano ripetute 4 volte ciascuna rispettivamente nella prima, seconda e terza colonna.\n\n\n# Crea la matrice E formata da 3 righe in cui le lettere \"A\",\"B\" e \"C\" vengano ripetute 4 volte ciascuna rispettivamente nella prima, seconda e terza riga.\n\n\n# Utilizzando gli indici di riga e di colonna selziona il numero 27 della matrice A\n\n\n# Selziona gli elementi compresi tra la seconda e quarta riga, seconda e terza colonna della matrice B\n\n\n# Elimina dalla matrice C la terza riga e la terza colonna\n\n\n# Seleziona tutti gli elementi della seconda e terza riga della matrice B\n\n\n# Seleziona tutti gli elementi diversi da “B” appartenenti alla matrice D\n\n\n# Crea la matrice G unendo alla matrice A le prime due colonne della matrice C\n\n\n# Ridefinisci la matrice A eliminando la seconda colonna. Ridefinisci la matrice B eliminando la prima riga. Verifica che le matrici così ottenute abbiano la stessa dimensione.\n\n\n# Commenta i differenti risultati che otteniamo nelle operazioni A*B, B*A, A%*%B e B%*%A.\n\n\n# Assegna i seguenti nomi alle colonne e alle righe della matrice C: \"col_1\", \"col_2\", \"col_3\", \"col_4\", \"row_1\", \"row_2\", \"row_3\"."
+  },
+  {
+    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#dataframe",
+    "href": "materiali/03-esercizi-introduttivi-rstudio.html#dataframe",
+    "title": "Esercizi introduttivi a RStudio",
+    "section": "4. Dataframe",
+    "text": "4. Dataframe\nGli esercizi seguenti fanno riferimento al dataset dat_scuole.csv, disponibile nella sezione Materiali.\nÈ necessario aprire il progetto RStudio corretto o impostare la working directory nella cartella del progetto.\n\n# Importa il dataset \"dat_scuole.csv\" e salvalo in un oggetto chiamato `dat`.\n\n\n# Esplora la struttura del dataframe `dat` usando la funzione `str()`. Di che tipo di dato è la variabile *reddito*?\n  \n  \n# Ottieni un riassunto statistico di tutte le variabili presenti nel dataframe usando una singola funzione\n\n\n# Quanti partecipanti e quante variabili ci sono nel dataset?\n  \n  \n# Mostra a schermo solo le prime 5 righe e poi solo le ultime 3 righe del dataframe.\n\n\n# Utilizzando gli indici a parentesi quadre `[riga, colonna]`, seleziona l'età del 12° partecipante.\n\n\n# Seleziona l'intero profilo (tutta la riga) del 42° partecipante.\n\n\n# Estrai l'intera colonna *stress_scolastico* utilizzando il simbolo del dollaro `$`.\n\n\n# Crea un nuovo dataframe chiamato `campione_stressato` contenente solo i soggetti con un livello di *stress* maggiore di 10.\n\n\n# Crea un nuovo dataframe chiamato `maggiorenni_f` selezionando solo le partecipanti femmine con un'età superiore ai 18 anni.\n\n\n# Filtra il dataset originario `dat` selezionando tutti i soggetti che hanno un *reddito* \"Basso\" OPPURE un punteggio di *stress_scolastico* minore o uguale a 6.\n\n\n# Estrai solamente i punteggi di *depressione* di chi ha un *reddito* \"Alto\" (Attenzione: vogliamo estrarre una sola colonna a partire da una condizione sulle righe).\n\n\n# Elimina dal dataframe `dat` la colonna *id*, assegnandole il valore `NULL`, in quanto non è una variabile utile per le nostre analisi psicologiche.\n\n\n# C'è stato un errore di trascrizione! Modifica l'età del 2° soggetto (attualmente 16) impostandola a 18.\n\n\n# Elimina dal dataframe `dat` le prime 3 righe (soggetti 1, 2 e 3) e salva il risultato in un nuovo oggetto chiamato `dat_ridotto`.\n\n\n# Trasforma la colonna *depressione* del dataframe `dat` originale: abbassa tutti i punteggi sottraendo 1 punto a ciascun soggetto.\n\n\n# Crea un piccolo dataframe chiamato `nuovi_studenti` con le osservazioni di 2 nuovi soggetti (inventa tu i valori per genere, età, reddito, stress_scolastico e depressione). Unisci questo nuovo dataframe sotto a `dat` usando la funzione appropriata."
+  },
+  {
+    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#funzioni-utili",
+    "href": "materiali/03-esercizi-introduttivi-rstudio.html#funzioni-utili",
+    "title": "Esercizi introduttivi a RStudio",
+    "section": "5. Funzioni utili",
+    "text": "5. Funzioni utili\n\n5.1. Gestione del Workspace e Importazione\n\n# Usa la combinazione delle funzioni `rm()` e `ls()` con la sintassi `rm(list=ls())` per cancellare tutti gli oggetti dal tuo ambiente di lavoro (Environment).\n\n\n# Ipotizza di aver salvato i dati della lezione precedente in un file chiamato \"dati_lezione.RData\". Scrivi il comando usando `load()` per caricarlo nel tuo ambiente.\n\n\n# Usa la funzione `library()` per caricare il pacchetto necessario per leggere file Excel (ad esempio `readxl`) prima di importare i dati.\n\n\n# Importa il dataset `dat_scuole.csv` usando la funzione `read.csv()` e salvalo nell'oggetto `dati_csv`.\n\n\n# Importa il dataset chiamato `dat_scuole.xlsx` usando la funzione appropriata (es. `read_excel()` o `read.xlsx()`) e salvalo nell'oggetto `dati_excel`.\n\n\n# Usa la funzione `str()` sull'oggetto appena creato per ispezionarne la struttura interna. Quante variabili ci sono e di che tipo sono?\n\n\n\n\n5.2. Generazione e Manipolazione Dati\n\n# Genera un vettore chiamato `ansia_grezza` con i seguenti punteggi: `4.567`, `5.123`, `3.987`, `6.452`. \n\n\n# Usa la funzione `length()` per verificare quanti punteggi sono contenuti nel vettore `ansia_grezza`.\n\n\n# Sovrascrivi il vettore usando la funzione `round()` per arrotondare tutti i punteggi a 1 solo decimale.\n\n\n# Usa la funzione `seq()` per creare un vettore chiamato `id_soggetti` che contenga una sequenza numerica da 101 a 150.\n\n\n# Usa la funzione `rep()` per generare un vettore chiamato `condizione` in cui l'etichetta \"Trattamento\" e l'etichetta \"Controllo\" vengono ripetute ciascuna per 25 volte.\n\n\n# Usa `sample()` per estrarre casualmente 5 partecipanti (numeri da 1 a 50) per un'intervista qualitativa di follow-up, assicurandoti che lo stesso partecipante non possa essere estratto due volte (senza reinserimento).\n\n\n\n\n5.3. Funzioni Statistiche e Distribuzioni Normali\n\n# Simula i punteggi di un test di Estroversione per 1000 soggetti. Sapendo che il test ha una media normativa di 50 e una deviazione standard di 10, usa `rnorm()` per generare la distribuzione e salvala nell'oggetto `estroversione_simulata`.\n\n\n# Un soggetto ha ottenuto un punteggio di 35 nel test di Estroversione. Utilizzando `pnorm()`, calcola la probabilità di incontrare nella popolazione un soggetto con un punteggio uguale o inferiore al suo.\n\n\n# Vuoi selezionare solo i partecipanti che rientrano nel 5% superiore della distribuzione (il 95° percentile) per un training specifico. Usa `qnorm()` per scoprire quale punteggio esatto fa da soglia, sapendo sempre che la media è 50 e la deviazione standard è 10.\n\n\n# Usa la funzione `replicate()` per ripetere 4 volte l'operazione `sample(1:100, 10)`. Osserva l'output: che tipo di struttura dati ha generato R?\n\n\n# Usa la funzione `curve()` per disegnare la distribuzione normale del test di estroversione. *(Suggerimento: scrivi `dnorm(x, mean = 50, sd = 10)` come primo argomento, e imposta l'asse x da 20 a 80 usando i parametri `from` e `to`)*."
+  },
+  {
+    "objectID": "materiali/04-dat_scuole.html",
+    "href": "materiali/04-dat_scuole.html",
     "title": "Dataset scuole",
     "section": "",
     "text": "Dataset utilizzato per gli esercizi introduttivi su RStudio.\n Scarica dat_scuole.csv"

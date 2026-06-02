@@ -10,4 +10,4 @@ title: "Sondaggio introduttivo"
 
 ## Mentimeter
 
-<center>![](quiz_qr.png){width="370"}</center>
+<center>![](images/quiz_qr.png){width="370"}</center>

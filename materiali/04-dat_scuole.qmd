@@ -1,5 +1,6 @@
 ---
 title: "Dataset scuole"
+type: "Dataset"
 ---
 
 Dataset utilizzato per gli esercizi introduttivi su RStudio.

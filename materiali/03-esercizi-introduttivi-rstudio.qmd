@@ -6,6 +6,7 @@ execute:
   
 toc: true
 toc-title: "Indice"
+type: "Exercise"
 ---
 
 :::{.callout-tip}

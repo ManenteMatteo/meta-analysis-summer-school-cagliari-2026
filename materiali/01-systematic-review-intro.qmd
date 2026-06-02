@@ -8,16 +8,13 @@ format:
     incremental: false
     toc: false
 editor: visual
+type: "Slides"
 ---
-
-
 
 ## Che cos'è una Systematic Review?
 
-:::::: {.columns}
-
+::::: columns
 ::: {.column width="55%"}
-
 <br>
 
 > **È una sintesi strutturata della ricerca esistente.**
@@ -26,24 +23,19 @@ editor: visual
 
 **Caratteristiche**
 
-- Parte da una domanda di ricerca chiara
+-   Parte da una domanda di ricerca chiara
 
-- Usa metodi espliciti per cercare, selezionare e valutare gli studi
+-   Usa metodi espliciti per cercare, selezionare e valutare gli studi
 
-- Produce una sintesi trasparente e riproducibile
-
+-   Produce una sintesi trasparente e riproducibile
 :::
 
 ::: {.column width="45%"}
-
 <br><br>
 
 ![](../images/pyramid.png){fig-align="center" width="100%"}
-
 :::
-
-::::::
-
+:::::
 
 ------------------------------------------------------------------------
 
@@ -92,7 +84,6 @@ editor: visual
 <br>
 
 > **Domanda: prima di iniziare un nuovo studio, controllate sempre se esiste già una review recente?**
-
 
 ------------------------------------------------------------------------
 
@@ -332,24 +323,21 @@ editor: visual
 
 <br>
 
-- Organizzare gli studi inclusi in modo chiaro e trasparente
+-   Organizzare gli studi inclusi in modo chiaro e trasparente
 
-- Descrivere caratteristiche, risultati e differenze tra gli studi
+-   Descrivere caratteristiche, risultati e differenze tra gli studi
 
-- Evidenziare pattern comuni, risultati contrastanti e lacune
+-   Evidenziare pattern comuni, risultati contrastanti e lacune
 
 <br>
 
 ::: {style="text-align: center; margin: 0 auto; width: 50%; border: 2px solid #528B8B; padding: 4px; border-radius: 8px; background-color: #98F5FF; font-size: 0.80em;"}
-
-**Next step** (se possibile) &rarr; **Meta-Analisi**
+**Next step** (se possibile) → **Meta-Analisi**
 :::
-
 
 <br>
 
 > **L’obiettivo è trasformare molti studi in una sintesi leggibile e replicabile**
-
 
 ------------------------------------------------------------------------
 
