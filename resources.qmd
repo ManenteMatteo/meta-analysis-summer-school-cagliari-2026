@@ -1,49 +1,69 @@
 ---
 title: "Risorse utili"
 subtitle: "Link, linee guida e strumenti"
+toc: true
+toc-title: "Indice"
 ---
 
 <br> 
 
 ## Systematic review
 
-- PRISMA: reporting delle systematic review
-- PROSPERO: registrazione dei protocolli
-- Cochrane Handbook: riferimento metodologico
-- PICO: formulazione della domanda di ricerca
+- **[PRISMA](https://www.prisma-statement.org/)**: per i report delle systematic review
+
+- **[PROSPERO](https://www.crd.york.ac.uk/prospero/)**: registrazione dei protocolli
+
+- **[Cochrane Handbook](https://www.cochrane.org/authors/handbooks-and-manuals/handbook)**: manuale metodologico
+
+- **[PICO](https://www.cochranelibrary.com/about-pico)**: criteri per formulazione della domanda di ricerca
+
+- **[Covidence](https://www.covidence.org/)**: screening ed estrazione dati
+
 
 <br> 
 
-## Database bibliografici
+## Bias Assessment Tools
 
-- PubMed
-- Web of Science
-- Scopus
-- PsycINFO
-- Google Scholar, con cautela e strategia esplicita
+- **[Risk of Bias 2](https://methods.cochrane.org/bias/resources/rob-2-revised-cochrane-risk-bias-tool-randomized-trials)**
+
+- **[GRADE](https://www.cochrane.org/learn/courses-and-resources/cochrane-methodology/grade)**
+
+
+<br> 
+
+## Database bibliografici principali
+
+- **[PubMed](https://pubmed.ncbi.nlm.nih.gov/)**
+
+- **[PsycINFO](https://www.apa.org/pubs/databases/psycinfo)**
+
+- **[Web of Science](https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/)**
+
+- **[Scopus](https://www.elsevier.com/products/scopus/search)**
+
 
 
 <br> 
 
 ## Letteratura grigia
 
-- Grey Matters
-- GreyNet
-- tesi, report tecnici, preprint, atti di conferenza
+- **[Grey Matters](https://greymatters.cda-amc.ca/)**
+
+- **[GreyNet](https://www.greynet.org/)**
+
+- **[OSF](https://osf.io/)**
 
 <br> 
 
 ## Meta-analisi in R
 
-- `metafor`: package R per meta-analisi
-- RStudio Projects: gestione ordinata dei materiali
-- Quarto: documenti riproducibili, siti e slide
+- **[metafor](https://www.metafor-project.org/doku.php/metafor)**: pacchetto R per meta-analisi
+
+- **[Quarto](https://quarto.org/)**: documenti riproducibili, siti e slide
 
 <br> 
 
-## Tools per il workflow
 
-- Covidence: screening ed estrazione dati
-- Zotero: gestione bibliografica
-- OSF: pre-registrazione e materiali aperti
-- GitHub: codice e versionamento
+
+
+

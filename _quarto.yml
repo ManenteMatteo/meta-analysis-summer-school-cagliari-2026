@@ -13,7 +13,7 @@ execute:
 website:
   title: "Summer School | Meta-Analisi"
   navbar:
-    background: "#355070"
+    background: "#528B8B"
     foreground: "#ffffff"
     search: true
     left:

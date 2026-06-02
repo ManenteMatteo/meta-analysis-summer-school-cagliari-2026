@@ -3,7 +3,9 @@
     "listing": "/materiali.html",
     "items": [
       "/materiali/01-systematic-review-intro.html",
-      "/materiali/02-rstudio-basics.html"
+      "/materiali/02-rstudio-basics.html",
+      "/materiali/03-esercizi-introduttivi-rstudio.html",
+      "/materiali/dat_scuole.html"
     ]
   }
 ]

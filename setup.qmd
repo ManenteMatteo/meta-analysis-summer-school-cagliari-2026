@@ -9,11 +9,11 @@ subtitle: "Preparare RStudio per eseguire i codici"
 
 Per eseguire i codici delle lezioni è consigliato avere installato:
 
-- R
+- [R](https://cran.r-project.org/)
 
-- RStudio
+- [RStudio](https://posit.co/download/rstudio-desktop)
 
-- Quarto
+- [Quarto](https://quarto.org/docs/get-started/)
 
 <br>
 
@@ -23,9 +23,10 @@ Eseguire questo codice una sola volta:
 
 ```{r}
 #| eval: false
+
+
 install.packages(c(
   "metafor",
-  "tidyverse",
   "readxl"
 ))
 ```
@@ -35,7 +36,6 @@ Poi, in ogni nuova sessione, caricare i pacchetti necessari:
 ```{r}
 #| eval: false
 library(metafor)
-library(tidyverse)
 library(readxl)
 ```
 

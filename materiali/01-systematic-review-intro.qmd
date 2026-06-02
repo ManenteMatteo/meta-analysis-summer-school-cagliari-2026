@@ -1,6 +1,6 @@
 ---
-title: "Systematic Review: un'introduzione"
-author: "Matteo Manente"
+title: "Systematic Review: Introduzione"
+author: "<br> <br> [Matteo Manente](https://manentematteo.github.io/)"
 format:
   revealjs:
     theme: [simple, ../assets/slides.scss]
@@ -10,15 +10,50 @@ format:
 editor: visual
 ---
 
-## Perché condurre una Systematic Review?
 
-<br> 
+
+## Che cos'è una Systematic Review?
+
+:::::: {.columns}
+
+::: {.column width="55%"}
+
+<br>
+
+> **È una sintesi strutturata della ricerca esistente.**
+
+<br>
+
+**Caratteristiche**
+
+- Parte da una domanda di ricerca chiara
+
+- Usa metodi espliciti per cercare, selezionare e valutare gli studi
+
+- Produce una sintesi trasparente e riproducibile
+
+:::
+
+::: {.column width="45%"}
+
+<br><br>
+
+![](../images/pyramid.png){fig-align="center" width="100%"}
+
+:::
+
+::::::
+
+
+------------------------------------------------------------------------
+
+## Perché fare una Systematic Review?
+
+<br>
 
 -   Prima di fare una nuova ricerca, dobbiamo sapere cosa esiste già
 
-
 -   La letteratura cresce più velocemente della nostra capacità di leggerla
-
 
 -   Singoli studi possono essere fragili, incompleti o contraddittori
 
@@ -28,23 +63,7 @@ editor: visual
 
 ------------------------------------------------------------------------
 
-## La letteratura scientifica oggi
-
-<br>
-
--   Ogni giorno vengono pubblicati moltissimi nuovi articoli
-
--   È difficile seguire tutto, anche in un'area di ricerca molto specifica
-
--   Il rischio è selezionare solo gli studi più visibili o più coerenti con le nostre idee
-
-<br>
-
-> **Una review sistematica serve a ridurre questo rischio.**
-
-------------------------------------------------------------------------
-
-## Cosa ci permette di fare una systematic review?
+## Cosa permette di fare una Systematic Review?
 
 <br>
 
@@ -74,62 +93,14 @@ editor: visual
 
 > **Domanda: prima di iniziare un nuovo studio, controllate sempre se esiste già una review recente?**
 
-------------------------------------------------------------------------
-
-##  Systematic review vs narrative review
-
-<br> <br>
-
-| Narrative review | Systematic review |
-|------------------------------------|------------------------------------|
-| Selezione spesso non esplicita | Criteri di inclusione espliciti |
-| Metodo meno standardizzato | Metodo trasparente e replicabile |
-| Più rischio di cherry picking | Minore rischio di selezione arbitraria |
-| Utile per discussioni teoriche | Utile per sintesi strutturate dell'evidenza |
 
 ------------------------------------------------------------------------
 
-## Che cos'è una systematic review?
+## Systematic Review e Meta-Analisi
 
 <br>
 
-> **È una sintesi strutturata della ricerca esistente.**
-
-<br>
-
-**Caratteristiche**
-
--   Parte da una domanda di ricerca chiara
-
--   Usa metodi espliciti per cercare, selezionare e valutare gli studi
-
--   Valuta il rischio di bias degli studi inclusi
-
--   Produce una sintesi trasparente e riproducibile
-
-------------------------------------------------------------------------
-
-## Cosa permette di fare?
-
-<br>
-
--   Riassumere lo stato della conoscenza in un campo di studi
-
--   Rispondere a domande non affrontabili con un singolo studio
-
--   Identificare gap, problemi e priorità future
-
--   Valutare teorie, meccanismi e spiegazioni
-
--   Produrre evidenza utile per ricercatori, clinici e decisori politici
-
-------------------------------------------------------------------------
-
-## Systematic review e meta-analisi
-
-<br>
-
-> **Una meta-analisi è una sintesi quantitativa dei risultati.**
+> **Una meta-analisi è una sintesi quantitativa dei risultati di studi diversi.**
 
 <br>
 
@@ -139,7 +110,7 @@ editor: visual
 
 -   La meta-analisi stima quanto è grande, preciso e variabile un effetto
 
--   Senza review sistematica, aumenta il rischio di bias e cherry picking
+-   ***Senza review sistematica, aumenta il rischio di bias e cherry picking***
 
 ------------------------------------------------------------------------
 
@@ -147,7 +118,11 @@ editor: visual
 
 <br>
 
--   **Systematic review:** risponde a una domanda specifica con metodo replicabile
+> **Systematic review:** risponde a una domanda specifica con metodo riproducibile e sistematico
+
+<br>
+
+-   **Narrative Review:** descrizione qualitativa della conoscenza su un dato ambito (non adotta criteri espliciti-sistematici per selezionare gli studi)
 
 -   **Scoping review:** mappa aspetti metodologici di un'area di ricerca
 
@@ -157,9 +132,11 @@ editor: visual
 
 ------------------------------------------------------------------------
 
-## Systematic Review: passaggi principali
+## Systematic Review - Come si fa?
 
 <br>
+
+### Passaggi principali
 
 1.  Definire la domanda di ricerca
 
@@ -171,7 +148,7 @@ editor: visual
 
 5.  Estrarre i dati di interesse (*extraction*)
 
-6.  Sintetizzare i risultati 
+6.  Sintetizzare i risultati
 
 ------------------------------------------------------------------------
 
@@ -181,34 +158,45 @@ editor: visual
 
 **Criteri PICO**
 
--   **P** = Population | partecipanti
+-   **P** = Population \| partecipanti
 
--   **I** = Intervention | esposizione / predittore
+-   **I** = Intervention \| esposizione / predittore
 
--   **C** = Comparison | gruppo di controllo
+-   **C** = Comparison \| gruppo di controllo
 
--   **O** = Outcome | esito principale
+-   **O** = Outcome \| esito principale
 
+<br>
+
+> **Le Systematic Review nascono in ambito clinico, ma si possono espandere a più ambiti di ricerca.**
 
 ------------------------------------------------------------------------
 
 ## 2. Preregistrazione del protocollo
 
-<br>
-
+:::::: columns
+::: {.column width="64%"}
 -   Registrazione in anticipo di: domanda, criteri e metodi
 
 -   La pre-registrazione rimuove il rischio di decisioni post-hoc
 
 -   Rende trasparente eventuali deviazioni dal piano iniziale
 
-
-<br>
-
 **Dove caricarla**
 
-- **PROSPERO**: registro di protocolli per systematic review
+-   [**PROSPERO**](https://www.crd.york.ac.uk/prospero/): registro di protocolli per systematic review
 
+-   [**Open Science Framework**](https://help.osf.io/article/330-welcome-to-registrations): principale database di pre-registrazioni
+:::
+
+:::: {.column width="36%"}
+<br>
+
+::: image-stack
+<img src="../images/prospero.png" class="stack-img prospero-img"/> <img src="../images/osf.png" class="stack-img osf-img"/>
+:::
+::::
+::::::
 
 ------------------------------------------------------------------------
 
@@ -216,62 +204,61 @@ editor: visual
 
 <br>
 
-**Team di ricerca** 
+### Team di ricerca
 
-> **Idealmente almeno 3-4 persone:**
+<br>
 
--   Due reviewer indipendenti per screening ed estrazione dati
+> **Idealmente almeno 3-4 persone**
+
+<br>
+
+-   Due/tre reviewer indipendenti per screening ed estrazione dati
 
 -   Un terzo reviewer o supervisore per risolvere disaccordi
 
+------------------------------------------------------------------------
+
+## 3. Screening della letteratura
+
+:::::: columns
+::: {.column width="64%"}
+<br>
+
+### Database principali
+
+-   **PubMed / MEDLINE**: biomedicina e salute
+
+-   **PsycInfo**: psicologia
+
+-   **Web of Science**: database multidisciplinare
+
+-   **Scopus**: ampia copertura bibliografica
+
+<br>
+
+> **La scelta dipende dalla domanda di ricerca**
+:::
+
+:::: {.column width="36%"}
+::: database-stack
+<img src="../images/pubmed.png" class="db-img pubmed-img"/> <img src="../images/psycinfo.png" class="db-img psycinfo-img"/> <img src="../images/scopus.png" class="db-img scopus-img"/>
+:::
+::::
+::::::
 
 ------------------------------------------------------------------------
 
 ## 3. Screening della letteratura
 
-<br> 
+### Search Query
 
-**Database principali**
+![](images/clipboard-3051271799.png){fig-align="center"}
 
--   **PubMed / MEDLINE:** biomedicina e salute
+-   **Virgolette**: per cercare una frase esatta
 
-- **PsycInfo**: psicologia 
+-   **Troncamento**: per recuperare varianti della stessa radice
 
--   **Web of Science:** database multidisciplinare
-
--   **Scopus:** ampia copertura bibliografica
-
-<br>
-
-**Note**
-
--   Database disciplinari specifici, se rilevanti
-
--   La scelta dipende dalla domanda di ricerca
-
-
-
-------------------------------------------------------------------------
-
-## 3. Screening della letteratura
-
-<br>
-
-**Costruzione della Search query**
-
--   **AND:** restringe la ricerca
-
--   **OR:** amplia la ricerca con sinonimi
-
--   **NOT:** esclude termini non pertinenti
-
--   Virgolette: cercano una frase esatta
-
--   Troncamento: recupera varianti della stessa radice
-
-<br>
-
-**Esempio**: `("post-traumatic stress" OR PTSD) AND (EMDR OR "eye movement desensitization")`
+> **Esempio**: `("post-traumatic stress" OR PTSD) AND (EMDR OR "eye movement desensitization") AND (child* AND adolesc*)`
 
 ------------------------------------------------------------------------
 
@@ -279,43 +266,51 @@ editor: visual
 
 <br>
 
-**Letteratura grigia**
+### Letteratura grigia
 
 -   Include report, tesi, preprint, atti di conferenze
 
 -   Riduce il rischio di publication bias
 
--   È utile quando gli studi pubblicati sono pochi o selezionati
-
 <br>
 
-**Fonti principali**: 
+### Fonti principali
 
-- Grey Matters
+-   [Grey Matters](https://greymatters.cda-amc.ca/)
 
-- GreyNet
+-   [GreyNet](https://www.greynet.org/)
 
-- Open Science Framework
+-   [Open Science Framework](https://osf.io/)
 
 ------------------------------------------------------------------------
 
 ## 4. Selezione degli studi
 
-<br>
+:::::: columns
+::: {.column width="70%"}
+-   **I Step**: selezione sulla base di titolo e abstract
 
--   Primo step: selezione sulla base di titolo e abstract
+-   **II Step**: valutazione dell'intero testo degli articoli
 
--   Secondo step: valutazione dell'intero testo degli articoli 
-
-> **Le decisioni dovrebbero essere indipendenti (almeno due reviewer) e documentate**
+> **Le decisioni dovrebbero essere indipendenti e documentate**
 
 <br>
 
 **Risorse utili**
 
-- Il flow diagram **PRISMA** mostra quanti studi vengono inclusi o esclusi
+-   Flow diagram [**PRISMA**](https://www.prisma-statement.org/)
 
-- **Covidence**: supporto per screening ed estrazione dati
+-   [**Covidence**](https://www.covidence.org/): supporto per screening ed estrazione dati
+:::
+
+:::: {.column width="30%"}
+::: image-stack
+<img src="../images/prisma.png" class="stack-img osf-img"/>
+
+<img src="../images/covidence.png" class="stack-img prospero-img"/>
+:::
+::::
+::::::
 
 ------------------------------------------------------------------------
 
@@ -323,38 +318,50 @@ editor: visual
 
 <br>
 
--   Si estraggono caratteristiche di studio, campione, intervento ed esiti
+-   Si estraggono caratteristiche di: studio, campione, intervento e outcome
 
--   **Risk of Bias** e/o **GRADE** valutano la credibilità interna degli studi inclusi
+-   [**Risk of Bias**](https://sites.google.com/site/riskofbiastool/welcome/rob-2-0-tool) e/o [**GRADE**](https://www.cochrane.org/learn/courses-and-resources/cochrane-methodology/grade) valutano la credibilità interna degli studi inclusi
 
 > **La qualità degli studi influenza la fiducia nei risultati.**
 
+![](images/clipboard-566536661.jpeg){fig-align="center"}
+
 ------------------------------------------------------------------------
 
-## 6. Sintetizzare i risultati
+## 6. Sintetizzare e riportare i risultati
 
 <br>
 
-- Produzione del report finale: risultati principali, trend, lacune
+- Organizzare gli studi inclusi in modo chiaro e trasparente
 
--   Non basta chiedere: “l'effetto è significativo?”
+- Descrivere caratteristiche, risultati e differenze tra gli studi
 
--   Bisogna domandarsi: “quanto possiamo fidarci di questa evidenza?”
+- Evidenziare pattern comuni, risultati contrastanti e lacune
 
-<br> 
+<br>
 
-> **Ogni meta-analisi nasce da una buona systematic review**
+::: {style="text-align: center; margin: 0 auto; width: 50%; border: 2px solid #528B8B; padding: 4px; border-radius: 8px; background-color: #98F5FF; font-size: 0.80em;"}
+
+**Next step** (se possibile) &rarr; **Meta-Analisi**
+:::
+
+
+<br>
+
+> **L’obiettivo è trasformare molti studi in una sintesi leggibile e replicabile**
 
 
 ------------------------------------------------------------------------
 
 ## In sintesi
 
+<br>
+
 -   La letteratura cresce più velocemente della nostra capacità di leggerla
 
--   Le systematic review aiutano a trasformare molti studi in una sintesi ordinata
+-   Le Systematic Review aiutano a trasformare molti studi in una sintesi ordinata
 
--   Una meta-analisi è forte solo quanto lo è la review su cui si basa
+-   Una meta-analisi è valida solo quanto lo è la review su cui si basa
 
 -   Metodo, pre-registrazione e trasparenza proteggono da bias e cherry picking
 

@@ -1,0 +1,343 @@
+---
+title: "Esercizi introduttivi a RStudio"
+execute:
+  eval: false
+  echo: true
+  
+toc: true
+toc-title: "Indice"
+---
+
+:::{.callout-tip}
+Scrivete il codice direttamente sotto ciascuna consegna e lanciate le righe con `Cmd + Enter` su Mac o `Ctrl + Enter` su Windows.
+:::
+
+<br>
+
+## 1. Oggetti
+
+
+```{r}
+#| label: oggetti
+#| eval: false
+
+# Crea un oggetto chiamato `punteggio_base` e assegnagli il valore 50 utilizzando l'operatore di assegnazione `<-`.
+
+
+# Crea un secondo oggetto chiamato `moltiplicatore` e assegnagli il valore 2.5.
+
+
+# Moltiplica `punteggio_base` per `moltiplicatore` e salva il risultato in un nuovo oggetto chiamato `punteggio_totale`. Richiama l'oggetto per visualizzarne il contenuto.
+
+
+# R fa distinzione tra lettere maiuscole e minuscole (è *case-sensitive*). Prova a richiamare l'oggetto `Punteggio_base` (con la P maiuscola). Quale errore ti restituisce la console?
+
+
+# Sovrascrivi l'oggetto `punteggio_base` assegnandogli un nuovo valore pari a 75. 
+
+
+# Dopo aver modificato il `punteggio_base`, richiama di nuovo `punteggio_totale`: il suo valore si è aggiornato in automatico o mostra ancora il vecchio risultato?
+  
+  
+# Controlla quali oggetti sono attualmente salvati nel tuo ambiente di lavoro (Environment) utilizzando la funzione `ls()`.
+
+
+# Usa la funzione `rm()` per eliminare l'oggetto `moltiplicatore` dal tuo ambiente di lavoro. Verifica con `ls()` che sia effettivamente scomparso.
+```
+
+<br>
+
+## 2. Vettori
+
+
+```{r}
+#| label: vettori
+#| eval: false
+
+# Crea il vettore x contenente i numeri 4, 6, 12, 34, 8
+
+
+# Crea il vettore y contenente tutti i numeri pari compresi tra 1 e 25 (?seq())
+
+
+# Crea il vettore z contenente tutti i primi 10 multipli di 7 partendo da 13 (?seq())
+
+
+# Crea il vettore s in cui le lettere "A","B" e "C" vengono ripetute nel medesimo ordine 4 volte (?rep())
+
+
+# Del vettore x seleziona il 2°, 3° e 5° elemento
+
+
+# Del vettore x seleziona i valori 34 e 4
+
+
+# Del vettore y seleziona tutti i valori minori di 13 o maggiori di 19
+
+
+# Del vettore z seleziona tutti i valori compresi tra 24 e 50
+
+
+# Del vettore s seleziona tutti gli elementi uguali ad "A"
+
+
+# Del vettore t seleziona tutti gli elementi diversi da "B"
+
+
+# Crea un nuovo vettore u identico a s ma dove le "A" sono sostituite con la lettera "U"
+
+
+# Elimina dal vettore z i valori 28 e 42
+
+
+# Crea il vettore j unendo i vettori x ed z.
+
+
+# Elimina gli ultimi tre elementi del vettore j e controlla che i vettori j e y abbiano la stessa lunghezza.
+
+
+# Calcola la somma tra i vettori j e y.
+
+
+# Moltiplica il vettore z per una costante k=3.
+
+
+# Calcola il prodotto tra i primi 10 elementi del vettore y ed il vettore z
+```
+
+<br> 
+
+## 2.1 Vettori factor
+
+```{r}
+#| label: vettori-factor
+#| eval: false
+
+# Crea la variabile categoriale genere così definita:
+  
+  ## [1] M F M F M F F F M
+  ## Levels: F M
+  
+
+
+# Rinomina i livelli della variabile genere rispettivamente in "donne" e "uomini".
+
+
+# Crea la variabile categoriale intervento così definita:
+  
+  ## [1] CBT         Psicanalisi CBT         Psicanalisi CBT         Psicanalisi
+  ## [7] Controllo   Controllo   CBT        
+  ## Levels: CBT Controllo Psicanalisi
+  
+
+# Correggi nella variabile intervento la 7° e 8° osservazione con la voce Farmaci.
+
+
+# Aggiungi alla variabile intervento le seguenti nuove osservazioni:
+  
+  ## [1] "Farmaci"   "Controllo" "Farmaci"
+```
+
+<br>
+
+## 3. Matrici
+
+
+```{r}
+#| label: matrici
+#| eval: false
+
+# Crea la matrice A così definita:
+  
+#   2 34 12 7 
+#  46 93 27 99 
+#  23 38 7  04
+
+
+# Crea la matrice B contenente tutti i primi 12 numeri dispari disposti su 4 righe e 3 colonne.
+
+
+# Crea la matrice C contenente i primi 12 multipli di 9 disposti su 3 righe e 4 colonne.
+
+
+# Crea la matrice D formata da 3 colonne in cui le lettere "A","B" e "C" vengano ripetute 4 volte ciascuna rispettivamente nella prima, seconda e terza colonna.
+
+
+# Crea la matrice E formata da 3 righe in cui le lettere "A","B" e "C" vengano ripetute 4 volte ciascuna rispettivamente nella prima, seconda e terza riga.
+
+
+# Utilizzando gli indici di riga e di colonna selziona il numero 27 della matrice A
+
+
+# Selziona gli elementi compresi tra la seconda e quarta riga, seconda e terza colonna della matrice B
+
+
+# Elimina dalla matrice C la terza riga e la terza colonna
+
+
+# Seleziona tutti gli elementi della seconda e terza riga della matrice B
+
+
+# Seleziona tutti gli elementi diversi da “B” appartenenti alla matrice D
+
+
+# Crea la matrice G unendo alla matrice A le prime due colonne della matrice C
+
+
+# Ridefinisci la matrice A eliminando la seconda colonna. Ridefinisci la matrice B eliminando la prima riga. Verifica che le matrici così ottenute abbiano la stessa dimensione.
+
+
+# Commenta i differenti risultati che otteniamo nelle operazioni A*B, B*A, A%*%B e B%*%A.
+
+
+# Assegna i seguenti nomi alle colonne e alle righe della matrice C: "col_1", "col_2", "col_3", "col_4", "row_1", "row_2", "row_3".
+```
+
+<br>
+
+## 4. Dataframe
+
+
+Gli esercizi seguenti fanno riferimento al dataset `dat_scuole.csv`, disponibile nella sezione [Materiali](../materiali.qmd).
+
+
+È necessario aprire il progetto RStudio corretto o impostare la working directory nella cartella del progetto.
+
+
+```{r}
+#| label: dataframe
+#| eval: false
+
+  
+# Importa il dataset "dat_scuole.csv" e salvalo in un oggetto chiamato `dat`.
+
+
+# Esplora la struttura del dataframe `dat` usando la funzione `str()`. Di che tipo di dato è la variabile *reddito*?
+  
+  
+# Ottieni un riassunto statistico di tutte le variabili presenti nel dataframe usando una singola funzione
+
+
+# Quanti partecipanti e quante variabili ci sono nel dataset?
+  
+  
+# Mostra a schermo solo le prime 5 righe e poi solo le ultime 3 righe del dataframe.
+
+
+# Utilizzando gli indici a parentesi quadre `[riga, colonna]`, seleziona l'età del 12° partecipante.
+
+
+# Seleziona l'intero profilo (tutta la riga) del 42° partecipante.
+
+
+# Estrai l'intera colonna *stress_scolastico* utilizzando il simbolo del dollaro `$`.
+
+
+# Crea un nuovo dataframe chiamato `campione_stressato` contenente solo i soggetti con un livello di *stress* maggiore di 10.
+
+
+# Crea un nuovo dataframe chiamato `maggiorenni_f` selezionando solo le partecipanti femmine con un'età superiore ai 18 anni.
+
+
+# Filtra il dataset originario `dat` selezionando tutti i soggetti che hanno un *reddito* "Basso" OPPURE un punteggio di *stress_scolastico* minore o uguale a 6.
+
+
+# Estrai solamente i punteggi di *depressione* di chi ha un *reddito* "Alto" (Attenzione: vogliamo estrarre una sola colonna a partire da una condizione sulle righe).
+
+
+# Elimina dal dataframe `dat` la colonna *id*, assegnandole il valore `NULL`, in quanto non è una variabile utile per le nostre analisi psicologiche.
+
+
+# C'è stato un errore di trascrizione! Modifica l'età del 2° soggetto (attualmente 16) impostandola a 18.
+
+
+# Elimina dal dataframe `dat` le prime 3 righe (soggetti 1, 2 e 3) e salva il risultato in un nuovo oggetto chiamato `dat_ridotto`.
+
+
+# Trasforma la colonna *depressione* del dataframe `dat` originale: abbassa tutti i punteggi sottraendo 1 punto a ciascun soggetto.
+
+
+# Crea un piccolo dataframe chiamato `nuovi_studenti` con le osservazioni di 2 nuovi soggetti (inventa tu i valori per genere, età, reddito, stress_scolastico e depressione). Unisci questo nuovo dataframe sotto a `dat` usando la funzione appropriata.
+```
+
+<br>
+
+## 5. Funzioni utili
+
+
+### 5.1. Gestione del Workspace e Importazione
+
+
+```{r}
+#| label: 5-1-gestione-del-workspace-e-importazione
+#| eval: false
+
+# Usa la combinazione delle funzioni `rm()` e `ls()` con la sintassi `rm(list=ls())` per cancellare tutti gli oggetti dal tuo ambiente di lavoro (Environment).
+
+
+# Ipotizza di aver salvato i dati della lezione precedente in un file chiamato "dati_lezione.RData". Scrivi il comando usando `load()` per caricarlo nel tuo ambiente.
+
+
+# Usa la funzione `library()` per caricare il pacchetto necessario per leggere file Excel (ad esempio `readxl`) prima di importare i dati.
+
+
+# Importa il dataset `dat_scuole.csv` usando la funzione `read.csv()` e salvalo nell'oggetto `dati_csv`.
+
+
+# Importa il dataset chiamato `dat_scuole.xlsx` usando la funzione appropriata (es. `read_excel()` o `read.xlsx()`) e salvalo nell'oggetto `dati_excel`.
+
+
+# Usa la funzione `str()` sull'oggetto appena creato per ispezionarne la struttura interna. Quante variabili ci sono e di che tipo sono?
+```
+
+<br>
+
+### 5.2. Generazione e Manipolazione Dati
+
+
+```{r}
+#| label: 5-2-generazione-e-manipolazione-dati
+#| eval: false
+
+# Genera un vettore chiamato `ansia_grezza` con i seguenti punteggi: `4.567`, `5.123`, `3.987`, `6.452`. 
+
+
+# Usa la funzione `length()` per verificare quanti punteggi sono contenuti nel vettore `ansia_grezza`.
+
+
+# Sovrascrivi il vettore usando la funzione `round()` per arrotondare tutti i punteggi a 1 solo decimale.
+
+
+# Usa la funzione `seq()` per creare un vettore chiamato `id_soggetti` che contenga una sequenza numerica da 101 a 150.
+
+
+# Usa la funzione `rep()` per generare un vettore chiamato `condizione` in cui l'etichetta "Trattamento" e l'etichetta "Controllo" vengono ripetute ciascuna per 25 volte.
+
+
+# Usa `sample()` per estrarre casualmente 5 partecipanti (numeri da 1 a 50) per un'intervista qualitativa di follow-up, assicurandoti che lo stesso partecipante non possa essere estratto due volte (senza reinserimento).
+```
+
+
+<br>
+
+### 5.3. Funzioni Statistiche e Distribuzioni Normali
+
+
+```{r}
+#| label: 5-3-funzioni-statistiche-e-distribuzioni-normali
+#| eval: false
+
+# Simula i punteggi di un test di Estroversione per 1000 soggetti. Sapendo che il test ha una media normativa di 50 e una deviazione standard di 10, usa `rnorm()` per generare la distribuzione e salvala nell'oggetto `estroversione_simulata`.
+
+
+# Un soggetto ha ottenuto un punteggio di 35 nel test di Estroversione. Utilizzando `pnorm()`, calcola la probabilità di incontrare nella popolazione un soggetto con un punteggio uguale o inferiore al suo.
+
+
+# Vuoi selezionare solo i partecipanti che rientrano nel 5% superiore della distribuzione (il 95° percentile) per un training specifico. Usa `qnorm()` per scoprire quale punteggio esatto fa da soglia, sapendo sempre che la media è 50 e la deviazione standard è 10.
+
+
+# Usa la funzione `replicate()` per ripetere 4 volte l'operazione `sample(1:100, 10)`. Osserva l'output: che tipo di struttura dati ha generato R?
+
+
+# Usa la funzione `curve()` per disegnare la distribuzione normale del test di estroversione. *(Suggerimento: scrivi `dnorm(x, mean = 50, sd = 10)` come primo argomento, e imposta l'asse x da 20 a 80 usando i parametri `from` e `to`)*.
+```

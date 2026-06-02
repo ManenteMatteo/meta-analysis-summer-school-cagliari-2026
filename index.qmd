@@ -4,7 +4,7 @@ subtitle: "Materiali didattici: Systematic Review, Basi RStudio, pacchetto `meta
 
 institute: "University of Padova"
 author:
-  - name: "Matteo Manente"
+  - name: "[Matteo Manente](https://manentematteo.github.io/)"
 ---
 
 <br>
@@ -23,7 +23,7 @@ Questo sito raccoglie i materiali per le lezioni introduttive della Summer Schoo
 
 L'obiettivo è fornire una base pratica per passare da una **domanda di ricerca**, passando attraverso una **sintesi sistematica della letteratura**, fino ad arrivare alla **gestione dei dati in R** e al calcolo di una **meta-analisi** con `metafor`.
 
-<center>![](github_qr.png){width="275"} </br> *Repository GitHub per scaricare tutti codici*</center>
+<center>![](github_qr.png){width="275"} </br> *[Link alla Repository GitHub per scaricare tutti codici](https://github.com/ManenteMatteo/meta-analysis-summer-school-cagliari-2026)*</center>
 
 
 <br> 
