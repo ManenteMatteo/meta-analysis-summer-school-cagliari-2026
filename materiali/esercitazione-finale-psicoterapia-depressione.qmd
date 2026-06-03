@@ -1,6 +1,7 @@
 ---
 title: "Esercitazione finale"
 subtitle: "Meta-Analisi: Efficacia della Psicoterapia per la Depressione"
+author: "[Matteo Manente](https://manentematteo.github.io/)"
 type: "Exercise"
 toc: true
 toc-title: "Indice"

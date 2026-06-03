@@ -1,6 +1,7 @@
 ---
 title: "Dataset scuole"
 type: "Dataset"
+author: "[Massimiliano Pastore](https://dpss.psy.unipd.it/~massimiliano.pastore/index.html)"
 ---
 
 Dataset utilizzato per gli esercizi introduttivi su RStudio.

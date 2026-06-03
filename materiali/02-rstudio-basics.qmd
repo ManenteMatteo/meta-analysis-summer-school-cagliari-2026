@@ -1,6 +1,6 @@
 ---
 title: "Basi di RStudio"
-author: "Matteo Manente"
+author: "[Matteo Manente](https://manentematteo.github.io/)"
 embed-resources: true
 format: 
   html:
@@ -31,7 +31,7 @@ Abbiamo misurato:
 
 # Spoiler: Il punto di arrivo
 
-Non preoccupatevi di capire questo blocco ora, serve solo per mostrarvi cosa sarete in grado di fare con 4 semplici righe di codice alla fine del corso!
+Ecco cosa si è in grado di fare con 4 semplici righe di codice!
 
 ```{r}
 

@@ -1,6 +1,6 @@
 ---
 title: "Systematic Review: Introduzione"
-author: "<br> <br> [Matteo Manente](https://manentematteo.github.io/)"
+author: "[Matteo Manente](https://manentematteo.github.io/)"
 format:
   revealjs:
     theme: [simple, ../assets/slides.scss]

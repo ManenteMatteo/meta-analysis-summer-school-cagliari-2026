@@ -5,15 +5,23 @@ subtitle: "Materiali didattici: Systematic Review, Basi RStudio, pacchetto `meta
 institute: "University of Padova"
 author:
   - name: "[Matteo Manente](https://manentematteo.github.io/)"
+  - name: "[Massimiliano Pastore](https://dpss.psy.unipd.it/~massimiliano.pastore/index.html)"
+  - name: "[Gianmarco Altoè](https://www.researchgate.net/profile/Gianmarco-Altoe)"
 ---
 
 <br>
 
 ## Informazioni
 
-Questo sito raccoglie i materiali per le lezioni introduttive della Summer School sulle Meta-Analisi relative a:
+Questo sito raccoglie i materiali per le lezioni della Summer School sulle Meta-Analisi relative a:
 
--   **Systematic Review**
+-   **Meta-Analisi: teoria e applicazioni pratiche (frequentiste e bayesiane)**
+
+-   **Introduzione alla crisi di replicabilità**
+
+-   **Effect Sizes**
+
+-   **Systematic Reviews**
 
 -   **Basi di R & RStudio**
 

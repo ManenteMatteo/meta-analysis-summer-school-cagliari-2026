@@ -1,0 +1,13 @@
+---
+title: "Introduzione - Crisi di Replicabilità"
+type: "Slides"
+author: "[Gianmarco Altoè](https://www.researchgate.net/profile/Gianmarco-Altoe)"
+---
+
+<br>
+
+Slide introduttive sulla crisi di replicabilità.
+
+<a href="slides/crisi-replicabilita-slides.pdf" download="crisi-replicabilita-slides.pdf" class="btn btn-primary">
+  Scarica Slides (pdf)
+</a>

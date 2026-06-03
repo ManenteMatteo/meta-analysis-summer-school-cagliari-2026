@@ -1,5 +1,6 @@
 ---
 title: "Esercizi introduttivi a RStudio"
+author: "[Matteo Manente](https://manentematteo.github.io/)"
 execute:
   eval: false
   echo: true

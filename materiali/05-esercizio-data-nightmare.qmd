@@ -1,0 +1,9 @@
+---
+title: "Esercizio Data Nightmare"
+author: "[Enrico Toffalini](https://enricotoffalini.github.io/)"
+type: "Exercise"
+---
+
+<br>
+
+[Link all'esercizio](https://enricotoffalini.github.io/Basics-R/Exercises/5-Exercises-DataNightmare.html)
