@@ -168,43 +168,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Indice</h2>
    
   <ul class="collapse">
-  <li><a href="#obiettivo-dellesercizio" id="toc-obiettivo-dellesercizio" class="nav-link active" data-scroll-target="#obiettivo-dellesercizio">Obiettivo dell’esercizio</a></li>
+  <li><a href="#obiettivo-dellesercizio" id="toc-obiettivo-dellesercizio" class="nav-link active" data-scroll-target="#obiettivo-dellesercizio">Obiettivo dell’esercizio</a>
+  <ul class="collapse">
   <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">1. Setup</a></li>
   <li><a href="#caricare-il-dataset" id="toc-caricare-il-dataset" class="nav-link" data-scroll-target="#caricare-il-dataset">2. Caricare il dataset</a></li>
   <li><a href="#una-riga-uno-studio-o-un-effect-size" id="toc-una-riga-uno-studio-o-un-effect-size" class="nav-link" data-scroll-target="#una-riga-uno-studio-o-un-effect-size">3. Una riga = uno studio o un effect size?</a></li>
-  <li><a href="#breve-passaggio-sugli-effect-size" id="toc-breve-passaggio-sugli-effect-size" class="nav-link" data-scroll-target="#breve-passaggio-sugli-effect-size">4. Breve passaggio sugli effect size</a></li>
-  <li><a href="#aggregare-gli-effect-size-entro-studio" id="toc-aggregare-gli-effect-size-entro-studio" class="nav-link" data-scroll-target="#aggregare-gli-effect-size-entro-studio">5. Aggregare gli effect size entro studio</a></li>
+  <li><a href="#effect-size" id="toc-effect-size" class="nav-link" data-scroll-target="#effect-size">4. Effect Size</a></li>
+  <li><a href="#aggregazione-gli-effect-size-within-study" id="toc-aggregazione-gli-effect-size-within-study" class="nav-link" data-scroll-target="#aggregazione-gli-effect-size-within-study">5. Aggregazione gli effect size within-study</a></li>
   <li><a href="#prima-meta-analisi-con-rma" id="toc-prima-meta-analisi-con-rma" class="nav-link" data-scroll-target="#prima-meta-analisi-con-rma">6. Prima meta-analisi con <code>rma()</code></a></li>
-  <li><a href="#interpretare-loutput" id="toc-interpretare-loutput" class="nav-link" data-scroll-target="#interpretare-loutput">7. Interpretare l’output</a>
-  <ul class="collapse">
-  <li><a href="#come-leggere-il-risultato" id="toc-come-leggere-il-risultato" class="nav-link" data-scroll-target="#come-leggere-il-risultato">Come leggere il risultato</a></li>
-  </ul></li>
-  <li><a href="#fixed-effect-vs-random-effects" id="toc-fixed-effect-vs-random-effects" class="nav-link" data-scroll-target="#fixed-effect-vs-random-effects">8. Fixed-effect vs random-effects</a>
-  <ul class="collapse">
-  <li><a href="#interpretazione-1" id="toc-interpretazione-1" class="nav-link" data-scroll-target="#interpretazione-1">Interpretazione</a></li>
-  </ul></li>
-  <li><a href="#forest-plot" id="toc-forest-plot" class="nav-link" data-scroll-target="#forest-plot">9. Forest plot</a>
-  <ul class="collapse">
+  <li><a href="#interpretare-loutput" id="toc-interpretare-loutput" class="nav-link" data-scroll-target="#interpretare-loutput">7. Interpretare l’output</a></li>
+  <li><a href="#interpretazione-risultato" id="toc-interpretazione-risultato" class="nav-link" data-scroll-target="#interpretazione-risultato">Interpretazione risultato</a></li>
+  <li><a href="#fixed-effect-vs-random-effects" id="toc-fixed-effect-vs-random-effects" class="nav-link" data-scroll-target="#fixed-effect-vs-random-effects">8. Fixed-effect vs random-effects</a></li>
+  <li><a href="#interpretazione-random-vs-fixed" id="toc-interpretazione-random-vs-fixed" class="nav-link" data-scroll-target="#interpretazione-random-vs-fixed">Interpretazione: Random vs Fixed</a></li>
+  <li><a href="#forest-plot" id="toc-forest-plot" class="nav-link" data-scroll-target="#forest-plot">9. Forest plot</a></li>
   <li><a href="#cosa-osservare" id="toc-cosa-osservare" class="nav-link" data-scroll-target="#cosa-osservare">Cosa osservare</a></li>
-  </ul></li>
   <li><a href="#prediction-interval" id="toc-prediction-interval" class="nav-link" data-scroll-target="#prediction-interval">10. Prediction interval</a></li>
-  <li><a href="#funnel-plot-e-publication-bias" id="toc-funnel-plot-e-publication-bias" class="nav-link" data-scroll-target="#funnel-plot-e-publication-bias">11. Funnel plot e publication bias</a>
-  <ul class="collapse">
+  <li><a href="#funnel-plot-e-publication-bias" id="toc-funnel-plot-e-publication-bias" class="nav-link" data-scroll-target="#funnel-plot-e-publication-bias">11. Funnel plot e publication bias</a></li>
   <li><a href="#egger-type-regression-test" id="toc-egger-type-regression-test" class="nav-link" data-scroll-target="#egger-type-regression-test">Egger-type regression test</a></li>
   <li><a href="#interpretazione-cauta" id="toc-interpretazione-cauta" class="nav-link" data-scroll-target="#interpretazione-cauta">Interpretazione cauta</a></li>
-  </ul></li>
   <li><a href="#trim-and-fill" id="toc-trim-and-fill" class="nav-link" data-scroll-target="#trim-and-fill">12. Trim-and-fill</a></li>
-  <li><a href="#sensitivity-analysis" id="toc-sensitivity-analysis" class="nav-link" data-scroll-target="#sensitivity-analysis">13. Sensitivity analysis</a>
-  <ul class="collapse">
-  <li><a href="#leave-one-out" id="toc-leave-one-out" class="nav-link" data-scroll-target="#leave-one-out">Leave-one-out</a></li>
+  <li><a href="#sensitivity-analysis" id="toc-sensitivity-analysis" class="nav-link" data-scroll-target="#sensitivity-analysis">13. Sensitivity analysis</a></li>
   <li><a href="#influence-diagnostics" id="toc-influence-diagnostics" class="nav-link" data-scroll-target="#influence-diagnostics">Influence diagnostics</a></li>
-  <li><a href="#domande-interpretative" id="toc-domande-interpretative" class="nav-link" data-scroll-target="#domande-interpretative">Domande interpretative</a></li>
-  </ul></li>
-  <li><a href="#meta-regressione-esplorativa" id="toc-meta-regressione-esplorativa" class="nav-link" data-scroll-target="#meta-regressione-esplorativa">14. Meta-regressione esplorativa</a>
-  <ul class="collapse">
+  <li><a href="#meta-regressione-esplorativa" id="toc-meta-regressione-esplorativa" class="nav-link" data-scroll-target="#meta-regressione-esplorativa">14. Meta-regressione esplorativa</a></li>
   <li><a href="#interpretazione-3" id="toc-interpretazione-3" class="nav-link" data-scroll-target="#interpretazione-3">Interpretazione</a></li>
-  </ul></li>
   <li><a href="#take-home-messages" id="toc-take-home-messages" class="nav-link" data-scroll-target="#take-home-messages">Take-home messages</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -240,18 +228,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="obiettivo-dellesercizio" class="level1">
 <h1>Obiettivo dell’esercizio</h1>
 <p>In questo esercizio useremo il dataset <code>barroso2021</code>, incluso nel pacchetto <code>psymetadata</code>.</p>
-<p>Il dataset contiene risultati da <strong>332 studi</strong>, per un totale di <strong>747 effect size</strong>, sulla relazione tra <strong>ansia matematica</strong> e <strong>rendimento matematico</strong>.</p>
+<p>Il dataset contiene risultati da <strong>225 studi</strong>, per un totale di <strong>747 effect size</strong>, sulla relazione tra <strong>ansia matematica</strong> e <strong>rendimento matematico</strong>.</p>
 <p>Gli effect size sono già espressi come <strong>correlazioni trasformate in Fisher’s z</strong>.</p>
 <p>L’obiettivo è mostrare come:</p>
 <ul>
-<li>preparare un dataset meta-analitico;</li>
-<li>aggregare più effect size provenienti dallo stesso studio;</li>
-<li>stimare un modello random-effects con <code>metafor</code>;</li>
-<li>interpretare output, eterogeneità e prediction interval;</li>
-<li>visualizzare i risultati;</li>
-<li>fare semplici analisi su publication bias e sensibilità;</li>
-<li>introdurre una meta-regressione esplorativa.</li>
+<li><p>preparare un dataset meta-analitico;</p></li>
+<li><p>aggregare più effect size provenienti dallo stesso studio;</p></li>
+<li><p>stimare un modello random-effects con <code>metafor</code>;</p></li>
+<li><p>interpretare output, eterogeneità e prediction interval;</p></li>
+<li><p>visualizzare i risultati;</p></li>
+<li><p>fare semplici analisi su publication bias e sensibilità;</p></li>
+<li><p>introdurre una meta-regressione esplorativa.</p></li>
 </ul>
+<p><br></p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -262,13 +251,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Stimare una meta-analisi in R può richiedere una sola riga di codice.</p>
-<p>Interpretarla correttamente richiede però una buona systematic review, decisioni metodologiche esplicite e cautela nell’interpretazione.</p>
+<p><strong>Stimare una meta-analisi in R può richiedere una sola riga di codice.</strong> <strong>Interpretarla correttamente richiede però una buona systematic review, decisioni metodologiche esplicite e riferimenti teorici robusti.</strong></p>
 </div>
 </div>
-</section>
-<section id="setup" class="level1">
-<h1>1. Setup</h1>
+<p><br></p>
+<section id="setup" class="level2">
+<h2 class="anchored" data-anchor-id="setup">1. Setup</h2>
 <p>Installiamo e carichiamo i pacchetti necessari.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Installare i pacchetti solo se non sono già presenti</span></span>
@@ -278,36 +266,80 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(metafor)</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psymetadata)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+<p><br></p>
 </section>
-<section id="caricare-il-dataset" class="level1">
-<h1>2. Caricare il dataset</h1>
+<section id="caricare-il-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="caricare-il-dataset">2. Caricare il dataset</h2>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> barroso2021</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Esploriamo la struttura del dataset.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(dat)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(dat)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(dat)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(dat)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'data.frame':   747 obs. of  11 variables:
+ $ es_id      : int  1 2 3 4 5 6 7 8 9 10 ...
+ $ study_id   : int  6 6 19 31 37 37 37 47 47 47 ...
+ $ author     : chr  "Hoffman" "Hoffman" "Farquharson" "Beasley, Long, &amp; Natali" ...
+ $ pub_year   : int  2010 2010 2004 2001 2015 2015 2015 2016 2016 2016 ...
+ $ continent  : int  1 1 1 1 1 1 1 1 1 1 ...
+ $ grade      : int  5 5 5 3 5 5 5 3 3 3 ...
+ $ low_ability: Factor w/ 2 levels "1","2": 2 2 2 2 2 2 2 2 2 2 ...
+ $ teachers   : int  1 1 2 2 1 1 1 2 2 2 ...
+ $ ni         : int  70 70 89 278 30 30 30 506 502 493 ...
+ $ yi         : num  -0.4 -0.448 0.01 -0.288 -0.466 ...
+ $ vi         : num  0.01493 0.01493 0.01163 0.00364 0.03704 ...</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(dat)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  es_id study_id                  author pub_year continent grade low_ability
+1     1        6                 Hoffman     2010         1     5           2
+2     2        6                 Hoffman     2010         1     5           2
+3     3       19             Farquharson     2004         1     5           2
+4     4       31 Beasley, Long, &amp; Natali     2001         1     3           2
+5     5       37         Novak &amp; Tassell     2015         1     5           2
+6     6       37         Novak &amp; Tassell     2015         1     5           2
+  teachers  ni          yi          vi
+1        1  70 -0.40005965 0.014925373
+2        1  70 -0.44769202 0.014925373
+3        2  89  0.01000033 0.011627907
+4        2 278 -0.28768207 0.003636364
+5        1  30 -0.46604720 0.037037037
+6        1  30 -0.69314718 0.037037037</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(dat)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "es_id"       "study_id"    "author"      "pub_year"    "continent"  
+ [6] "grade"       "low_ability" "teachers"    "ni"          "yi"         
+[11] "vi"         </code></pre>
+</div>
 </div>
 <p>Alcune variabili importanti:</p>
 <ul>
-<li><code>study_id</code>: identificativo dello studio;</li>
-<li><code>es_id</code>: identificativo dell’effect size;</li>
-<li><code>author</code>: autore/autori dello studio;</li>
-<li><code>pub_year</code>: anno di pubblicazione;</li>
-<li><code>ni</code>: numerosità campionaria;</li>
-<li><code>yi</code>: effect size osservato, già in Fisher’s z;</li>
-<li><code>vi</code>: varianza dell’effect size.</li>
+<li><p><code>study_id</code>: identificativo dello studio;</p></li>
+<li><p><code>es_id</code>: identificativo dell’effect size;</p></li>
+<li><p><code>author</code>: autore/autori dello studio;</p></li>
+<li><p><code>pub_year</code>: anno di pubblicazione;</p></li>
+<li><p><code>ni</code>: numerosità campionaria;</p></li>
+<li><p><code>yi</code>: effect size osservato, già in Fisher’s z;</p></li>
+<li><p><code>vi</code>: varianza dell’effect size.</p></li>
 </ul>
+<p><br></p>
 </section>
-<section id="una-riga-uno-studio-o-un-effect-size" class="level1">
-<h1>3. Una riga = uno studio o un effect size?</h1>
+<section id="una-riga-uno-studio-o-un-effect-size" class="level2">
+<h2 class="anchored" data-anchor-id="una-riga-uno-studio-o-un-effect-size">3. Una riga = uno studio o un effect size?</h2>
 <p>Contiamo quanti effect size e quanti studi unici abbiamo.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(dat)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(<span class="fu">unique</span>(dat<span class="sc">$</span>study_id))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(dat)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 747</code></pre>
 </div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(<span class="fu">unique</span>(dat<span class="sc">$</span>study_id))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 225</code></pre>
+</div>
+</div>
+<p><br></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -318,32 +350,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Molti studi contribuiscono con più di un effect size.</p>
-<p>Il modello ideale sarebbe quindi un modello multilevel o multivariate, ad esempio con <code>rma.mv()</code>.</p>
+<p><strong>Molti studi contribuiscono con più di un effect size.</strong> <strong>Il modello ideale sarebbe quindi un modello multilevel o multivariate, ad esempio con <code>rma.mv()</code>.</strong></p>
 <p>In questa esercitazione introduttiva useremo una strategia più semplice: <strong>aggregare gli effect size entro studio</strong>, assumendo una correlazione tra effect size pari a <code>rho = 0.50</code>.</p>
 </div>
 </div>
+<p><br></p>
 </section>
-<section id="breve-passaggio-sugli-effect-size" class="level1">
-<h1>4. Breve passaggio sugli effect size</h1>
+<section id="effect-size" class="level2">
+<h2 class="anchored" data-anchor-id="effect-size">4. Effect Size</h2>
 <p>In questo dataset <code>yi</code> è già in <strong>Fisher’s z</strong>.</p>
 <p>La trasformazione Fisher’s z viene spesso usata perché rende le correlazioni più adatte alla modellizzazione meta-analitica.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Esempio: da correlazione r a Fisher's z</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>r_example <span class="ot">&lt;-</span> <span class="sc">-</span><span class="fl">0.30</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>z_example <span class="ot">&lt;-</span> <span class="fu">transf.rtoz</span>(r_example)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>z_example</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Esempio: da Fisher's z a correlazione r</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="fu">transf.ztor</span>(z_example)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Esempio: da correlazione r a Fisher's z</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>r_example <span class="ot">&lt;-</span> <span class="sc">-</span><span class="fl">0.30</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>z_example <span class="ot">&lt;-</span> <span class="fu">transf.rtoz</span>(r_example)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>z_example</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] -0.3095196</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Esempio: da Fisher's z a correlazione r</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">transf.ztor</span>(z_example)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] -0.3</code></pre>
+</div>
 </div>
 <p>Per una correlazione, una formula comune per la varianza della Fisher’s z è:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Varianza approssimata della Fisher's z</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>n_example <span class="ot">&lt;-</span> <span class="dv">100</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>vi_example <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">/</span> (n_example <span class="sc">-</span> <span class="dv">3</span>)</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>vi_example</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Varianza approssimata della Fisher's z</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>n_example <span class="ot">&lt;-</span> <span class="dv">100</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>vi_example <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">/</span> (n_example <span class="sc">-</span> <span class="dv">3</span>)</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>vi_example</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.01030928</code></pre>
 </div>
+</div>
+<p><br></p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -354,59 +395,94 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Nel modello lavoreremo sulla scala Fisher’s z, ma per interpretare i risultati possiamo trasformare la stima finale di nuovo in correlazione <code>r</code>.</p>
+<p><strong>Nel modello lavoreremo sulla scala Fisher’s z, ma per interpretare i risultati trasformiamo la stima finale di nuovo in correlazione <code>r</code>.</strong></p>
 </div>
 </div>
+<p><br></p>
 </section>
-<section id="aggregare-gli-effect-size-entro-studio" class="level1">
-<h1>5. Aggregare gli effect size entro studio</h1>
+<section id="aggregazione-gli-effect-size-within-study" class="level2">
+<h2 class="anchored" data-anchor-id="aggregazione-gli-effect-size-within-study">5. Aggregazione gli effect size within-study</h2>
 <p>Creiamo prima un oggetto <code>escalc</code>, cioè un dataset che <code>metafor</code> riconosce come contenente effect size e varianze.</p>
 <p>Poiché <code>yi</code> e <code>vi</code> sono già disponibili, usiamo <code>measure = "GEN"</code>.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>dat_es <span class="ot">&lt;-</span> <span class="fu">escalc</span>(</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">measure =</span> <span class="st">"GEN"</span>,</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">yi =</span> yi,</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">vi =</span> vi,</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dat</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>dat_es <span class="ot">&lt;-</span> <span class="fu">escalc</span>(</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">measure =</span> <span class="st">"GEN"</span>,</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">yi =</span> yi,</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">vi =</span> vi,</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dat</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Ora aggreghiamo gli effect size entro studio.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>dat_agg <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  dat_es,</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">cluster =</span> study_id,</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">rho =</span> <span class="fl">0.50</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>dat_agg <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  dat_es,</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">cluster =</span> study_id,</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">rho =</span> <span class="fl">0.50</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Controlliamo il risultato.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(dat_agg)</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(dat_agg)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(dat_agg)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 225</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(dat_agg)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+  es_id study_id                                              author pub_year 
+1   1.5        6                                             Hoffman     2010 
+2   3.0       19                                         Farquharson     2004 
+3   4.0       31                             Beasley, Long, &amp; Natali     2001 
+4   6.0       37                                     Novak &amp; Tassell     2015 
+5  10.0       47 Hart, Logan, Thompson, Kovas, McLoughlin, &amp; Petrill     2016 
+6  13.0       69                                                Leap     2013 
+  continent grade low_ability teachers  ni      yi     vi 
+1         1     5           2        1  70 -0.4239 0.0112 
+2         1     5           2        2  89  0.0100 0.0116 
+3         1     3           2        2 278 -0.2877 0.0036 
+4         1     5           2        1  30 -0.6691 0.0247 
+5         1     3           2        2 492 -0.2214 0.0012 
+6         1     2           2        2  40 -0.2522 0.0270 </code></pre>
+</div>
 </div>
 <p>Aggiungiamo alcune informazioni utili per grafici e meta-regressione.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>study_info <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cbind</span>(pub_year, grade, ni) <span class="sc">~</span> study_id,</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dat,</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">FUN =</span> <span class="cf">function</span>(x) <span class="fu">mean</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>author_info <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(</span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  author <span class="sc">~</span> study_id,</span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dat,</span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">FUN =</span> <span class="cf">function</span>(x) x[<span class="dv">1</span>]</span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>study_info <span class="ot">&lt;-</span> <span class="fu">merge</span>(study_info, author_info, <span class="at">by =</span> <span class="st">"study_id"</span>)</span>
-<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>dat_agg <span class="ot">&lt;-</span> <span class="fu">merge</span>(</span>
-<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>(dat_agg),</span>
-<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>  study_info,</span>
-<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">by =</span> <span class="st">"study_id"</span>,</span>
-<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">all.x =</span> <span class="cn">TRUE</span></span>
-<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(dat_agg)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Informazioni a livello di studio: una sola riga per studio</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>study_info_author <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  author <span class="sc">~</span> study_id,</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dat,</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">FUN =</span> <span class="cf">function</span>(x) x[<span class="dv">1</span>]</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>study_info_year <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(</span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>  pub_year <span class="sc">~</span> study_id,</span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dat,</span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">FUN =</span> <span class="cf">function</span>(x) x[<span class="dv">1</span>]</span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a>study_info <span class="ot">&lt;-</span> <span class="fu">merge</span>(</span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a>  study_info_author,</span>
+<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a>  study_info_year,</span>
+<span id="cb25-17"><a href="#cb25-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">by =</span> <span class="st">"study_id"</span></span>
+<span id="cb25-18"><a href="#cb25-18" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb25-19"><a href="#cb25-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-20"><a href="#cb25-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Rimuoviamo eventuali colonne problematiche già presenti in dat_agg</span></span>
+<span id="cb25-21"><a href="#cb25-21" aria-hidden="true" tabindex="-1"></a>dat_agg<span class="sc">$</span>author <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb25-22"><a href="#cb25-22" aria-hidden="true" tabindex="-1"></a>dat_agg<span class="sc">$</span>pub_year <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb25-23"><a href="#cb25-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-24"><a href="#cb25-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Aggiungiamo autore e anno puliti al dataset aggregato</span></span>
+<span id="cb25-25"><a href="#cb25-25" aria-hidden="true" tabindex="-1"></a>dat_agg <span class="ot">&lt;-</span> <span class="fu">merge</span>(</span>
+<span id="cb25-26"><a href="#cb25-26" aria-hidden="true" tabindex="-1"></a>  dat_agg,</span>
+<span id="cb25-27"><a href="#cb25-27" aria-hidden="true" tabindex="-1"></a>  study_info,</span>
+<span id="cb25-28"><a href="#cb25-28" aria-hidden="true" tabindex="-1"></a>  <span class="at">by =</span> <span class="st">"study_id"</span>,</span>
+<span id="cb25-29"><a href="#cb25-29" aria-hidden="true" tabindex="-1"></a>  <span class="at">all.x =</span> <span class="cn">TRUE</span></span>
+<span id="cb25-30"><a href="#cb25-30" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb25-31"><a href="#cb25-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-32"><a href="#cb25-32" aria-hidden="true" tabindex="-1"></a><span class="co"># Creiamo etichette per il forest plot</span></span>
+<span id="cb25-33"><a href="#cb25-33" aria-hidden="true" tabindex="-1"></a>dat_agg<span class="sc">$</span>slab <span class="ot">&lt;-</span> <span class="fu">paste0</span>(dat_agg<span class="sc">$</span>author, <span class="st">" ("</span>, dat_agg<span class="sc">$</span>pub_year, <span class="st">")"</span>)</span>
+<span id="cb25-34"><a href="#cb25-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-35"><a href="#cb25-35" aria-hidden="true" tabindex="-1"></a><span class="co"># Ordiniamo per anno di pubblicazione</span></span>
+<span id="cb25-36"><a href="#cb25-36" aria-hidden="true" tabindex="-1"></a>dat_plot <span class="ot">&lt;-</span> dat_agg[<span class="fu">order</span>(dat_agg[[<span class="st">"pub_year"</span>]]), ]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -418,29 +494,71 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>L’aggregazione è una semplificazione didattica.</p>
+<p><strong>L’aggregazione è una semplificazione didattica.</strong></p>
 <p>Riduce la dipendenza tra effect size, ma perde informazioni sulla variabilità entro studio.</p>
-<p>In un’analisi reale, questa scelta dovrebbe essere giustificata nel protocollo della systematic review.</p>
+<p>In un’analisi reale, questa scelta dovrebbe essere <strong>giustificata</strong> nel protocollo della systematic review.</p>
 </div>
 </div>
+<p><br></p>
 </section>
-<section id="prima-meta-analisi-con-rma" class="level1">
-<h1>6. Prima meta-analisi con <code>rma()</code></h1>
+<section id="prima-meta-analisi-con-rma" class="level2">
+<h2 class="anchored" data-anchor-id="prima-meta-analisi-con-rma">6. Prima meta-analisi con <code>rma()</code></h2>
 <p>Stimiamo un modello random-effects.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">rma</span>(</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">yi =</span> yi,</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">vi =</span> vi,</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dat_agg,</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">method =</span> <span class="st">"REML"</span></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>res</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">rma</span>(</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">yi =</span> yi,</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">vi =</span> vi,</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dat_agg,</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">method =</span> <span class="st">"REML"</span></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>res</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Random-Effects Model (k = 225; tau^2 estimator: REML)
+
+tau^2 (estimated amount of total heterogeneity): 0.0219 (SE = 0.0026)
+tau (square root of estimated tau^2 value):      0.1480
+I^2 (total heterogeneity / total variability):   93.80%
+H^2 (total variability / sampling variability):  16.13
+
+Test for Heterogeneity:
+Q(df = 224) = 1914.7881, p-val &lt; .0001
+
+Model Results:
+
+estimate      se      zval    pval    ci.lb    ci.ub      
+ -0.2775  0.0112  -24.8723  &lt;.0001  -0.2994  -0.2557  *** 
+
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
 </div>
 <p>Questa è la struttura minima:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rma</span>(yi, vi, <span class="at">data =</span> dat_agg)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rma</span>(yi, vi, <span class="at">data =</span> dat_agg)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Random-Effects Model (k = 225; tau^2 estimator: REML)
+
+tau^2 (estimated amount of total heterogeneity): 0.0219 (SE = 0.0026)
+tau (square root of estimated tau^2 value):      0.1480
+I^2 (total heterogeneity / total variability):   93.80%
+H^2 (total variability / sampling variability):  16.13
+
+Test for Heterogeneity:
+Q(df = 224) = 1914.7881, p-val &lt; .0001
+
+Model Results:
+
+estimate      se      zval    pval    ci.lb    ci.ub      
+ -0.2775  0.0112  -24.8723  &lt;.0001  -0.2994  -0.2557  *** 
+
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
+</div>
+<p><br></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -455,33 +573,70 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Poiché gli effect size sono Fisher’s z, anche la stima del modello è inizialmente sulla scala Fisher’s z.</p>
 </div>
 </div>
+<p><br></p>
 </section>
-<section id="interpretare-loutput" class="level1">
-<h1>7. Interpretare l’output</h1>
+<section id="interpretare-loutput" class="level2">
+<h2 class="anchored" data-anchor-id="interpretare-loutput">7. Interpretare l’output</h2>
 <p>Estraiamo alcuni elementi principali.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>res<span class="sc">$</span>b       <span class="co"># effetto medio stimato in Fisher's z</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>res<span class="sc">$</span>se      <span class="co"># errore standard</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>res<span class="sc">$</span>ci.lb   <span class="co"># limite inferiore IC</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>res<span class="sc">$</span>ci.ub   <span class="co"># limite superiore IC</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>res<span class="sc">$</span>pval    <span class="co"># p-value</span></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>res<span class="sc">$</span>tau2    <span class="co"># varianza tra studi</span></span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>res<span class="sc">$</span>I2      <span class="co"># percentuale di variabilità dovuta a eterogeneità</span></span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>res<span class="sc">$</span>QE      <span class="co"># test Q di eterogeneità</span></span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>res<span class="sc">$</span>QEp     <span class="co"># p-value del test Q</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>res<span class="sc">$</span>b       <span class="co"># effetto medio stimato in Fisher's z</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>              [,1]
+intrcpt -0.2775353</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>res<span class="sc">$</span>se      <span class="co"># errore standard</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.01115839</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>res<span class="sc">$</span>ci.lb   <span class="co"># limite inferiore IC</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] -0.2994054</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>res<span class="sc">$</span>ci.ub   <span class="co"># limite superiore IC</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] -0.2556653</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>res<span class="sc">$</span>pval    <span class="co"># p-value</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.4825e-136</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>res<span class="sc">$</span>tau2    <span class="co"># varianza tra studi</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.02189226</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>res<span class="sc">$</span>I2      <span class="co"># percentuale di variabilità dovuta a eterogeneità</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 93.79905</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>res<span class="sc">$</span>QE      <span class="co"># test Q di eterogeneità</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1914.788</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>res<span class="sc">$</span>QEp     <span class="co"># p-value del test Q</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 8.266581e-266</code></pre>
+</div>
 </div>
 <p>Trasformiamo la stima da Fisher’s z a correlazione <code>r</code>.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">predict</span>(res, <span class="at">transf =</span> transf.ztor)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">predict</span>(res, <span class="at">transf =</span> transf.ztor)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    pred   ci.lb   ci.ub   pi.lb  pi.ub 
+ -0.2706 -0.2908 -0.2502 -0.5142 0.0133 </code></pre>
 </div>
-<section id="come-leggere-il-risultato" class="level2">
-<h2 class="anchored" data-anchor-id="come-leggere-il-risultato">Come leggere il risultato</h2>
+</div>
+<p><br></p>
+</section>
+<section id="interpretazione-risultato" class="level2">
+<h2 class="anchored" data-anchor-id="interpretazione-risultato">Interpretazione risultato</h2>
 <ul>
-<li>La stima media indica la relazione media tra ansia matematica e rendimento.</li>
-<li>Una correlazione negativa indica che maggiore ansia matematica tende ad associarsi a minore rendimento.</li>
-<li>L’intervallo di confidenza descrive l’incertezza sulla stima media.</li>
-<li><code>tau²</code> e <code>I²</code> indicano quanta eterogeneità rimane tra gli studi.</li>
+<li><p>La stima indica la relazione media tra ansia matematica e rendimento.</p></li>
+<li><p>Una correlazione negativa indica che maggiore ansia matematica tende ad associarsi a minore rendimento.</p></li>
+<li><p>L’intervallo di fiducia descrive l’incertezza sulla stima media.</p></li>
+<li><p><code>tau²</code> e <code>I²</code> indicano quanta eterogeneità rimane tra gli studi.</p></li>
 </ul>
+<p><br></p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -495,82 +650,136 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Non basta chiedere: <em>l’effetto è statisticamente significativo?</em></p>
 <p>Bisogna chiedere anche:</p>
 <ul>
-<li>quanto è grande l’effetto?</li>
-<li>quanto è incerto?</li>
-<li>quanto varia tra gli studi?</li>
-<li>l’effetto medio rappresenta bene la letteratura?</li>
+<li><p>quanto è grande l’effetto?</p></li>
+<li><p>quanto è incerto?</p></li>
+<li><p>quanto varia tra gli studi?</p></li>
+<li><p>l’effetto medio rappresenta bene la letteratura?</p></li>
 </ul>
 </div>
 </div>
+<p><br></p>
 </section>
-</section>
-<section id="fixed-effect-vs-random-effects" class="level1">
-<h1>8. Fixed-effect vs random-effects</h1>
+<section id="fixed-effect-vs-random-effects" class="level2">
+<h2 class="anchored" data-anchor-id="fixed-effect-vs-random-effects">8. Fixed-effect vs random-effects</h2>
 <p>Confrontiamo un modello fixed-effect e un modello random-effects.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>res_fe <span class="ot">&lt;-</span> <span class="fu">rma</span>(</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">yi =</span> yi,</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">vi =</span> vi,</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dat_agg,</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">method =</span> <span class="st">"FE"</span></span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>res_re <span class="ot">&lt;-</span> <span class="fu">rma</span>(</span>
-<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">yi =</span> yi,</span>
-<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">vi =</span> vi,</span>
-<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dat_agg,</span>
-<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">method =</span> <span class="st">"REML"</span></span>
-<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>res_fe</span>
-<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>res_re</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>res_fe <span class="ot">&lt;-</span> <span class="fu">rma</span>(</span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">yi =</span> yi,</span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">vi =</span> vi,</span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dat_agg,</span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">method =</span> <span class="st">"FE"</span></span>
+<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb50-7"><a href="#cb50-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-8"><a href="#cb50-8" aria-hidden="true" tabindex="-1"></a>res_re <span class="ot">&lt;-</span> <span class="fu">rma</span>(</span>
+<span id="cb50-9"><a href="#cb50-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">yi =</span> yi,</span>
+<span id="cb50-10"><a href="#cb50-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">vi =</span> vi,</span>
+<span id="cb50-11"><a href="#cb50-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dat_agg,</span>
+<span id="cb50-12"><a href="#cb50-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">method =</span> <span class="st">"REML"</span></span>
+<span id="cb50-13"><a href="#cb50-13" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb50-14"><a href="#cb50-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-15"><a href="#cb50-15" aria-hidden="true" tabindex="-1"></a>res_fe</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Fixed-Effects Model (k = 225)
+
+I^2 (total heterogeneity / total variability):   88.30%
+H^2 (total variability / sampling variability):  8.55
+
+Test for Heterogeneity:
+Q(df = 224) = 1914.7881, p-val &lt; .0001
+
+Model Results:
+
+estimate      se       zval    pval    ci.lb    ci.ub      
+ -0.3294  0.0023  -141.3221  &lt;.0001  -0.3339  -0.3248  *** 
+
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
-<section id="interpretazione-1" class="level2">
-<h2 class="anchored" data-anchor-id="interpretazione-1">Interpretazione</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>res_re</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Random-Effects Model (k = 225; tau^2 estimator: REML)
+
+tau^2 (estimated amount of total heterogeneity): 0.0219 (SE = 0.0026)
+tau (square root of estimated tau^2 value):      0.1480
+I^2 (total heterogeneity / total variability):   93.80%
+H^2 (total variability / sampling variability):  16.13
+
+Test for Heterogeneity:
+Q(df = 224) = 1914.7881, p-val &lt; .0001
+
+Model Results:
+
+estimate      se      zval    pval    ci.lb    ci.ub      
+ -0.2775  0.0112  -24.8723  &lt;.0001  -0.2994  -0.2557  *** 
+
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="interpretazione-random-vs-fixed" class="level2">
+<h2 class="anchored" data-anchor-id="interpretazione-random-vs-fixed">Interpretazione: Random vs Fixed</h2>
 <p>Il modello fixed-effect assume che tutti gli studi stimino lo stesso effetto vero.</p>
 <p>Il modello random-effects assume che gli effetti veri possano variare tra studi.</p>
 <p>Nella maggior parte delle meta-analisi in psicologia, il modello random-effects è spesso più realistico, perché gli studi differiscono per campioni, strumenti, contesti e procedure.</p>
+<p><br></p>
 </section>
-</section>
-<section id="forest-plot" class="level1">
-<h1>9. Forest plot</h1>
+<section id="forest-plot" class="level2">
+<h2 class="anchored" data-anchor-id="forest-plot">9. Forest plot</h2>
 <p>Con molti studi, un forest plot completo può diventare poco leggibile.</p>
 <p>Per scopi didattici, costruiamo un forest plot su un sottoinsieme di studi.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>dat_plot <span class="ot">&lt;-</span> dat_agg[<span class="fu">order</span>(dat_agg<span class="sc">$</span>pub_year), ]</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>dat_plot <span class="ot">&lt;-</span> dat_plot[<span class="dv">1</span><span class="sc">:</span><span class="dv">30</span>, ]</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>res_plot <span class="ot">&lt;-</span> <span class="fu">rma</span>(</span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">yi =</span> yi,</span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">vi =</span> vi,</span>
-<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dat_plot,</span>
-<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">method =</span> <span class="st">"REML"</span></span>
-<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="fu">forest</span>(</span>
-<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>  res_plot,</span>
-<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">slab =</span> <span class="fu">paste</span>(dat_plot<span class="sc">$</span>author, dat_plot<span class="sc">$</span>pub_year),</span>
-<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">transf =</span> transf.ztor,</span>
-<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Correlazione r"</span>,</span>
-<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">header =</span> <span class="st">"Studio"</span></span>
-<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>dat_plot <span class="ot">&lt;-</span> dat_agg[<span class="fu">order</span>(dat_agg<span class="sc">$</span>pub_year), ]</span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>dat_plot <span class="ot">&lt;-</span> dat_plot[<span class="dv">1</span><span class="sc">:</span><span class="dv">30</span>, ]</span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a>res_plot <span class="ot">&lt;-</span> <span class="fu">rma</span>(</span>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">yi =</span> yi,</span>
+<span id="cb54-6"><a href="#cb54-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">vi =</span> vi,</span>
+<span id="cb54-7"><a href="#cb54-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dat_plot,</span>
+<span id="cb54-8"><a href="#cb54-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">method =</span> <span class="st">"REML"</span></span>
+<span id="cb54-9"><a href="#cb54-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb54-10"><a href="#cb54-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-11"><a href="#cb54-11" aria-hidden="true" tabindex="-1"></a><span class="fu">forest</span>(</span>
+<span id="cb54-12"><a href="#cb54-12" aria-hidden="true" tabindex="-1"></a>  res_plot,</span>
+<span id="cb54-13"><a href="#cb54-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">slab =</span> <span class="fu">paste</span>(dat_plot<span class="sc">$</span>author, dat_plot<span class="sc">$</span>pub_year),</span>
+<span id="cb54-14"><a href="#cb54-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">transf =</span> transf.ztor,</span>
+<span id="cb54-15"><a href="#cb54-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Correlazione r"</span>,</span>
+<span id="cb54-16"><a href="#cb54-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">header =</span> <span class="st">"Studio"</span></span>
+<span id="cb54-17"><a href="#cb54-17" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="06-metafor-barroso2021_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
 </div>
+</div>
+</div>
+</section>
 <section id="cosa-osservare" class="level2">
 <h2 class="anchored" data-anchor-id="cosa-osservare">Cosa osservare</h2>
 <ul>
-<li>Studi con intervalli di confidenza più larghi hanno stime meno precise.</li>
-<li>Studi più grandi tendono ad avere intervalli più stretti.</li>
-<li>L’effetto pooled è la sintesi complessiva, ma non cancella la variabilità tra studi.</li>
+<li><p>Studi con intervalli di fiducia più larghi hanno stime meno precise.</p></li>
+<li><p>Studi più grandi tendono ad avere intervalli più stretti.</p></li>
+<li><p>L’effetto pooled è la sintesi complessiva, ma non cancella la variabilità tra studi.</p></li>
 </ul>
+<p><br></p>
 </section>
-</section>
-<section id="prediction-interval" class="level1">
-<h1>10. Prediction interval</h1>
-<p>L’intervallo di confidenza riguarda l’effetto medio.</p>
+<section id="prediction-interval" class="level2">
+<h2 class="anchored" data-anchor-id="prediction-interval">10. Prediction interval</h2>
+<p>L’intervallo di fiducia riguarda l’effetto medio.</p>
 <p>Il <strong>prediction interval</strong> dà un’idea di dove potrebbe cadere l’effetto vero di un nuovo studio simile.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">predict</span>(res, <span class="at">transf =</span> transf.ztor)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">predict</span>(res, <span class="at">transf =</span> transf.ztor)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    pred   ci.lb   ci.ub   pi.lb  pi.ub 
+ -0.2706 -0.2908 -0.2502 -0.5142 0.0133 </code></pre>
 </div>
+</div>
+<p><br></p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -585,57 +794,113 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>In quel caso, l’effetto medio può essere corretto, ma poco rappresentativo di tutti i contesti.</p>
 </div>
 </div>
+<p><br></p>
 </section>
-<section id="funnel-plot-e-publication-bias" class="level1">
-<h1>11. Funnel plot e publication bias</h1>
+<section id="funnel-plot-e-publication-bias" class="level2">
+<h2 class="anchored" data-anchor-id="funnel-plot-e-publication-bias">11. Funnel plot e publication bias</h2>
 <p>Produciamo un funnel plot.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">funnel</span>(</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  res,</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">yaxis =</span> <span class="st">"sei"</span>,</span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Fisher's z"</span></span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">funnel</span>(</span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>  res,</span>
+<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">yaxis =</span> <span class="st">"sei"</span>,</span>
+<span id="cb57-4"><a href="#cb57-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Fisher's z"</span></span>
+<span id="cb57-5"><a href="#cb57-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="06-metafor-barroso2021_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
 </div>
+</div>
+</div>
+<p><br></p>
+</section>
 <section id="egger-type-regression-test" class="level2">
 <h2 class="anchored" data-anchor-id="egger-type-regression-test">Egger-type regression test</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">regtest</span>(</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  res,</span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">model =</span> <span class="st">"rma"</span>,</span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">predictor =</span> <span class="st">"sei"</span></span>
-<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">regtest</span>(</span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>  res,</span>
+<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">model =</span> <span class="st">"rma"</span>,</span>
+<span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">predictor =</span> <span class="st">"sei"</span></span>
+<span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Regression Test for Funnel Plot Asymmetry
+
+Model:     mixed-effects meta-regression model
+Predictor: standard error
+
+Test for Funnel Plot Asymmetry: z =  1.5567, p = 0.1195
+Limit Estimate (as sei -&gt; 0):   b = -0.3109 (CI: -0.3581, -0.2636)</code></pre>
 </div>
+</div>
+<p><br></p>
 </section>
 <section id="interpretazione-cauta" class="level2">
 <h2 class="anchored" data-anchor-id="interpretazione-cauta">Interpretazione cauta</h2>
 <p>Un funnel plot asimmetrico può suggerire publication bias, ma non lo dimostra automaticamente.</p>
 <p>Possibili spiegazioni alternative:</p>
 <ul>
-<li>eterogeneità reale;</li>
-<li>studi piccoli di qualità diversa;</li>
-<li>strumenti di misura diversi;</li>
-<li>popolazioni diverse;</li>
-<li>errori di codifica o estrazione.</li>
+<li><p>eterogeneità reale;</p></li>
+<li><p>studi piccoli di qualità diversa;</p></li>
+<li><p>strumenti di misura diversi;</p></li>
+<li><p>popolazioni diverse;</p></li>
+<li><p>errori di codifica o estrazione.</p></li>
 </ul>
+<p><br></p>
 </section>
-</section>
-<section id="trim-and-fill" class="level1">
-<h1>12. Trim-and-fill</h1>
+<section id="trim-and-fill" class="level2">
+<h2 class="anchored" data-anchor-id="trim-and-fill">12. Trim-and-fill</h2>
 <p>Applichiamo il metodo trim-and-fill.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>tf <span class="ot">&lt;-</span> <span class="fu">trimfill</span>(res)</span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>tf</span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="fu">predict</span>(tf, <span class="at">transf =</span> transf.ztor)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>tf <span class="ot">&lt;-</span> <span class="fu">trimfill</span>(res)</span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a>tf</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Estimated number of missing studies on the left side: 47 (SE = 9.8217)
+
+Random-Effects Model (k = 272; tau^2 estimator: REML)
+
+tau^2 (estimated amount of total heterogeneity): 0.0320 (SE = 0.0033)
+tau (square root of estimated tau^2 value):      0.1788
+I^2 (total heterogeneity / total variability):   95.16%
+H^2 (total variability / sampling variability):  20.68
+
+Test for Heterogeneity:
+Q(df = 271) = 2558.5308, p-val &lt; .0001
+
+Model Results:
+
+estimate      se      zval    pval    ci.lb    ci.ub      
+ -0.3297  0.0119  -27.6824  &lt;.0001  -0.3530  -0.3064  *** 
+
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="fu">predict</span>(tf, <span class="at">transf =</span> transf.ztor)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    pred   ci.lb   ci.ub   pi.lb  pi.ub 
+ -0.3183 -0.3391 -0.2971 -0.5921 0.0215 </code></pre>
+</div>
 </div>
 <p>Visualizziamo il funnel plot con gli studi imputati.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">funnel</span>(</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  tf,</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">yaxis =</span> <span class="st">"sei"</span>,</span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Fisher's z"</span></span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="fu">funnel</span>(</span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>  tf,</span>
+<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">yaxis =</span> <span class="st">"sei"</span>,</span>
+<span id="cb64-4"><a href="#cb64-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Fisher's z"</span></span>
+<span id="cb64-5"><a href="#cb64-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="06-metafor-barroso2021_files/figure-html/unnamed-chunk-21-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
 </div>
+</div>
+</div>
+<p><br></p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -650,55 +915,113 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>È meglio interpretarlo come una sensitivity analysis rispetto a uno specifico scenario di asimmetria del funnel plot.</p>
 </div>
 </div>
+<p><br></p>
 </section>
-<section id="sensitivity-analysis" class="level1">
-<h1>13. Sensitivity analysis</h1>
-<section id="leave-one-out" class="level2">
-<h2 class="anchored" data-anchor-id="leave-one-out">Leave-one-out</h2>
+<section id="sensitivity-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="sensitivity-analysis">13. Sensitivity analysis</h2>
+<section id="leave-one-out" class="level3">
+<h3 class="anchored" data-anchor-id="leave-one-out">Leave-one-out</h3>
 <p>Verifichiamo se il risultato dipende in modo eccessivo da un singolo studio.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>loo <span class="ot">&lt;-</span> <span class="fu">leave1out</span>(res)</span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>loo</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>loo <span class="ot">&lt;-</span> <span class="fu">leave1out</span>(res)</span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(loo)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+   estimate     se     zval   pval   ci.lb   ci.ub         Q     Qp   tau2 
+-1  -0.2770 0.0112 -24.7577 0.0000 -0.2989 -0.2551 1913.9900 0.0000 0.0219 
+-2  -0.2786 0.0111 -24.9952 0.0000 -0.3005 -0.2568 1904.8782 0.0000 0.0217 
+-3  -0.2775 0.0112 -24.7451 0.0000 -0.2994 -0.2555 1914.3093 0.0000 0.0220 
+-4  -0.2765 0.0111 -24.8207 0.0000 -0.2983 -0.2547 1910.1143 0.0000 0.0217 
+-5  -0.2778 0.0112 -24.7739 0.0000 -0.2998 -0.2558 1905.2392 0.0000 0.0220 
+-6  -0.2776 0.0112 -24.8144 0.0000 -0.2995 -0.2557 1914.5678 0.0000 0.0220 
+        I2      H2 
+-1 93.8315 16.2113 
+-2 93.7801 16.0775 
+-3 93.8480 16.2550 
+-4 93.7807 16.0791 
+-5 93.8226 16.1880 
+-6 93.8414 16.2375 </code></pre>
 </div>
+</div>
+<p><br></p>
+</section>
 </section>
 <section id="influence-diagnostics" class="level2">
 <h2 class="anchored" data-anchor-id="influence-diagnostics">Influence diagnostics</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>inf <span class="ot">&lt;-</span> <span class="fu">influence</span>(res)</span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>inf</span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(inf)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a>inf <span class="ot">&lt;-</span> <span class="fu">influence</span>(res)</span>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(inf)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="06-metafor-barroso2021_files/figure-html/unnamed-chunk-23-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
 </div>
-</section>
-<section id="domande-interpretative" class="level2">
-<h2 class="anchored" data-anchor-id="domande-interpretative">Domande interpretative</h2>
+</div>
+</div>
+<p><br></p>
+<section id="interpretazione-2" class="level3">
+<h3 class="anchored" data-anchor-id="interpretazione-2">Interpretazione</h3>
 <ul>
-<li>C’è uno studio che cambia molto la stima complessiva?</li>
-<li>Ci sono studi particolarmente influenti?</li>
-<li>Le conclusioni sono stabili?</li>
+<li><p>C’è uno studio che cambia molto la stima complessiva?</p></li>
+<li><p>Ci sono studi particolarmente influenti?</p></li>
+<li><p>Le conclusioni sono stabili?</p></li>
 </ul>
+<p><br></p>
 </section>
 </section>
-<section id="meta-regressione-esplorativa" class="level1">
-<h1>14. Meta-regressione esplorativa</h1>
+<section id="meta-regressione-esplorativa" class="level2">
+<h2 class="anchored" data-anchor-id="meta-regressione-esplorativa">14. Meta-regressione esplorativa</h2>
 <p>Come esempio finale, testiamo se l’anno di pubblicazione è associato alla dimensione dell’effetto.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>dat_agg<span class="sc">$</span>pub_year_c <span class="ot">&lt;-</span> dat_agg<span class="sc">$</span>pub_year <span class="sc">-</span> <span class="fu">mean</span>(dat_agg<span class="sc">$</span>pub_year, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>res_mod <span class="ot">&lt;-</span> <span class="fu">rma</span>(</span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">yi =</span> yi,</span>
-<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">vi =</span> vi,</span>
-<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">mods =</span> <span class="sc">~</span> pub_year_c,</span>
-<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dat_agg,</span>
-<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">method =</span> <span class="st">"REML"</span></span>
-<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>res_mod</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a>dat_agg<span class="sc">$</span>pub_year_c <span class="ot">&lt;-</span> dat_agg<span class="sc">$</span>pub_year <span class="sc">-</span> <span class="fu">mean</span>(dat_agg<span class="sc">$</span>pub_year, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a>res_mod <span class="ot">&lt;-</span> <span class="fu">rma</span>(</span>
+<span id="cb68-4"><a href="#cb68-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">yi =</span> yi,</span>
+<span id="cb68-5"><a href="#cb68-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">vi =</span> vi,</span>
+<span id="cb68-6"><a href="#cb68-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">mods =</span> <span class="sc">~</span> pub_year_c,</span>
+<span id="cb68-7"><a href="#cb68-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dat_agg,</span>
+<span id="cb68-8"><a href="#cb68-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">method =</span> <span class="st">"REML"</span></span>
+<span id="cb68-9"><a href="#cb68-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb68-10"><a href="#cb68-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb68-11"><a href="#cb68-11" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(res_mod)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Mixed-Effects Model (k = 225; tau^2 estimator: REML)
+
+   logLik   deviance        AIC        BIC       AICc   
+  79.9710  -159.9420  -153.9420  -143.7205  -153.8324   
+
+tau^2 (estimated amount of residual heterogeneity):     0.0220 (SE = 0.0026)
+tau (square root of estimated tau^2 value):             0.1483
+I^2 (residual heterogeneity / unaccounted variability): 93.57%
+H^2 (unaccounted variability / sampling variability):   15.56
+R^2 (amount of heterogeneity accounted for):            0.00%
+
+Test for Residual Heterogeneity:
+QE(df = 223) = 1891.8303, p-val &lt; .0001
+
+Test of Moderators (coefficient 2):
+QM(df = 1) = 0.1554, p-val = 0.6934
+
+Model Results:
+
+            estimate      se      zval    pval    ci.lb    ci.ub      
+intrcpt      -0.2776  0.0112  -24.8301  &lt;.0001  -0.2996  -0.2557  *** 
+pub_year_c    0.0006  0.0016    0.3942  0.6934  -0.0025   0.0037      
+
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
+</div>
+<p><br></p>
+</section>
 <section id="interpretazione-3" class="level2">
 <h2 class="anchored" data-anchor-id="interpretazione-3">Interpretazione</h2>
 <p>Il coefficiente di <code>pub_year_c</code> indica quanto cambia l’effect size medio per ogni anno di pubblicazione.</p>
-<p>Se il coefficiente è negativo, gli studi più recenti tendono a stimare effetti più negativi.</p>
-<p>Se il coefficiente è positivo, gli studi più recenti tendono a stimare effetti meno negativi o più positivi.</p>
+<p>Se il coefficiente è positivo, gli studi più recenti tendono a stimare effetti più positivi.</p>
+<p>In questo caso, l’effetto dell’anno di pubblicazione non è significativo, quindi non possiamo rifiutare l’ipotesi nulla di non-effetto dell’anno di pubblicazione.</p>
+<p><br></p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -709,25 +1032,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>La meta-regressione è osservazionale.</p>
-<p>Non dimostra causalità e dovrebbe essere interpretata soprattutto come analisi esplorativa, a meno che il moderatore fosse pre-specificato nel protocollo.</p>
+<p><strong>La meta-regressione è osservazionale.</strong> <strong>Non dimostra causalità e dovrebbe essere interpretata soprattutto come analisi esplorativa, a meno che il moderatore fosse pre-specificato nel protocollo.</strong></p>
 </div>
 </div>
+<p><br></p>
 </section>
-</section>
-<section id="take-home-messages" class="level1">
-<h1>Take-home messages</h1>
+<section id="take-home-messages" class="level2">
+<h2 class="anchored" data-anchor-id="take-home-messages">Take-home messages</h2>
 <ul>
-<li><code>rma()</code> permette di stimare una meta-analisi con pochissimo codice.</li>
-<li>La parte difficile non è solo il codice, ma la qualità delle decisioni prima e dopo il modello.</li>
-<li>Gli effect size devono essere sulla scala corretta e accompagnati dalla loro varianza.</li>
-<li>Se ci sono più effect size per studio, bisogna gestire la dipendenza.</li>
-<li>Effetto medio, eterogeneità e prediction interval vanno interpretati insieme.</li>
-<li>Publication bias e trim-and-fill richiedono molta cautela.</li>
-<li>La meta-regressione è utile, ma non sostituisce una buona teoria e un protocollo chiaro.</li>
+<li><p><code>rma()</code> permette di stimare una meta-analisi con pochissimo codice.</p></li>
+<li><p>La parte difficile non è solo il codice, ma la qualità delle decisioni prima e dopo il modello.</p></li>
+<li><p>Gli effect size devono essere sulla scala corretta e accompagnati dalla loro varianza.</p></li>
+<li><p>Se ci sono più effect size per studio, bisogna gestire la dipendenza.</p></li>
+<li><p>Effetto medio, eterogeneità e prediction interval vanno interpretati insieme.</p></li>
+<li><p>Publication bias e trim-and-fill richiedono molta cautela.</p></li>
+<li><p>La meta-regressione è utile, ma non sostituisce una buona teoria e un protocollo chiaro.</p></li>
 </ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

@@ -9,12 +9,12 @@ toc: true
 toc-title: "Indice"
 type: "Exercise"
 ---
+<br>
 
 :::{.callout-tip}
 Scrivete il codice direttamente sotto ciascuna consegna e lanciate le righe con `Cmd + Enter` su Mac o `Ctrl + Enter` su Windows.
 :::
 
-<br>
 
 ## 1. Oggetti
 

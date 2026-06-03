@@ -4,6 +4,8 @@ type: "Dataset"
 author: "[Massimiliano Pastore](https://dpss.psy.unipd.it/~massimiliano.pastore/index.html)"
 ---
 
+<br>
+
 Dataset utilizzato per gli esercizi introduttivi su RStudio.
 
 <a href="data/dat_scuole.csv" download="dat_scuole.csv" class="btn btn-primary">
