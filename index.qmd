@@ -1,6 +1,6 @@
 ---
 title: "Scuola Estiva sulle Meta-Analisi | Cagliari 2026" 
-subtitle: "Materiali didattici: Systematic Review, Basi RStudio, pacchetto `metafor`"
+subtitle: "Materiali didattici"
 
 institute: "University of Padova"
 author:
