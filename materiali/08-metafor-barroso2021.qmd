@@ -72,7 +72,7 @@ library(psymetadata)
 ## 2. Caricare il dataset
 
 ```{r}
-dat <- barroso2021
+dat <- data.frame(barroso2021)
 ```
 
 Esploriamo la struttura del dataset.

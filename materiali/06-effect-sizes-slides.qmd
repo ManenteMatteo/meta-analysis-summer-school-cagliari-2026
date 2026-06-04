@@ -1,0 +1,13 @@
+---
+title: "Effect Size"
+type: "Slides"
+author: "[Massimiliano Pastore](https://dpss.psy.unipd.it/~massimiliano.pastore/index.html)"
+---
+
+<br>
+
+Slides sugli Effect Sizes
+
+<a href="slides/effect-sizes-slides.pdf" download="effect-sizes-slides.pdf" class="btn btn-primary">
+  Scarica slides (pdf)
+</a>

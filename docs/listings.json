@@ -2,15 +2,17 @@
   {
     "listing": "/materiali.html",
     "items": [
-      "/materiali/001-crisi-replicabilita-slides.html",
-      "/materiali/01-systematic-review-intro.html",
-      "/materiali/02-rstudio-basics.html",
-      "/materiali/03-esercizi-introduttivi-rstudio.html",
-      "/materiali/04-dat_scuole.html",
+      "/materiali/01-crisi-replicabilita-slides.html",
+      "/materiali/010-supplementary-materials.html",
+      "/materiali/02-systematic-review-intro.html",
+      "/materiali/03-rstudio-basics.html",
+      "/materiali/04-esercizi-introduttivi-rstudio.html",
+      "/materiali/05-dat_scuole.html",
       "/materiali/05-esercizio-data-nightmare.html",
-      "/materiali/06-metafor-maccann2020.html",
-      "/materiali/07-metafor-barroso2021.html",
-      "/materiali/1-supplementary-materials.html",
+      "/materiali/06-effect-sizes-slides.html",
+      "/materiali/07-meta-analisi-teoria-sildes.html",
+      "/materiali/08-metafor-barroso2021.html",
+      "/materiali/09-metafor-maccann2020.html",
       "/materiali/esercitazione-finale-psicoterapia-depressione.html"
     ]
   }

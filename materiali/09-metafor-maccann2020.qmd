@@ -61,7 +61,7 @@ library(psymetadata)
 ## 2. Caricare il dataset
 
 ```{r}
-dat <- maccann2020
+dat <- data.frame(maccann2020)
 ```
 
 Esploriamo il dataset.

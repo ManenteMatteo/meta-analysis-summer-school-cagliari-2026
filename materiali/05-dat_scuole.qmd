@@ -1,6 +1,6 @@
 ---
 title: "Dataset scuole"
-type: "Dataset"
+type: "Datset"
 author: "[Massimiliano Pastore](https://dpss.psy.unipd.it/~massimiliano.pastore/index.html)"
 ---
 

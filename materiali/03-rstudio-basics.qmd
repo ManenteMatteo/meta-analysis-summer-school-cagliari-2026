@@ -624,7 +624,7 @@ Ora installiamo e carichiamo un pacchetto (`psymetadata`) con all'interno divers
 # Caricamento pacchetto
 library(psymetadata)
 
-# Carichiamo un dataset di esemio
+# Carichiamo un dataset di esempio
 data.meta <- gamble2019
 
 ```
