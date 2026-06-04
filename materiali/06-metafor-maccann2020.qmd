@@ -9,7 +9,6 @@ format:
     code-fold: false
 execute:
   echo: true
-  eval: false
   warning: false
   message: false
 type: "Exercise"
@@ -17,7 +16,7 @@ type: "Exercise"
 
 <br>
 
-# Obiettivo dell'esercizio
+## Obiettivo dell'esercizio
 
 In questo esercizio useremo il dataset `maccann2020`, incluso nel pacchetto `psymetadata`.
 
@@ -25,27 +24,29 @@ Il dataset contiene risultati da **158 studi**, per un totale di **1246 effect s
 
 Gli effect size sono riportati come **correlazioni r**.
 
-L'obiettivo è mostrare come:
+L'obiettivo è imparare a:
 
-- caricare un dataset meta-analitico;
+- caricare un dataset;
+
 - convertire correlazioni `r` in Fisher's z;
+
 - aggregare più effect size provenienti dallo stesso studio;
+
 - stimare una meta-analisi random-effects;
+
 - interpretare output, eterogeneità e prediction interval;
-- valutare publication bias e sensibilità;
-- introdurre una meta-regressione esplorativa.
 
-::: {.callout-important}
-## Messaggio centrale
+- valutare publication bias;
 
-Una meta-analisi non è solo una funzione statistica.
+- introdurre una meta-analisi multilivello.
 
-È la fase quantitativa di una systematic review, e dipende dalla qualità delle decisioni prese prima del modello.
-:::
+<br>
 
-# 1. Setup
+## 1. Setup
 
 ```{r}
+rm(list=ls())  # pulizia environment
+
 # Installare i pacchetti solo se non sono già presenti
 # install.packages("metafor")
 # install.packages("psymetadata")
@@ -54,11 +55,12 @@ library(metafor)
 library(psymetadata)
 ```
 
-# 2. Caricare il dataset
+
+<br>
+
+## 2. Caricare il dataset
 
 ```{r}
-data("maccann2020", package = "psymetadata")
-
 dat <- maccann2020
 ```
 
@@ -67,46 +69,51 @@ Esploriamo il dataset.
 ```{r}
 str(dat)
 head(dat)
-names(dat)
+
 ```
 
-Alcune variabili importanti:
+Variabili importanti:
 
 - `study_id`: identificativo dello studio;
+
 - `author`: autore/autori;
+
 - `pub_year`: anno di pubblicazione;
+
 - `yi`: effect size osservato, qui espresso come correlazione `r`;
+
 - `vi`: varianza associata;
+
 - `n`: numerosità campionaria;
+
 - `age`: età media del campione;
+
 - `perc_female`: percentuale di partecipanti donne;
+
 - `ei_stream`: tipologia/misura dell'intelligenza emotiva.
 
-# 3. Una riga = uno studio o un effect size?
+<br>
+
+## 3. Una riga = uno studio o un effect size?
 
 ```{r}
 nrow(dat)
 length(unique(dat$study_id))
 ```
 
-Numero di effect size per studio.
-
-```{r}
-table_effects <- table(dat$study_id)
-summary(table_effects)
-```
 
 ::: {.callout-note}
 ## Nota metodologica
 
-Anche qui molti studi contribuiscono con più di un effect size.
+Anche qui molti studi contribuiscono con più di un effect size. **Il modello ideale sarebbe un modello multilevel o multivariate**.
 
-Il modello ideale sarebbe un modello multilevel o multivariate.
-
-In questa esercitazione introduttiva aggregheremo gli effect size entro studio assumendo `rho = 0.50`.
+In questa esercitazione aggregheremo gli effect size all'interno di ciascuno studio assumendo una correlazione `rho = 0.50`.
 :::
 
-# 4. Conversione degli effect size
+
+<br>
+
+## 4. Conversione degli effect size
 
 In questo dataset `yi` contiene correlazioni `r`.
 
@@ -119,15 +126,6 @@ Per stimare il modello useremo la trasformazione di Fisher, che converte `r` in 
 dat$ri <- dat$yi
 ```
 
-Esempio manuale su una singola correlazione.
-
-```{r}
-r_example <- 0.30
-z_example <- transf.rtoz(r_example)
-z_example
-
-transf.ztor(z_example)
-```
 
 Con `metafor`, possiamo calcolare Fisher's z e la sua varianza usando `escalc()`.
 
@@ -158,7 +156,9 @@ Da questo punto in poi:
 Il modello verrà stimato su Fisher's z, ma alla fine trasformeremo la stima in correlazione `r`.
 :::
 
-# 5. Aggregare gli effect size entro studio
+<br>
+
+## 5. Aggregare gli effect size within-study
 
 ```{r}
 dat_agg <- aggregate(
@@ -175,44 +175,19 @@ nrow(dat_agg)
 head(dat_agg)
 ```
 
-Aggiungiamo alcune informazioni di studio utili per grafici e meta-regressioni.
 
-```{r}
-study_info <- aggregate(
-  cbind(pub_year, n, age, perc_female) ~ study_id,
-  data = dat,
-  FUN = function(x) mean(x, na.rm = TRUE)
-)
-
-author_info <- aggregate(
-  author ~ study_id,
-  data = dat,
-  FUN = function(x) x[1]
-)
-
-study_info <- merge(study_info, author_info, by = "study_id")
-
-dat_agg <- merge(
-  as.data.frame(dat_agg),
-  study_info,
-  by = "study_id",
-  all.x = TRUE
-)
-
-head(dat_agg)
-```
 
 ::: {.callout-warning}
 ## Attenzione
 
-L'aggregazione è una scelta semplificata.
+**L'aggregazione è una scelta didattica.** Aiuta a ottenere una sola riga per studio, ma non è il modello più informativo quando gli studi contribuiscono con molti effect size.
 
-Aiuta a ottenere una sola riga per studio, ma non è il modello più informativo quando gli studi contribuiscono con molti effect size.
-
-In un'analisi avanzata sarebbe opportuno considerare modelli multilevel con `rma.mv()`.
+**In un'analisi avanzata sarebbe opportuno considerare modelli multilevel con `rma.mv()`.**
 :::
 
-# 6. Prima meta-analisi con `rma()`
+<br>
+
+## 6. Meta-analisi con `rma()`
 
 Stimiamo un modello random-effects.
 
@@ -220,18 +195,13 @@ Stimiamo un modello random-effects.
 res <- rma(
   yi = yi,
   vi = vi,
-  data = dat_agg,
-  method = "REML"
+  method = "REML",    # per effettuare una meta-analisi random-effects
+  data = dat_agg
 )
 
 res
 ```
 
-La versione più minimale è:
-
-```{r}
-rma(yi, vi, data = dat_agg)
-```
 
 ::: {.callout-note}
 ## Cosa stiamo stimando?
@@ -241,7 +211,9 @@ Stiamo stimando la correlazione media tra intelligenza emotiva e performance acc
 Il modello lavora sulla scala Fisher's z.
 :::
 
-# 7. Interpretare l'output
+<br>
+
+## 7. Interpretare l'output
 
 ```{r}
 res$b       # effetto medio in Fisher's z
@@ -263,33 +235,35 @@ predict(res, transf = transf.ztor)
 
 ## Come leggere il risultato
 
-- Una correlazione positiva indica che maggiore intelligenza emotiva tende ad associarsi a maggiore performance accademica.
-- L'intervallo di confidenza indica l'incertezza sulla correlazione media.
-- `tau²` e `I²` indicano quanta variabilità rimane tra studi.
-- Il test Q valuta se l'eterogeneità osservata è maggiore di quanto atteso per solo errore di campionamento.
+- La correlazione positiva ($r = 0.19$) indica che maggiore intelligenza emotiva tende ad associarsi ad una migliore performance accademica.
 
-# 8. Fixed-effect vs random-effects
+- L'intervallo di fiducia indica l'incertezza sulla correlazione media, in questo caso è relativamente preciso (0.16, 0.22).
+
+- `tau` e `I²` indicano quanta variabilità rimane tra gli studi.
+
+- Il test Q valuta se l'eterogeneità osservata è maggiore di quanto atteso per solo errore di campionamento, in questo caso è significativo, quindi possiamo rifiutare l'ipotesi nulla di assenza di eterogeneità.
+
+<br>
+
+## 8. Fixed-effect vs random-effects
 
 ```{r}
 res_fe <- rma(
   yi = yi,
   vi = vi,
-  data = dat_agg,
-  method = "FE"
+  method = "EE",    # per calcolare una meta-analisi Fixed-effect, come indicato
+                    # dal creatore di metafor - W. Viechtbauer
+  data = dat_agg
 )
 
-res_re <- rma(
-  yi = yi,
-  vi = vi,
-  data = dat_agg,
-  method = "REML"
-)
 
 res_fe
-res_re
+
+# Random-effects
+res
 ```
 
-## Interpretazione
+### Interpretazione
 
 Il modello fixed-effect assume un unico effetto vero.
 
@@ -297,21 +271,22 @@ Il modello random-effects assume che l'effetto vero possa variare tra studi.
 
 Per dati psicologici raccolti in contesti diversi, il modello random-effects è spesso più plausibile.
 
-# 9. Forest plot
+<br>
+
+## 9. Forest plot
 
 Con 158 studi, un forest plot completo può essere molto denso.
 
 Per scopi didattici, visualizziamo un sottoinsieme di studi.
 
 ```{r}
-dat_plot <- dat_agg[order(dat_agg$pub_year), ]
-dat_plot <- dat_plot[1:30, ]
+dat_plot <- dat_agg[1:30, ]
 
 res_plot <- rma(
   yi = yi,
   vi = vi,
-  data = dat_plot,
-  method = "REML"
+  method = "REML",
+  data = dat_plot
 )
 
 forest(
@@ -326,24 +301,31 @@ forest(
 ## Cosa osservare
 
 - Quanto variano le stime tra studi?
+
 - Quali studi hanno maggiore precisione?
+
 - L'effetto pooled rappresenta bene tutti gli studi?
 
-# 10. Prediction interval
+<br>
+
+## 10. Prediction interval
 
 ```{r}
 predict(res, transf = transf.ztor)
 ```
 
-## Interpretazione
+### Interpretazione
 
-L'intervallo di confidenza descrive l'incertezza sull'effetto medio.
+L'intervallo di fiducia descrive l'incertezza sull'effetto medio.
 
 Il prediction interval descrive la variabilità attesa degli effetti veri in studi futuri simili.
 
 Se il prediction interval è ampio, il campo è eterogeneo e l'effetto medio va interpretato con cautela.
 
-# 11. Funnel plot e publication bias
+
+<br>
+
+## 11. Funnel plot e publication bias
 
 ```{r}
 funnel(
@@ -353,7 +335,9 @@ funnel(
 )
 ```
 
-## Egger-type regression test
+<br>
+
+### Egger-type regression test
 
 ```{r}
 regtest(
@@ -363,7 +347,7 @@ regtest(
 )
 ```
 
-## Interpretazione cauta
+### Interpretazione cauta
 
 L'Egger test valuta l'associazione tra dimensione dell'effetto e precisione dello studio.
 
@@ -372,12 +356,16 @@ Un risultato significativo può indicare asimmetria del funnel plot, ma non dimo
 Possibili spiegazioni alternative:
 
 - eterogeneità reale;
-- differenze metodologiche;
-- differenze nei campioni;
-- studi piccoli di qualità diversa;
-- coding decisions nella systematic review.
 
-# 12. Trim-and-fill
+- differenze metodologiche;
+
+- differenze nei campioni;
+
+- studi piccoli di qualità diversa;
+
+<br>
+
+## 12. Trim-and-fill
 
 ```{r}
 tf <- trimfill(res)
@@ -402,30 +390,38 @@ Il trim-and-fill non corregge magicamente il publication bias.
 È una sensitivity analysis basata su assunzioni specifiche sul meccanismo di asimmetria.
 :::
 
-# 13. Sensitivity analysis
+<br>
 
-## Leave-one-out
+## 13. Sensitivity analysis
+
+### Leave-one-out
 
 ```{r}
 loo <- leave1out(res)
-loo
+head(loo)
 ```
 
-## Influence diagnostics
+<br>
+
+### Influence diagnostics
 
 ```{r}
 inf <- influence(res)
-inf
 plot(inf)
 ```
 
-## Domande interpretative
+### Domande interpretative
 
 - Ci sono studi molto influenti?
+
 - La stima media cambia molto rimuovendo uno studio alla volta?
+
 - Le conclusioni sembrano robuste?
 
-# 14. Meta-regressione esplorativa
+
+<br>
+
+## 14. Meta-regressione esplorativa
 
 Come esempio, testiamo se l'età media del campione è associata alla dimensione dell'effetto.
 
@@ -465,18 +461,20 @@ Il coefficiente del moderatore indica quanto cambia l'effect size medio al varia
 
 Per esempio:
 
-- `age_c`: cambiamento dell'effect size per un anno in più di età media;
-- `pub_year_c`: cambiamento dell'effect size per un anno in più di pubblicazione.
+- `age_c`: cambiamento dell'effect size per un anno in più di età media; in questo caso l'effetto è limitato, ma significativo, quindi possiamo rifiutare l'ipotesi nulla di assenza di un effetto dell'età.
+
+- `pub_year_c`: cambiamento dell'effect size per un anno in più di pubblicazione; in questo caso l'effetto è piccolo e non significativo.
 
 ::: {.callout-warning}
 ## Cautela
 
 La meta-regressione è un'analisi a livello di studio.
-
 Non permette inferenze causali individuali e può essere poco potente se il numero di studi è limitato o se il moderatore è misurato con errore.
 :::
 
-# 15. Possibile estensione: modelli multilevel
+<br>
+
+## 15. Modelli multilevel
 
 In questo esercizio abbiamo aggregato i dati per avere una sola riga per studio.
 
@@ -486,9 +484,9 @@ In un'analisi più avanzata, potremmo usare un modello multilevel:
 res_mv <- rma.mv(
   yi = yi,
   V = vi,
-  random = ~ 1 | study_id/es_id,
-  data = dat_z,
-  method = "REML"
+  random = ~ 1 | study_id/sample_id,
+  method = "REML",
+  data = dat_z
 )
 
 res_mv
@@ -502,12 +500,24 @@ res_mv
 Per una prima esercitazione, l'aggregazione è più semplice e didattica.
 :::
 
-# Take-home messages
+<br>
 
-- Le correlazioni spesso vengono trasformate in Fisher's z prima della meta-analisi.
-- `escalc()` aiuta a calcolare effect size e varianze in modo coerente.
-- `rma()` permette di stimare rapidamente un modello random-effects.
-- La stima finale può essere trasformata di nuovo in correlazione `r` per l'interpretazione.
-- Se ci sono più effect size per studio, bisogna gestire la dipendenza.
+## Take-home messages
+
+- Le correlazioni devono essere trasformate in Fisher's z prima della meta-analisi.
+
+- `escalc()` aiuta a calcolare effect size e varianze.
+
+- `rma()` permette di stimare rapidamente una meta-analisi.
+
+- `method = "REML"`per calcolare una meta-analisi random-effects.
+
+- `method = "EE"`per calcolare una meta-analisi fixed-effect.
+
+- La stima finale può essere trasformata di nuovo in correlazione `r` per l'interpretazione - `predict(res, transf = transf.ztor)`)
+
+- Se ci sono più effect size per studio, bisogna gestire la dipendenza (aggregazione vs modello multilivello)
+
 - Funnel plot, Egger test e trim-and-fill sono strumenti utili, ma non definitivi.
+
 - La meta-regressione va interpretata come analisi esplorativa, soprattutto se non pre-specificata.

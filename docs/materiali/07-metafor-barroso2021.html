@@ -175,7 +175,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#una-riga-uno-studio-o-un-effect-size" id="toc-una-riga-uno-studio-o-un-effect-size" class="nav-link" data-scroll-target="#una-riga-uno-studio-o-un-effect-size">3. Una riga = uno studio o un effect size?</a></li>
   <li><a href="#effect-size" id="toc-effect-size" class="nav-link" data-scroll-target="#effect-size">4. Effect Size</a></li>
   <li><a href="#aggregazione-degli-effect-size-within-study" id="toc-aggregazione-degli-effect-size-within-study" class="nav-link" data-scroll-target="#aggregazione-degli-effect-size-within-study">5. Aggregazione degli effect size within-study</a></li>
-  <li><a href="#prima-meta-analisi-con-rma" id="toc-prima-meta-analisi-con-rma" class="nav-link" data-scroll-target="#prima-meta-analisi-con-rma">6. Prima meta-analisi con <code>rma()</code></a></li>
+  <li><a href="#meta-analisi-con-rma" id="toc-meta-analisi-con-rma" class="nav-link" data-scroll-target="#meta-analisi-con-rma">6. Meta-analisi con <code>rma()</code></a></li>
   <li><a href="#interpretare-loutput" id="toc-interpretare-loutput" class="nav-link" data-scroll-target="#interpretare-loutput">7. Interpretare l’output</a></li>
   <li><a href="#interpretazione-risultato" id="toc-interpretazione-risultato" class="nav-link" data-scroll-target="#interpretazione-risultato">Interpretazione risultato</a></li>
   <li><a href="#fixed-effect-vs-random-effects" id="toc-fixed-effect-vs-random-effects" class="nav-link" data-scroll-target="#fixed-effect-vs-random-effects">8. Fixed-effect vs random-effects</a></li>
@@ -259,12 +259,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="setup">1. Setup</h2>
 <p>Installiamo e carichiamo i pacchetti necessari.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Installare i pacchetti solo se non sono già presenti</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("metafor")</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("psymetadata")</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(metafor)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psymetadata)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>())  <span class="co"># pulizia environment</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Installare i pacchetti solo se non sono già presenti</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("metafor")</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("psymetadata")</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(metafor)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psymetadata)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p><br></p>
 </section>
@@ -473,8 +475,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p><br></p>
 </section>
-<section id="prima-meta-analisi-con-rma" class="level2">
-<h2 class="anchored" data-anchor-id="prima-meta-analisi-con-rma">6. Prima meta-analisi con <code>rma()</code></h2>
+<section id="meta-analisi-con-rma" class="level2">
+<h2 class="anchored" data-anchor-id="meta-analisi-con-rma">6. Meta-analisi con <code>rma()</code></h2>
 <p>Stimiamo un modello random-effects.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">rma</span>(</span>
@@ -694,7 +696,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="06-metafor-barroso2021_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="07-metafor-barroso2021_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -750,7 +752,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="06-metafor-barroso2021_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="07-metafor-barroso2021_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -836,12 +838,11 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="06-metafor-barroso2021_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="07-metafor-barroso2021_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
-<p><br></p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -895,7 +896,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="06-metafor-barroso2021_files/figure-html/unnamed-chunk-20-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="07-metafor-barroso2021_files/figure-html/unnamed-chunk-20-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -915,17 +916,15 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <h2 class="anchored" data-anchor-id="meta-regressione-esplorativa">14. Meta-regressione esplorativa</h2>
 <p>Come esempio finale, testiamo se l’anno di pubblicazione è associato alla dimensione dell’effetto.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>dat_agg<span class="sc">$</span>pub_year_c <span class="ot">&lt;-</span> dat_agg<span class="sc">$</span>pub_year <span class="sc">-</span> <span class="fu">mean</span>(dat_agg<span class="sc">$</span>pub_year, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a>res_mod <span class="ot">&lt;-</span> <span class="fu">rma</span>(</span>
-<span id="cb63-4"><a href="#cb63-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">yi =</span> yi,</span>
-<span id="cb63-5"><a href="#cb63-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">vi =</span> vi,</span>
-<span id="cb63-6"><a href="#cb63-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">mods =</span> <span class="sc">~</span> pub_year_c,</span>
-<span id="cb63-7"><a href="#cb63-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dat_agg,</span>
-<span id="cb63-8"><a href="#cb63-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">method =</span> <span class="st">"REML"</span></span>
-<span id="cb63-9"><a href="#cb63-9" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb63-10"><a href="#cb63-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb63-11"><a href="#cb63-11" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(res_mod)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>res_mod <span class="ot">&lt;-</span> <span class="fu">rma</span>(</span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">yi =</span> yi,</span>
+<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">vi =</span> vi,</span>
+<span id="cb63-4"><a href="#cb63-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">mods =</span> <span class="sc">~</span> pub_year,</span>
+<span id="cb63-5"><a href="#cb63-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dat_agg,</span>
+<span id="cb63-6"><a href="#cb63-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">method =</span> <span class="st">"REML"</span></span>
+<span id="cb63-7"><a href="#cb63-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb63-8"><a href="#cb63-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb63-9"><a href="#cb63-9" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(res_mod)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Mixed-Effects Model (k = 225; tau^2 estimator: REML)
@@ -947,9 +946,9 @@ QM(df = 1) = 0.1615, p-val = 0.6878
 
 Model Results:
 
-            estimate      se      zval    pval    ci.lb    ci.ub      
-intrcpt      -0.2776  0.0112  -24.8307  &lt;.0001  -0.2996  -0.2557  *** 
-pub_year_c    0.0006  0.0016    0.4018  0.6878  -0.0025   0.0038      
+          estimate      se     zval    pval    ci.lb   ci.ub    
+intrcpt    -1.5606  3.1933  -0.4887  0.6250  -7.8193  4.6981    
+pub_year    0.0006  0.0016   0.4018  0.6878  -0.0025  0.0038    
 
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
@@ -959,7 +958,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </section>
 <section id="interpretazione-3" class="level2">
 <h2 class="anchored" data-anchor-id="interpretazione-3">Interpretazione</h2>
-<p>Il coefficiente di <code>pub_year_c</code> indica quanto cambia l’effect size medio per ogni anno di pubblicazione.</p>
+<p>Il coefficiente di <code>pub_year</code> indica quanto cambia l’effect size medio per ogni anno di pubblicazione.</p>
 <p>Se il coefficiente è positivo, gli studi più recenti tendono a stimare effetti più positivi.</p>
 <p>In questo caso, l’effetto dell’anno di pubblicazione non è significativo, quindi non possiamo rifiutare l’ipotesi nulla di non-effetto dell’anno di pubblicazione.</p>
 <p><br></p>
@@ -982,8 +981,8 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <h2 class="anchored" data-anchor-id="take-home-messages">Take-home messages</h2>
 <ul>
 <li><p><code>rma()</code> permette di stimare una meta-analisi con pochissimo codice.</p></li>
-<li><p><code>method = "REML"</code>per calcolare una meta-analisi random-effects</p></li>
-<li><p><code>method = "EE"</code>per calcolare una meta-analisi fixed-effect</p></li>
+<li><p><code>method = "REML"</code>per calcolare una meta-analisi random-effects.</p></li>
+<li><p><code>method = "EE"</code>per calcolare una meta-analisi fixed-effect.</p></li>
 <li><p>La parte difficile non è solo il codice, ma la qualità delle decisioni prima e dopo il modello.</p></li>
 <li><p>Gli effect size devono essere sulla scala corretta e accompagnati dalla loro varianza.</p></li>
 <li><p>Se ci sono più effect size per studio, bisogna gestire la dipendenza.</p></li>

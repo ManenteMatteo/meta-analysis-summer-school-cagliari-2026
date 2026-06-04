@@ -57,6 +57,8 @@ L'obiettivo è imparare a:
 Installiamo e carichiamo i pacchetti necessari.
 
 ```{r}
+rm(list=ls())  # pulizia environment
+
 # Installare i pacchetti solo se non sono già presenti
 # install.packages("metafor")
 # install.packages("psymetadata")
@@ -197,7 +199,7 @@ In un'analisi reale, questa scelta dovrebbe essere **giustificata**.
 
 <br>
 
-## 6. Prima meta-analisi con `rma()`
+## 6. Meta-analisi con `rma()`
 
 Stimiamo un modello random-effects.
 
@@ -432,7 +434,6 @@ funnel(
 )
 ```
 
-<br>
 
 ::: {.callout-warning}
 ## Attenzione
@@ -481,12 +482,11 @@ plot(inf)
 Come esempio finale, testiamo se l'anno di pubblicazione è associato alla dimensione dell'effetto.
 
 ```{r}
-dat_agg$pub_year_c <- dat_agg$pub_year - mean(dat_agg$pub_year, na.rm = TRUE)
 
 res_mod <- rma(
   yi = yi,
   vi = vi,
-  mods = ~ pub_year_c,
+  mods = ~ pub_year,
   data = dat_agg,
   method = "REML"
 )
@@ -498,7 +498,7 @@ summary(res_mod)
 
 ## Interpretazione
 
-Il coefficiente di `pub_year_c` indica quanto cambia l'effect size medio per ogni anno di pubblicazione.
+Il coefficiente di `pub_year` indica quanto cambia l'effect size medio per ogni anno di pubblicazione.
 
 Se il coefficiente è positivo, gli studi più recenti tendono a stimare effetti più positivi.
 
@@ -519,9 +519,9 @@ In questo caso, l'effetto dell'anno di pubblicazione non è significativo, quind
 
 - `rma()` permette di stimare una meta-analisi con pochissimo codice.
 
-- `method = "REML"`per calcolare una meta-analisi random-effects
+- `method = "REML"`per calcolare una meta-analisi random-effects.
 
-- `method = "EE"`per calcolare una meta-analisi fixed-effect
+- `method = "EE"`per calcolare una meta-analisi fixed-effect.
 
 - La parte difficile non è solo il codice, ma la qualità delle decisioni prima e dopo il modello.
 

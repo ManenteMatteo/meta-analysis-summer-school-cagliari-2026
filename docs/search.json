@@ -53,217 +53,217 @@
     "href": "materiali.html",
     "title": "Materiali",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\ntype\n\n\n\n\n\n\n\n\nIntroduzione - Crisi di Replicabilità\n\n\nGianmarco Altoè\n\n\nSlides\n\n\n\n\n\n\nSystematic Review: Introduzione\n\n\nMatteo Manente\n\n\nSlides\n\n\n\n\n\n\nBasi di RStudio\n\n\nMatteo Manente\n\n\nTutorial\n\n\n\n\n\n\nEsercizi introduttivi a RStudio\n\n\nMatteo Manente\n\n\nExercise\n\n\n\n\n\n\nDataset scuole\n\n\nMassimiliano Pastore\n\n\nDataset\n\n\n\n\n\n\nEsercizio Data Nightmare\n\n\nEnrico Toffalini\n\n\nExercise\n\n\n\n\n\n\nEsercizio Meta-Analisi: Math anxiety e achievement\n\n\nMatteo Manente\n\n\nExercise\n\n\n\n\n\n\nEsercizio Meta-Analisi: Intelligenza emotiva e performance accademica\n\n\nMatteo Manente\n\n\nExercise\n\n\n\n\n\n\nEsercitazione finale\n\n\nMatteo Manente\n\n\nExercise\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\ntype\n\n\n\n\n\n\n\n\nIntroduzione - Crisi di Replicabilità\n\n\nGianmarco Altoè\n\n\nSlides\n\n\n\n\n\n\nSystematic Review: Introduzione\n\n\nMatteo Manente\n\n\nSlides\n\n\n\n\n\n\nBasi di RStudio\n\n\nMatteo Manente\n\n\nTutorial\n\n\n\n\n\n\nEsercizi introduttivi a RStudio\n\n\nMatteo Manente\n\n\nExercise\n\n\n\n\n\n\nDataset scuole\n\n\nMassimiliano Pastore\n\n\nDataset\n\n\n\n\n\n\nEsercizio Data Nightmare\n\n\nEnrico Toffalini\n\n\nExercise\n\n\n\n\n\n\nEsercizio Meta-Analisi: Intelligenza emotiva e performance accademica\n\n\nMatteo Manente\n\n\nExercise\n\n\n\n\n\n\nEsercizio Meta-Analisi: Math anxiety e achievement\n\n\nMatteo Manente\n\n\nExercise\n\n\n\n\n\n\nEsercitazione finale\n\n\nMatteo Manente\n\n\nExercise\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html",
-    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html",
-    "title": "Esercitazione finale",
+    "objectID": "materiali/04-dat_scuole.html",
+    "href": "materiali/04-dat_scuole.html",
+    "title": "Dataset scuole",
     "section": "",
-    "text": "Durata prevista: 45 minuti\nObiettivo: analizzare un dataset di studi primari rispondendo alla seguente domanda di ricerca\nIl dataset contiene studi che confrontano interventi psicoterapeutici con condizioni di controllo."
+    "text": "Dataset utilizzato per gli esercizi introduttivi su RStudio.\n Scarica dat_scuole.csv"
   },
   {
-    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#materiali",
-    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#materiali",
-    "title": "Esercitazione finale",
-    "section": "Materiali",
-    "text": "Materiali\nFile per l’esercitazione.\n Dataset CSV \n Data Dictionary & Protocol \n\n\n\n\n\n\nNote\n\n\n\nIl data dictionary descrive le variabili del dataset e contiene alcune informazioni importanti per l’analisi."
-  },
-  {
-    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#scenario",
-    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#scenario",
-    "title": "Esercitazione finale",
-    "section": "Scenario",
-    "text": "Scenario\nAvete a disposizione un dataset con effect size estratti da studi primari sulla psicoterapia per la depressione.\nAlcune informazioni importanti:\n\nogni riga rappresenta un effect size;\nalcune pubblicazioni possono contribuire con più effect size;\nl’effect size è una Standardized Mean Difference calcolata in Hedges’ g;\nvalori positivi indicano che la psicoterapia ha prodotto esiti migliori rispetto al controllo."
-  },
-  {
-    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#consegna",
-    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#consegna",
-    "title": "Esercitazione finale",
-    "section": "Consegna",
-    "text": "Consegna\nEffettuare una meta-analisi sul dataset per rispondere alla domanda:\n\nLa psicoterapia è efficace per trattare la depressione?\n\nAvete piena libertà sulle scelte analitiche.\nPotete decidere, per esempio:\n\nquale modello stimare;\ncome gestire studi con più effect size;\nse escludere o mantenere eventuali outlier;\nse considerare sottogruppi o moderatori;\nse controllare publication bias o studi influenti.\n\nNon esiste una sola risposta corretta: l’obiettivo è produrre una scelta analitica ragionevole."
-  },
-  {
-    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#output-richiesto",
-    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#output-richiesto",
-    "title": "Esercitazione finale",
-    "section": "Output richiesto",
-    "text": "Output richiesto\nAl termine dei 45 minuti, dovrete riportare solo questi tre elementi:\n\nEffect size pooled\nAd esempio: Hedges’ g = …\nIntervallo di confidenza al 95%\nAd esempio: 95% CI [ …, … ]\nUna frase interpretativa semplice\nAd esempio:\n“La psicoterapia sembra essere efficace.”\n“I risultati sono inconclusivi.”\n“L’effetto è positivo, ma l’evidenza è eterogenea.”"
-  },
-  {
-    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#per-iniziare",
-    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#per-iniziare",
-    "title": "Esercitazione finale",
-    "section": "Per iniziare",
-    "text": "Per iniziare\n\nlibrary(metafor)\n\ndat &lt;- read.csv(\"../materiali/data/data_depression_therapy.csv\")\n\nstr(dat)\nhead(dat)\n\n# Quanti effect size?\nnrow(dat)\n\n# Quanti studi unici?\nlength(unique(dat$study))"
-  },
-  {
-    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#suggerimenti",
-    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#suggerimenti",
-    "title": "Esercitazione finale",
-    "section": "Suggerimenti",
-    "text": "Suggerimenti\nPrima di stimare il modello, controllate:\n\nsummary(dat$yi)\nsummary(dat$vi)\n\ntable(dat$format)\ntable(dat$diagnosis)\ntable(dat$type)\ntable(dat$control)\ntable(dat$risk_of_bias)\n\n\nDomande guida:\n\nTutti gli effect size possono essere trattati come indipendenti?\nIl modello fixed-effect è plausibile?\nQuanto pesa l’eterogeneità?\nCi sono studi o effect size influenti?\nLe conclusioni cambiano se fate scelte analitiche diverse?"
-  },
-  {
-    "objectID": "materiali/001-crisi-replicabilita-slides.html",
-    "href": "materiali/001-crisi-replicabilita-slides.html",
-    "title": "Introduzione - Crisi di Replicabilità",
+    "objectID": "materiali/05-esercizio-data-nightmare.html",
+    "href": "materiali/05-esercizio-data-nightmare.html",
+    "title": "Esercizio Data Nightmare",
     "section": "",
-    "text": "Slide introduttive sulla crisi di replicabilità.\n Scarica Slides (pdf)"
+    "text": "Link all’esercizio"
   },
   {
-    "objectID": "materiali/06-metafor-barroso2021.html#setup",
-    "href": "materiali/06-metafor-barroso2021.html#setup",
-    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#oggetti",
+    "href": "materiali/03-esercizi-introduttivi-rstudio.html#oggetti",
+    "title": "Esercizi introduttivi a RStudio",
+    "section": "1. Oggetti",
+    "text": "1. Oggetti\n\n# Crea un oggetto chiamato `punteggio_base` e assegnagli il valore 50 utilizzando l'operatore di assegnazione `&lt;-`.\n\n\n# Crea un secondo oggetto chiamato `moltiplicatore` e assegnagli il valore 2.5.\n\n\n# Moltiplica `punteggio_base` per `moltiplicatore` e salva il risultato in un nuovo oggetto chiamato `punteggio_totale`. Richiama l'oggetto per visualizzarne il contenuto.\n\n\n# R fa distinzione tra lettere maiuscole e minuscole (è *case-sensitive*). Prova a richiamare l'oggetto `Punteggio_base` (con la P maiuscola). Quale errore ti restituisce la console?\n\n\n# Sovrascrivi l'oggetto `punteggio_base` assegnandogli un nuovo valore pari a 75. \n\n\n# Dopo aver modificato il `punteggio_base`, richiama di nuovo `punteggio_totale`: il suo valore si è aggiornato in automatico o mostra ancora il vecchio risultato?\n  \n  \n# Controlla quali oggetti sono attualmente salvati nel tuo ambiente di lavoro (Environment) utilizzando la funzione `ls()`.\n\n\n# Usa la funzione `rm()` per eliminare l'oggetto `moltiplicatore` dal tuo ambiente di lavoro. Verifica con `ls()` che sia effettivamente scomparso."
+  },
+  {
+    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#vettori",
+    "href": "materiali/03-esercizi-introduttivi-rstudio.html#vettori",
+    "title": "Esercizi introduttivi a RStudio",
+    "section": "2. Vettori",
+    "text": "2. Vettori\n\n# Crea il vettore x contenente i numeri 4, 6, 12, 34, 8\n\n\n# Crea il vettore y contenente tutti i numeri pari compresi tra 1 e 25 (?seq())\n\n\n# Crea il vettore z contenente tutti i primi 10 multipli di 7 partendo da 13 (?seq())\n\n\n# Crea il vettore s in cui le lettere \"A\",\"B\" e \"C\" vengono ripetute nel medesimo ordine 4 volte (?rep())\n\n\n# Del vettore x seleziona il 2°, 3° e 5° elemento\n\n\n# Del vettore x seleziona i valori 34 e 4\n\n\n# Del vettore y seleziona tutti i valori minori di 13 o maggiori di 19\n\n\n# Del vettore z seleziona tutti i valori compresi tra 24 e 50\n\n\n# Del vettore s seleziona tutti gli elementi uguali ad \"A\"\n\n\n# Del vettore t seleziona tutti gli elementi diversi da \"B\"\n\n\n# Crea un nuovo vettore u identico a s ma dove le \"A\" sono sostituite con la lettera \"U\"\n\n\n# Elimina dal vettore z i valori 28 e 42\n\n\n# Crea il vettore j unendo i vettori x ed z.\n\n\n# Elimina gli ultimi tre elementi del vettore j e controlla che i vettori j e y abbiano la stessa lunghezza.\n\n\n# Calcola la somma tra i vettori j e y.\n\n\n# Moltiplica il vettore z per una costante k=3.\n\n\n# Calcola il prodotto tra i primi 10 elementi del vettore y ed il vettore z"
+  },
+  {
+    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#vettori-factor",
+    "href": "materiali/03-esercizi-introduttivi-rstudio.html#vettori-factor",
+    "title": "Esercizi introduttivi a RStudio",
+    "section": "2.1 Vettori factor",
+    "text": "2.1 Vettori factor\n\n# Crea la variabile categoriale genere così definita:\n  \n  ## [1] M F M F M F F F M\n  ## Levels: F M\n  \n\n\n# Rinomina i livelli della variabile genere rispettivamente in \"donne\" e \"uomini\".\n\n\n# Crea la variabile categoriale intervento così definita:\n  \n  ## [1] CBT         Psicanalisi CBT         Psicanalisi CBT         Psicanalisi\n  ## [7] Controllo   Controllo   CBT        \n  ## Levels: CBT Controllo Psicanalisi\n  \n\n# Correggi nella variabile intervento la 7° e 8° osservazione con la voce Farmaci.\n\n\n# Aggiungi alla variabile intervento le seguenti nuove osservazioni:\n  \n  ## [1] \"Farmaci\"   \"Controllo\" \"Farmaci\""
+  },
+  {
+    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#matrici",
+    "href": "materiali/03-esercizi-introduttivi-rstudio.html#matrici",
+    "title": "Esercizi introduttivi a RStudio",
+    "section": "3. Matrici",
+    "text": "3. Matrici\n\n# Crea la matrice A così definita:\n  \n#   2 34 12 7 \n#  46 93 27 99 \n#  23 38 7  04\n\n\n# Crea la matrice B contenente tutti i primi 12 numeri dispari disposti su 4 righe e 3 colonne.\n\n\n# Crea la matrice C contenente i primi 12 multipli di 9 disposti su 3 righe e 4 colonne.\n\n\n# Crea la matrice D formata da 3 colonne in cui le lettere \"A\",\"B\" e \"C\" vengano ripetute 4 volte ciascuna rispettivamente nella prima, seconda e terza colonna.\n\n\n# Crea la matrice E formata da 3 righe in cui le lettere \"A\",\"B\" e \"C\" vengano ripetute 4 volte ciascuna rispettivamente nella prima, seconda e terza riga.\n\n\n# Utilizzando gli indici di riga e di colonna selziona il numero 27 della matrice A\n\n\n# Selziona gli elementi compresi tra la seconda e quarta riga, seconda e terza colonna della matrice B\n\n\n# Elimina dalla matrice C la terza riga e la terza colonna\n\n\n# Seleziona tutti gli elementi della seconda e terza riga della matrice B\n\n\n# Seleziona tutti gli elementi diversi da “B” appartenenti alla matrice D\n\n\n# Crea la matrice G unendo alla matrice A le prime due colonne della matrice C\n\n\n# Ridefinisci la matrice A eliminando la seconda colonna. Ridefinisci la matrice B eliminando la prima riga. Verifica che le matrici così ottenute abbiano la stessa dimensione.\n\n\n# Commenta i differenti risultati che otteniamo nelle operazioni A*B, B*A, A%*%B e B%*%A.\n\n\n# Assegna i seguenti nomi alle colonne e alle righe della matrice C: \"col_1\", \"col_2\", \"col_3\", \"col_4\", \"row_1\", \"row_2\", \"row_3\"."
+  },
+  {
+    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#dataframe",
+    "href": "materiali/03-esercizi-introduttivi-rstudio.html#dataframe",
+    "title": "Esercizi introduttivi a RStudio",
+    "section": "4. Dataframe",
+    "text": "4. Dataframe\nGli esercizi seguenti fanno riferimento al dataset dat_scuole.csv, disponibile nella sezione Materiali.\nÈ necessario aprire il progetto RStudio corretto o impostare la working directory nella cartella del progetto.\n\n# Importa il dataset \"dat_scuole.csv\" e salvalo in un oggetto chiamato `dat`.\n\n\n# Esplora la struttura del dataframe `dat` usando la funzione `str()`. Di che tipo di dato è la variabile *reddito*?\n  \n  \n# Ottieni un riassunto statistico di tutte le variabili presenti nel dataframe usando una singola funzione\n\n\n# Quanti partecipanti e quante variabili ci sono nel dataset?\n  \n  \n# Mostra a schermo solo le prime 5 righe e poi solo le ultime 3 righe del dataframe.\n\n\n# Utilizzando gli indici a parentesi quadre `[riga, colonna]`, seleziona l'età del 12° partecipante.\n\n\n# Seleziona l'intero profilo (tutta la riga) del 42° partecipante.\n\n\n# Estrai l'intera colonna *stress_scolastico* utilizzando il simbolo del dollaro `$`.\n\n\n# Crea un nuovo dataframe chiamato `campione_stressato` contenente solo i soggetti con un livello di *stress* maggiore di 10.\n\n\n# Crea un nuovo dataframe chiamato `maggiorenni_f` selezionando solo le partecipanti femmine con un'età superiore ai 18 anni.\n\n\n# Filtra il dataset originario `dat` selezionando tutti i soggetti che hanno un *reddito* \"Basso\" OPPURE un punteggio di *stress_scolastico* minore o uguale a 6.\n\n\n# Estrai solamente i punteggi di *depressione* di chi ha un *reddito* \"Alto\" (Attenzione: vogliamo estrarre una sola colonna a partire da una condizione sulle righe).\n\n\n# Elimina dal dataframe `dat` la colonna *id*, assegnandole il valore `NULL`, in quanto non è una variabile utile per le nostre analisi psicologiche.\n\n\n# C'è stato un errore di trascrizione! Modifica l'età del 2° soggetto (attualmente 16) impostandola a 18.\n\n\n# Elimina dal dataframe `dat` le prime 3 righe (soggetti 1, 2 e 3) e salva il risultato in un nuovo oggetto chiamato `dat_ridotto`.\n\n\n# Trasforma la colonna *depressione* del dataframe `dat` originale: abbassa tutti i punteggi sottraendo 1 punto a ciascun soggetto.\n\n\n# Crea un piccolo dataframe chiamato `nuovi_studenti` con le osservazioni di 2 nuovi soggetti (inventa tu i valori per genere, età, reddito, stress_scolastico e depressione). Unisci questo nuovo dataframe sotto a `dat` usando la funzione appropriata."
+  },
+  {
+    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#funzioni-utili",
+    "href": "materiali/03-esercizi-introduttivi-rstudio.html#funzioni-utili",
+    "title": "Esercizi introduttivi a RStudio",
+    "section": "5. Funzioni utili",
+    "text": "5. Funzioni utili\n\n5.1. Gestione del Workspace e Importazione\n\n# Usa la combinazione delle funzioni `rm()` e `ls()` con la sintassi `rm(list=ls())` per cancellare tutti gli oggetti dal tuo ambiente di lavoro (Environment).\n\n\n# Ipotizza di aver salvato i dati della lezione precedente in un file chiamato \"dati_lezione.RData\". Scrivi il comando usando `load()` per caricarlo nel tuo ambiente.\n\n\n# Usa la funzione `library()` per caricare il pacchetto necessario per leggere file Excel (ad esempio `readxl`) prima di importare i dati.\n\n\n# Importa il dataset `dat_scuole.csv` usando la funzione `read.csv()` e salvalo nell'oggetto `dati_csv`.\n\n\n# Importa il dataset chiamato `dat_scuole.xlsx` usando la funzione appropriata (es. `read_excel()` o `read.xlsx()`) e salvalo nell'oggetto `dati_excel`.\n\n\n# Usa la funzione `str()` sull'oggetto appena creato per ispezionarne la struttura interna. Quante variabili ci sono e di che tipo sono?\n\n\n\n\n5.2. Generazione e Manipolazione Dati\n\n# Genera un vettore chiamato `ansia_grezza` con i seguenti punteggi: `4.567`, `5.123`, `3.987`, `6.452`. \n\n\n# Usa la funzione `length()` per verificare quanti punteggi sono contenuti nel vettore `ansia_grezza`.\n\n\n# Sovrascrivi il vettore usando la funzione `round()` per arrotondare tutti i punteggi a 1 solo decimale.\n\n\n# Usa la funzione `seq()` per creare un vettore chiamato `id_soggetti` che contenga una sequenza numerica da 101 a 150.\n\n\n# Usa la funzione `rep()` per generare un vettore chiamato `condizione` in cui l'etichetta \"Trattamento\" e l'etichetta \"Controllo\" vengono ripetute ciascuna per 25 volte.\n\n\n# Usa `sample()` per estrarre casualmente 5 partecipanti (numeri da 1 a 50) per un'intervista qualitativa di follow-up, assicurandoti che lo stesso partecipante non possa essere estratto due volte (senza reinserimento).\n\n\n\n\n5.3. Funzioni Statistiche e Distribuzioni Normali\n\n# Simula i punteggi di un test di Estroversione per 1000 soggetti. Sapendo che il test ha una media normativa di 50 e una deviazione standard di 10, usa `rnorm()` per generare la distribuzione e salvala nell'oggetto `estroversione_simulata`.\n\n\n# Un soggetto ha ottenuto un punteggio di 35 nel test di Estroversione. Utilizzando `pnorm()`, calcola la probabilità di incontrare nella popolazione un soggetto con un punteggio uguale o inferiore al suo.\n\n\n# Vuoi selezionare solo i partecipanti che rientrano nel 5% superiore della distribuzione (il 95° percentile) per un training specifico. Usa `qnorm()` per scoprire quale punteggio esatto fa da soglia, sapendo sempre che la media è 50 e la deviazione standard è 10.\n\n\n# Usa la funzione `replicate()` per ripetere 4 volte l'operazione `sample(1:100, 10)`. Osserva l'output: che tipo di struttura dati ha generato R?\n\n\n# Usa la funzione `curve()` per disegnare la distribuzione normale del test di estroversione. *(Suggerimento: scrivi `dnorm(x, mean = 50, sd = 10)` come primo argomento, e imposta l'asse x da 20 a 80 usando i parametri `from` e `to`)*."
+  },
+  {
+    "objectID": "materiali/06-metafor-maccann2020.html#obiettivo-dellesercizio",
+    "href": "materiali/06-metafor-maccann2020.html#obiettivo-dellesercizio",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
+    "section": "Obiettivo dell’esercizio",
+    "text": "Obiettivo dell’esercizio\nIn questo esercizio useremo il dataset maccann2020, incluso nel pacchetto psymetadata.\nIl dataset contiene risultati da 158 studi, per un totale di 1246 effect size, sulla relazione tra intelligenza emotiva e performance accademica.\nGli effect size sono riportati come correlazioni r.\nL’obiettivo è imparare a:\n\ncaricare un dataset;\nconvertire correlazioni r in Fisher’s z;\naggregare più effect size provenienti dallo stesso studio;\nstimare una meta-analisi random-effects;\ninterpretare output, eterogeneità e prediction interval;\nvalutare publication bias;\nintrodurre una meta-analisi multilivello."
+  },
+  {
+    "objectID": "materiali/06-metafor-maccann2020.html#setup",
+    "href": "materiali/06-metafor-maccann2020.html#setup",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
     "section": "1. Setup",
-    "text": "1. Setup\nInstalliamo e carichiamo i pacchetti necessari.\n\n# Installare i pacchetti solo se non sono già presenti\n# install.packages(\"metafor\")\n# install.packages(\"psymetadata\")\n\nlibrary(metafor)\nlibrary(psymetadata)"
+    "text": "1. Setup\n\nrm(list=ls())  # pulizia environment\n\n# Installare i pacchetti solo se non sono già presenti\n# install.packages(\"metafor\")\n# install.packages(\"psymetadata\")\n\nlibrary(metafor)\nlibrary(psymetadata)"
   },
   {
-    "objectID": "materiali/06-metafor-barroso2021.html#caricare-il-dataset",
-    "href": "materiali/06-metafor-barroso2021.html#caricare-il-dataset",
-    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "objectID": "materiali/06-metafor-maccann2020.html#caricare-il-dataset",
+    "href": "materiali/06-metafor-maccann2020.html#caricare-il-dataset",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
     "section": "2. Caricare il dataset",
-    "text": "2. Caricare il dataset\n\ndat &lt;- barroso2021\n\nEsploriamo la struttura del dataset.\n\nstr(dat)\n\n'data.frame':   747 obs. of  11 variables:\n $ es_id      : int  1 2 3 4 5 6 7 8 9 10 ...\n $ study_id   : int  6 6 19 31 37 37 37 47 47 47 ...\n $ author     : chr  \"Hoffman\" \"Hoffman\" \"Farquharson\" \"Beasley, Long, & Natali\" ...\n $ pub_year   : int  2010 2010 2004 2001 2015 2015 2015 2016 2016 2016 ...\n $ continent  : int  1 1 1 1 1 1 1 1 1 1 ...\n $ grade      : int  5 5 5 3 5 5 5 3 3 3 ...\n $ low_ability: Factor w/ 2 levels \"1\",\"2\": 2 2 2 2 2 2 2 2 2 2 ...\n $ teachers   : int  1 1 2 2 1 1 1 2 2 2 ...\n $ ni         : int  70 70 89 278 30 30 30 506 502 493 ...\n $ yi         : num  -0.4 -0.448 0.01 -0.288 -0.466 ...\n $ vi         : num  0.01493 0.01493 0.01163 0.00364 0.03704 ...\n\nhead(dat)\n\n  es_id study_id                  author pub_year continent grade low_ability\n1     1        6                 Hoffman     2010         1     5           2\n2     2        6                 Hoffman     2010         1     5           2\n3     3       19             Farquharson     2004         1     5           2\n4     4       31 Beasley, Long, & Natali     2001         1     3           2\n5     5       37         Novak & Tassell     2015         1     5           2\n6     6       37         Novak & Tassell     2015         1     5           2\n  teachers  ni          yi          vi\n1        1  70 -0.40005965 0.014925373\n2        1  70 -0.44769202 0.014925373\n3        2  89  0.01000033 0.011627907\n4        2 278 -0.28768207 0.003636364\n5        1  30 -0.46604720 0.037037037\n6        1  30 -0.69314718 0.037037037\n\nsummary(dat)\n\n     es_id          study_id         author             pub_year   \n Min.   :  1.0   Min.   :   6.0   Length:747         Min.   :1993  \n 1st Qu.:187.5   1st Qu.: 631.0   Class :character   1st Qu.:2008  \n Median :374.0   Median :1061.0   Mode  :character   Median :2013  \n Mean   :374.0   Mean   : 987.8                      Mean   :2010  \n 3rd Qu.:560.5   3rd Qu.:1420.0                      3rd Qu.:2016  \n Max.   :747.0   Max.   :1600.0                      Max.   :2018  \n   continent            grade       low_ability    teachers    \n Min.   :-999.000   Min.   :1.000   1: 18       Min.   :1.000  \n 1st Qu.:   1.000   1st Qu.:3.000   2:729       1st Qu.:2.000  \n Median :   1.000   Median :5.000               Median :2.000  \n Mean   :  -5.925   Mean   :3.862               Mean   :1.922  \n 3rd Qu.:   3.000   3rd Qu.:5.000               3rd Qu.:2.000  \n Max.   :   6.000   Max.   :6.000               Max.   :2.000  \n       ni                yi                vi           \n Min.   :   13.0   Min.   :-0.9730   Min.   :3.336e-05  \n 1st Qu.:   69.0   1st Qu.:-0.3654   1st Qu.:3.565e-03  \n Median :  151.0   Median :-0.2448   Median :6.757e-03  \n Mean   :  642.2   Mean   :-0.2495   Mean   :1.423e-02  \n 3rd Qu.:  283.5   3rd Qu.:-0.1368   3rd Qu.:1.515e-02  \n Max.   :29983.0   Max.   : 0.5668   Max.   :1.000e-01  \n\n\nVariabili importanti:\n\nstudy_id: identificativo dello studio;\nes_id: identificativo dell’effect size;\nauthor: autore/autori dello studio;\npub_year: anno di pubblicazione;\nni: numerosità campionaria;\nyi: effect size osservato, già in Fisher’s z;\nvi: varianza dell’effect size."
+    "text": "2. Caricare il dataset\n\ndat &lt;- maccann2020\n\nEsploriamo il dataset.\n\nstr(dat)\n\nClasses 'escalc' and 'data.frame':  1246 obs. of  20 variables:\n $ study_id        : num  1 2 3 5 6 7 7 8 8 8 ...\n $ sample_id       : num  1 2 3 5 6 7 7 8 8 8 ...\n $ author          : chr  \"Abdo\" \"Abdullah, Habibah, Mahyuddin, & Uli\" \"Abel\" \"Adeyemo\" ...\n $ pub_year        : num  2012 2004 2013 2007 2009 ...\n $ yi              : num  0.218 0.3 0.138 0.41 0.293 ...\n  ..- attr(*, \"ni\")= num [1:1246] 266 205 78 300 110 352 352 204 204 204 ...\n  ..- attr(*, \"measure\")= chr \"COR\"\n $ vi              : num  0.00342 0.00406 0.0125 0.00231 0.00766 ...\n $ pub_type        : num  1 0 1 0 0 0 0 0 0 0 ...\n $ n               : num  266 205 78 300 110 352 352 204 204 204 ...\n $ ed_level1       : num  1 1 1 2 2 0 0 2 2 2 ...\n $ ed_level2       : num  1 1 1 2 2 0 0 2 2 2 ...\n $ country         : chr  \"USA\" \"Kuala Lumpur & Malaysia\" \"USA\" \"Nigeria\" ...\n $ perc_white      : num  77 NA 0 NA NA NA NA NA NA NA ...\n $ age             : num  17.3 16.5 17.5 19.4 21.6 ...\n $ perc_female     : num  62 NA 63.3 53.3 41.8 ...\n $ ei_construct    : num  0 0 0 0 0 0 0 2 3 0 ...\n $ ei_stream       : num  3 1 3 2 3 3 3 1 1 1 ...\n $ ei_measure      : num  3.1 1.2 3.2 2.2 NA 3.2 3.2 1.1 1.1 1.1 ...\n $ subject         : num  0 0 0 6 0 1 2 0 0 0 ...\n $ humanities      : num  0 0 0 0 0 0 0 0 0 0 ...\n $ achievement_type: num  0 0 0 0 0 0 0 0 0 0 ...\n - attr(*, \"digits\")= Named num [1:9] 4 4 4 4 4 4 4 4 4\n  ..- attr(*, \"names\")= chr [1:9] \"est\" \"se\" \"test\" \"pval\" ...\n\nhead(dat)\n\n\n  study_id sample_id                                                author \n1        1         1                                                  Abdo \n2        2         2                   Abdullah, Habibah, Mahyuddin, & Uli \n3        3         3                                                  Abel \n4        5         5                                               Adeyemo \n5        6         6                          Afolabi, Okediji, Ogunmwonji \n6        7         7 Agnoli, Mancini, Pozzoli, Baldaro, Russo & Surcinelli \n  pub_year        yi          vi pub_type   n ed_level1 ed_level2 \n1     2012 0.2183201 0.003422432        1 266         1         1 \n2     2004 0.3003224 0.004057587        0 205         1         1 \n3     2013 0.1376696 0.012499394        1  78         1         1 \n4     2007 0.4101488 0.002313895        0 300         2         2 \n5     2009 0.2933921 0.007662860        0 110         2         2 \n6     2012 0.1771894 0.002672916        0 352         0         0 \n                  country perc_white   age perc_female ei_construct ei_stream \n1                     USA         77 17.28       62.00            0         3 \n2 Kuala Lumpur & Malaysia         NA 16.50          NA            0         1 \n3                     USA          0 17.47       63.30            0         3 \n4                 Nigeria         NA 19.40       53.33            0         2 \n5                 Nigeria         NA 21.55       41.80            0         3 \n6                   Italy         NA  9.35       53.41            0         3 \n  ei_measure subject humanities achievement_type \n1        3.1       0          0                0 \n2        1.2       0          0                0 \n3        3.2       0          0                0 \n4        2.2       6          0                0 \n5         NA       0          0                0 \n6        3.2       1          0                0 \n\n\nVariabili importanti:\n\nstudy_id: identificativo dello studio;\nauthor: autore/autori;\npub_year: anno di pubblicazione;\nyi: effect size osservato, qui espresso come correlazione r;\nvi: varianza associata;\nn: numerosità campionaria;\nage: età media del campione;\nperc_female: percentuale di partecipanti donne;\nei_stream: tipologia/misura dell’intelligenza emotiva."
   },
   {
-    "objectID": "materiali/06-metafor-barroso2021.html#una-riga-uno-studio-o-un-effect-size",
-    "href": "materiali/06-metafor-barroso2021.html#una-riga-uno-studio-o-un-effect-size",
-    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "objectID": "materiali/06-metafor-maccann2020.html#una-riga-uno-studio-o-un-effect-size",
+    "href": "materiali/06-metafor-maccann2020.html#una-riga-uno-studio-o-un-effect-size",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
     "section": "3. Una riga = uno studio o un effect size?",
-    "text": "3. Una riga = uno studio o un effect size?\nContiamo quanti effect size e quanti studi unici abbiamo.\n\n# Numero Effect Size\nnrow(dat)\n\n[1] 747\n\n# Numero studi\nlength(unique(dat$study_id))\n\n[1] 225\n\n\n\n\n\n\n\n\n\nNoteNota metodologica\n\n\n\nMolti studi riportano più di un effect size. Il modello ideale sarebbe quindi un modello multilevel, ad esempio con rma.mv().\nIn questa esercitazione introduttiva però useremo una strategia più semplice: aggregare gli effect size dello stesso studio, assumendo una correlazione tra effect size pari a rho = 0.50."
+    "text": "3. Una riga = uno studio o un effect size?\n\nnrow(dat)\n\n[1] 1246\n\nlength(unique(dat$study_id))\n\n[1] 158\n\n\n\n\n\n\n\n\nNoteNota metodologica\n\n\n\nAnche qui molti studi contribuiscono con più di un effect size. Il modello ideale sarebbe un modello multilevel o multivariate.\nIn questa esercitazione aggregheremo gli effect size all’interno di ciascuno studio assumendo una correlazione rho = 0.50."
   },
   {
-    "objectID": "materiali/06-metafor-barroso2021.html#effect-size",
-    "href": "materiali/06-metafor-barroso2021.html#effect-size",
-    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
-    "section": "4. Effect Size",
-    "text": "4. Effect Size\nIn questo dataset yi è già in Fisher’s z.\n\n# Esempio: da correlazione r a Fisher's z\n\n## install.packages(\"psych\")\nlibrary(psych)      # pacchetto per la trasformazione in Fisher's z\n\nr_example &lt;- -0.30\nz_example &lt;- fisherz(r_example)\nz_example\n\n[1] -0.3095196\n\n# Back-transformation: da Fisher's z a correlazione r\nfisherz2r(z_example)\n\n[1] -0.3\n\n\n\n\n\n\n\n\n\nTipInterpretazione\n\n\n\nNel modello lavoreremo sulla scala Fisher’s z, ma per interpretare i risultati trasformiamo la stima finale di nuovo in correlazione r."
+    "objectID": "materiali/06-metafor-maccann2020.html#conversione-degli-effect-size",
+    "href": "materiali/06-metafor-maccann2020.html#conversione-degli-effect-size",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
+    "section": "4. Conversione degli effect size",
+    "text": "4. Conversione degli effect size\nIn questo dataset yi contiene correlazioni r.\nPer stimare il modello useremo la trasformazione di Fisher, che converte r in Fisher’s z.\n\n# Salviamo le correlazioni originali in una nuova colonna\n# Così evitiamo confusione quando escalc creerà nuovi yi e vi\n\ndat$ri &lt;- dat$yi\n\nCon metafor, possiamo calcolare Fisher’s z e la sua varianza usando escalc().\n\ndat_z &lt;- escalc(\n  measure = \"ZCOR\",\n  ri = ri,\n  ni = n,\n  data = dat\n)\n\nControlliamo le nuove colonne yi e vi.\n\nhead(dat_z[, c(\"study_id\", \"author\", \"ri\", \"n\", \"yi\", \"vi\")])\n\n\n  study_id                                                author        ri   n \n1        1                                                  Abdo 0.2183201 266 \n2        2                   Abdullah, Habibah, Mahyuddin, & Uli 0.3003224 205 \n3        3                                                  Abel 0.1376696  78 \n4        5                                               Adeyemo 0.4101488 300 \n5        6                          Afolabi, Okediji, Ogunmwonji 0.2933921 110 \n6        7 Agnoli, Mancini, Pozzoli, Baldaro, Russo & Surcinelli 0.1771894 352 \n      yi     vi \n1 0.2219 0.0038 \n2 0.3099 0.0050 \n3 0.1385 0.0133 \n4 0.4358 0.0034 \n5 0.3023 0.0093 \n6 0.1791 0.0029 \n\n\n\n\n\n\n\n\nTipInterpretazione\n\n\n\nDa questo punto in poi:\n\nri = correlazione originale;\nyi = correlazione trasformata in Fisher’s z;\nvi = varianza della Fisher’s z.\n\nIl modello verrà stimato su Fisher’s z, ma alla fine trasformeremo la stima in correlazione r."
   },
   {
-    "objectID": "materiali/06-metafor-barroso2021.html#aggregazione-degli-effect-size-within-study",
-    "href": "materiali/06-metafor-barroso2021.html#aggregazione-degli-effect-size-within-study",
-    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
-    "section": "5. Aggregazione degli effect size within-study",
-    "text": "5. Aggregazione degli effect size within-study\nCreiamo prima un oggetto escalc, cioè un dataset che metafor riconosce come contenente effect size e varianze.\nPoiché yi e vi sono già disponibili, usiamo measure = \"GEN\".\n\ndat_es &lt;- escalc(\n  measure = \"GEN\",\n  yi = yi,\n  vi = vi,\n  data = dat\n)\n\nOra aggreghiamo gli effect size all’interno di ciascuno studio.\n\ndat_agg &lt;- aggregate(\n  dat_es,\n  cluster = study_id,\n  rho = 0.50\n)\n\nControlliamo il risultato.\n\nnrow(dat_agg)\n\n[1] 225\n\nhead(dat_agg)\n\n\n  es_id study_id                                              author pub_year \n1   1.5        6                                             Hoffman     2010 \n2   3.0       19                                         Farquharson     2004 \n3   4.0       31                             Beasley, Long, & Natali     2001 \n4   6.0       37                                     Novak & Tassell     2015 \n5  10.0       47 Hart, Logan, Thompson, Kovas, McLoughlin, & Petrill     2016 \n6  13.0       69                                                Leap     2013 \n  continent grade low_ability teachers  ni      yi     vi \n1         1     5           2        1  70 -0.4239 0.0112 \n2         1     5           2        2  89  0.0100 0.0116 \n3         1     3           2        2 278 -0.2877 0.0036 \n4         1     5           2        1  30 -0.6691 0.0247 \n5         1     3           2        2 492 -0.2214 0.0012 \n6         1     2           2        2  40 -0.2522 0.0270 \n\n\n\n\n\n\n\n\nWarningAttenzione\n\n\n\nL’aggregazione è una semplificazione didattica. In un’analisi reale, questa scelta dovrebbe essere giustificata."
+    "objectID": "materiali/06-metafor-maccann2020.html#aggregare-gli-effect-size-within-study",
+    "href": "materiali/06-metafor-maccann2020.html#aggregare-gli-effect-size-within-study",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
+    "section": "5. Aggregare gli effect size within-study",
+    "text": "5. Aggregare gli effect size within-study\n\ndat_agg &lt;- aggregate(\n  dat_z,\n  cluster = study_id,\n  rho = 0.50\n)\n\nControlliamo quante righe rimangono dopo l’aggregazione.\n\nnrow(dat_agg)\n\n[1] 158\n\nhead(dat_agg)\n\n\n  study_id sample_id                                                author \n1        1         1                                                  Abdo \n2        2         2                   Abdullah, Habibah, Mahyuddin, & Uli \n3        3         3                                                  Abel \n4        5         5                                               Adeyemo \n5        6         6                          Afolabi, Okediji, Ogunmwonji \n6        7         7 Agnoli, Mancini, Pozzoli, Baldaro, Russo & Surcinelli \n  pub_year     yi     vi pub_type   n ed_level1 ed_level2 \n1     2012 0.2219 0.0038        1 266         1         1 \n2     2004 0.3099 0.0050        0 205         1         1 \n3     2013 0.1385 0.0133        1  78         1         1 \n4     2007 0.4358 0.0034        0 300         2         2 \n5     2009 0.3023 0.0093        0 110         2         2 \n6     2012 0.2145 0.0021        0 352         0         0 \n                  country perc_white   age perc_female ei_construct ei_stream \n1                     USA         77 17.28       62.00            0         3 \n2 Kuala Lumpur & Malaysia         NA 16.50          NA            0         1 \n3                     USA          0 17.47       63.30            0         3 \n4                 Nigeria         NA 19.40       53.33            0         2 \n5                 Nigeria         NA 21.55       41.80            0         3 \n6                   Italy         NA  9.35       53.41            0         3 \n  ei_measure subject humanities achievement_type        ri \n1        3.1     0.0          0                0 0.2183201 \n2        1.2     0.0          0                0 0.3003224 \n3        3.2     0.0          0                0 0.1376696 \n4        2.2     6.0          0                0 0.4101488 \n5         NA     0.0          0                0 0.2933921 \n6        3.2     1.5          0                0 0.2109721 \n\n\n\n\n\n\n\n\nWarningAttenzione\n\n\n\nL’aggregazione è una scelta didattica. Aiuta a ottenere una sola riga per studio, ma non è il modello più informativo quando gli studi contribuiscono con molti effect size.\nIn un’analisi avanzata sarebbe opportuno considerare modelli multilevel con rma.mv()."
   },
   {
-    "objectID": "materiali/06-metafor-barroso2021.html#prima-meta-analisi-con-rma",
-    "href": "materiali/06-metafor-barroso2021.html#prima-meta-analisi-con-rma",
-    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
-    "section": "6. Prima meta-analisi con rma()",
-    "text": "6. Prima meta-analisi con rma()\nStimiamo un modello random-effects.\n\nres &lt;- rma(\n  yi = yi,\n  vi = vi,\n  method = \"REML\",      # per calcolare una meta-analisi random-effects\n  data = dat_agg      \n)\n\nres       # Risultati\n\n\nRandom-Effects Model (k = 225; tau^2 estimator: REML)\n\ntau^2 (estimated amount of total heterogeneity): 0.0219 (SE = 0.0026)\ntau (square root of estimated tau^2 value):      0.1480\nI^2 (total heterogeneity / total variability):   93.80%\nH^2 (total variability / sampling variability):  16.13\n\nTest for Heterogeneity:\nQ(df = 224) = 1914.7881, p-val &lt; .0001\n\nModel Results:\n\nestimate      se      zval    pval    ci.lb    ci.ub      \n -0.2775  0.0112  -24.8723  &lt;.0001  -0.2994  -0.2557  *** \n\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\n\n\n\n\n\n\nNoteCosa stiamo stimando?\n\n\n\nIl modello stima l’effetto medio della relazione tra ansia matematica e rendimento matematico.\nPoiché gli effect size sono Fisher’s z, anche la stima del modello è inizialmente sulla scala Fisher’s z."
+    "objectID": "materiali/06-metafor-maccann2020.html#meta-analisi-con-rma",
+    "href": "materiali/06-metafor-maccann2020.html#meta-analisi-con-rma",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
+    "section": "6. Meta-analisi con rma()",
+    "text": "6. Meta-analisi con rma()\nStimiamo un modello random-effects.\n\nres &lt;- rma(\n  yi = yi,\n  vi = vi,\n  method = \"REML\",    # per effettuare una meta-analisi random-effects\n  data = dat_agg\n)\n\nres\n\n\nRandom-Effects Model (k = 158; tau^2 estimator: REML)\n\ntau^2 (estimated amount of total heterogeneity): 0.0333 (SE = 0.0043)\ntau (square root of estimated tau^2 value):      0.1824\nI^2 (total heterogeneity / total variability):   93.04%\nH^2 (total variability / sampling variability):  14.37\n\nTest for Heterogeneity:\nQ(df = 157) = 1515.0543, p-val &lt; .0001\n\nModel Results:\n\nestimate      se     zval    pval   ci.lb   ci.ub      \n  0.1968  0.0156  12.5782  &lt;.0001  0.1662  0.2275  *** \n\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\n\n\n\n\n\n\nNoteCosa stiamo stimando?\n\n\n\nStiamo stimando la correlazione media tra intelligenza emotiva e performance accademica.\nIl modello lavora sulla scala Fisher’s z."
   },
   {
-    "objectID": "materiali/06-metafor-barroso2021.html#interpretare-loutput",
-    "href": "materiali/06-metafor-barroso2021.html#interpretare-loutput",
-    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "objectID": "materiali/06-metafor-maccann2020.html#interpretare-loutput",
+    "href": "materiali/06-metafor-maccann2020.html#interpretare-loutput",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
     "section": "7. Interpretare l’output",
-    "text": "7. Interpretare l’output\nEstraiamo alcuni elementi principali.\n\nres$b       # effetto medio stimato in Fisher's z\n\n              [,1]\nintrcpt -0.2775353\n\nres$se      # errore standard\n\n[1] 0.01115839\n\nres$ci.lb   # limite inferiore CI\n\n[1] -0.2994054\n\nres$ci.ub   # limite superiore CI\n\n[1] -0.2556653\n\nres$pval    # p-value\n\n[1] 1.4825e-136\n\nres$tau2    # varianza tra studi\n\n[1] 0.02189226\n\nres$I2      # percentuale di variabilità dovuta a eterogeneità\n\n[1] 93.79905\n\nres$QE      # test Q di eterogeneità\n\n[1] 1914.788\n\nres$QEp     # p-value del test Q\n\n[1] 8.266581e-266\n\n\n\nTrasformiamo la stima da Fisher’s z a correlazione r.\n\npredict(res, transf = transf.ztor)\n\n\n    pred   ci.lb   ci.ub   pi.lb  pi.ub \n -0.2706 -0.2908 -0.2502 -0.5142 0.0133"
+    "text": "7. Interpretare l’output\n\nres$b       # effetto medio in Fisher's z\n\n             [,1]\nintrcpt 0.1968271\n\nres$se      # errore standard\n\n[1] 0.01564823\n\nres$ci.lb   # limite inferiore IC\n\n[1] 0.1661571\n\nres$ci.ub   # limite superiore IC\n\n[1] 0.227497\n\nres$pval    # p-value\n\n[1] 2.781802e-36\n\nres$tau2    # varianza tra studi\n\n[1] 0.0332516\n\nres$I2      # percentuale di variabilità dovuta a eterogeneità\n\n[1] 93.04281\n\nres$QE      # test Q di eterogeneità\n\n[1] 1515.054\n\nres$QEp     # p-value del test Q\n\n[1] 1.267746e-220\n\n\nTrasformiamo il risultato in correlazione r.\n\npredict(res, transf = transf.ztor)\n\n\n   pred  ci.lb  ci.ub   pi.lb  pi.ub \n 0.1943 0.1646 0.2237 -0.1605 0.5047"
   },
   {
-    "objectID": "materiali/06-metafor-barroso2021.html#interpretazione-risultato",
-    "href": "materiali/06-metafor-barroso2021.html#interpretazione-risultato",
-    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
-    "section": "Interpretazione risultato",
-    "text": "Interpretazione risultato\n\nLa stima indica la relazione media tra ansia matematica e rendimento.\nLa correlazione negativa (r = -0.27) indica che maggiore ansia matematica tende ad associarsi a minore rendimento.\nL’intervallo di fiducia descrive l’incertezza sulla stima media, nel nostro caso la stima è molto precisa (-0.29, -0.25).\ntau e I² indicano l’eterogeneità tra gli studi.\n\n\n\n\n\n\n\n\nImportantDomanda interpretativa\n\n\n\nNon basta chiedere: l’effetto è statisticamente significativo?\nBisogna chiedere anche:\n\nquanto è grande l’effetto?\nquanto è incerto?\nquanto varia tra gli studi?\nl’effetto medio rappresenta bene la letteratura?"
+    "objectID": "materiali/06-metafor-maccann2020.html#come-leggere-il-risultato",
+    "href": "materiali/06-metafor-maccann2020.html#come-leggere-il-risultato",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
+    "section": "Come leggere il risultato",
+    "text": "Come leggere il risultato\n\nLa correlazione positiva (\\(r = 0.19\\)) indica che maggiore intelligenza emotiva tende ad associarsi ad una migliore performance accademica.\nL’intervallo di fiducia indica l’incertezza sulla correlazione media, in questo caso è relativamente preciso (0.16, 0.22).\ntau e I² indicano quanta variabilità rimane tra gli studi.\nIl test Q valuta se l’eterogeneità osservata è maggiore di quanto atteso per solo errore di campionamento, in questo caso è significativo, quindi possiamo rifiutare l’ipotesi nulla di assenza di eterogeneità."
   },
   {
-    "objectID": "materiali/06-metafor-barroso2021.html#fixed-effect-vs-random-effects",
-    "href": "materiali/06-metafor-barroso2021.html#fixed-effect-vs-random-effects",
-    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "objectID": "materiali/06-metafor-maccann2020.html#fixed-effect-vs-random-effects",
+    "href": "materiali/06-metafor-maccann2020.html#fixed-effect-vs-random-effects",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
     "section": "8. Fixed-effect vs random-effects",
-    "text": "8. Fixed-effect vs random-effects\nConfrontiamo un modello fixed-effect e un modello random-effects.\n\nres_fe &lt;- rma(\n  yi = yi,\n  vi = vi,\n  method = \"EE\",     # per calcolare una meta-analisi fixed-effect \n                     # consigliato dal creatore di metafor - W. Viechtbauer\n  data = dat_agg \n)\n\nres_fe\n\n\nEqual-Effects Model (k = 225)\n\nI^2 (total heterogeneity / total variability):   88.30%\nH^2 (total variability / sampling variability):  8.55\n\nTest for Heterogeneity:\nQ(df = 224) = 1914.7881, p-val &lt; .0001\n\nModel Results:\n\nestimate      se       zval    pval    ci.lb    ci.ub      \n -0.3294  0.0023  -141.3221  &lt;.0001  -0.3339  -0.3248  *** \n\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nres\n\n\nRandom-Effects Model (k = 225; tau^2 estimator: REML)\n\ntau^2 (estimated amount of total heterogeneity): 0.0219 (SE = 0.0026)\ntau (square root of estimated tau^2 value):      0.1480\nI^2 (total heterogeneity / total variability):   93.80%\nH^2 (total variability / sampling variability):  16.13\n\nTest for Heterogeneity:\nQ(df = 224) = 1914.7881, p-val &lt; .0001\n\nModel Results:\n\nestimate      se      zval    pval    ci.lb    ci.ub      \n -0.2775  0.0112  -24.8723  &lt;.0001  -0.2994  -0.2557  *** \n\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1"
+    "text": "8. Fixed-effect vs random-effects\n\nres_fe &lt;- rma(\n  yi = yi,\n  vi = vi,\n  method = \"EE\",    # per calcolare una meta-analisi Fixed-effect, come indicato\n                    # dal creatore di metafor - W. Viechtbauer\n  data = dat_agg\n)\n\n\nres_fe\n\n\nEqual-Effects Model (k = 158)\n\nI^2 (total heterogeneity / total variability):   89.64%\nH^2 (total variability / sampling variability):  9.65\n\nTest for Heterogeneity:\nQ(df = 157) = 1515.0543, p-val &lt; .0001\n\nModel Results:\n\nestimate      se     zval    pval   ci.lb   ci.ub      \n  0.1771  0.0039  45.0035  &lt;.0001  0.1694  0.1848  *** \n\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n# Random-effects\nres\n\n\nRandom-Effects Model (k = 158; tau^2 estimator: REML)\n\ntau^2 (estimated amount of total heterogeneity): 0.0333 (SE = 0.0043)\ntau (square root of estimated tau^2 value):      0.1824\nI^2 (total heterogeneity / total variability):   93.04%\nH^2 (total variability / sampling variability):  14.37\n\nTest for Heterogeneity:\nQ(df = 157) = 1515.0543, p-val &lt; .0001\n\nModel Results:\n\nestimate      se     zval    pval   ci.lb   ci.ub      \n  0.1968  0.0156  12.5782  &lt;.0001  0.1662  0.2275  *** \n\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\n\nInterpretazione\nIl modello fixed-effect assume un unico effetto vero.\nIl modello random-effects assume che l’effetto vero possa variare tra studi.\nPer dati psicologici raccolti in contesti diversi, il modello random-effects è spesso più plausibile."
   },
   {
-    "objectID": "materiali/06-metafor-barroso2021.html#interpretazione-random-vs-fixed",
-    "href": "materiali/06-metafor-barroso2021.html#interpretazione-random-vs-fixed",
-    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
-    "section": "Interpretazione: Random vs Fixed",
-    "text": "Interpretazione: Random vs Fixed\nIl modello fixed-effect assume che tutti gli studi stimino lo stesso effetto vero.\nIl modello random-effects assume che gli effetti veri possano variare tra studi.\nNella maggior parte delle meta-analisi in psicologia, il modello random-effects è spesso più realistico, perché gli studi differiscono per campioni, strumenti, contesti e procedure."
-  },
-  {
-    "objectID": "materiali/06-metafor-barroso2021.html#forest-plot",
-    "href": "materiali/06-metafor-barroso2021.html#forest-plot",
-    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "objectID": "materiali/06-metafor-maccann2020.html#forest-plot",
+    "href": "materiali/06-metafor-maccann2020.html#forest-plot",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
     "section": "9. Forest plot",
-    "text": "9. Forest plot\nCon molti studi, un forest plot completo può diventare poco leggibile.\nPer scopi didattici, costruiamo un forest plot su un sottoinsieme di studi.\n\ndat_plot &lt;- dat_agg[1:30, ]\n\nres_plot &lt;- rma(\n  yi = yi,\n  vi = vi,\n  data = dat_plot,\n  method = \"REML\"\n)\n\nforest(\n  res_plot,\n  slab = paste(dat_plot$author, \n               dat_plot$pub_year),   # per visualizzare autori-anno nel grafico\n  transf = transf.ztor,\n  xlab = \"Correlazione r\",\n  header = \"Studio\"\n)"
+    "text": "9. Forest plot\nCon 158 studi, un forest plot completo può essere molto denso.\nPer scopi didattici, visualizziamo un sottoinsieme di studi.\n\ndat_plot &lt;- dat_agg[1:30, ]\n\nres_plot &lt;- rma(\n  yi = yi,\n  vi = vi,\n  method = \"REML\",\n  data = dat_plot\n)\n\nforest(\n  res_plot,\n  slab = paste(dat_plot$author, dat_plot$pub_year),\n  transf = transf.ztor,\n  xlab = \"Correlazione r\",\n  header = \"Studio\"\n)"
   },
   {
-    "objectID": "materiali/06-metafor-barroso2021.html#cosa-osservare",
-    "href": "materiali/06-metafor-barroso2021.html#cosa-osservare",
-    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "objectID": "materiali/06-metafor-maccann2020.html#cosa-osservare",
+    "href": "materiali/06-metafor-maccann2020.html#cosa-osservare",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
     "section": "Cosa osservare",
-    "text": "Cosa osservare\n\nStudi con intervalli di fiducia più larghi hanno stime meno precise.\nStudi più grandi tendono ad avere intervalli più stretti.\nL’effetto pooled è la sintesi complessiva, ma non cancella la variabilità tra studi."
+    "text": "Cosa osservare\n\nQuanto variano le stime tra studi?\nQuali studi hanno maggiore precisione?\nL’effetto pooled rappresenta bene tutti gli studi?"
   },
   {
-    "objectID": "materiali/06-metafor-barroso2021.html#prediction-interval",
-    "href": "materiali/06-metafor-barroso2021.html#prediction-interval",
-    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "objectID": "materiali/06-metafor-maccann2020.html#prediction-interval",
+    "href": "materiali/06-metafor-maccann2020.html#prediction-interval",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
     "section": "10. Prediction interval",
-    "text": "10. Prediction interval\nL’intervallo di fiducia riguarda l’effetto medio.\nIl prediction interval dà un’idea di dove potrebbe cadere l’effetto vero di un nuovo studio simile.\n\npredict(res, transf = transf.ztor)\n\n\n    pred   ci.lb   ci.ub   pi.lb  pi.ub \n -0.2706 -0.2908 -0.2502 -0.5142 0.0133 \n\n\n\n\n\n\n\n\n\nTipInterpretazione\n\n\n\nSe il prediction interval è molto ampio, significa che gli effetti variano molto tra studi.\nIn quel caso, l’effetto medio può essere corretto, ma poco rappresentativo di tutti i contesti."
+    "text": "10. Prediction interval\n\npredict(res, transf = transf.ztor)\n\n\n   pred  ci.lb  ci.ub   pi.lb  pi.ub \n 0.1943 0.1646 0.2237 -0.1605 0.5047 \n\n\n\nInterpretazione\nL’intervallo di fiducia descrive l’incertezza sull’effetto medio.\nIl prediction interval descrive la variabilità attesa degli effetti veri in studi futuri simili.\nSe il prediction interval è ampio, il campo è eterogeneo e l’effetto medio va interpretato con cautela."
   },
   {
-    "objectID": "materiali/06-metafor-barroso2021.html#funnel-plot-e-publication-bias",
-    "href": "materiali/06-metafor-barroso2021.html#funnel-plot-e-publication-bias",
-    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "objectID": "materiali/06-metafor-maccann2020.html#funnel-plot-e-publication-bias",
+    "href": "materiali/06-metafor-maccann2020.html#funnel-plot-e-publication-bias",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
     "section": "11. Funnel plot e publication bias",
-    "text": "11. Funnel plot e publication bias\nProduciamo un funnel plot.\n\nfunnel(\n  res,\n  yaxis = \"sei\",\n  xlab = \"Fisher's z\"\n)"
+    "text": "11. Funnel plot e publication bias\n\nfunnel(\n  res,\n  yaxis = \"sei\",\n  xlab = \"Fisher's z\"\n)\n\n\n\n\n\n\n\n\n\n\nEgger-type regression test\n\nregtest(\n  res,\n  model = \"rma\",\n  predictor = \"sei\"\n)\n\n\nRegression Test for Funnel Plot Asymmetry\n\nModel:     mixed-effects meta-regression model\nPredictor: standard error\n\nTest for Funnel Plot Asymmetry: z = 1.9834, p = 0.0473\nLimit Estimate (as sei -&gt; 0):   b = 0.1273 (CI: 0.0522, 0.2024)\n\n\n\n\nInterpretazione cauta\nL’Egger test valuta l’associazione tra dimensione dell’effetto e precisione dello studio.\nUn risultato significativo può indicare asimmetria del funnel plot, ma non dimostra automaticamente publication bias.\nPossibili spiegazioni alternative:\n\neterogeneità reale;\ndifferenze metodologiche;\ndifferenze nei campioni;\nstudi piccoli di qualità diversa;"
   },
   {
-    "objectID": "materiali/06-metafor-barroso2021.html#egger-type-regression-test",
-    "href": "materiali/06-metafor-barroso2021.html#egger-type-regression-test",
-    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
-    "section": "Egger-type regression test",
-    "text": "Egger-type regression test\n\nregtest(\n  res,\n  model = \"rma\",\n  predictor = \"sei\"\n)\n\n\nRegression Test for Funnel Plot Asymmetry\n\nModel:     mixed-effects meta-regression model\nPredictor: standard error\n\nTest for Funnel Plot Asymmetry: z =  1.5567, p = 0.1195\nLimit Estimate (as sei -&gt; 0):   b = -0.3109 (CI: -0.3581, -0.2636)"
-  },
-  {
-    "objectID": "materiali/06-metafor-barroso2021.html#interpretazione-cauta",
-    "href": "materiali/06-metafor-barroso2021.html#interpretazione-cauta",
-    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
-    "section": "Interpretazione cauta",
-    "text": "Interpretazione cauta\nUn funnel plot asimmetrico può suggerire publication bias, ma non lo dimostra automaticamente.\nPossibili spiegazioni alternative:\n\neterogeneità reale;\nstudi piccoli di qualità diversa;\nstrumenti di misura diversi;\npopolazioni diverse;"
-  },
-  {
-    "objectID": "materiali/06-metafor-barroso2021.html#trim-and-fill",
-    "href": "materiali/06-metafor-barroso2021.html#trim-and-fill",
-    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "objectID": "materiali/06-metafor-maccann2020.html#trim-and-fill",
+    "href": "materiali/06-metafor-maccann2020.html#trim-and-fill",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
     "section": "12. Trim-and-fill",
-    "text": "12. Trim-and-fill\nApplichiamo il metodo trim-and-fill.\n\ntf &lt;- trimfill(res)\n\ntf\n\n\nEstimated number of missing studies on the left side: 47 (SE = 9.8217)\n\nRandom-Effects Model (k = 272; tau^2 estimator: REML)\n\ntau^2 (estimated amount of total heterogeneity): 0.0320 (SE = 0.0033)\ntau (square root of estimated tau^2 value):      0.1788\nI^2 (total heterogeneity / total variability):   95.16%\nH^2 (total variability / sampling variability):  20.68\n\nTest for Heterogeneity:\nQ(df = 271) = 2558.5308, p-val &lt; .0001\n\nModel Results:\n\nestimate      se      zval    pval    ci.lb    ci.ub      \n -0.3297  0.0119  -27.6824  &lt;.0001  -0.3530  -0.3064  *** \n\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\npredict(tf, transf = transf.ztor)\n\n\n    pred   ci.lb   ci.ub   pi.lb  pi.ub \n -0.3183 -0.3391 -0.2971 -0.5921 0.0215 \n\n\nVisualizziamo il funnel plot con gli studi imputati.\n\nfunnel(\n  tf,\n  yaxis = \"sei\",\n  xlab = \"Fisher's z\"\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarningAttenzione\n\n\n\nIl trim-and-fill non produce automaticamente una stima “corretta” dell’effetto vero.\nÈ meglio interpretarlo come una sensitivity analysis rispetto a uno specifico scenario di asimmetria del funnel plot."
+    "text": "12. Trim-and-fill\n\ntf &lt;- trimfill(res)\n\ntf\n\n\nEstimated number of missing studies on the left side: 0 (SE = 6.8485)\n\nRandom-Effects Model (k = 158; tau^2 estimator: REML)\n\ntau^2 (estimated amount of total heterogeneity): 0.0333 (SE = 0.0043)\ntau (square root of estimated tau^2 value):      0.1824\nI^2 (total heterogeneity / total variability):   93.04%\nH^2 (total variability / sampling variability):  14.37\n\nTest for Heterogeneity:\nQ(df = 157) = 1515.0543, p-val &lt; .0001\n\nModel Results:\n\nestimate      se     zval    pval   ci.lb   ci.ub      \n  0.1968  0.0156  12.5782  &lt;.0001  0.1662  0.2275  *** \n\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\npredict(tf, transf = transf.ztor)\n\n\n   pred  ci.lb  ci.ub   pi.lb  pi.ub \n 0.1943 0.1646 0.2237 -0.1605 0.5047 \n\n\n\nfunnel(\n  tf,\n  yaxis = \"sei\",\n  xlab = \"Fisher's z\"\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarningCautela\n\n\n\nIl trim-and-fill non corregge magicamente il publication bias.\nÈ una sensitivity analysis basata su assunzioni specifiche sul meccanismo di asimmetria."
   },
   {
-    "objectID": "materiali/06-metafor-barroso2021.html#sensitivity-analysis",
-    "href": "materiali/06-metafor-barroso2021.html#sensitivity-analysis",
-    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "objectID": "materiali/06-metafor-maccann2020.html#sensitivity-analysis",
+    "href": "materiali/06-metafor-maccann2020.html#sensitivity-analysis",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
     "section": "13. Sensitivity analysis",
-    "text": "13. Sensitivity analysis\n\nLeave-one-out\nVerifichiamo se il risultato dipende in modo eccessivo da un singolo studio.\n\nloo &lt;- leave1out(res)\nhead(loo)\n\n\n   estimate     se     zval   pval   ci.lb   ci.ub         Q     Qp   tau2 \n-1  -0.2770 0.0112 -24.7577 0.0000 -0.2989 -0.2551 1913.9900 0.0000 0.0219 \n-2  -0.2786 0.0111 -24.9952 0.0000 -0.3005 -0.2568 1904.8782 0.0000 0.0217 \n-3  -0.2775 0.0112 -24.7451 0.0000 -0.2994 -0.2555 1914.3093 0.0000 0.0220 \n-4  -0.2765 0.0111 -24.8207 0.0000 -0.2983 -0.2547 1910.1143 0.0000 0.0217 \n-5  -0.2778 0.0112 -24.7739 0.0000 -0.2998 -0.2558 1905.2392 0.0000 0.0220 \n-6  -0.2776 0.0112 -24.8144 0.0000 -0.2995 -0.2557 1914.5678 0.0000 0.0220 \n        I2      H2 \n-1 93.8315 16.2113 \n-2 93.7801 16.0775 \n-3 93.8480 16.2550 \n-4 93.7807 16.0791 \n-5 93.8226 16.1880 \n-6 93.8414 16.2375"
+    "text": "13. Sensitivity analysis\n\nLeave-one-out\n\nloo &lt;- leave1out(res)\nhead(loo)\n\n\n   estimate     se    zval   pval  ci.lb  ci.ub         Q     Qp   tau2      I2 \n-1   0.1967 0.0158 12.4836 0.0000 0.1658 0.2276 1514.5238 0.0000 0.0335 93.1085 \n-2   0.1961 0.0157 12.4644 0.0000 0.1653 0.2270 1511.4806 0.0000 0.0334 93.0962 \n-3   0.1972 0.0157 12.5323 0.0000 0.1663 0.2280 1514.9429 0.0000 0.0335 93.1158 \n-4   0.1952 0.0157 12.4606 0.0000 0.1645 0.2259 1495.0829 0.0000 0.0331 93.0197 \n-5   0.1962 0.0157 12.4760 0.0000 0.1654 0.2271 1513.3743 0.0000 0.0334 93.1061 \n-6   0.1967 0.0158 12.4821 0.0000 0.1658 0.2276 1514.3994 0.0000 0.0335 93.0905 \n        H2 \n-1 14.5107 \n-2 14.4847 \n-3 14.5260 \n-4 14.3260 \n-5 14.5056 \n-6 14.4729 \n\n\n\n\n\nInfluence diagnostics\n\ninf &lt;- influence(res)\nplot(inf)\n\n\n\n\n\n\n\n\n\n\nDomande interpretative\n\nCi sono studi molto influenti?\nLa stima media cambia molto rimuovendo uno studio alla volta?\nLe conclusioni sembrano robuste?"
   },
   {
-    "objectID": "materiali/06-metafor-barroso2021.html#influence-diagnostics",
-    "href": "materiali/06-metafor-barroso2021.html#influence-diagnostics",
-    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
-    "section": "Influence diagnostics",
-    "text": "Influence diagnostics\n\ninf &lt;- influence(res)\nplot(inf)\n\n\n\n\n\n\n\n\n\n\nInterpretazione\n\nC’è uno studio che cambia molto la stima complessiva?\nCi sono studi particolarmente influenti?\nLe conclusioni sono stabili?"
-  },
-  {
-    "objectID": "materiali/06-metafor-barroso2021.html#meta-regressione-esplorativa",
-    "href": "materiali/06-metafor-barroso2021.html#meta-regressione-esplorativa",
-    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "objectID": "materiali/06-metafor-maccann2020.html#meta-regressione-esplorativa",
+    "href": "materiali/06-metafor-maccann2020.html#meta-regressione-esplorativa",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
     "section": "14. Meta-regressione esplorativa",
-    "text": "14. Meta-regressione esplorativa\nCome esempio finale, testiamo se l’anno di pubblicazione è associato alla dimensione dell’effetto.\n\ndat_agg$pub_year_c &lt;- dat_agg$pub_year - mean(dat_agg$pub_year, na.rm = TRUE)\n\nres_mod &lt;- rma(\n  yi = yi,\n  vi = vi,\n  mods = ~ pub_year_c,\n  data = dat_agg,\n  method = \"REML\"\n)\n\nsummary(res_mod)\n\n\nMixed-Effects Model (k = 225; tau^2 estimator: REML)\n\n   logLik   deviance        AIC        BIC       AICc   \n  79.9740  -159.9480  -153.9480  -143.7265  -153.8384   \n\ntau^2 (estimated amount of residual heterogeneity):     0.0220 (SE = 0.0026)\ntau (square root of estimated tau^2 value):             0.1483\nI^2 (residual heterogeneity / unaccounted variability): 93.57%\nH^2 (unaccounted variability / sampling variability):   15.56\nR^2 (amount of heterogeneity accounted for):            0.00%\n\nTest for Residual Heterogeneity:\nQE(df = 223) = 1891.5105, p-val &lt; .0001\n\nTest of Moderators (coefficient 2):\nQM(df = 1) = 0.1615, p-val = 0.6878\n\nModel Results:\n\n            estimate      se      zval    pval    ci.lb    ci.ub      \nintrcpt      -0.2776  0.0112  -24.8307  &lt;.0001  -0.2996  -0.2557  *** \npub_year_c    0.0006  0.0016    0.4018  0.6878  -0.0025   0.0038      \n\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1"
+    "text": "14. Meta-regressione esplorativa\nCome esempio, testiamo se l’età media del campione è associata alla dimensione dell’effetto.\n\ndat_agg$age_c &lt;- dat_agg$age - mean(dat_agg$age, na.rm = TRUE)\n\nres_mod_age &lt;- rma(\n  yi = yi,\n  vi = vi,\n  mods = ~ age_c,\n  data = dat_agg,\n  method = \"REML\"\n)\n\nres_mod_age\n\n\nMixed-Effects Model (k = 157; tau^2 estimator: REML)\n\ntau^2 (estimated amount of residual heterogeneity):     0.0327 (SE = 0.0043)\ntau (square root of estimated tau^2 value):             0.1808\nI^2 (residual heterogeneity / unaccounted variability): 92.77%\nH^2 (unaccounted variability / sampling variability):   13.83\nR^2 (amount of heterogeneity accounted for):            2.53%\n\nTest for Residual Heterogeneity:\nQE(df = 155) = 1475.8384, p-val &lt; .0001\n\nTest of Moderators (coefficient 2):\nQM(df = 1) = 4.5570, p-val = 0.0328\n\nModel Results:\n\n         estimate      se     zval    pval    ci.lb    ci.ub      \nintrcpt    0.1968  0.0156  12.6279  &lt;.0001   0.1663   0.2274  *** \nage_c     -0.0063  0.0030  -2.1347  0.0328  -0.0121  -0.0005    * \n\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\nPossiamo anche testare l’anno di pubblicazione.\n\ndat_agg$pub_year_c &lt;- dat_agg$pub_year - mean(dat_agg$pub_year, na.rm = TRUE)\n\nres_mod_year &lt;- rma(\n  yi = yi,\n  vi = vi,\n  mods = ~ pub_year_c,\n  data = dat_agg,\n  method = \"REML\"\n)\n\nres_mod_year\n\n\nMixed-Effects Model (k = 158; tau^2 estimator: REML)\n\ntau^2 (estimated amount of residual heterogeneity):     0.0335 (SE = 0.0044)\ntau (square root of estimated tau^2 value):             0.1830\nI^2 (residual heterogeneity / unaccounted variability): 93.03%\nH^2 (unaccounted variability / sampling variability):   14.35\nR^2 (amount of heterogeneity accounted for):            0.00%\n\nTest for Residual Heterogeneity:\nQE(df = 156) = 1514.6987, p-val &lt; .0001\n\nTest of Moderators (coefficient 2):\nQM(df = 1) = 0.1351, p-val = 0.7132\n\nModel Results:\n\n            estimate      se     zval    pval    ci.lb   ci.ub      \nintrcpt       0.1968  0.0157  12.5342  &lt;.0001   0.1660  0.2276  *** \npub_year_c    0.0013  0.0035   0.3676  0.7132  -0.0055  0.0081      \n\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1"
   },
   {
-    "objectID": "materiali/06-metafor-barroso2021.html#interpretazione-3",
-    "href": "materiali/06-metafor-barroso2021.html#interpretazione-3",
-    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "objectID": "materiali/06-metafor-maccann2020.html#interpretazione-3",
+    "href": "materiali/06-metafor-maccann2020.html#interpretazione-3",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
     "section": "Interpretazione",
-    "text": "Interpretazione\nIl coefficiente di pub_year_c indica quanto cambia l’effect size medio per ogni anno di pubblicazione.\nSe il coefficiente è positivo, gli studi più recenti tendono a stimare effetti più positivi.\nIn questo caso, l’effetto dell’anno di pubblicazione non è significativo, quindi non possiamo rifiutare l’ipotesi nulla di non-effetto dell’anno di pubblicazione.\n\n\n\n\n\n\n\nWarningCautela\n\n\n\nLa meta-regressione è osservazionale. Non dimostra causalità e dovrebbe essere interpretata soprattutto come analisi esplorativa."
+    "text": "Interpretazione\nIl coefficiente del moderatore indica quanto cambia l’effect size medio al variare del moderatore.\nPer esempio:\n\nage_c: cambiamento dell’effect size per un anno in più di età media; in questo caso l’effetto è limitato, ma significativo, quindi possiamo rifiutare l’ipotesi nulla di assenza di un effetto dell’età.\npub_year_c: cambiamento dell’effect size per un anno in più di pubblicazione; in questo caso l’effetto è piccolo e non significativo.\n\n\n\n\n\n\n\nWarningCautela\n\n\n\nLa meta-regressione è un’analisi a livello di studio. Non permette inferenze causali individuali e può essere poco potente se il numero di studi è limitato o se il moderatore è misurato con errore."
   },
   {
-    "objectID": "materiali/06-metafor-barroso2021.html#take-home-messages",
-    "href": "materiali/06-metafor-barroso2021.html#take-home-messages",
-    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "objectID": "materiali/06-metafor-maccann2020.html#modelli-multilevel",
+    "href": "materiali/06-metafor-maccann2020.html#modelli-multilevel",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
+    "section": "15. Modelli multilevel",
+    "text": "15. Modelli multilevel\nIn questo esercizio abbiamo aggregato i dati per avere una sola riga per studio.\nIn un’analisi più avanzata, potremmo usare un modello multilevel:\n\nres_mv &lt;- rma.mv(\n  yi = yi,\n  V = vi,\n  random = ~ 1 | study_id/sample_id,\n  method = \"REML\",\n  data = dat_z\n)\n\nres_mv\n\n\nMultivariate Meta-Analysis Model (k = 1246; method: REML)\n\nVariance Components:\n\n            estim    sqrt  nlvls  fixed              factor \nsigma^2.1  0.0183  0.1353    158     no            study_id \nsigma^2.2  0.0158  0.1258    183     no  study_id/sample_id \n\nTest for Heterogeneity:\nQ(df = 1245) = 13290.9897, p-val &lt; .0001\n\nModel Results:\n\nestimate      se     zval    pval   ci.lb   ci.ub      \n  0.2011  0.0151  13.2919  &lt;.0001  0.1715  0.2308  *** \n\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\n\n\n\n\n\n\nNotePerché non lo facciamo qui?\n\n\n\nrma.mv() è più adatto alla struttura reale dei dati, ma richiede maggiore attenzione alla dipendenza tra effect size, alla struttura della varianza-covarianza e all’interpretazione dei livelli random.\nPer una prima esercitazione, l’aggregazione è più semplice e didattica."
+  },
+  {
+    "objectID": "materiali/06-metafor-maccann2020.html#take-home-messages",
+    "href": "materiali/06-metafor-maccann2020.html#take-home-messages",
+    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
     "section": "Take-home messages",
-    "text": "Take-home messages\n\nrma() permette di stimare una meta-analisi con pochissimo codice.\nmethod = \"REML\"per calcolare una meta-analisi random-effects\nmethod = \"EE\"per calcolare una meta-analisi fixed-effect\nLa parte difficile non è solo il codice, ma la qualità delle decisioni prima e dopo il modello.\nGli effect size devono essere sulla scala corretta e accompagnati dalla loro varianza.\nSe ci sono più effect size per studio, bisogna gestire la dipendenza.\nEffetto medio, eterogeneità e prediction interval vanno interpretati insieme.\nPublication bias e trim-and-fill richiedono molta cautela.\nLa meta-regressione è utile, ma non sostituisce una buona teoria e un protocollo chiaro."
+    "text": "Take-home messages\n\nLe correlazioni devono essere trasformate in Fisher’s z prima della meta-analisi.\nescalc() aiuta a calcolare effect size e varianze.\nrma() permette di stimare rapidamente una meta-analisi.\nmethod = \"REML\"per calcolare una meta-analisi random-effects.\nmethod = \"EE\"per calcolare una meta-analisi fixed-effect.\nLa stima finale può essere trasformata di nuovo in correlazione r per l’interpretazione - predict(res, transf = transf.ztor))\nSe ci sono più effect size per studio, bisogna gestire la dipendenza (aggregazione vs modello multilivello)\nFunnel plot, Egger test e trim-and-fill sono strumenti utili, ma non definitivi.\nLa meta-regressione va interpretata come analisi esplorativa, soprattutto se non pre-specificata."
+  },
+  {
+    "objectID": "materiali/02-rstudio-basics.html",
+    "href": "materiali/02-rstudio-basics.html",
+    "title": "Basi di RStudio",
+    "section": "",
+    "text": "Immaginiamo di avere un dataset reale raccolto su 85 studenti/esse di scuole superiori.\nAbbiamo misurato:\n\nEtà\nGenere\nReddito della famiglia\nStress scolastico\nDepressione\n\nDOMANDA DI RICERCA: “Esiste una correlazione tra lo stress scolastico e i sintomi depressivi?”"
+  },
+  {
+    "objectID": "materiali/02-rstudio-basics.html#applichiamo-la-matematica-ai-dati-reali",
+    "href": "materiali/02-rstudio-basics.html#applichiamo-la-matematica-ai-dati-reali",
+    "title": "Basi di RStudio",
+    "section": "Applichiamo la matematica ai dati reali",
+    "text": "Applichiamo la matematica ai dati reali\nCome calcolare la media dell’età dei nostri 85 partecipanti?\nAssicuratevi di avere il file ‘dat_scuole.csv’ nella stessa cartella del vostro progetto.\n\n# Importiamo il dataset nel nostro ambiente chiamandolo 'dat'\ndat &lt;- read.csv(\"data/dat_scuole.csv\")\n\n# O in alternativa (se file Excel)\nlibrary(readxl)\ndat &lt;- read_xlsx(\"data/dat_scuole.xlsx\")\n\n# Visualizziamolo come fosse un foglio Excel\n# View(dat)\n\n# La media: METODO MANUALE (formula: somma dei valori diviso N)\ndat$eta           # Il simbolo '$' ci permette di estrarre solo la colonna 'eta'\n\n [1] 16 16 19 18 17 18 18 16 14 16 15 17 15 19 17 16 19 15 19 14 19 14 17 16 17\n[26] 18 17 15 19 18 19 17 15 14 17 18 19 16 16 17 18 19 18 16 16 14 16 16 17 19\n[51] 18 19 18 19 16 16 16 17 19 18 18 16 18 16 15 18 18 16 18 19 14 14 14 15 16\n[76] 16 17 16 17 18 17 17 18 14 18\n\nsum(dat$eta)      # Sommiamo tutte le 85 età\n\n[1] 1430\n\nlength(dat$eta)   # Contiamo quante età ci sono (il nostro 'N')\n\n[1] 85\n\nsum(dat$eta) / length(dat$eta)  # Ecco la nostra media calcolata a mano!\n\n[1] 16.82353\n\n# METODO VELOCE (Usando le funzioni interne di R)\nmean(dat$eta)     # Media\n\n[1] 16.82353\n\nvar(dat$eta)      # Varianza\n\n[1] 2.408964\n\nsd(dat$eta)       # Deviazione Standard\n\n[1] 1.552084"
   },
   {
     "objectID": "materiali/01-systematic-review-intro.html#che-cosè-una-systematic-review",
@@ -385,144 +385,214 @@
     "text": "In sintesi\n\n\nLa letteratura cresce più velocemente della nostra capacità di leggerla\nLe Systematic Review aiutano a trasformare molti studi in una sintesi ordinata\nUna meta-analisi è valida solo quanto lo è la review su cui si basa\nMetodo, pre-registrazione e trasparenza proteggono da bias e cherry picking\nL’obiettivo finale è produrre evidenza utile per ricerca, pratica e decisioni"
   },
   {
-    "objectID": "materiali/02-rstudio-basics.html",
-    "href": "materiali/02-rstudio-basics.html",
-    "title": "Basi di RStudio",
+    "objectID": "materiali/001-crisi-replicabilita-slides.html",
+    "href": "materiali/001-crisi-replicabilita-slides.html",
+    "title": "Introduzione - Crisi di Replicabilità",
     "section": "",
-    "text": "Immaginiamo di avere un dataset reale raccolto su 85 studenti/esse di scuole superiori.\nAbbiamo misurato:\n\nEtà\nGenere\nReddito della famiglia\nStress scolastico\nDepressione\n\nDOMANDA DI RICERCA: “Esiste una correlazione tra lo stress scolastico e i sintomi depressivi?”"
+    "text": "Slide introduttive sulla crisi di replicabilità.\n Scarica Slides (pdf)"
   },
   {
-    "objectID": "materiali/02-rstudio-basics.html#applichiamo-la-matematica-ai-dati-reali",
-    "href": "materiali/02-rstudio-basics.html#applichiamo-la-matematica-ai-dati-reali",
-    "title": "Basi di RStudio",
-    "section": "Applichiamo la matematica ai dati reali",
-    "text": "Applichiamo la matematica ai dati reali\nCome calcolare la media dell’età dei nostri 85 partecipanti?\nAssicuratevi di avere il file ‘dat_scuole.csv’ nella stessa cartella del vostro progetto.\n\n# Importiamo il dataset nel nostro ambiente chiamandolo 'dat'\ndat &lt;- read.csv(\"data/dat_scuole.csv\")\n\n# O in alternativa (se file Excel)\nlibrary(readxl)\ndat &lt;- read_xlsx(\"data/dat_scuole.xlsx\")\n\n# Visualizziamolo come fosse un foglio Excel\n# View(dat)\n\n# La media: METODO MANUALE (formula: somma dei valori diviso N)\ndat$eta           # Il simbolo '$' ci permette di estrarre solo la colonna 'eta'\n\n [1] 16 16 19 18 17 18 18 16 14 16 15 17 15 19 17 16 19 15 19 14 19 14 17 16 17\n[26] 18 17 15 19 18 19 17 15 14 17 18 19 16 16 17 18 19 18 16 16 14 16 16 17 19\n[51] 18 19 18 19 16 16 16 17 19 18 18 16 18 16 15 18 18 16 18 19 14 14 14 15 16\n[76] 16 17 16 17 18 17 17 18 14 18\n\nsum(dat$eta)      # Sommiamo tutte le 85 età\n\n[1] 1430\n\nlength(dat$eta)   # Contiamo quante età ci sono (il nostro 'N')\n\n[1] 85\n\nsum(dat$eta) / length(dat$eta)  # Ecco la nostra media calcolata a mano!\n\n[1] 16.82353\n\n# METODO VELOCE (Usando le funzioni interne di R)\nmean(dat$eta)     # Media\n\n[1] 16.82353\n\nvar(dat$eta)      # Varianza\n\n[1] 2.408964\n\nsd(dat$eta)       # Deviazione Standard\n\n[1] 1.552084"
+    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html",
+    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html",
+    "title": "Esercitazione finale",
+    "section": "",
+    "text": "Durata prevista: 45 minuti\nObiettivo: analizzare un dataset di studi primari rispondendo alla seguente domanda di ricerca\nIl dataset contiene studi che confrontano interventi psicoterapeutici con condizioni di controllo."
   },
   {
-    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#oggetti",
-    "href": "materiali/03-esercizi-introduttivi-rstudio.html#oggetti",
-    "title": "Esercizi introduttivi a RStudio",
-    "section": "1. Oggetti",
-    "text": "1. Oggetti\n\n# Crea un oggetto chiamato `punteggio_base` e assegnagli il valore 50 utilizzando l'operatore di assegnazione `&lt;-`.\n\n\n# Crea un secondo oggetto chiamato `moltiplicatore` e assegnagli il valore 2.5.\n\n\n# Moltiplica `punteggio_base` per `moltiplicatore` e salva il risultato in un nuovo oggetto chiamato `punteggio_totale`. Richiama l'oggetto per visualizzarne il contenuto.\n\n\n# R fa distinzione tra lettere maiuscole e minuscole (è *case-sensitive*). Prova a richiamare l'oggetto `Punteggio_base` (con la P maiuscola). Quale errore ti restituisce la console?\n\n\n# Sovrascrivi l'oggetto `punteggio_base` assegnandogli un nuovo valore pari a 75. \n\n\n# Dopo aver modificato il `punteggio_base`, richiama di nuovo `punteggio_totale`: il suo valore si è aggiornato in automatico o mostra ancora il vecchio risultato?\n  \n  \n# Controlla quali oggetti sono attualmente salvati nel tuo ambiente di lavoro (Environment) utilizzando la funzione `ls()`.\n\n\n# Usa la funzione `rm()` per eliminare l'oggetto `moltiplicatore` dal tuo ambiente di lavoro. Verifica con `ls()` che sia effettivamente scomparso."
+    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#materiali",
+    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#materiali",
+    "title": "Esercitazione finale",
+    "section": "Materiali",
+    "text": "Materiali\nFile per l’esercitazione.\n Dataset CSV \n Data Dictionary & Protocol \n\n\n\n\n\n\nNote\n\n\n\nIl data dictionary descrive le variabili del dataset e contiene alcune informazioni importanti per l’analisi."
   },
   {
-    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#vettori",
-    "href": "materiali/03-esercizi-introduttivi-rstudio.html#vettori",
-    "title": "Esercizi introduttivi a RStudio",
-    "section": "2. Vettori",
-    "text": "2. Vettori\n\n# Crea il vettore x contenente i numeri 4, 6, 12, 34, 8\n\n\n# Crea il vettore y contenente tutti i numeri pari compresi tra 1 e 25 (?seq())\n\n\n# Crea il vettore z contenente tutti i primi 10 multipli di 7 partendo da 13 (?seq())\n\n\n# Crea il vettore s in cui le lettere \"A\",\"B\" e \"C\" vengono ripetute nel medesimo ordine 4 volte (?rep())\n\n\n# Del vettore x seleziona il 2°, 3° e 5° elemento\n\n\n# Del vettore x seleziona i valori 34 e 4\n\n\n# Del vettore y seleziona tutti i valori minori di 13 o maggiori di 19\n\n\n# Del vettore z seleziona tutti i valori compresi tra 24 e 50\n\n\n# Del vettore s seleziona tutti gli elementi uguali ad \"A\"\n\n\n# Del vettore t seleziona tutti gli elementi diversi da \"B\"\n\n\n# Crea un nuovo vettore u identico a s ma dove le \"A\" sono sostituite con la lettera \"U\"\n\n\n# Elimina dal vettore z i valori 28 e 42\n\n\n# Crea il vettore j unendo i vettori x ed z.\n\n\n# Elimina gli ultimi tre elementi del vettore j e controlla che i vettori j e y abbiano la stessa lunghezza.\n\n\n# Calcola la somma tra i vettori j e y.\n\n\n# Moltiplica il vettore z per una costante k=3.\n\n\n# Calcola il prodotto tra i primi 10 elementi del vettore y ed il vettore z"
+    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#scenario",
+    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#scenario",
+    "title": "Esercitazione finale",
+    "section": "Scenario",
+    "text": "Scenario\nAvete a disposizione un dataset con effect size estratti da studi primari sulla psicoterapia per la depressione.\nAlcune informazioni importanti:\n\nogni riga rappresenta un effect size;\nalcune pubblicazioni possono contribuire con più effect size;\nl’effect size è una Standardized Mean Difference calcolata in Hedges’ g;\nvalori positivi indicano che la psicoterapia ha prodotto esiti migliori rispetto al controllo."
   },
   {
-    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#vettori-factor",
-    "href": "materiali/03-esercizi-introduttivi-rstudio.html#vettori-factor",
-    "title": "Esercizi introduttivi a RStudio",
-    "section": "2.1 Vettori factor",
-    "text": "2.1 Vettori factor\n\n# Crea la variabile categoriale genere così definita:\n  \n  ## [1] M F M F M F F F M\n  ## Levels: F M\n  \n\n\n# Rinomina i livelli della variabile genere rispettivamente in \"donne\" e \"uomini\".\n\n\n# Crea la variabile categoriale intervento così definita:\n  \n  ## [1] CBT         Psicanalisi CBT         Psicanalisi CBT         Psicanalisi\n  ## [7] Controllo   Controllo   CBT        \n  ## Levels: CBT Controllo Psicanalisi\n  \n\n# Correggi nella variabile intervento la 7° e 8° osservazione con la voce Farmaci.\n\n\n# Aggiungi alla variabile intervento le seguenti nuove osservazioni:\n  \n  ## [1] \"Farmaci\"   \"Controllo\" \"Farmaci\""
+    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#consegna",
+    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#consegna",
+    "title": "Esercitazione finale",
+    "section": "Consegna",
+    "text": "Consegna\nEffettuare una meta-analisi sul dataset per rispondere alla domanda:\n\nLa psicoterapia è efficace per trattare la depressione?\n\nAvete piena libertà sulle scelte analitiche.\nPotete decidere, per esempio:\n\nquale modello stimare;\ncome gestire studi con più effect size;\nse escludere o mantenere eventuali outlier;\nse considerare sottogruppi o moderatori;\nse controllare publication bias o studi influenti.\n\nNon esiste una sola risposta corretta: l’obiettivo è produrre una scelta analitica ragionevole."
   },
   {
-    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#matrici",
-    "href": "materiali/03-esercizi-introduttivi-rstudio.html#matrici",
-    "title": "Esercizi introduttivi a RStudio",
-    "section": "3. Matrici",
-    "text": "3. Matrici\n\n# Crea la matrice A così definita:\n  \n#   2 34 12 7 \n#  46 93 27 99 \n#  23 38 7  04\n\n\n# Crea la matrice B contenente tutti i primi 12 numeri dispari disposti su 4 righe e 3 colonne.\n\n\n# Crea la matrice C contenente i primi 12 multipli di 9 disposti su 3 righe e 4 colonne.\n\n\n# Crea la matrice D formata da 3 colonne in cui le lettere \"A\",\"B\" e \"C\" vengano ripetute 4 volte ciascuna rispettivamente nella prima, seconda e terza colonna.\n\n\n# Crea la matrice E formata da 3 righe in cui le lettere \"A\",\"B\" e \"C\" vengano ripetute 4 volte ciascuna rispettivamente nella prima, seconda e terza riga.\n\n\n# Utilizzando gli indici di riga e di colonna selziona il numero 27 della matrice A\n\n\n# Selziona gli elementi compresi tra la seconda e quarta riga, seconda e terza colonna della matrice B\n\n\n# Elimina dalla matrice C la terza riga e la terza colonna\n\n\n# Seleziona tutti gli elementi della seconda e terza riga della matrice B\n\n\n# Seleziona tutti gli elementi diversi da “B” appartenenti alla matrice D\n\n\n# Crea la matrice G unendo alla matrice A le prime due colonne della matrice C\n\n\n# Ridefinisci la matrice A eliminando la seconda colonna. Ridefinisci la matrice B eliminando la prima riga. Verifica che le matrici così ottenute abbiano la stessa dimensione.\n\n\n# Commenta i differenti risultati che otteniamo nelle operazioni A*B, B*A, A%*%B e B%*%A.\n\n\n# Assegna i seguenti nomi alle colonne e alle righe della matrice C: \"col_1\", \"col_2\", \"col_3\", \"col_4\", \"row_1\", \"row_2\", \"row_3\"."
+    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#output-richiesto",
+    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#output-richiesto",
+    "title": "Esercitazione finale",
+    "section": "Output richiesto",
+    "text": "Output richiesto\nAl termine dei 45 minuti, dovrete riportare solo questi tre elementi:\n\nEffect size pooled\nAd esempio: Hedges’ g = …\nIntervallo di confidenza al 95%\nAd esempio: 95% CI [ …, … ]\nUna frase interpretativa semplice\nAd esempio:\n“La psicoterapia sembra essere efficace.”\n“I risultati sono inconclusivi.”\n“L’effetto è positivo, ma l’evidenza è eterogenea.”"
   },
   {
-    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#dataframe",
-    "href": "materiali/03-esercizi-introduttivi-rstudio.html#dataframe",
-    "title": "Esercizi introduttivi a RStudio",
-    "section": "4. Dataframe",
-    "text": "4. Dataframe\nGli esercizi seguenti fanno riferimento al dataset dat_scuole.csv, disponibile nella sezione Materiali.\nÈ necessario aprire il progetto RStudio corretto o impostare la working directory nella cartella del progetto.\n\n# Importa il dataset \"dat_scuole.csv\" e salvalo in un oggetto chiamato `dat`.\n\n\n# Esplora la struttura del dataframe `dat` usando la funzione `str()`. Di che tipo di dato è la variabile *reddito*?\n  \n  \n# Ottieni un riassunto statistico di tutte le variabili presenti nel dataframe usando una singola funzione\n\n\n# Quanti partecipanti e quante variabili ci sono nel dataset?\n  \n  \n# Mostra a schermo solo le prime 5 righe e poi solo le ultime 3 righe del dataframe.\n\n\n# Utilizzando gli indici a parentesi quadre `[riga, colonna]`, seleziona l'età del 12° partecipante.\n\n\n# Seleziona l'intero profilo (tutta la riga) del 42° partecipante.\n\n\n# Estrai l'intera colonna *stress_scolastico* utilizzando il simbolo del dollaro `$`.\n\n\n# Crea un nuovo dataframe chiamato `campione_stressato` contenente solo i soggetti con un livello di *stress* maggiore di 10.\n\n\n# Crea un nuovo dataframe chiamato `maggiorenni_f` selezionando solo le partecipanti femmine con un'età superiore ai 18 anni.\n\n\n# Filtra il dataset originario `dat` selezionando tutti i soggetti che hanno un *reddito* \"Basso\" OPPURE un punteggio di *stress_scolastico* minore o uguale a 6.\n\n\n# Estrai solamente i punteggi di *depressione* di chi ha un *reddito* \"Alto\" (Attenzione: vogliamo estrarre una sola colonna a partire da una condizione sulle righe).\n\n\n# Elimina dal dataframe `dat` la colonna *id*, assegnandole il valore `NULL`, in quanto non è una variabile utile per le nostre analisi psicologiche.\n\n\n# C'è stato un errore di trascrizione! Modifica l'età del 2° soggetto (attualmente 16) impostandola a 18.\n\n\n# Elimina dal dataframe `dat` le prime 3 righe (soggetti 1, 2 e 3) e salva il risultato in un nuovo oggetto chiamato `dat_ridotto`.\n\n\n# Trasforma la colonna *depressione* del dataframe `dat` originale: abbassa tutti i punteggi sottraendo 1 punto a ciascun soggetto.\n\n\n# Crea un piccolo dataframe chiamato `nuovi_studenti` con le osservazioni di 2 nuovi soggetti (inventa tu i valori per genere, età, reddito, stress_scolastico e depressione). Unisci questo nuovo dataframe sotto a `dat` usando la funzione appropriata."
+    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#per-iniziare",
+    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#per-iniziare",
+    "title": "Esercitazione finale",
+    "section": "Per iniziare",
+    "text": "Per iniziare\n\nlibrary(metafor)\n\ndat &lt;- read.csv(\"../materiali/data/data_depression_therapy.csv\")\n\nstr(dat)\nhead(dat)\n\n# Quanti effect size?\nnrow(dat)\n\n# Quanti studi unici?\nlength(unique(dat$study))"
   },
   {
-    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#funzioni-utili",
-    "href": "materiali/03-esercizi-introduttivi-rstudio.html#funzioni-utili",
-    "title": "Esercizi introduttivi a RStudio",
-    "section": "5. Funzioni utili",
-    "text": "5. Funzioni utili\n\n5.1. Gestione del Workspace e Importazione\n\n# Usa la combinazione delle funzioni `rm()` e `ls()` con la sintassi `rm(list=ls())` per cancellare tutti gli oggetti dal tuo ambiente di lavoro (Environment).\n\n\n# Ipotizza di aver salvato i dati della lezione precedente in un file chiamato \"dati_lezione.RData\". Scrivi il comando usando `load()` per caricarlo nel tuo ambiente.\n\n\n# Usa la funzione `library()` per caricare il pacchetto necessario per leggere file Excel (ad esempio `readxl`) prima di importare i dati.\n\n\n# Importa il dataset `dat_scuole.csv` usando la funzione `read.csv()` e salvalo nell'oggetto `dati_csv`.\n\n\n# Importa il dataset chiamato `dat_scuole.xlsx` usando la funzione appropriata (es. `read_excel()` o `read.xlsx()`) e salvalo nell'oggetto `dati_excel`.\n\n\n# Usa la funzione `str()` sull'oggetto appena creato per ispezionarne la struttura interna. Quante variabili ci sono e di che tipo sono?\n\n\n\n\n5.2. Generazione e Manipolazione Dati\n\n# Genera un vettore chiamato `ansia_grezza` con i seguenti punteggi: `4.567`, `5.123`, `3.987`, `6.452`. \n\n\n# Usa la funzione `length()` per verificare quanti punteggi sono contenuti nel vettore `ansia_grezza`.\n\n\n# Sovrascrivi il vettore usando la funzione `round()` per arrotondare tutti i punteggi a 1 solo decimale.\n\n\n# Usa la funzione `seq()` per creare un vettore chiamato `id_soggetti` che contenga una sequenza numerica da 101 a 150.\n\n\n# Usa la funzione `rep()` per generare un vettore chiamato `condizione` in cui l'etichetta \"Trattamento\" e l'etichetta \"Controllo\" vengono ripetute ciascuna per 25 volte.\n\n\n# Usa `sample()` per estrarre casualmente 5 partecipanti (numeri da 1 a 50) per un'intervista qualitativa di follow-up, assicurandoti che lo stesso partecipante non possa essere estratto due volte (senza reinserimento).\n\n\n\n\n5.3. Funzioni Statistiche e Distribuzioni Normali\n\n# Simula i punteggi di un test di Estroversione per 1000 soggetti. Sapendo che il test ha una media normativa di 50 e una deviazione standard di 10, usa `rnorm()` per generare la distribuzione e salvala nell'oggetto `estroversione_simulata`.\n\n\n# Un soggetto ha ottenuto un punteggio di 35 nel test di Estroversione. Utilizzando `pnorm()`, calcola la probabilità di incontrare nella popolazione un soggetto con un punteggio uguale o inferiore al suo.\n\n\n# Vuoi selezionare solo i partecipanti che rientrano nel 5% superiore della distribuzione (il 95° percentile) per un training specifico. Usa `qnorm()` per scoprire quale punteggio esatto fa da soglia, sapendo sempre che la media è 50 e la deviazione standard è 10.\n\n\n# Usa la funzione `replicate()` per ripetere 4 volte l'operazione `sample(1:100, 10)`. Osserva l'output: che tipo di struttura dati ha generato R?\n\n\n# Usa la funzione `curve()` per disegnare la distribuzione normale del test di estroversione. *(Suggerimento: scrivi `dnorm(x, mean = 50, sd = 10)` come primo argomento, e imposta l'asse x da 20 a 80 usando i parametri `from` e `to`)*."
+    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#suggerimenti",
+    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#suggerimenti",
+    "title": "Esercitazione finale",
+    "section": "Suggerimenti",
+    "text": "Suggerimenti\nPrima di stimare il modello, controllate:\n\nsummary(dat$yi)\nsummary(dat$vi)\n\ntable(dat$format)\ntable(dat$diagnosis)\ntable(dat$type)\ntable(dat$control)\ntable(dat$risk_of_bias)\n\n\nDomande guida:\n\nTutti gli effect size possono essere trattati come indipendenti?\nIl modello fixed-effect è plausibile?\nQuanto pesa l’eterogeneità?\nCi sono studi o effect size influenti?\nLe conclusioni cambiano se fate scelte analitiche diverse?"
   },
   {
-    "objectID": "materiali/07-metafor-maccann2020.html#come-leggere-il-risultato",
-    "href": "materiali/07-metafor-maccann2020.html#come-leggere-il-risultato",
-    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
-    "section": "Come leggere il risultato",
-    "text": "Come leggere il risultato\n\nUna correlazione positiva indica che maggiore intelligenza emotiva tende ad associarsi a maggiore performance accademica.\nL’intervallo di confidenza indica l’incertezza sulla correlazione media.\ntau² e I² indicano quanta variabilità rimane tra studi.\nIl test Q valuta se l’eterogeneità osservata è maggiore di quanto atteso per solo errore di campionamento."
+    "objectID": "materiali/07-metafor-barroso2021.html#setup",
+    "href": "materiali/07-metafor-barroso2021.html#setup",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "1. Setup",
+    "text": "1. Setup\nInstalliamo e carichiamo i pacchetti necessari.\n\nrm(list=ls())  # pulizia environment\n\n# Installare i pacchetti solo se non sono già presenti\n# install.packages(\"metafor\")\n# install.packages(\"psymetadata\")\n\nlibrary(metafor)\nlibrary(psymetadata)"
   },
   {
-    "objectID": "materiali/07-metafor-maccann2020.html#interpretazione-1",
-    "href": "materiali/07-metafor-maccann2020.html#interpretazione-1",
-    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
-    "section": "Interpretazione",
-    "text": "Interpretazione\nIl modello fixed-effect assume un unico effetto vero.\nIl modello random-effects assume che l’effetto vero possa variare tra studi.\nPer dati psicologici raccolti in contesti diversi, il modello random-effects è spesso più plausibile."
+    "objectID": "materiali/07-metafor-barroso2021.html#caricare-il-dataset",
+    "href": "materiali/07-metafor-barroso2021.html#caricare-il-dataset",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "2. Caricare il dataset",
+    "text": "2. Caricare il dataset\n\ndat &lt;- barroso2021\n\nEsploriamo la struttura del dataset.\n\nstr(dat)\n\n'data.frame':   747 obs. of  11 variables:\n $ es_id      : int  1 2 3 4 5 6 7 8 9 10 ...\n $ study_id   : int  6 6 19 31 37 37 37 47 47 47 ...\n $ author     : chr  \"Hoffman\" \"Hoffman\" \"Farquharson\" \"Beasley, Long, & Natali\" ...\n $ pub_year   : int  2010 2010 2004 2001 2015 2015 2015 2016 2016 2016 ...\n $ continent  : int  1 1 1 1 1 1 1 1 1 1 ...\n $ grade      : int  5 5 5 3 5 5 5 3 3 3 ...\n $ low_ability: Factor w/ 2 levels \"1\",\"2\": 2 2 2 2 2 2 2 2 2 2 ...\n $ teachers   : int  1 1 2 2 1 1 1 2 2 2 ...\n $ ni         : int  70 70 89 278 30 30 30 506 502 493 ...\n $ yi         : num  -0.4 -0.448 0.01 -0.288 -0.466 ...\n $ vi         : num  0.01493 0.01493 0.01163 0.00364 0.03704 ...\n\nhead(dat)\n\n  es_id study_id                  author pub_year continent grade low_ability\n1     1        6                 Hoffman     2010         1     5           2\n2     2        6                 Hoffman     2010         1     5           2\n3     3       19             Farquharson     2004         1     5           2\n4     4       31 Beasley, Long, & Natali     2001         1     3           2\n5     5       37         Novak & Tassell     2015         1     5           2\n6     6       37         Novak & Tassell     2015         1     5           2\n  teachers  ni          yi          vi\n1        1  70 -0.40005965 0.014925373\n2        1  70 -0.44769202 0.014925373\n3        2  89  0.01000033 0.011627907\n4        2 278 -0.28768207 0.003636364\n5        1  30 -0.46604720 0.037037037\n6        1  30 -0.69314718 0.037037037\n\nsummary(dat)\n\n     es_id          study_id         author             pub_year   \n Min.   :  1.0   Min.   :   6.0   Length:747         Min.   :1993  \n 1st Qu.:187.5   1st Qu.: 631.0   Class :character   1st Qu.:2008  \n Median :374.0   Median :1061.0   Mode  :character   Median :2013  \n Mean   :374.0   Mean   : 987.8                      Mean   :2010  \n 3rd Qu.:560.5   3rd Qu.:1420.0                      3rd Qu.:2016  \n Max.   :747.0   Max.   :1600.0                      Max.   :2018  \n   continent            grade       low_ability    teachers    \n Min.   :-999.000   Min.   :1.000   1: 18       Min.   :1.000  \n 1st Qu.:   1.000   1st Qu.:3.000   2:729       1st Qu.:2.000  \n Median :   1.000   Median :5.000               Median :2.000  \n Mean   :  -5.925   Mean   :3.862               Mean   :1.922  \n 3rd Qu.:   3.000   3rd Qu.:5.000               3rd Qu.:2.000  \n Max.   :   6.000   Max.   :6.000               Max.   :2.000  \n       ni                yi                vi           \n Min.   :   13.0   Min.   :-0.9730   Min.   :3.336e-05  \n 1st Qu.:   69.0   1st Qu.:-0.3654   1st Qu.:3.565e-03  \n Median :  151.0   Median :-0.2448   Median :6.757e-03  \n Mean   :  642.2   Mean   :-0.2495   Mean   :1.423e-02  \n 3rd Qu.:  283.5   3rd Qu.:-0.1368   3rd Qu.:1.515e-02  \n Max.   :29983.0   Max.   : 0.5668   Max.   :1.000e-01  \n\n\nVariabili importanti:\n\nstudy_id: identificativo dello studio;\nes_id: identificativo dell’effect size;\nauthor: autore/autori dello studio;\npub_year: anno di pubblicazione;\nni: numerosità campionaria;\nyi: effect size osservato, già in Fisher’s z;\nvi: varianza dell’effect size."
   },
   {
-    "objectID": "materiali/07-metafor-maccann2020.html#cosa-osservare",
-    "href": "materiali/07-metafor-maccann2020.html#cosa-osservare",
-    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
+    "objectID": "materiali/07-metafor-barroso2021.html#una-riga-uno-studio-o-un-effect-size",
+    "href": "materiali/07-metafor-barroso2021.html#una-riga-uno-studio-o-un-effect-size",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "3. Una riga = uno studio o un effect size?",
+    "text": "3. Una riga = uno studio o un effect size?\nContiamo quanti effect size e quanti studi unici abbiamo.\n\n# Numero Effect Size\nnrow(dat)\n\n[1] 747\n\n# Numero studi\nlength(unique(dat$study_id))\n\n[1] 225\n\n\n\n\n\n\n\n\n\nNoteNota metodologica\n\n\n\nMolti studi riportano più di un effect size. Il modello ideale sarebbe quindi un modello multilevel, ad esempio con rma.mv().\nIn questa esercitazione introduttiva però useremo una strategia più semplice: aggregare gli effect size dello stesso studio, assumendo una correlazione tra effect size pari a rho = 0.50."
+  },
+  {
+    "objectID": "materiali/07-metafor-barroso2021.html#effect-size",
+    "href": "materiali/07-metafor-barroso2021.html#effect-size",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "4. Effect Size",
+    "text": "4. Effect Size\nIn questo dataset yi è già in Fisher’s z.\n\n# Esempio: da correlazione r a Fisher's z\n\n## install.packages(\"psych\")\nlibrary(psych)      # pacchetto per la trasformazione in Fisher's z\n\nr_example &lt;- -0.30\nz_example &lt;- fisherz(r_example)\nz_example\n\n[1] -0.3095196\n\n# Back-transformation: da Fisher's z a correlazione r\nfisherz2r(z_example)\n\n[1] -0.3\n\n\n\n\n\n\n\n\n\nTipInterpretazione\n\n\n\nNel modello lavoreremo sulla scala Fisher’s z, ma per interpretare i risultati trasformiamo la stima finale di nuovo in correlazione r."
+  },
+  {
+    "objectID": "materiali/07-metafor-barroso2021.html#aggregazione-degli-effect-size-within-study",
+    "href": "materiali/07-metafor-barroso2021.html#aggregazione-degli-effect-size-within-study",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "5. Aggregazione degli effect size within-study",
+    "text": "5. Aggregazione degli effect size within-study\nCreiamo prima un oggetto escalc, cioè un dataset che metafor riconosce come contenente effect size e varianze.\nPoiché yi e vi sono già disponibili, usiamo measure = \"GEN\".\n\ndat_es &lt;- escalc(\n  measure = \"GEN\",\n  yi = yi,\n  vi = vi,\n  data = dat\n)\n\nOra aggreghiamo gli effect size all’interno di ciascuno studio.\n\ndat_agg &lt;- aggregate(\n  dat_es,\n  cluster = study_id,\n  rho = 0.50\n)\n\nControlliamo il risultato.\n\nnrow(dat_agg)\n\n[1] 225\n\nhead(dat_agg)\n\n\n  es_id study_id                                              author pub_year \n1   1.5        6                                             Hoffman     2010 \n2   3.0       19                                         Farquharson     2004 \n3   4.0       31                             Beasley, Long, & Natali     2001 \n4   6.0       37                                     Novak & Tassell     2015 \n5  10.0       47 Hart, Logan, Thompson, Kovas, McLoughlin, & Petrill     2016 \n6  13.0       69                                                Leap     2013 \n  continent grade low_ability teachers  ni      yi     vi \n1         1     5           2        1  70 -0.4239 0.0112 \n2         1     5           2        2  89  0.0100 0.0116 \n3         1     3           2        2 278 -0.2877 0.0036 \n4         1     5           2        1  30 -0.6691 0.0247 \n5         1     3           2        2 492 -0.2214 0.0012 \n6         1     2           2        2  40 -0.2522 0.0270 \n\n\n\n\n\n\n\n\nWarningAttenzione\n\n\n\nL’aggregazione è una semplificazione didattica. In un’analisi reale, questa scelta dovrebbe essere giustificata."
+  },
+  {
+    "objectID": "materiali/07-metafor-barroso2021.html#meta-analisi-con-rma",
+    "href": "materiali/07-metafor-barroso2021.html#meta-analisi-con-rma",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "6. Meta-analisi con rma()",
+    "text": "6. Meta-analisi con rma()\nStimiamo un modello random-effects.\n\nres &lt;- rma(\n  yi = yi,\n  vi = vi,\n  method = \"REML\",      # per calcolare una meta-analisi random-effects\n  data = dat_agg      \n)\n\nres       # Risultati\n\n\nRandom-Effects Model (k = 225; tau^2 estimator: REML)\n\ntau^2 (estimated amount of total heterogeneity): 0.0219 (SE = 0.0026)\ntau (square root of estimated tau^2 value):      0.1480\nI^2 (total heterogeneity / total variability):   93.80%\nH^2 (total variability / sampling variability):  16.13\n\nTest for Heterogeneity:\nQ(df = 224) = 1914.7881, p-val &lt; .0001\n\nModel Results:\n\nestimate      se      zval    pval    ci.lb    ci.ub      \n -0.2775  0.0112  -24.8723  &lt;.0001  -0.2994  -0.2557  *** \n\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\n\n\n\n\n\n\nNoteCosa stiamo stimando?\n\n\n\nIl modello stima l’effetto medio della relazione tra ansia matematica e rendimento matematico.\nPoiché gli effect size sono Fisher’s z, anche la stima del modello è inizialmente sulla scala Fisher’s z."
+  },
+  {
+    "objectID": "materiali/07-metafor-barroso2021.html#interpretare-loutput",
+    "href": "materiali/07-metafor-barroso2021.html#interpretare-loutput",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "7. Interpretare l’output",
+    "text": "7. Interpretare l’output\nEstraiamo alcuni elementi principali.\n\nres$b       # effetto medio stimato in Fisher's z\n\n              [,1]\nintrcpt -0.2775353\n\nres$se      # errore standard\n\n[1] 0.01115839\n\nres$ci.lb   # limite inferiore CI\n\n[1] -0.2994054\n\nres$ci.ub   # limite superiore CI\n\n[1] -0.2556653\n\nres$pval    # p-value\n\n[1] 1.4825e-136\n\nres$tau2    # varianza tra studi\n\n[1] 0.02189226\n\nres$I2      # percentuale di variabilità dovuta a eterogeneità\n\n[1] 93.79905\n\nres$QE      # test Q di eterogeneità\n\n[1] 1914.788\n\nres$QEp     # p-value del test Q\n\n[1] 8.266581e-266\n\n\n\nTrasformiamo la stima da Fisher’s z a correlazione r.\n\npredict(res, transf = transf.ztor)\n\n\n    pred   ci.lb   ci.ub   pi.lb  pi.ub \n -0.2706 -0.2908 -0.2502 -0.5142 0.0133"
+  },
+  {
+    "objectID": "materiali/07-metafor-barroso2021.html#interpretazione-risultato",
+    "href": "materiali/07-metafor-barroso2021.html#interpretazione-risultato",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "Interpretazione risultato",
+    "text": "Interpretazione risultato\n\nLa stima indica la relazione media tra ansia matematica e rendimento.\nLa correlazione negativa (r = -0.27) indica che maggiore ansia matematica tende ad associarsi a minore rendimento.\nL’intervallo di fiducia descrive l’incertezza sulla stima media, nel nostro caso la stima è molto precisa (-0.29, -0.25).\ntau e I² indicano l’eterogeneità tra gli studi.\n\n\n\n\n\n\n\n\nImportantDomanda interpretativa\n\n\n\nNon basta chiedere: l’effetto è statisticamente significativo?\nBisogna chiedere anche:\n\nquanto è grande l’effetto?\nquanto è incerto?\nquanto varia tra gli studi?\nl’effetto medio rappresenta bene la letteratura?"
+  },
+  {
+    "objectID": "materiali/07-metafor-barroso2021.html#fixed-effect-vs-random-effects",
+    "href": "materiali/07-metafor-barroso2021.html#fixed-effect-vs-random-effects",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "8. Fixed-effect vs random-effects",
+    "text": "8. Fixed-effect vs random-effects\nConfrontiamo un modello fixed-effect e un modello random-effects.\n\nres_fe &lt;- rma(\n  yi = yi,\n  vi = vi,\n  method = \"EE\",     # per calcolare una meta-analisi fixed-effect \n                     # consigliato dal creatore di metafor - W. Viechtbauer\n  data = dat_agg \n)\n\nres_fe\n\n\nEqual-Effects Model (k = 225)\n\nI^2 (total heterogeneity / total variability):   88.30%\nH^2 (total variability / sampling variability):  8.55\n\nTest for Heterogeneity:\nQ(df = 224) = 1914.7881, p-val &lt; .0001\n\nModel Results:\n\nestimate      se       zval    pval    ci.lb    ci.ub      \n -0.3294  0.0023  -141.3221  &lt;.0001  -0.3339  -0.3248  *** \n\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nres\n\n\nRandom-Effects Model (k = 225; tau^2 estimator: REML)\n\ntau^2 (estimated amount of total heterogeneity): 0.0219 (SE = 0.0026)\ntau (square root of estimated tau^2 value):      0.1480\nI^2 (total heterogeneity / total variability):   93.80%\nH^2 (total variability / sampling variability):  16.13\n\nTest for Heterogeneity:\nQ(df = 224) = 1914.7881, p-val &lt; .0001\n\nModel Results:\n\nestimate      se      zval    pval    ci.lb    ci.ub      \n -0.2775  0.0112  -24.8723  &lt;.0001  -0.2994  -0.2557  *** \n\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1"
+  },
+  {
+    "objectID": "materiali/07-metafor-barroso2021.html#interpretazione-random-vs-fixed",
+    "href": "materiali/07-metafor-barroso2021.html#interpretazione-random-vs-fixed",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "Interpretazione: Random vs Fixed",
+    "text": "Interpretazione: Random vs Fixed\nIl modello fixed-effect assume che tutti gli studi stimino lo stesso effetto vero.\nIl modello random-effects assume che gli effetti veri possano variare tra studi.\nNella maggior parte delle meta-analisi in psicologia, il modello random-effects è spesso più realistico, perché gli studi differiscono per campioni, strumenti, contesti e procedure."
+  },
+  {
+    "objectID": "materiali/07-metafor-barroso2021.html#forest-plot",
+    "href": "materiali/07-metafor-barroso2021.html#forest-plot",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "9. Forest plot",
+    "text": "9. Forest plot\nCon molti studi, un forest plot completo può diventare poco leggibile.\nPer scopi didattici, costruiamo un forest plot su un sottoinsieme di studi.\n\ndat_plot &lt;- dat_agg[1:30, ]\n\nres_plot &lt;- rma(\n  yi = yi,\n  vi = vi,\n  data = dat_plot,\n  method = \"REML\"\n)\n\nforest(\n  res_plot,\n  slab = paste(dat_plot$author, \n               dat_plot$pub_year),   # per visualizzare autori-anno nel grafico\n  transf = transf.ztor,\n  xlab = \"Correlazione r\",\n  header = \"Studio\"\n)"
+  },
+  {
+    "objectID": "materiali/07-metafor-barroso2021.html#cosa-osservare",
+    "href": "materiali/07-metafor-barroso2021.html#cosa-osservare",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
     "section": "Cosa osservare",
-    "text": "Cosa osservare\n\nQuanto variano le stime tra studi?\nQuali studi hanno maggiore precisione?\nL’effetto pooled rappresenta bene tutti gli studi?"
+    "text": "Cosa osservare\n\nStudi con intervalli di fiducia più larghi hanno stime meno precise.\nStudi più grandi tendono ad avere intervalli più stretti.\nL’effetto pooled è la sintesi complessiva, ma non cancella la variabilità tra studi."
   },
   {
-    "objectID": "materiali/07-metafor-maccann2020.html#interpretazione-2",
-    "href": "materiali/07-metafor-maccann2020.html#interpretazione-2",
-    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
-    "section": "Interpretazione",
-    "text": "Interpretazione\nL’intervallo di confidenza descrive l’incertezza sull’effetto medio.\nIl prediction interval descrive la variabilità attesa degli effetti veri in studi futuri simili.\nSe il prediction interval è ampio, il campo è eterogeneo e l’effetto medio va interpretato con cautela."
+    "objectID": "materiali/07-metafor-barroso2021.html#prediction-interval",
+    "href": "materiali/07-metafor-barroso2021.html#prediction-interval",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "10. Prediction interval",
+    "text": "10. Prediction interval\nL’intervallo di fiducia riguarda l’effetto medio.\nIl prediction interval dà un’idea di dove potrebbe cadere l’effetto vero di un nuovo studio simile.\n\npredict(res, transf = transf.ztor)\n\n\n    pred   ci.lb   ci.ub   pi.lb  pi.ub \n -0.2706 -0.2908 -0.2502 -0.5142 0.0133 \n\n\n\n\n\n\n\n\n\nTipInterpretazione\n\n\n\nSe il prediction interval è molto ampio, significa che gli effetti variano molto tra studi.\nIn quel caso, l’effetto medio può essere corretto, ma poco rappresentativo di tutti i contesti."
   },
   {
-    "objectID": "materiali/07-metafor-maccann2020.html#egger-type-regression-test",
-    "href": "materiali/07-metafor-maccann2020.html#egger-type-regression-test",
-    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
+    "objectID": "materiali/07-metafor-barroso2021.html#funnel-plot-e-publication-bias",
+    "href": "materiali/07-metafor-barroso2021.html#funnel-plot-e-publication-bias",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "11. Funnel plot e publication bias",
+    "text": "11. Funnel plot e publication bias\nProduciamo un funnel plot.\n\nfunnel(\n  res,\n  yaxis = \"sei\",\n  xlab = \"Fisher's z\"\n)"
+  },
+  {
+    "objectID": "materiali/07-metafor-barroso2021.html#egger-type-regression-test",
+    "href": "materiali/07-metafor-barroso2021.html#egger-type-regression-test",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
     "section": "Egger-type regression test",
-    "text": "Egger-type regression test\n\nregtest(\n  res,\n  model = \"rma\",\n  predictor = \"sei\"\n)"
+    "text": "Egger-type regression test\n\nregtest(\n  res,\n  model = \"rma\",\n  predictor = \"sei\"\n)\n\n\nRegression Test for Funnel Plot Asymmetry\n\nModel:     mixed-effects meta-regression model\nPredictor: standard error\n\nTest for Funnel Plot Asymmetry: z =  1.5567, p = 0.1195\nLimit Estimate (as sei -&gt; 0):   b = -0.3109 (CI: -0.3581, -0.2636)"
   },
   {
-    "objectID": "materiali/07-metafor-maccann2020.html#interpretazione-cauta",
-    "href": "materiali/07-metafor-maccann2020.html#interpretazione-cauta",
-    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
+    "objectID": "materiali/07-metafor-barroso2021.html#interpretazione-cauta",
+    "href": "materiali/07-metafor-barroso2021.html#interpretazione-cauta",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
     "section": "Interpretazione cauta",
-    "text": "Interpretazione cauta\nL’Egger test valuta l’associazione tra dimensione dell’effetto e precisione dello studio.\nUn risultato significativo può indicare asimmetria del funnel plot, ma non dimostra automaticamente publication bias.\nPossibili spiegazioni alternative:\n\neterogeneità reale;\ndifferenze metodologiche;\ndifferenze nei campioni;\nstudi piccoli di qualità diversa;\ncoding decisions nella systematic review."
+    "text": "Interpretazione cauta\nUn funnel plot asimmetrico può suggerire publication bias, ma non lo dimostra automaticamente.\nPossibili spiegazioni alternative:\n\neterogeneità reale;\nstudi piccoli di qualità diversa;\nstrumenti di misura diversi;\npopolazioni diverse;"
   },
   {
-    "objectID": "materiali/07-metafor-maccann2020.html#leave-one-out",
-    "href": "materiali/07-metafor-maccann2020.html#leave-one-out",
-    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
-    "section": "Leave-one-out",
-    "text": "Leave-one-out\n\nloo &lt;- leave1out(res)\nloo"
+    "objectID": "materiali/07-metafor-barroso2021.html#trim-and-fill",
+    "href": "materiali/07-metafor-barroso2021.html#trim-and-fill",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "12. Trim-and-fill",
+    "text": "12. Trim-and-fill\nApplichiamo il metodo trim-and-fill.\n\ntf &lt;- trimfill(res)\n\ntf\n\n\nEstimated number of missing studies on the left side: 47 (SE = 9.8217)\n\nRandom-Effects Model (k = 272; tau^2 estimator: REML)\n\ntau^2 (estimated amount of total heterogeneity): 0.0320 (SE = 0.0033)\ntau (square root of estimated tau^2 value):      0.1788\nI^2 (total heterogeneity / total variability):   95.16%\nH^2 (total variability / sampling variability):  20.68\n\nTest for Heterogeneity:\nQ(df = 271) = 2558.5308, p-val &lt; .0001\n\nModel Results:\n\nestimate      se      zval    pval    ci.lb    ci.ub      \n -0.3297  0.0119  -27.6824  &lt;.0001  -0.3530  -0.3064  *** \n\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\npredict(tf, transf = transf.ztor)\n\n\n    pred   ci.lb   ci.ub   pi.lb  pi.ub \n -0.3183 -0.3391 -0.2971 -0.5921 0.0215 \n\n\nVisualizziamo il funnel plot con gli studi imputati.\n\nfunnel(\n  tf,\n  yaxis = \"sei\",\n  xlab = \"Fisher's z\"\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarningAttenzione\n\n\n\nIl trim-and-fill non produce automaticamente una stima “corretta” dell’effetto vero.\nÈ meglio interpretarlo come una sensitivity analysis rispetto a uno specifico scenario di asimmetria del funnel plot."
   },
   {
-    "objectID": "materiali/07-metafor-maccann2020.html#influence-diagnostics",
-    "href": "materiali/07-metafor-maccann2020.html#influence-diagnostics",
-    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
+    "objectID": "materiali/07-metafor-barroso2021.html#sensitivity-analysis",
+    "href": "materiali/07-metafor-barroso2021.html#sensitivity-analysis",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "13. Sensitivity analysis",
+    "text": "13. Sensitivity analysis\n\nLeave-one-out\nVerifichiamo se il risultato dipende in modo eccessivo da un singolo studio.\n\nloo &lt;- leave1out(res)\nhead(loo)\n\n\n   estimate     se     zval   pval   ci.lb   ci.ub         Q     Qp   tau2 \n-1  -0.2770 0.0112 -24.7577 0.0000 -0.2989 -0.2551 1913.9900 0.0000 0.0219 \n-2  -0.2786 0.0111 -24.9952 0.0000 -0.3005 -0.2568 1904.8782 0.0000 0.0217 \n-3  -0.2775 0.0112 -24.7451 0.0000 -0.2994 -0.2555 1914.3093 0.0000 0.0220 \n-4  -0.2765 0.0111 -24.8207 0.0000 -0.2983 -0.2547 1910.1143 0.0000 0.0217 \n-5  -0.2778 0.0112 -24.7739 0.0000 -0.2998 -0.2558 1905.2392 0.0000 0.0220 \n-6  -0.2776 0.0112 -24.8144 0.0000 -0.2995 -0.2557 1914.5678 0.0000 0.0220 \n        I2      H2 \n-1 93.8315 16.2113 \n-2 93.7801 16.0775 \n-3 93.8480 16.2550 \n-4 93.7807 16.0791 \n-5 93.8226 16.1880 \n-6 93.8414 16.2375"
+  },
+  {
+    "objectID": "materiali/07-metafor-barroso2021.html#influence-diagnostics",
+    "href": "materiali/07-metafor-barroso2021.html#influence-diagnostics",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
     "section": "Influence diagnostics",
-    "text": "Influence diagnostics\n\ninf &lt;- influence(res)\ninf\nplot(inf)"
+    "text": "Influence diagnostics\n\ninf &lt;- influence(res)\nplot(inf)\n\n\n\n\n\n\n\n\n\n\nInterpretazione\n\nC’è uno studio che cambia molto la stima complessiva?\nCi sono studi particolarmente influenti?\nLe conclusioni sono stabili?"
   },
   {
-    "objectID": "materiali/07-metafor-maccann2020.html#domande-interpretative",
-    "href": "materiali/07-metafor-maccann2020.html#domande-interpretative",
-    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
-    "section": "Domande interpretative",
-    "text": "Domande interpretative\n\nCi sono studi molto influenti?\nLa stima media cambia molto rimuovendo uno studio alla volta?\nLe conclusioni sembrano robuste?"
+    "objectID": "materiali/07-metafor-barroso2021.html#meta-regressione-esplorativa",
+    "href": "materiali/07-metafor-barroso2021.html#meta-regressione-esplorativa",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "14. Meta-regressione esplorativa",
+    "text": "14. Meta-regressione esplorativa\nCome esempio finale, testiamo se l’anno di pubblicazione è associato alla dimensione dell’effetto.\n\nres_mod &lt;- rma(\n  yi = yi,\n  vi = vi,\n  mods = ~ pub_year,\n  data = dat_agg,\n  method = \"REML\"\n)\n\nsummary(res_mod)\n\n\nMixed-Effects Model (k = 225; tau^2 estimator: REML)\n\n   logLik   deviance        AIC        BIC       AICc   \n  79.9740  -159.9480  -153.9480  -143.7265  -153.8384   \n\ntau^2 (estimated amount of residual heterogeneity):     0.0220 (SE = 0.0026)\ntau (square root of estimated tau^2 value):             0.1483\nI^2 (residual heterogeneity / unaccounted variability): 93.57%\nH^2 (unaccounted variability / sampling variability):   15.56\nR^2 (amount of heterogeneity accounted for):            0.00%\n\nTest for Residual Heterogeneity:\nQE(df = 223) = 1891.5105, p-val &lt; .0001\n\nTest of Moderators (coefficient 2):\nQM(df = 1) = 0.1615, p-val = 0.6878\n\nModel Results:\n\n          estimate      se     zval    pval    ci.lb   ci.ub    \nintrcpt    -1.5606  3.1933  -0.4887  0.6250  -7.8193  4.6981    \npub_year    0.0006  0.0016   0.4018  0.6878  -0.0025  0.0038    \n\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1"
   },
   {
-    "objectID": "materiali/07-metafor-maccann2020.html#interpretazione-3",
-    "href": "materiali/07-metafor-maccann2020.html#interpretazione-3",
-    "title": "Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica",
+    "objectID": "materiali/07-metafor-barroso2021.html#interpretazione-3",
+    "href": "materiali/07-metafor-barroso2021.html#interpretazione-3",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
     "section": "Interpretazione",
-    "text": "Interpretazione\nIl coefficiente del moderatore indica quanto cambia l’effect size medio al variare del moderatore.\nPer esempio:\n\nage_c: cambiamento dell’effect size per un anno in più di età media;\npub_year_c: cambiamento dell’effect size per un anno in più di pubblicazione.\n\n\n\n\n\n\n\nWarningCautela\n\n\n\nLa meta-regressione è un’analisi a livello di studio.\nNon permette inferenze causali individuali e può essere poco potente se il numero di studi è limitato o se il moderatore è misurato con errore."
+    "text": "Interpretazione\nIl coefficiente di pub_year indica quanto cambia l’effect size medio per ogni anno di pubblicazione.\nSe il coefficiente è positivo, gli studi più recenti tendono a stimare effetti più positivi.\nIn questo caso, l’effetto dell’anno di pubblicazione non è significativo, quindi non possiamo rifiutare l’ipotesi nulla di non-effetto dell’anno di pubblicazione.\n\n\n\n\n\n\n\nWarningCautela\n\n\n\nLa meta-regressione è osservazionale. Non dimostra causalità e dovrebbe essere interpretata soprattutto come analisi esplorativa."
   },
   {
-    "objectID": "materiali/05-esercizio-data-nightmare.html",
-    "href": "materiali/05-esercizio-data-nightmare.html",
-    "title": "Esercizio Data Nightmare",
-    "section": "",
-    "text": "Link all’esercizio"
-  },
-  {
-    "objectID": "materiali/04-dat_scuole.html",
-    "href": "materiali/04-dat_scuole.html",
-    "title": "Dataset scuole",
-    "section": "",
-    "text": "Dataset utilizzato per gli esercizi introduttivi su RStudio.\n Scarica dat_scuole.csv"
+    "objectID": "materiali/07-metafor-barroso2021.html#take-home-messages",
+    "href": "materiali/07-metafor-barroso2021.html#take-home-messages",
+    "title": "Esercizio Meta-Analisi: Math anxiety e achievement",
+    "section": "Take-home messages",
+    "text": "Take-home messages\n\nrma() permette di stimare una meta-analisi con pochissimo codice.\nmethod = \"REML\"per calcolare una meta-analisi random-effects.\nmethod = \"EE\"per calcolare una meta-analisi fixed-effect.\nLa parte difficile non è solo il codice, ma la qualità delle decisioni prima e dopo il modello.\nGli effect size devono essere sulla scala corretta e accompagnati dalla loro varianza.\nSe ci sono più effect size per studio, bisogna gestire la dipendenza.\nEffetto medio, eterogeneità e prediction interval vanno interpretati insieme.\nPublication bias e trim-and-fill richiedono molta cautela.\nLa meta-regressione è utile, ma non sostituisce una buona teoria e un protocollo chiaro."
   },
   {
     "objectID": "index.html#informazioni",
