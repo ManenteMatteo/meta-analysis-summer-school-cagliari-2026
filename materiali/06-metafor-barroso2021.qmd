@@ -25,19 +25,19 @@ Il dataset contiene risultati da **225 studi**, per un totale di **747 effect si
 
 Gli effect size sono già espressi come **correlazioni trasformate in Fisher's z**.
 
-L'obiettivo è mostrare come:
+L'obiettivo è imparare a:
 
-- preparare un dataset meta-analitico;
+- preparare un dataset in vista di una meta-analisi;
 
 - aggregare più effect size provenienti dallo stesso studio;
 
-- stimare un modello random-effects con `metafor`;
+- stimare un modelli fixed e random-effects con `metafor`;
 
 - interpretare output, eterogeneità e prediction interval;
 
 - visualizzare i risultati;
 
-- fare semplici analisi su publication bias e sensibilità;
+- analizzare il publication bias;
 
 - introdurre una meta-regressione esplorativa.
 
@@ -78,10 +78,10 @@ Esploriamo la struttura del dataset.
 ```{r}
 str(dat)
 head(dat)
-names(dat)
+summary(dat)
 ```
 
-Alcune variabili importanti:
+Variabili importanti:
 
 - `study_id`: identificativo dello studio;
 
@@ -105,7 +105,10 @@ Alcune variabili importanti:
 Contiamo quanti effect size e quanti studi unici abbiamo.
 
 ```{r}
+# Numero Effect Size
 nrow(dat)
+
+# Numero studi
 length(unique(dat$study_id))
 ```
 
@@ -114,10 +117,10 @@ length(unique(dat$study_id))
 ::: {.callout-note}
 ## Nota metodologica
 
-**Molti studi contribuiscono con più di un effect size.**
-**Il modello ideale sarebbe quindi un modello multilevel o multivariate, ad esempio con `rma.mv()`.**
+**Molti studi riportano più di un effect size.**
+**Il modello ideale sarebbe quindi un modello multilevel, ad esempio con `rma.mv()`.**
 
-In questa esercitazione introduttiva useremo una strategia più semplice: **aggregare gli effect size entro studio**, assumendo una correlazione tra effect size pari a `rho = 0.50`.
+In questa esercitazione introduttiva però useremo una strategia più semplice: **aggregare gli effect size dello stesso studio**, assumendo una correlazione tra effect size pari a `rho = 0.50`.
 :::
 
 <br>
@@ -126,25 +129,18 @@ In questa esercitazione introduttiva useremo una strategia più semplice: **aggr
 
 In questo dataset `yi` è già in **Fisher's z**.
 
-La trasformazione Fisher's z viene spesso usata perché rende le correlazioni più adatte alla modellizzazione meta-analitica.
-
 ```{r}
 # Esempio: da correlazione r a Fisher's z
+
+## install.packages("psych")
+library(psych)      # pacchetto per la trasformazione in Fisher's z
+
 r_example <- -0.30
-z_example <- transf.rtoz(r_example)
+z_example <- fisherz(r_example)
 z_example
 
-# Esempio: da Fisher's z a correlazione r
-transf.ztor(z_example)
-```
-
-Per una correlazione, una formula comune per la varianza della Fisher's z è:
-
-```{r}
-# Varianza approssimata della Fisher's z
-n_example <- 100
-vi_example <- 1 / (n_example - 3)
-vi_example
+# Back-transformation: da Fisher's z a correlazione r
+fisherz2r(z_example)
 ```
 
 <br>
@@ -157,7 +153,7 @@ vi_example
 
 <br>
 
-## 5. Aggregazione gli effect size within-study
+## 5. Aggregazione degli effect size within-study
 
 Creiamo prima un oggetto `escalc`, cioè un dataset che `metafor` riconosce come contenente effect size e varianze.
 
@@ -172,7 +168,7 @@ dat_es <- escalc(
 )
 ```
 
-Ora aggreghiamo gli effect size entro studio.
+Ora aggreghiamo gli effect size all'interno di ciascuno studio.
 
 ```{r}
 dat_agg <- aggregate(
@@ -182,6 +178,7 @@ dat_agg <- aggregate(
 )
 ```
 
+
 Controlliamo il risultato.
 
 ```{r}
@@ -190,55 +187,12 @@ head(dat_agg)
 ```
 
 
-Aggiungiamo alcune informazioni utili per grafici e meta-regressione.
-
-```{r}
-# Informazioni a livello di studio: una sola riga per studio
-study_info_author <- aggregate(
-  author ~ study_id,
-  data = dat,
-  FUN = function(x) x[1]
-)
-
-study_info_year <- aggregate(
-  pub_year ~ study_id,
-  data = dat,
-  FUN = function(x) x[1]
-)
-
-study_info <- merge(
-  study_info_author,
-  study_info_year,
-  by = "study_id"
-)
-
-# Rimuoviamo eventuali colonne problematiche già presenti in dat_agg
-dat_agg$author <- NULL
-dat_agg$pub_year <- NULL
-
-# Aggiungiamo autore e anno puliti al dataset aggregato
-dat_agg <- merge(
-  dat_agg,
-  study_info,
-  by = "study_id",
-  all.x = TRUE
-)
-
-# Creiamo etichette per il forest plot
-dat_agg$slab <- paste0(dat_agg$author, " (", dat_agg$pub_year, ")")
-
-# Ordiniamo per anno di pubblicazione
-dat_plot <- dat_agg[order(dat_agg[["pub_year"]]), ]
-```
 
 ::: {.callout-warning}
 ## Attenzione
 
 **L'aggregazione è una semplificazione didattica.**
-
-Riduce la dipendenza tra effect size, ma perde informazioni sulla variabilità entro studio.
-
-In un'analisi reale, questa scelta dovrebbe essere **giustificata** nel protocollo della systematic review.
+In un'analisi reale, questa scelta dovrebbe essere **giustificata**.
 :::
 
 <br>
@@ -251,19 +205,13 @@ Stimiamo un modello random-effects.
 res <- rma(
   yi = yi,
   vi = vi,
-  data = dat_agg,
-  method = "REML"
+  method = "REML",      # per calcolare una meta-analisi random-effects
+  data = dat_agg      
 )
 
-res
+res       # Risultati
 ```
 
-Questa è la struttura minima:
-
-```{r}
-rma(yi, vi, data = dat_agg)
-```
-<br>
 
 ::: {.callout-note}
 ## Cosa stiamo stimando?
@@ -282,16 +230,17 @@ Estraiamo alcuni elementi principali.
 ```{r}
 res$b       # effetto medio stimato in Fisher's z
 res$se      # errore standard
-res$ci.lb   # limite inferiore IC
-res$ci.ub   # limite superiore IC
+res$ci.lb   # limite inferiore CI
+res$ci.ub   # limite superiore CI
 res$pval    # p-value
 res$tau2    # varianza tra studi
 res$I2      # percentuale di variabilità dovuta a eterogeneità
 res$QE      # test Q di eterogeneità
 res$QEp     # p-value del test Q
 ```
+<br>
 
-Trasformiamo la stima da Fisher's z a correlazione `r`.
+**Trasformiamo la stima da Fisher's z a correlazione `r`.**
 
 ```{r}
 predict(res, transf = transf.ztor)
@@ -303,11 +252,11 @@ predict(res, transf = transf.ztor)
 
 - La stima indica la relazione media tra ansia matematica e rendimento.
 
-- Una correlazione negativa indica che maggiore ansia matematica tende ad associarsi a minore rendimento.
+- La correlazione negativa (r = -0.27) indica che maggiore ansia matematica tende ad associarsi a minore rendimento.
 
-- L'intervallo di fiducia descrive l'incertezza sulla stima media.
+- L'intervallo di fiducia descrive l'incertezza sulla stima media, nel nostro caso la stima è molto precisa (-0.29, -0.25).
 
-- `tau²` e `I²` indicano quanta eterogeneità rimane tra gli studi.
+- `tau` e `I²` indicano l'eterogeneità tra gli studi.
 
 <br>
 
@@ -338,19 +287,13 @@ Confrontiamo un modello fixed-effect e un modello random-effects.
 res_fe <- rma(
   yi = yi,
   vi = vi,
-  data = dat_agg,
-  method = "FE"
-)
-
-res_re <- rma(
-  yi = yi,
-  vi = vi,
-  data = dat_agg,
-  method = "REML"
+  method = "EE",     # per calcolare una meta-analisi fixed-effect 
+                     # consigliato dal creatore di metafor - W. Viechtbauer
+  data = dat_agg 
 )
 
 res_fe
-res_re
+res
 ```
 <br>
 
@@ -372,8 +315,7 @@ Con molti studi, un forest plot completo può diventare poco leggibile.
 Per scopi didattici, costruiamo un forest plot su un sottoinsieme di studi.
 
 ```{r}
-dat_plot <- dat_agg[order(dat_agg$pub_year), ]
-dat_plot <- dat_plot[1:30, ]
+dat_plot <- dat_agg[1:30, ]
 
 res_plot <- rma(
   yi = yi,
@@ -384,7 +326,8 @@ res_plot <- rma(
 
 forest(
   res_plot,
-  slab = paste(dat_plot$author, dat_plot$pub_year),
+  slab = paste(dat_plot$author, 
+               dat_plot$pub_year),   # per visualizzare autori-anno nel grafico
   transf = transf.ztor,
   xlab = "Correlazione r",
   header = "Studio"
@@ -465,8 +408,6 @@ Possibili spiegazioni alternative:
 - strumenti di misura diversi;
 
 - popolazioni diverse;
-
-- errori di codifica o estrazione.
 
 <br>
 
@@ -569,7 +510,7 @@ In questo caso, l'effetto dell'anno di pubblicazione non è significativo, quind
 ## Cautela
 
 **La meta-regressione è osservazionale.**
-**Non dimostra causalità e dovrebbe essere interpretata soprattutto come analisi esplorativa, a meno che il moderatore fosse pre-specificato nel protocollo.**
+**Non dimostra causalità e dovrebbe essere interpretata soprattutto come analisi esplorativa.**
 :::
 
 <br>
@@ -577,6 +518,10 @@ In questo caso, l'effetto dell'anno di pubblicazione non è significativo, quind
 ## Take-home messages
 
 - `rma()` permette di stimare una meta-analisi con pochissimo codice.
+
+- `method = "REML"`per calcolare una meta-analisi random-effects
+
+- `method = "EE"`per calcolare una meta-analisi fixed-effect
 
 - La parte difficile non è solo il codice, ma la qualità delle decisioni prima e dopo il modello.
 

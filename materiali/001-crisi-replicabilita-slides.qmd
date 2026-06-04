@@ -1,7 +1,7 @@
 ---
 title: "Introduzione - Crisi di Replicabilità"
 type: "Slides"
-author: "[Gianmarco Altoè](https://www.researchgate.net/profile/Gianmarco-Altoe)"
+author: "[Gianmarco Altoè](https://scholar.google.com/citations?hl=en&user=-N7efdEAAAAJ&view_op=list_works&sortby=pubdate)"
 ---
 
 <br>

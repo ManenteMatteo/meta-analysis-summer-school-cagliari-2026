@@ -6,7 +6,7 @@ institute: "University of Padova"
 author:
   - name: "[Matteo Manente](https://manentematteo.github.io/)"
   - name: "[Massimiliano Pastore](https://dpss.psy.unipd.it/~massimiliano.pastore/index.html)"
-  - name: "[Gianmarco Altoè](https://www.researchgate.net/profile/Gianmarco-Altoe)"
+  - name: "[Gianmarco Altoè](https://scholar.google.com/citations?hl=en&user=-N7efdEAAAAJ&view_op=list_works&sortby=pubdate)"
 ---
 
 <br>
@@ -48,13 +48,13 @@ Alcune domande per conoscerci meglio.
 ::: g-col-4
 ### [Materiali](materiali.qmd)
 
-Introduzione alle systematic review & Tutorial RStudio
+Slides delle lezioni, Tutorial RStudio & Esercizi
 :::
 
 ::: g-col-4
 ### [Risorse](resources.qmd)
 
-Risorse utili per condurre Systematic Review/Meta-Analisi
+Risorse utili per Systematic Review/Meta-Analisi
 :::
 
 ::::::
