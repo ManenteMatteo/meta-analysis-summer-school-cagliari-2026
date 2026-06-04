@@ -53,63 +53,203 @@
     "href": "materiali.html",
     "title": "Materiali",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\ntype\n\n\n\n\n\n\n\n\nIntroduzione - Crisi di Replicabilità\n\n\nGianmarco Altoè\n\n\nSlides\n\n\n\n\n\n\nSystematic Review: Introduzione\n\n\nMatteo Manente\n\n\nSlides\n\n\n\n\n\n\nBasi di RStudio\n\n\nMatteo Manente\n\n\nTutorial\n\n\n\n\n\n\nEsercizi introduttivi a RStudio\n\n\nMatteo Manente\n\n\nExercise\n\n\n\n\n\n\nDataset scuole\n\n\nMassimiliano Pastore\n\n\nDataset\n\n\n\n\n\n\nEsercizio Data Nightmare\n\n\nEnrico Toffalini\n\n\nExercise\n\n\n\n\n\n\nEsercizio Meta-Analisi: Intelligenza emotiva e performance accademica\n\n\nMatteo Manente\n\n\nExercise\n\n\n\n\n\n\nEsercizio Meta-Analisi: Math anxiety e achievement\n\n\nMatteo Manente\n\n\nExercise\n\n\n\n\n\n\nEsercitazione finale\n\n\nMatteo Manente\n\n\nExercise\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\ntype\n\n\n\n\n\n\n\n\nIntroduzione - Crisi di Replicabilità\n\n\nGianmarco Altoè\n\n\nSlides\n\n\n\n\n\n\nSystematic Review: Introduzione\n\n\nMatteo Manente\n\n\nSlides\n\n\n\n\n\n\nBasi di RStudio\n\n\nMatteo Manente\n\n\nTutorial\n\n\n\n\n\n\nEsercizi introduttivi a RStudio\n\n\nMatteo Manente\n\n\nExercise\n\n\n\n\n\n\nDataset scuole\n\n\nMassimiliano Pastore\n\n\nDataset\n\n\n\n\n\n\nEsercizio Data Nightmare\n\n\nEnrico Toffalini\n\n\nExercise\n\n\n\n\n\n\nEsercizio Meta-Analisi: Intelligenza emotiva e performance accademica\n\n\nMatteo Manente\n\n\nExercise\n\n\n\n\n\n\nEsercizio Meta-Analisi: Math anxiety e achievement\n\n\nMatteo Manente\n\n\nExercise\n\n\n\n\n\n\nMeta-Analysis: Supplementary Materials\n\n\nGianmarco Altoè\n\n\nSupplementary\n\n\n\n\n\n\nEsercitazione finale\n\n\nMatteo Manente\n\n\nExercise\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "materiali/04-dat_scuole.html",
-    "href": "materiali/04-dat_scuole.html",
-    "title": "Dataset scuole",
+    "objectID": "materiali/1-supplementary-materials.html",
+    "href": "materiali/1-supplementary-materials.html",
+    "title": "Meta-Analysis: Supplementary Materials",
     "section": "",
-    "text": "Dataset utilizzato per gli esercizi introduttivi su RStudio.\n Scarica dat_scuole.csv"
+    "text": "Materiali aggiuntivi relativi alle meta-analisi.\n Libro sulle Meta-Analisi - Borenstein, 2009 (pdf) \n “Heterogeneity in meta-analysis” - Borenstein, 2023 (pdf)"
   },
   {
-    "objectID": "materiali/05-esercizio-data-nightmare.html",
-    "href": "materiali/05-esercizio-data-nightmare.html",
-    "title": "Esercizio Data Nightmare",
+    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html",
+    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html",
+    "title": "Esercitazione finale",
     "section": "",
-    "text": "Link all’esercizio"
+    "text": "Durata prevista: 45 minuti\nObiettivo: analizzare un dataset di studi primari rispondendo alla seguente domanda di ricerca\nIl dataset contiene studi che confrontano interventi psicoterapeutici con condizioni di controllo."
   },
   {
-    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#oggetti",
-    "href": "materiali/03-esercizi-introduttivi-rstudio.html#oggetti",
-    "title": "Esercizi introduttivi a RStudio",
-    "section": "1. Oggetti",
-    "text": "1. Oggetti\n\n# Crea un oggetto chiamato `punteggio_base` e assegnagli il valore 50 utilizzando l'operatore di assegnazione `&lt;-`.\n\n\n# Crea un secondo oggetto chiamato `moltiplicatore` e assegnagli il valore 2.5.\n\n\n# Moltiplica `punteggio_base` per `moltiplicatore` e salva il risultato in un nuovo oggetto chiamato `punteggio_totale`. Richiama l'oggetto per visualizzarne il contenuto.\n\n\n# R fa distinzione tra lettere maiuscole e minuscole (è *case-sensitive*). Prova a richiamare l'oggetto `Punteggio_base` (con la P maiuscola). Quale errore ti restituisce la console?\n\n\n# Sovrascrivi l'oggetto `punteggio_base` assegnandogli un nuovo valore pari a 75. \n\n\n# Dopo aver modificato il `punteggio_base`, richiama di nuovo `punteggio_totale`: il suo valore si è aggiornato in automatico o mostra ancora il vecchio risultato?\n  \n  \n# Controlla quali oggetti sono attualmente salvati nel tuo ambiente di lavoro (Environment) utilizzando la funzione `ls()`.\n\n\n# Usa la funzione `rm()` per eliminare l'oggetto `moltiplicatore` dal tuo ambiente di lavoro. Verifica con `ls()` che sia effettivamente scomparso."
+    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#materiali",
+    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#materiali",
+    "title": "Esercitazione finale",
+    "section": "Materiali",
+    "text": "Materiali\nFile per l’esercitazione.\n Dataset CSV \n Data Dictionary & Protocol \n\n\n\n\n\n\nNote\n\n\n\nIl data dictionary descrive le variabili del dataset e contiene alcune informazioni importanti per l’analisi."
   },
   {
-    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#vettori",
-    "href": "materiali/03-esercizi-introduttivi-rstudio.html#vettori",
-    "title": "Esercizi introduttivi a RStudio",
-    "section": "2. Vettori",
-    "text": "2. Vettori\n\n# Crea il vettore x contenente i numeri 4, 6, 12, 34, 8\n\n\n# Crea il vettore y contenente tutti i numeri pari compresi tra 1 e 25 (?seq())\n\n\n# Crea il vettore z contenente tutti i primi 10 multipli di 7 partendo da 13 (?seq())\n\n\n# Crea il vettore s in cui le lettere \"A\",\"B\" e \"C\" vengono ripetute nel medesimo ordine 4 volte (?rep())\n\n\n# Del vettore x seleziona il 2°, 3° e 5° elemento\n\n\n# Del vettore x seleziona i valori 34 e 4\n\n\n# Del vettore y seleziona tutti i valori minori di 13 o maggiori di 19\n\n\n# Del vettore z seleziona tutti i valori compresi tra 24 e 50\n\n\n# Del vettore s seleziona tutti gli elementi uguali ad \"A\"\n\n\n# Del vettore t seleziona tutti gli elementi diversi da \"B\"\n\n\n# Crea un nuovo vettore u identico a s ma dove le \"A\" sono sostituite con la lettera \"U\"\n\n\n# Elimina dal vettore z i valori 28 e 42\n\n\n# Crea il vettore j unendo i vettori x ed z.\n\n\n# Elimina gli ultimi tre elementi del vettore j e controlla che i vettori j e y abbiano la stessa lunghezza.\n\n\n# Calcola la somma tra i vettori j e y.\n\n\n# Moltiplica il vettore z per una costante k=3.\n\n\n# Calcola il prodotto tra i primi 10 elementi del vettore y ed il vettore z"
+    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#scenario",
+    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#scenario",
+    "title": "Esercitazione finale",
+    "section": "Scenario",
+    "text": "Scenario\nAvete a disposizione un dataset con effect size estratti da studi primari sulla psicoterapia per la depressione.\nAlcune informazioni importanti:\n\nogni riga rappresenta un effect size;\nalcune pubblicazioni possono contribuire con più effect size;\nl’effect size è una Standardized Mean Difference calcolata in Hedges’ g;\nvalori positivi indicano che la psicoterapia ha prodotto esiti migliori rispetto al controllo."
   },
   {
-    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#vettori-factor",
-    "href": "materiali/03-esercizi-introduttivi-rstudio.html#vettori-factor",
-    "title": "Esercizi introduttivi a RStudio",
-    "section": "2.1 Vettori factor",
-    "text": "2.1 Vettori factor\n\n# Crea la variabile categoriale genere così definita:\n  \n  ## [1] M F M F M F F F M\n  ## Levels: F M\n  \n\n\n# Rinomina i livelli della variabile genere rispettivamente in \"donne\" e \"uomini\".\n\n\n# Crea la variabile categoriale intervento così definita:\n  \n  ## [1] CBT         Psicanalisi CBT         Psicanalisi CBT         Psicanalisi\n  ## [7] Controllo   Controllo   CBT        \n  ## Levels: CBT Controllo Psicanalisi\n  \n\n# Correggi nella variabile intervento la 7° e 8° osservazione con la voce Farmaci.\n\n\n# Aggiungi alla variabile intervento le seguenti nuove osservazioni:\n  \n  ## [1] \"Farmaci\"   \"Controllo\" \"Farmaci\""
+    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#consegna",
+    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#consegna",
+    "title": "Esercitazione finale",
+    "section": "Consegna",
+    "text": "Consegna\nEffettuare una meta-analisi sul dataset per rispondere alla domanda:\n\nLa psicoterapia è efficace per trattare la depressione?\n\nAvete piena libertà sulle scelte analitiche.\nPotete decidere, per esempio:\n\nquale modello stimare;\ncome gestire studi con più effect size;\nse escludere o mantenere eventuali outlier;\nse considerare sottogruppi o moderatori;\nse controllare publication bias o studi influenti.\n\nNon esiste una sola risposta corretta: l’obiettivo è produrre una scelta analitica ragionevole."
   },
   {
-    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#matrici",
-    "href": "materiali/03-esercizi-introduttivi-rstudio.html#matrici",
-    "title": "Esercizi introduttivi a RStudio",
-    "section": "3. Matrici",
-    "text": "3. Matrici\n\n# Crea la matrice A così definita:\n  \n#   2 34 12 7 \n#  46 93 27 99 \n#  23 38 7  04\n\n\n# Crea la matrice B contenente tutti i primi 12 numeri dispari disposti su 4 righe e 3 colonne.\n\n\n# Crea la matrice C contenente i primi 12 multipli di 9 disposti su 3 righe e 4 colonne.\n\n\n# Crea la matrice D formata da 3 colonne in cui le lettere \"A\",\"B\" e \"C\" vengano ripetute 4 volte ciascuna rispettivamente nella prima, seconda e terza colonna.\n\n\n# Crea la matrice E formata da 3 righe in cui le lettere \"A\",\"B\" e \"C\" vengano ripetute 4 volte ciascuna rispettivamente nella prima, seconda e terza riga.\n\n\n# Utilizzando gli indici di riga e di colonna selziona il numero 27 della matrice A\n\n\n# Selziona gli elementi compresi tra la seconda e quarta riga, seconda e terza colonna della matrice B\n\n\n# Elimina dalla matrice C la terza riga e la terza colonna\n\n\n# Seleziona tutti gli elementi della seconda e terza riga della matrice B\n\n\n# Seleziona tutti gli elementi diversi da “B” appartenenti alla matrice D\n\n\n# Crea la matrice G unendo alla matrice A le prime due colonne della matrice C\n\n\n# Ridefinisci la matrice A eliminando la seconda colonna. Ridefinisci la matrice B eliminando la prima riga. Verifica che le matrici così ottenute abbiano la stessa dimensione.\n\n\n# Commenta i differenti risultati che otteniamo nelle operazioni A*B, B*A, A%*%B e B%*%A.\n\n\n# Assegna i seguenti nomi alle colonne e alle righe della matrice C: \"col_1\", \"col_2\", \"col_3\", \"col_4\", \"row_1\", \"row_2\", \"row_3\"."
+    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#output-richiesto",
+    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#output-richiesto",
+    "title": "Esercitazione finale",
+    "section": "Output richiesto",
+    "text": "Output richiesto\nAl termine dei 45 minuti, dovrete riportare solo questi tre elementi:\n\nEffect size pooled\nAd esempio: Hedges’ g = …\nIntervallo di confidenza al 95%\nAd esempio: 95% CI [ …, … ]\nUna frase interpretativa semplice\nAd esempio:\n“La psicoterapia sembra essere efficace.”\n“I risultati sono inconclusivi.”\n“L’effetto è positivo, ma l’evidenza è eterogenea.”"
   },
   {
-    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#dataframe",
-    "href": "materiali/03-esercizi-introduttivi-rstudio.html#dataframe",
-    "title": "Esercizi introduttivi a RStudio",
-    "section": "4. Dataframe",
-    "text": "4. Dataframe\nGli esercizi seguenti fanno riferimento al dataset dat_scuole.csv, disponibile nella sezione Materiali.\nÈ necessario aprire il progetto RStudio corretto o impostare la working directory nella cartella del progetto.\n\n# Importa il dataset \"dat_scuole.csv\" e salvalo in un oggetto chiamato `dat`.\n\n\n# Esplora la struttura del dataframe `dat` usando la funzione `str()`. Di che tipo di dato è la variabile *reddito*?\n  \n  \n# Ottieni un riassunto statistico di tutte le variabili presenti nel dataframe usando una singola funzione\n\n\n# Quanti partecipanti e quante variabili ci sono nel dataset?\n  \n  \n# Mostra a schermo solo le prime 5 righe e poi solo le ultime 3 righe del dataframe.\n\n\n# Utilizzando gli indici a parentesi quadre `[riga, colonna]`, seleziona l'età del 12° partecipante.\n\n\n# Seleziona l'intero profilo (tutta la riga) del 42° partecipante.\n\n\n# Estrai l'intera colonna *stress_scolastico* utilizzando il simbolo del dollaro `$`.\n\n\n# Crea un nuovo dataframe chiamato `campione_stressato` contenente solo i soggetti con un livello di *stress* maggiore di 10.\n\n\n# Crea un nuovo dataframe chiamato `maggiorenni_f` selezionando solo le partecipanti femmine con un'età superiore ai 18 anni.\n\n\n# Filtra il dataset originario `dat` selezionando tutti i soggetti che hanno un *reddito* \"Basso\" OPPURE un punteggio di *stress_scolastico* minore o uguale a 6.\n\n\n# Estrai solamente i punteggi di *depressione* di chi ha un *reddito* \"Alto\" (Attenzione: vogliamo estrarre una sola colonna a partire da una condizione sulle righe).\n\n\n# Elimina dal dataframe `dat` la colonna *id*, assegnandole il valore `NULL`, in quanto non è una variabile utile per le nostre analisi psicologiche.\n\n\n# C'è stato un errore di trascrizione! Modifica l'età del 2° soggetto (attualmente 16) impostandola a 18.\n\n\n# Elimina dal dataframe `dat` le prime 3 righe (soggetti 1, 2 e 3) e salva il risultato in un nuovo oggetto chiamato `dat_ridotto`.\n\n\n# Trasforma la colonna *depressione* del dataframe `dat` originale: abbassa tutti i punteggi sottraendo 1 punto a ciascun soggetto.\n\n\n# Crea un piccolo dataframe chiamato `nuovi_studenti` con le osservazioni di 2 nuovi soggetti (inventa tu i valori per genere, età, reddito, stress_scolastico e depressione). Unisci questo nuovo dataframe sotto a `dat` usando la funzione appropriata."
+    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#per-iniziare",
+    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#per-iniziare",
+    "title": "Esercitazione finale",
+    "section": "Per iniziare",
+    "text": "Per iniziare\n\nlibrary(metafor)\n\ndat &lt;- read.csv(\"../materiali/data/data_depression_therapy.csv\")\n\nstr(dat)\nhead(dat)\n\n# Quanti effect size?\nnrow(dat)\n\n# Quanti studi unici?\nlength(unique(dat$study))"
   },
   {
-    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#funzioni-utili",
-    "href": "materiali/03-esercizi-introduttivi-rstudio.html#funzioni-utili",
-    "title": "Esercizi introduttivi a RStudio",
-    "section": "5. Funzioni utili",
-    "text": "5. Funzioni utili\n\n5.1. Gestione del Workspace e Importazione\n\n# Usa la combinazione delle funzioni `rm()` e `ls()` con la sintassi `rm(list=ls())` per cancellare tutti gli oggetti dal tuo ambiente di lavoro (Environment).\n\n\n# Ipotizza di aver salvato i dati della lezione precedente in un file chiamato \"dati_lezione.RData\". Scrivi il comando usando `load()` per caricarlo nel tuo ambiente.\n\n\n# Usa la funzione `library()` per caricare il pacchetto necessario per leggere file Excel (ad esempio `readxl`) prima di importare i dati.\n\n\n# Importa il dataset `dat_scuole.csv` usando la funzione `read.csv()` e salvalo nell'oggetto `dati_csv`.\n\n\n# Importa il dataset chiamato `dat_scuole.xlsx` usando la funzione appropriata (es. `read_excel()` o `read.xlsx()`) e salvalo nell'oggetto `dati_excel`.\n\n\n# Usa la funzione `str()` sull'oggetto appena creato per ispezionarne la struttura interna. Quante variabili ci sono e di che tipo sono?\n\n\n\n\n5.2. Generazione e Manipolazione Dati\n\n# Genera un vettore chiamato `ansia_grezza` con i seguenti punteggi: `4.567`, `5.123`, `3.987`, `6.452`. \n\n\n# Usa la funzione `length()` per verificare quanti punteggi sono contenuti nel vettore `ansia_grezza`.\n\n\n# Sovrascrivi il vettore usando la funzione `round()` per arrotondare tutti i punteggi a 1 solo decimale.\n\n\n# Usa la funzione `seq()` per creare un vettore chiamato `id_soggetti` che contenga una sequenza numerica da 101 a 150.\n\n\n# Usa la funzione `rep()` per generare un vettore chiamato `condizione` in cui l'etichetta \"Trattamento\" e l'etichetta \"Controllo\" vengono ripetute ciascuna per 25 volte.\n\n\n# Usa `sample()` per estrarre casualmente 5 partecipanti (numeri da 1 a 50) per un'intervista qualitativa di follow-up, assicurandoti che lo stesso partecipante non possa essere estratto due volte (senza reinserimento).\n\n\n\n\n5.3. Funzioni Statistiche e Distribuzioni Normali\n\n# Simula i punteggi di un test di Estroversione per 1000 soggetti. Sapendo che il test ha una media normativa di 50 e una deviazione standard di 10, usa `rnorm()` per generare la distribuzione e salvala nell'oggetto `estroversione_simulata`.\n\n\n# Un soggetto ha ottenuto un punteggio di 35 nel test di Estroversione. Utilizzando `pnorm()`, calcola la probabilità di incontrare nella popolazione un soggetto con un punteggio uguale o inferiore al suo.\n\n\n# Vuoi selezionare solo i partecipanti che rientrano nel 5% superiore della distribuzione (il 95° percentile) per un training specifico. Usa `qnorm()` per scoprire quale punteggio esatto fa da soglia, sapendo sempre che la media è 50 e la deviazione standard è 10.\n\n\n# Usa la funzione `replicate()` per ripetere 4 volte l'operazione `sample(1:100, 10)`. Osserva l'output: che tipo di struttura dati ha generato R?\n\n\n# Usa la funzione `curve()` per disegnare la distribuzione normale del test di estroversione. *(Suggerimento: scrivi `dnorm(x, mean = 50, sd = 10)` come primo argomento, e imposta l'asse x da 20 a 80 usando i parametri `from` e `to`)*."
+    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#suggerimenti",
+    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#suggerimenti",
+    "title": "Esercitazione finale",
+    "section": "Suggerimenti",
+    "text": "Suggerimenti\nPrima di stimare il modello, controllate:\n\nsummary(dat$yi)\nsummary(dat$vi)\n\ntable(dat$format)\ntable(dat$diagnosis)\ntable(dat$type)\ntable(dat$control)\ntable(dat$risk_of_bias)\n\n\nDomande guida:\n\nTutti gli effect size possono essere trattati come indipendenti?\nIl modello fixed-effect è plausibile?\nQuanto pesa l’eterogeneità?\nCi sono studi o effect size influenti?\nLe conclusioni cambiano se fate scelte analitiche diverse?"
+  },
+  {
+    "objectID": "materiali/001-crisi-replicabilita-slides.html",
+    "href": "materiali/001-crisi-replicabilita-slides.html",
+    "title": "Introduzione - Crisi di Replicabilità",
+    "section": "",
+    "text": "Slide introduttive sulla crisi di replicabilità.\n Scarica Slides (pdf)"
+  },
+  {
+    "objectID": "materiali/01-systematic-review-intro.html#che-cosè-una-systematic-review",
+    "href": "materiali/01-systematic-review-intro.html#che-cosè-una-systematic-review",
+    "title": "Systematic Review: Introduzione",
+    "section": "Che cos’è una Systematic Review?",
+    "text": "Che cos’è una Systematic Review?\n\n\n\n\nÈ una sintesi strutturata della ricerca esistente.\n\n\nCaratteristiche\n\nParte da una domanda di ricerca chiara\nUsa metodi espliciti per cercare, selezionare e valutare gli studi\nProduce una sintesi trasparente e riproducibile"
+  },
+  {
+    "objectID": "materiali/01-systematic-review-intro.html#perché-fare-una-systematic-review",
+    "href": "materiali/01-systematic-review-intro.html#perché-fare-una-systematic-review",
+    "title": "Systematic Review: Introduzione",
+    "section": "Perché fare una Systematic Review?",
+    "text": "Perché fare una Systematic Review?\n\n\nPrima di fare una nuova ricerca, dobbiamo sapere cosa esiste già\nLa letteratura cresce più velocemente della nostra capacità di leggerla\nSingoli studi possono essere fragili, incompleti o contraddittori\n\n\n\nLe Systematic Review aiutano a trasformare molti studi in una sintesi accessibile."
+  },
+  {
+    "objectID": "materiali/01-systematic-review-intro.html#cosa-permette-di-fare-una-systematic-review",
+    "href": "materiali/01-systematic-review-intro.html#cosa-permette-di-fare-una-systematic-review",
+    "title": "Systematic Review: Introduzione",
+    "section": "Cosa permette di fare una Systematic Review?",
+    "text": "Cosa permette di fare una Systematic Review?\n\n\nRiassumere lo stato attuale delle conoscenze\nCapire se una domanda ha già una risposta abbastanza robusta\nIdentificare risultati coerenti, contraddizioni e lacune\nInformare nuove ricerche, pratica clinica, policy e linee guida"
+  },
+  {
+    "objectID": "materiali/01-systematic-review-intro.html#quando-è-particolarmente-utile",
+    "href": "materiali/01-systematic-review-intro.html#quando-è-particolarmente-utile",
+    "title": "Systematic Review: Introduzione",
+    "section": "Quando è particolarmente utile?",
+    "text": "Quando è particolarmente utile?\n\n\nQuando molti studi rispondono a domande simili\nQuando i risultati sembrano discordanti\nQuando si vuole progettare un nuovo studio\nQuando una decisione pratica richiede una sintesi affidabile\n\n\n\nDomanda: prima di iniziare un nuovo studio, controllate sempre se esiste già una review recente?"
+  },
+  {
+    "objectID": "materiali/01-systematic-review-intro.html#systematic-review-e-meta-analisi",
+    "href": "materiali/01-systematic-review-intro.html#systematic-review-e-meta-analisi",
+    "title": "Systematic Review: Introduzione",
+    "section": "Systematic Review e Meta-Analisi",
+    "text": "Systematic Review e Meta-Analisi\n\n\nUna meta-analisi è una sintesi quantitativa dei risultati di studi diversi.\n\n\n\nUna meta-analisi dovrebbe sempre poggiare su una systematic review\nLa review definisce quali studi entrano nell’analisi\nLa meta-analisi stima quanto è grande, preciso e variabile un effetto\nSenza review sistematica, aumenta il rischio di bias e cherry picking"
+  },
+  {
+    "objectID": "materiali/01-systematic-review-intro.html#non-tutte-le-review-sono-uguali",
+    "href": "materiali/01-systematic-review-intro.html#non-tutte-le-review-sono-uguali",
+    "title": "Systematic Review: Introduzione",
+    "section": "Non tutte le review sono uguali",
+    "text": "Non tutte le review sono uguali\n\n\nSystematic review: risponde a una domanda specifica con metodo riproducibile e sistematico\n\n\n\nNarrative Review: descrizione qualitativa della conoscenza su un dato ambito (non adotta criteri espliciti-sistematici per selezionare gli studi)\nScoping review: mappa aspetti metodologici di un’area di ricerca\nMeta-analisi: combina quantitativamente effect sizes comparabili\nUmbrella review: sintetizza risultati da più systematic review/meta-analisi"
+  },
+  {
+    "objectID": "materiali/01-systematic-review-intro.html#systematic-review---come-si-fa",
+    "href": "materiali/01-systematic-review-intro.html#systematic-review---come-si-fa",
+    "title": "Systematic Review: Introduzione",
+    "section": "Systematic Review - Come si fa?",
+    "text": "Systematic Review - Come si fa?\n\nPassaggi principali\n\nDefinire la domanda di ricerca\nScrivere e preregistrare il protocollo\nCercare gli studi in modo sistematico (screening)\nSelezionare gli studi con criteri espliciti e trasparenti (selection)\nEstrarre i dati di interesse (extraction)\nSintetizzare i risultati"
+  },
+  {
+    "objectID": "materiali/01-systematic-review-intro.html#definire-la-domanda-di-ricerca",
+    "href": "materiali/01-systematic-review-intro.html#definire-la-domanda-di-ricerca",
+    "title": "Systematic Review: Introduzione",
+    "section": "1. Definire la domanda di ricerca",
+    "text": "1. Definire la domanda di ricerca\n\nCriteri PICO\n\nP = Population | partecipanti\nI = Intervention | esposizione / predittore\nC = Comparison | gruppo di controllo\nO = Outcome | esito principale\n\n\n\nLe Systematic Review nascono in ambito clinico, ma si possono espandere a più ambiti di ricerca."
+  },
+  {
+    "objectID": "materiali/01-systematic-review-intro.html#preregistrazione-del-protocollo",
+    "href": "materiali/01-systematic-review-intro.html#preregistrazione-del-protocollo",
+    "title": "Systematic Review: Introduzione",
+    "section": "2. Preregistrazione del protocollo",
+    "text": "2. Preregistrazione del protocollo\n\n\n\nRegistrazione in anticipo di: domanda, criteri e metodi\nLa pre-registrazione rimuove il rischio di decisioni post-hoc\nRende trasparente eventuali deviazioni dal piano iniziale\n\nDove caricarla\n\nPROSPERO: registro di protocolli per systematic review\nOpen Science Framework: principale database di pre-registrazioni"
+  },
+  {
+    "objectID": "materiali/01-systematic-review-intro.html#screening-della-letteratura",
+    "href": "materiali/01-systematic-review-intro.html#screening-della-letteratura",
+    "title": "Systematic Review: Introduzione",
+    "section": "3. Screening della letteratura",
+    "text": "3. Screening della letteratura\n\nTeam di ricerca\n\n\nIdealmente almeno 3-4 persone\n\n\n\nDue/tre reviewer indipendenti per screening ed estrazione dati\nUn terzo reviewer o supervisore per risolvere disaccordi"
+  },
+  {
+    "objectID": "materiali/01-systematic-review-intro.html#screening-della-letteratura-1",
+    "href": "materiali/01-systematic-review-intro.html#screening-della-letteratura-1",
+    "title": "Systematic Review: Introduzione",
+    "section": "3. Screening della letteratura",
+    "text": "3. Screening della letteratura\n\n\n\nDatabase principali\n\nPubMed / MEDLINE: biomedicina e salute\nPsycInfo: psicologia\nWeb of Science: database multidisciplinare\nScopus: ampia copertura bibliografica\n\n\n\nLa scelta dipende dalla domanda di ricerca"
+  },
+  {
+    "objectID": "materiali/01-systematic-review-intro.html#screening-della-letteratura-2",
+    "href": "materiali/01-systematic-review-intro.html#screening-della-letteratura-2",
+    "title": "Systematic Review: Introduzione",
+    "section": "3. Screening della letteratura",
+    "text": "3. Screening della letteratura\nSearch Query\n\n\nVirgolette: per cercare una frase esatta\nTroncamento: per recuperare varianti della stessa radice\n\n\nEsempio: (\"post-traumatic stress\" OR PTSD) AND (EMDR OR \"eye movement desensitization\") AND (child* AND adolesc*)"
+  },
+  {
+    "objectID": "materiali/01-systematic-review-intro.html#screening-della-letteratura-3",
+    "href": "materiali/01-systematic-review-intro.html#screening-della-letteratura-3",
+    "title": "Systematic Review: Introduzione",
+    "section": "3. Screening della letteratura",
+    "text": "3. Screening della letteratura\n\nLetteratura grigia\n\nInclude report, tesi, preprint, atti di conferenze\nRiduce il rischio di publication bias\n\n\nFonti principali\n\nGrey Matters\nGreyNet\nOpen Science Framework"
+  },
+  {
+    "objectID": "materiali/01-systematic-review-intro.html#selezione-degli-studi",
+    "href": "materiali/01-systematic-review-intro.html#selezione-degli-studi",
+    "title": "Systematic Review: Introduzione",
+    "section": "4. Selezione degli studi",
+    "text": "4. Selezione degli studi\n\n\n\nI Step: selezione sulla base di titolo e abstract\nII Step: valutazione dell’intero testo degli articoli\n\n\nLe decisioni dovrebbero essere indipendenti e documentate\n\n\nRisorse utili\n\nFlow diagram PRISMA\nCovidence: supporto per screening ed estrazione dati"
+  },
+  {
+    "objectID": "materiali/01-systematic-review-intro.html#estrazione-dei-risultati-valutazione-bias",
+    "href": "materiali/01-systematic-review-intro.html#estrazione-dei-risultati-valutazione-bias",
+    "title": "Systematic Review: Introduzione",
+    "section": "5. Estrazione dei risultati & valutazione bias",
+    "text": "5. Estrazione dei risultati & valutazione bias\n\n\nSi estraggono caratteristiche di: studio, campione, intervento e outcome\nRisk of Bias e/o GRADE valutano la credibilità interna degli studi inclusi\n\n\nLa qualità degli studi influenza la fiducia nei risultati."
+  },
+  {
+    "objectID": "materiali/01-systematic-review-intro.html#sintetizzare-e-riportare-i-risultati",
+    "href": "materiali/01-systematic-review-intro.html#sintetizzare-e-riportare-i-risultati",
+    "title": "Systematic Review: Introduzione",
+    "section": "6. Sintetizzare e riportare i risultati",
+    "text": "6. Sintetizzare e riportare i risultati\n\n\nOrganizzare gli studi inclusi in modo chiaro e trasparente\nDescrivere caratteristiche, risultati e differenze tra gli studi\nEvidenziare pattern comuni, risultati contrastanti e lacune\n\n\n\nNext step (se possibile) → Meta-Analisi\n\n\n\nL’obiettivo è trasformare molti studi in una sintesi leggibile e replicabile"
+  },
+  {
+    "objectID": "materiali/01-systematic-review-intro.html#in-sintesi",
+    "href": "materiali/01-systematic-review-intro.html#in-sintesi",
+    "title": "Systematic Review: Introduzione",
+    "section": "In sintesi",
+    "text": "In sintesi\n\n\nLa letteratura cresce più velocemente della nostra capacità di leggerla\nLe Systematic Review aiutano a trasformare molti studi in una sintesi ordinata\nUna meta-analisi è valida solo quanto lo è la review su cui si basa\nMetodo, pre-registrazione e trasparenza proteggono da bias e cherry picking\nL’obiettivo finale è produrre evidenza utile per ricerca, pratica e decisioni"
+  },
+  {
+    "objectID": "materiali/02-rstudio-basics.html",
+    "href": "materiali/02-rstudio-basics.html",
+    "title": "Basi di RStudio",
+    "section": "",
+    "text": "Immaginiamo di avere un dataset reale raccolto su 85 studenti/esse di scuole superiori.\nAbbiamo misurato:\n\nEtà\nGenere\nReddito della famiglia\nStress scolastico\nDepressione\n\nDOMANDA DI RICERCA: “Esiste una correlazione tra lo stress scolastico e i sintomi depressivi?”"
+  },
+  {
+    "objectID": "materiali/02-rstudio-basics.html#applichiamo-la-matematica-ai-dati-reali",
+    "href": "materiali/02-rstudio-basics.html#applichiamo-la-matematica-ai-dati-reali",
+    "title": "Basi di RStudio",
+    "section": "Applichiamo la matematica ai dati reali",
+    "text": "Applichiamo la matematica ai dati reali\nCome calcolare la media dell’età dei nostri 85 partecipanti?\nAssicuratevi di avere il file ‘dat_scuole.csv’ nella stessa cartella del vostro progetto.\n\n# Importiamo il dataset nel nostro ambiente chiamandolo 'dat'\ndat &lt;- read.csv(\"data/dat_scuole.csv\")\n\n# O in alternativa (se file Excel)\nlibrary(readxl)\ndat &lt;- read_xlsx(\"data/dat_scuole.xlsx\")\n\n# Visualizziamolo come fosse un foglio Excel\n# View(dat)\n\n# La media: METODO MANUALE (formula: somma dei valori diviso N)\ndat$eta           # Il simbolo '$' ci permette di estrarre solo la colonna 'eta'\n\n [1] 16 16 19 18 17 18 18 16 14 16 15 17 15 19 17 16 19 15 19 14 19 14 17 16 17\n[26] 18 17 15 19 18 19 17 15 14 17 18 19 16 16 17 18 19 18 16 16 14 16 16 17 19\n[51] 18 19 18 19 16 16 16 17 19 18 18 16 18 16 15 18 18 16 18 19 14 14 14 15 16\n[76] 16 17 16 17 18 17 17 18 14 18\n\nsum(dat$eta)      # Sommiamo tutte le 85 età\n\n[1] 1430\n\nlength(dat$eta)   # Contiamo quante età ci sono (il nostro 'N')\n\n[1] 85\n\nsum(dat$eta) / length(dat$eta)  # Ecco la nostra media calcolata a mano!\n\n[1] 16.82353\n\n# METODO VELOCE (Usando le funzioni interne di R)\nmean(dat$eta)     # Media\n\n[1] 16.82353\n\nvar(dat$eta)      # Varianza\n\n[1] 2.408964\n\nsd(dat$eta)       # Deviazione Standard\n\n[1] 1.552084"
   },
   {
     "objectID": "materiali/06-metafor-maccann2020.html#obiettivo-dellesercizio",
@@ -252,193 +392,60 @@
     "text": "Take-home messages\n\nLe correlazioni devono essere trasformate in Fisher’s z prima della meta-analisi.\nescalc() aiuta a calcolare effect size e varianze.\nrma() permette di stimare rapidamente una meta-analisi.\nmethod = \"REML\"per calcolare una meta-analisi random-effects.\nmethod = \"EE\"per calcolare una meta-analisi fixed-effect.\nLa stima finale può essere trasformata di nuovo in correlazione r per l’interpretazione - predict(res, transf = transf.ztor))\nSe ci sono più effect size per studio, bisogna gestire la dipendenza (aggregazione vs modello multilivello)\nFunnel plot, Egger test e trim-and-fill sono strumenti utili, ma non definitivi.\nLa meta-regressione va interpretata come analisi esplorativa, soprattutto se non pre-specificata."
   },
   {
-    "objectID": "materiali/02-rstudio-basics.html",
-    "href": "materiali/02-rstudio-basics.html",
-    "title": "Basi di RStudio",
+    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#oggetti",
+    "href": "materiali/03-esercizi-introduttivi-rstudio.html#oggetti",
+    "title": "Esercizi introduttivi a RStudio",
+    "section": "1. Oggetti",
+    "text": "1. Oggetti\n\n# Crea un oggetto chiamato `punteggio_base` e assegnagli il valore 50 utilizzando l'operatore di assegnazione `&lt;-`.\n\n\n# Crea un secondo oggetto chiamato `moltiplicatore` e assegnagli il valore 2.5.\n\n\n# Moltiplica `punteggio_base` per `moltiplicatore` e salva il risultato in un nuovo oggetto chiamato `punteggio_totale`. Richiama l'oggetto per visualizzarne il contenuto.\n\n\n# R fa distinzione tra lettere maiuscole e minuscole (è *case-sensitive*). Prova a richiamare l'oggetto `Punteggio_base` (con la P maiuscola). Quale errore ti restituisce la console?\n\n\n# Sovrascrivi l'oggetto `punteggio_base` assegnandogli un nuovo valore pari a 75. \n\n\n# Dopo aver modificato il `punteggio_base`, richiama di nuovo `punteggio_totale`: il suo valore si è aggiornato in automatico o mostra ancora il vecchio risultato?\n  \n  \n# Controlla quali oggetti sono attualmente salvati nel tuo ambiente di lavoro (Environment) utilizzando la funzione `ls()`.\n\n\n# Usa la funzione `rm()` per eliminare l'oggetto `moltiplicatore` dal tuo ambiente di lavoro. Verifica con `ls()` che sia effettivamente scomparso."
+  },
+  {
+    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#vettori",
+    "href": "materiali/03-esercizi-introduttivi-rstudio.html#vettori",
+    "title": "Esercizi introduttivi a RStudio",
+    "section": "2. Vettori",
+    "text": "2. Vettori\n\n# Crea il vettore x contenente i numeri 4, 6, 12, 34, 8\n\n\n# Crea il vettore y contenente tutti i numeri pari compresi tra 1 e 25 (?seq())\n\n\n# Crea il vettore z contenente tutti i primi 10 multipli di 7 partendo da 13 (?seq())\n\n\n# Crea il vettore s in cui le lettere \"A\",\"B\" e \"C\" vengono ripetute nel medesimo ordine 4 volte (?rep())\n\n\n# Del vettore x seleziona il 2°, 3° e 5° elemento\n\n\n# Del vettore x seleziona i valori 34 e 4\n\n\n# Del vettore y seleziona tutti i valori minori di 13 o maggiori di 19\n\n\n# Del vettore z seleziona tutti i valori compresi tra 24 e 50\n\n\n# Del vettore s seleziona tutti gli elementi uguali ad \"A\"\n\n\n# Del vettore t seleziona tutti gli elementi diversi da \"B\"\n\n\n# Crea un nuovo vettore u identico a s ma dove le \"A\" sono sostituite con la lettera \"U\"\n\n\n# Elimina dal vettore z i valori 28 e 42\n\n\n# Crea il vettore j unendo i vettori x ed z.\n\n\n# Elimina gli ultimi tre elementi del vettore j e controlla che i vettori j e y abbiano la stessa lunghezza.\n\n\n# Calcola la somma tra i vettori j e y.\n\n\n# Moltiplica il vettore z per una costante k=3.\n\n\n# Calcola il prodotto tra i primi 10 elementi del vettore y ed il vettore z"
+  },
+  {
+    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#vettori-factor",
+    "href": "materiali/03-esercizi-introduttivi-rstudio.html#vettori-factor",
+    "title": "Esercizi introduttivi a RStudio",
+    "section": "2.1 Vettori factor",
+    "text": "2.1 Vettori factor\n\n# Crea la variabile categoriale genere così definita:\n  \n  ## [1] M F M F M F F F M\n  ## Levels: F M\n  \n\n\n# Rinomina i livelli della variabile genere rispettivamente in \"donne\" e \"uomini\".\n\n\n# Crea la variabile categoriale intervento così definita:\n  \n  ## [1] CBT         Psicanalisi CBT         Psicanalisi CBT         Psicanalisi\n  ## [7] Controllo   Controllo   CBT        \n  ## Levels: CBT Controllo Psicanalisi\n  \n\n# Correggi nella variabile intervento la 7° e 8° osservazione con la voce Farmaci.\n\n\n# Aggiungi alla variabile intervento le seguenti nuove osservazioni:\n  \n  ## [1] \"Farmaci\"   \"Controllo\" \"Farmaci\""
+  },
+  {
+    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#matrici",
+    "href": "materiali/03-esercizi-introduttivi-rstudio.html#matrici",
+    "title": "Esercizi introduttivi a RStudio",
+    "section": "3. Matrici",
+    "text": "3. Matrici\n\n# Crea la matrice A così definita:\n  \n#   2 34 12 7 \n#  46 93 27 99 \n#  23 38 7  04\n\n\n# Crea la matrice B contenente tutti i primi 12 numeri dispari disposti su 4 righe e 3 colonne.\n\n\n# Crea la matrice C contenente i primi 12 multipli di 9 disposti su 3 righe e 4 colonne.\n\n\n# Crea la matrice D formata da 3 colonne in cui le lettere \"A\",\"B\" e \"C\" vengano ripetute 4 volte ciascuna rispettivamente nella prima, seconda e terza colonna.\n\n\n# Crea la matrice E formata da 3 righe in cui le lettere \"A\",\"B\" e \"C\" vengano ripetute 4 volte ciascuna rispettivamente nella prima, seconda e terza riga.\n\n\n# Utilizzando gli indici di riga e di colonna selziona il numero 27 della matrice A\n\n\n# Selziona gli elementi compresi tra la seconda e quarta riga, seconda e terza colonna della matrice B\n\n\n# Elimina dalla matrice C la terza riga e la terza colonna\n\n\n# Seleziona tutti gli elementi della seconda e terza riga della matrice B\n\n\n# Seleziona tutti gli elementi diversi da “B” appartenenti alla matrice D\n\n\n# Crea la matrice G unendo alla matrice A le prime due colonne della matrice C\n\n\n# Ridefinisci la matrice A eliminando la seconda colonna. Ridefinisci la matrice B eliminando la prima riga. Verifica che le matrici così ottenute abbiano la stessa dimensione.\n\n\n# Commenta i differenti risultati che otteniamo nelle operazioni A*B, B*A, A%*%B e B%*%A.\n\n\n# Assegna i seguenti nomi alle colonne e alle righe della matrice C: \"col_1\", \"col_2\", \"col_3\", \"col_4\", \"row_1\", \"row_2\", \"row_3\"."
+  },
+  {
+    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#dataframe",
+    "href": "materiali/03-esercizi-introduttivi-rstudio.html#dataframe",
+    "title": "Esercizi introduttivi a RStudio",
+    "section": "4. Dataframe",
+    "text": "4. Dataframe\nGli esercizi seguenti fanno riferimento al dataset dat_scuole.csv, disponibile nella sezione Materiali.\nÈ necessario aprire il progetto RStudio corretto o impostare la working directory nella cartella del progetto.\n\n# Importa il dataset \"dat_scuole.csv\" e salvalo in un oggetto chiamato `dat`.\n\n\n# Esplora la struttura del dataframe `dat` usando la funzione `str()`. Di che tipo di dato è la variabile *reddito*?\n  \n  \n# Ottieni un riassunto statistico di tutte le variabili presenti nel dataframe usando una singola funzione\n\n\n# Quanti partecipanti e quante variabili ci sono nel dataset?\n  \n  \n# Mostra a schermo solo le prime 5 righe e poi solo le ultime 3 righe del dataframe.\n\n\n# Utilizzando gli indici a parentesi quadre `[riga, colonna]`, seleziona l'età del 12° partecipante.\n\n\n# Seleziona l'intero profilo (tutta la riga) del 42° partecipante.\n\n\n# Estrai l'intera colonna *stress_scolastico* utilizzando il simbolo del dollaro `$`.\n\n\n# Crea un nuovo dataframe chiamato `campione_stressato` contenente solo i soggetti con un livello di *stress* maggiore di 10.\n\n\n# Crea un nuovo dataframe chiamato `maggiorenni_f` selezionando solo le partecipanti femmine con un'età superiore ai 18 anni.\n\n\n# Filtra il dataset originario `dat` selezionando tutti i soggetti che hanno un *reddito* \"Basso\" OPPURE un punteggio di *stress_scolastico* minore o uguale a 6.\n\n\n# Estrai solamente i punteggi di *depressione* di chi ha un *reddito* \"Alto\" (Attenzione: vogliamo estrarre una sola colonna a partire da una condizione sulle righe).\n\n\n# Elimina dal dataframe `dat` la colonna *id*, assegnandole il valore `NULL`, in quanto non è una variabile utile per le nostre analisi psicologiche.\n\n\n# C'è stato un errore di trascrizione! Modifica l'età del 2° soggetto (attualmente 16) impostandola a 18.\n\n\n# Elimina dal dataframe `dat` le prime 3 righe (soggetti 1, 2 e 3) e salva il risultato in un nuovo oggetto chiamato `dat_ridotto`.\n\n\n# Trasforma la colonna *depressione* del dataframe `dat` originale: abbassa tutti i punteggi sottraendo 1 punto a ciascun soggetto.\n\n\n# Crea un piccolo dataframe chiamato `nuovi_studenti` con le osservazioni di 2 nuovi soggetti (inventa tu i valori per genere, età, reddito, stress_scolastico e depressione). Unisci questo nuovo dataframe sotto a `dat` usando la funzione appropriata."
+  },
+  {
+    "objectID": "materiali/03-esercizi-introduttivi-rstudio.html#funzioni-utili",
+    "href": "materiali/03-esercizi-introduttivi-rstudio.html#funzioni-utili",
+    "title": "Esercizi introduttivi a RStudio",
+    "section": "5. Funzioni utili",
+    "text": "5. Funzioni utili\n\n5.1. Gestione del Workspace e Importazione\n\n# Usa la combinazione delle funzioni `rm()` e `ls()` con la sintassi `rm(list=ls())` per cancellare tutti gli oggetti dal tuo ambiente di lavoro (Environment).\n\n\n# Ipotizza di aver salvato i dati della lezione precedente in un file chiamato \"dati_lezione.RData\". Scrivi il comando usando `load()` per caricarlo nel tuo ambiente.\n\n\n# Usa la funzione `library()` per caricare il pacchetto necessario per leggere file Excel (ad esempio `readxl`) prima di importare i dati.\n\n\n# Importa il dataset `dat_scuole.csv` usando la funzione `read.csv()` e salvalo nell'oggetto `dati_csv`.\n\n\n# Importa il dataset chiamato `dat_scuole.xlsx` usando la funzione appropriata (es. `read_excel()` o `read.xlsx()`) e salvalo nell'oggetto `dati_excel`.\n\n\n# Usa la funzione `str()` sull'oggetto appena creato per ispezionarne la struttura interna. Quante variabili ci sono e di che tipo sono?\n\n\n\n\n5.2. Generazione e Manipolazione Dati\n\n# Genera un vettore chiamato `ansia_grezza` con i seguenti punteggi: `4.567`, `5.123`, `3.987`, `6.452`. \n\n\n# Usa la funzione `length()` per verificare quanti punteggi sono contenuti nel vettore `ansia_grezza`.\n\n\n# Sovrascrivi il vettore usando la funzione `round()` per arrotondare tutti i punteggi a 1 solo decimale.\n\n\n# Usa la funzione `seq()` per creare un vettore chiamato `id_soggetti` che contenga una sequenza numerica da 101 a 150.\n\n\n# Usa la funzione `rep()` per generare un vettore chiamato `condizione` in cui l'etichetta \"Trattamento\" e l'etichetta \"Controllo\" vengono ripetute ciascuna per 25 volte.\n\n\n# Usa `sample()` per estrarre casualmente 5 partecipanti (numeri da 1 a 50) per un'intervista qualitativa di follow-up, assicurandoti che lo stesso partecipante non possa essere estratto due volte (senza reinserimento).\n\n\n\n\n5.3. Funzioni Statistiche e Distribuzioni Normali\n\n# Simula i punteggi di un test di Estroversione per 1000 soggetti. Sapendo che il test ha una media normativa di 50 e una deviazione standard di 10, usa `rnorm()` per generare la distribuzione e salvala nell'oggetto `estroversione_simulata`.\n\n\n# Un soggetto ha ottenuto un punteggio di 35 nel test di Estroversione. Utilizzando `pnorm()`, calcola la probabilità di incontrare nella popolazione un soggetto con un punteggio uguale o inferiore al suo.\n\n\n# Vuoi selezionare solo i partecipanti che rientrano nel 5% superiore della distribuzione (il 95° percentile) per un training specifico. Usa `qnorm()` per scoprire quale punteggio esatto fa da soglia, sapendo sempre che la media è 50 e la deviazione standard è 10.\n\n\n# Usa la funzione `replicate()` per ripetere 4 volte l'operazione `sample(1:100, 10)`. Osserva l'output: che tipo di struttura dati ha generato R?\n\n\n# Usa la funzione `curve()` per disegnare la distribuzione normale del test di estroversione. *(Suggerimento: scrivi `dnorm(x, mean = 50, sd = 10)` come primo argomento, e imposta l'asse x da 20 a 80 usando i parametri `from` e `to`)*."
+  },
+  {
+    "objectID": "materiali/05-esercizio-data-nightmare.html",
+    "href": "materiali/05-esercizio-data-nightmare.html",
+    "title": "Esercizio Data Nightmare",
     "section": "",
-    "text": "Immaginiamo di avere un dataset reale raccolto su 85 studenti/esse di scuole superiori.\nAbbiamo misurato:\n\nEtà\nGenere\nReddito della famiglia\nStress scolastico\nDepressione\n\nDOMANDA DI RICERCA: “Esiste una correlazione tra lo stress scolastico e i sintomi depressivi?”"
+    "text": "Link all’esercizio"
   },
   {
-    "objectID": "materiali/02-rstudio-basics.html#applichiamo-la-matematica-ai-dati-reali",
-    "href": "materiali/02-rstudio-basics.html#applichiamo-la-matematica-ai-dati-reali",
-    "title": "Basi di RStudio",
-    "section": "Applichiamo la matematica ai dati reali",
-    "text": "Applichiamo la matematica ai dati reali\nCome calcolare la media dell’età dei nostri 85 partecipanti?\nAssicuratevi di avere il file ‘dat_scuole.csv’ nella stessa cartella del vostro progetto.\n\n# Importiamo il dataset nel nostro ambiente chiamandolo 'dat'\ndat &lt;- read.csv(\"data/dat_scuole.csv\")\n\n# O in alternativa (se file Excel)\nlibrary(readxl)\ndat &lt;- read_xlsx(\"data/dat_scuole.xlsx\")\n\n# Visualizziamolo come fosse un foglio Excel\n# View(dat)\n\n# La media: METODO MANUALE (formula: somma dei valori diviso N)\ndat$eta           # Il simbolo '$' ci permette di estrarre solo la colonna 'eta'\n\n [1] 16 16 19 18 17 18 18 16 14 16 15 17 15 19 17 16 19 15 19 14 19 14 17 16 17\n[26] 18 17 15 19 18 19 17 15 14 17 18 19 16 16 17 18 19 18 16 16 14 16 16 17 19\n[51] 18 19 18 19 16 16 16 17 19 18 18 16 18 16 15 18 18 16 18 19 14 14 14 15 16\n[76] 16 17 16 17 18 17 17 18 14 18\n\nsum(dat$eta)      # Sommiamo tutte le 85 età\n\n[1] 1430\n\nlength(dat$eta)   # Contiamo quante età ci sono (il nostro 'N')\n\n[1] 85\n\nsum(dat$eta) / length(dat$eta)  # Ecco la nostra media calcolata a mano!\n\n[1] 16.82353\n\n# METODO VELOCE (Usando le funzioni interne di R)\nmean(dat$eta)     # Media\n\n[1] 16.82353\n\nvar(dat$eta)      # Varianza\n\n[1] 2.408964\n\nsd(dat$eta)       # Deviazione Standard\n\n[1] 1.552084"
-  },
-  {
-    "objectID": "materiali/01-systematic-review-intro.html#che-cosè-una-systematic-review",
-    "href": "materiali/01-systematic-review-intro.html#che-cosè-una-systematic-review",
-    "title": "Systematic Review: Introduzione",
-    "section": "Che cos’è una Systematic Review?",
-    "text": "Che cos’è una Systematic Review?\n\n\n\n\nÈ una sintesi strutturata della ricerca esistente.\n\n\nCaratteristiche\n\nParte da una domanda di ricerca chiara\nUsa metodi espliciti per cercare, selezionare e valutare gli studi\nProduce una sintesi trasparente e riproducibile"
-  },
-  {
-    "objectID": "materiali/01-systematic-review-intro.html#perché-fare-una-systematic-review",
-    "href": "materiali/01-systematic-review-intro.html#perché-fare-una-systematic-review",
-    "title": "Systematic Review: Introduzione",
-    "section": "Perché fare una Systematic Review?",
-    "text": "Perché fare una Systematic Review?\n\n\nPrima di fare una nuova ricerca, dobbiamo sapere cosa esiste già\nLa letteratura cresce più velocemente della nostra capacità di leggerla\nSingoli studi possono essere fragili, incompleti o contraddittori\n\n\n\nLe Systematic Review aiutano a trasformare molti studi in una sintesi accessibile."
-  },
-  {
-    "objectID": "materiali/01-systematic-review-intro.html#cosa-permette-di-fare-una-systematic-review",
-    "href": "materiali/01-systematic-review-intro.html#cosa-permette-di-fare-una-systematic-review",
-    "title": "Systematic Review: Introduzione",
-    "section": "Cosa permette di fare una Systematic Review?",
-    "text": "Cosa permette di fare una Systematic Review?\n\n\nRiassumere lo stato attuale delle conoscenze\nCapire se una domanda ha già una risposta abbastanza robusta\nIdentificare risultati coerenti, contraddizioni e lacune\nInformare nuove ricerche, pratica clinica, policy e linee guida"
-  },
-  {
-    "objectID": "materiali/01-systematic-review-intro.html#quando-è-particolarmente-utile",
-    "href": "materiali/01-systematic-review-intro.html#quando-è-particolarmente-utile",
-    "title": "Systematic Review: Introduzione",
-    "section": "Quando è particolarmente utile?",
-    "text": "Quando è particolarmente utile?\n\n\nQuando molti studi rispondono a domande simili\nQuando i risultati sembrano discordanti\nQuando si vuole progettare un nuovo studio\nQuando una decisione pratica richiede una sintesi affidabile\n\n\n\nDomanda: prima di iniziare un nuovo studio, controllate sempre se esiste già una review recente?"
-  },
-  {
-    "objectID": "materiali/01-systematic-review-intro.html#systematic-review-e-meta-analisi",
-    "href": "materiali/01-systematic-review-intro.html#systematic-review-e-meta-analisi",
-    "title": "Systematic Review: Introduzione",
-    "section": "Systematic Review e Meta-Analisi",
-    "text": "Systematic Review e Meta-Analisi\n\n\nUna meta-analisi è una sintesi quantitativa dei risultati di studi diversi.\n\n\n\nUna meta-analisi dovrebbe sempre poggiare su una systematic review\nLa review definisce quali studi entrano nell’analisi\nLa meta-analisi stima quanto è grande, preciso e variabile un effetto\nSenza review sistematica, aumenta il rischio di bias e cherry picking"
-  },
-  {
-    "objectID": "materiali/01-systematic-review-intro.html#non-tutte-le-review-sono-uguali",
-    "href": "materiali/01-systematic-review-intro.html#non-tutte-le-review-sono-uguali",
-    "title": "Systematic Review: Introduzione",
-    "section": "Non tutte le review sono uguali",
-    "text": "Non tutte le review sono uguali\n\n\nSystematic review: risponde a una domanda specifica con metodo riproducibile e sistematico\n\n\n\nNarrative Review: descrizione qualitativa della conoscenza su un dato ambito (non adotta criteri espliciti-sistematici per selezionare gli studi)\nScoping review: mappa aspetti metodologici di un’area di ricerca\nMeta-analisi: combina quantitativamente effect sizes comparabili\nUmbrella review: sintetizza risultati da più systematic review/meta-analisi"
-  },
-  {
-    "objectID": "materiali/01-systematic-review-intro.html#systematic-review---come-si-fa",
-    "href": "materiali/01-systematic-review-intro.html#systematic-review---come-si-fa",
-    "title": "Systematic Review: Introduzione",
-    "section": "Systematic Review - Come si fa?",
-    "text": "Systematic Review - Come si fa?\n\nPassaggi principali\n\nDefinire la domanda di ricerca\nScrivere e preregistrare il protocollo\nCercare gli studi in modo sistematico (screening)\nSelezionare gli studi con criteri espliciti e trasparenti (selection)\nEstrarre i dati di interesse (extraction)\nSintetizzare i risultati"
-  },
-  {
-    "objectID": "materiali/01-systematic-review-intro.html#definire-la-domanda-di-ricerca",
-    "href": "materiali/01-systematic-review-intro.html#definire-la-domanda-di-ricerca",
-    "title": "Systematic Review: Introduzione",
-    "section": "1. Definire la domanda di ricerca",
-    "text": "1. Definire la domanda di ricerca\n\nCriteri PICO\n\nP = Population | partecipanti\nI = Intervention | esposizione / predittore\nC = Comparison | gruppo di controllo\nO = Outcome | esito principale\n\n\n\nLe Systematic Review nascono in ambito clinico, ma si possono espandere a più ambiti di ricerca."
-  },
-  {
-    "objectID": "materiali/01-systematic-review-intro.html#preregistrazione-del-protocollo",
-    "href": "materiali/01-systematic-review-intro.html#preregistrazione-del-protocollo",
-    "title": "Systematic Review: Introduzione",
-    "section": "2. Preregistrazione del protocollo",
-    "text": "2. Preregistrazione del protocollo\n\n\n\nRegistrazione in anticipo di: domanda, criteri e metodi\nLa pre-registrazione rimuove il rischio di decisioni post-hoc\nRende trasparente eventuali deviazioni dal piano iniziale\n\nDove caricarla\n\nPROSPERO: registro di protocolli per systematic review\nOpen Science Framework: principale database di pre-registrazioni"
-  },
-  {
-    "objectID": "materiali/01-systematic-review-intro.html#screening-della-letteratura",
-    "href": "materiali/01-systematic-review-intro.html#screening-della-letteratura",
-    "title": "Systematic Review: Introduzione",
-    "section": "3. Screening della letteratura",
-    "text": "3. Screening della letteratura\n\nTeam di ricerca\n\n\nIdealmente almeno 3-4 persone\n\n\n\nDue/tre reviewer indipendenti per screening ed estrazione dati\nUn terzo reviewer o supervisore per risolvere disaccordi"
-  },
-  {
-    "objectID": "materiali/01-systematic-review-intro.html#screening-della-letteratura-1",
-    "href": "materiali/01-systematic-review-intro.html#screening-della-letteratura-1",
-    "title": "Systematic Review: Introduzione",
-    "section": "3. Screening della letteratura",
-    "text": "3. Screening della letteratura\n\n\n\nDatabase principali\n\nPubMed / MEDLINE: biomedicina e salute\nPsycInfo: psicologia\nWeb of Science: database multidisciplinare\nScopus: ampia copertura bibliografica\n\n\n\nLa scelta dipende dalla domanda di ricerca"
-  },
-  {
-    "objectID": "materiali/01-systematic-review-intro.html#screening-della-letteratura-2",
-    "href": "materiali/01-systematic-review-intro.html#screening-della-letteratura-2",
-    "title": "Systematic Review: Introduzione",
-    "section": "3. Screening della letteratura",
-    "text": "3. Screening della letteratura\nSearch Query\n\n\nVirgolette: per cercare una frase esatta\nTroncamento: per recuperare varianti della stessa radice\n\n\nEsempio: (\"post-traumatic stress\" OR PTSD) AND (EMDR OR \"eye movement desensitization\") AND (child* AND adolesc*)"
-  },
-  {
-    "objectID": "materiali/01-systematic-review-intro.html#screening-della-letteratura-3",
-    "href": "materiali/01-systematic-review-intro.html#screening-della-letteratura-3",
-    "title": "Systematic Review: Introduzione",
-    "section": "3. Screening della letteratura",
-    "text": "3. Screening della letteratura\n\nLetteratura grigia\n\nInclude report, tesi, preprint, atti di conferenze\nRiduce il rischio di publication bias\n\n\nFonti principali\n\nGrey Matters\nGreyNet\nOpen Science Framework"
-  },
-  {
-    "objectID": "materiali/01-systematic-review-intro.html#selezione-degli-studi",
-    "href": "materiali/01-systematic-review-intro.html#selezione-degli-studi",
-    "title": "Systematic Review: Introduzione",
-    "section": "4. Selezione degli studi",
-    "text": "4. Selezione degli studi\n\n\n\nI Step: selezione sulla base di titolo e abstract\nII Step: valutazione dell’intero testo degli articoli\n\n\nLe decisioni dovrebbero essere indipendenti e documentate\n\n\nRisorse utili\n\nFlow diagram PRISMA\nCovidence: supporto per screening ed estrazione dati"
-  },
-  {
-    "objectID": "materiali/01-systematic-review-intro.html#estrazione-dei-risultati-valutazione-bias",
-    "href": "materiali/01-systematic-review-intro.html#estrazione-dei-risultati-valutazione-bias",
-    "title": "Systematic Review: Introduzione",
-    "section": "5. Estrazione dei risultati & valutazione bias",
-    "text": "5. Estrazione dei risultati & valutazione bias\n\n\nSi estraggono caratteristiche di: studio, campione, intervento e outcome\nRisk of Bias e/o GRADE valutano la credibilità interna degli studi inclusi\n\n\nLa qualità degli studi influenza la fiducia nei risultati."
-  },
-  {
-    "objectID": "materiali/01-systematic-review-intro.html#sintetizzare-e-riportare-i-risultati",
-    "href": "materiali/01-systematic-review-intro.html#sintetizzare-e-riportare-i-risultati",
-    "title": "Systematic Review: Introduzione",
-    "section": "6. Sintetizzare e riportare i risultati",
-    "text": "6. Sintetizzare e riportare i risultati\n\n\nOrganizzare gli studi inclusi in modo chiaro e trasparente\nDescrivere caratteristiche, risultati e differenze tra gli studi\nEvidenziare pattern comuni, risultati contrastanti e lacune\n\n\n\nNext step (se possibile) → Meta-Analisi\n\n\n\nL’obiettivo è trasformare molti studi in una sintesi leggibile e replicabile"
-  },
-  {
-    "objectID": "materiali/01-systematic-review-intro.html#in-sintesi",
-    "href": "materiali/01-systematic-review-intro.html#in-sintesi",
-    "title": "Systematic Review: Introduzione",
-    "section": "In sintesi",
-    "text": "In sintesi\n\n\nLa letteratura cresce più velocemente della nostra capacità di leggerla\nLe Systematic Review aiutano a trasformare molti studi in una sintesi ordinata\nUna meta-analisi è valida solo quanto lo è la review su cui si basa\nMetodo, pre-registrazione e trasparenza proteggono da bias e cherry picking\nL’obiettivo finale è produrre evidenza utile per ricerca, pratica e decisioni"
-  },
-  {
-    "objectID": "materiali/001-crisi-replicabilita-slides.html",
-    "href": "materiali/001-crisi-replicabilita-slides.html",
-    "title": "Introduzione - Crisi di Replicabilità",
+    "objectID": "materiali/04-dat_scuole.html",
+    "href": "materiali/04-dat_scuole.html",
+    "title": "Dataset scuole",
     "section": "",
-    "text": "Slide introduttive sulla crisi di replicabilità.\n Scarica Slides (pdf)"
-  },
-  {
-    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html",
-    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html",
-    "title": "Esercitazione finale",
-    "section": "",
-    "text": "Durata prevista: 45 minuti\nObiettivo: analizzare un dataset di studi primari rispondendo alla seguente domanda di ricerca\nIl dataset contiene studi che confrontano interventi psicoterapeutici con condizioni di controllo."
-  },
-  {
-    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#materiali",
-    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#materiali",
-    "title": "Esercitazione finale",
-    "section": "Materiali",
-    "text": "Materiali\nFile per l’esercitazione.\n Dataset CSV \n Data Dictionary & Protocol \n\n\n\n\n\n\nNote\n\n\n\nIl data dictionary descrive le variabili del dataset e contiene alcune informazioni importanti per l’analisi."
-  },
-  {
-    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#scenario",
-    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#scenario",
-    "title": "Esercitazione finale",
-    "section": "Scenario",
-    "text": "Scenario\nAvete a disposizione un dataset con effect size estratti da studi primari sulla psicoterapia per la depressione.\nAlcune informazioni importanti:\n\nogni riga rappresenta un effect size;\nalcune pubblicazioni possono contribuire con più effect size;\nl’effect size è una Standardized Mean Difference calcolata in Hedges’ g;\nvalori positivi indicano che la psicoterapia ha prodotto esiti migliori rispetto al controllo."
-  },
-  {
-    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#consegna",
-    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#consegna",
-    "title": "Esercitazione finale",
-    "section": "Consegna",
-    "text": "Consegna\nEffettuare una meta-analisi sul dataset per rispondere alla domanda:\n\nLa psicoterapia è efficace per trattare la depressione?\n\nAvete piena libertà sulle scelte analitiche.\nPotete decidere, per esempio:\n\nquale modello stimare;\ncome gestire studi con più effect size;\nse escludere o mantenere eventuali outlier;\nse considerare sottogruppi o moderatori;\nse controllare publication bias o studi influenti.\n\nNon esiste una sola risposta corretta: l’obiettivo è produrre una scelta analitica ragionevole."
-  },
-  {
-    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#output-richiesto",
-    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#output-richiesto",
-    "title": "Esercitazione finale",
-    "section": "Output richiesto",
-    "text": "Output richiesto\nAl termine dei 45 minuti, dovrete riportare solo questi tre elementi:\n\nEffect size pooled\nAd esempio: Hedges’ g = …\nIntervallo di confidenza al 95%\nAd esempio: 95% CI [ …, … ]\nUna frase interpretativa semplice\nAd esempio:\n“La psicoterapia sembra essere efficace.”\n“I risultati sono inconclusivi.”\n“L’effetto è positivo, ma l’evidenza è eterogenea.”"
-  },
-  {
-    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#per-iniziare",
-    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#per-iniziare",
-    "title": "Esercitazione finale",
-    "section": "Per iniziare",
-    "text": "Per iniziare\n\nlibrary(metafor)\n\ndat &lt;- read.csv(\"../materiali/data/data_depression_therapy.csv\")\n\nstr(dat)\nhead(dat)\n\n# Quanti effect size?\nnrow(dat)\n\n# Quanti studi unici?\nlength(unique(dat$study))"
-  },
-  {
-    "objectID": "materiali/esercitazione-finale-psicoterapia-depressione.html#suggerimenti",
-    "href": "materiali/esercitazione-finale-psicoterapia-depressione.html#suggerimenti",
-    "title": "Esercitazione finale",
-    "section": "Suggerimenti",
-    "text": "Suggerimenti\nPrima di stimare il modello, controllate:\n\nsummary(dat$yi)\nsummary(dat$vi)\n\ntable(dat$format)\ntable(dat$diagnosis)\ntable(dat$type)\ntable(dat$control)\ntable(dat$risk_of_bias)\n\n\nDomande guida:\n\nTutti gli effect size possono essere trattati come indipendenti?\nIl modello fixed-effect è plausibile?\nQuanto pesa l’eterogeneità?\nCi sono studi o effect size influenti?\nLe conclusioni cambiano se fate scelte analitiche diverse?"
+    "text": "Dataset utilizzato per gli esercizi introduttivi su RStudio.\n Scarica dat_scuole.csv"
   },
   {
     "objectID": "materiali/07-metafor-barroso2021.html#setup",
