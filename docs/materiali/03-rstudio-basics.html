@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Matteo Manente">
+<meta name="dcterms.date" content="2026-06-03">
 
-<title>Basi di RStudio – Summer School | Meta-Analisi</title>
+<title>3. Basi di RStudio – Summer School | Meta-Analisi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -3975,7 +3976,7 @@ vertical-align: -.125em;
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Basi di RStudio</h1>
+<h1 class="title">3. Basi di RStudio</h1>
 </div>
 
 
@@ -3989,6 +3990,12 @@ vertical-align: -.125em;
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 3, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -4305,11 +4312,11 @@ sample estimates:
 <span id="cb57-9"><a href="#cb57-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb57-10"><a href="#cb57-10" aria-hidden="true" tabindex="-1"></a>iniziali                 <span class="co"># Ecco il nostro vettore di 85 iniziali!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] &quot;C&quot; &quot;O&quot; &quot;F&quot; &quot;G&quot; &quot;L&quot; &quot;P&quot; &quot;S&quot; &quot;Z&quot; &quot;F&quot; &quot;A&quot; &quot;D&quot; &quot;W&quot; &quot;Y&quot; &quot;Q&quot; &quot;Y&quot; &quot;A&quot; &quot;Y&quot; &quot;F&quot; &quot;O&quot;
-[20] &quot;R&quot; &quot;W&quot; &quot;Y&quot; &quot;R&quot; &quot;K&quot; &quot;G&quot; &quot;W&quot; &quot;V&quot; &quot;C&quot; &quot;K&quot; &quot;E&quot; &quot;S&quot; &quot;J&quot; &quot;Z&quot; &quot;N&quot; &quot;S&quot; &quot;P&quot; &quot;A&quot; &quot;M&quot;
-[39] &quot;Q&quot; &quot;R&quot; &quot;W&quot; &quot;W&quot; &quot;Z&quot; &quot;M&quot; &quot;B&quot; &quot;R&quot; &quot;S&quot; &quot;H&quot; &quot;E&quot; &quot;I&quot; &quot;W&quot; &quot;W&quot; &quot;R&quot; &quot;H&quot; &quot;A&quot; &quot;U&quot; &quot;U&quot;
-[58] &quot;S&quot; &quot;F&quot; &quot;K&quot; &quot;V&quot; &quot;P&quot; &quot;Y&quot; &quot;H&quot; &quot;W&quot; &quot;J&quot; &quot;Q&quot; &quot;N&quot; &quot;P&quot; &quot;A&quot; &quot;W&quot; &quot;R&quot; &quot;X&quot; &quot;L&quot; &quot;M&quot; &quot;Y&quot;
-[77] &quot;X&quot; &quot;B&quot; &quot;Z&quot; &quot;R&quot; &quot;J&quot; &quot;N&quot; &quot;W&quot; &quot;K&quot; &quot;A&quot;</code></pre>
+<pre><code> [1] &quot;O&quot; &quot;L&quot; &quot;J&quot; &quot;B&quot; &quot;V&quot; &quot;S&quot; &quot;A&quot; &quot;C&quot; &quot;Y&quot; &quot;Z&quot; &quot;N&quot; &quot;Z&quot; &quot;I&quot; &quot;S&quot; &quot;M&quot; &quot;B&quot; &quot;Z&quot; &quot;D&quot; &quot;K&quot;
+[20] &quot;B&quot; &quot;E&quot; &quot;S&quot; &quot;W&quot; &quot;Q&quot; &quot;R&quot; &quot;O&quot; &quot;L&quot; &quot;T&quot; &quot;I&quot; &quot;U&quot; &quot;H&quot; &quot;T&quot; &quot;N&quot; &quot;P&quot; &quot;P&quot; &quot;H&quot; &quot;H&quot; &quot;C&quot;
+[39] &quot;O&quot; &quot;D&quot; &quot;K&quot; &quot;D&quot; &quot;I&quot; &quot;C&quot; &quot;Q&quot; &quot;E&quot; &quot;Z&quot; &quot;N&quot; &quot;P&quot; &quot;Q&quot; &quot;B&quot; &quot;J&quot; &quot;U&quot; &quot;F&quot; &quot;B&quot; &quot;D&quot; &quot;Z&quot;
+[58] &quot;D&quot; &quot;L&quot; &quot;A&quot; &quot;H&quot; &quot;C&quot; &quot;I&quot; &quot;O&quot; &quot;J&quot; &quot;Z&quot; &quot;B&quot; &quot;K&quot; &quot;K&quot; &quot;R&quot; &quot;J&quot; &quot;U&quot; &quot;U&quot; &quot;K&quot; &quot;B&quot; &quot;K&quot;
+[77] &quot;Q&quot; &quot;S&quot; &quot;M&quot; &quot;X&quot; &quot;J&quot; &quot;N&quot; &quot;Z&quot; &quot;V&quot; &quot;E&quot;</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ora vogliamo creare un ID (codice identificativo) numerico e segreto </span></span>
 <span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a><span class="co"># a 3 cifre per ogni partecipante.</span></span>
@@ -4324,11 +4331,11 @@ sample estimates:
 <span id="cb59-11"><a href="#cb59-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb59-12"><a href="#cb59-12" aria-hidden="true" tabindex="-1"></a>id_random</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 475 604 969 500 377 733 624 217 718 646 695 714 301 143 630 784 146 250 729
-[20] 892 626 530 971 226 929 835 462 796 193 308 236 900 507 510 110 114 809 101
-[39] 559 711 135 164 153 353 227 936 698 273 103 832 914 131 485 421 749 859 188
-[58] 592 838 285 379 245 305 979 345 230 255 888 297 470 469 617 953 104 244 253
-[77] 660 207 490 366 594 672 984 933 735</code></pre>
+<pre><code> [1] 117 210 130 860 354 984 415 857 115 665 103 384 409 593 945 805 339 545 278
+[20] 406 786 448 763 215 561 148 449 436 633 843 125 539 452 707 258 736 500 809
+[39] 966 518 694 234 551 946 142 708 603 208 437 397 912 583 175 775 686 750 788
+[58] 615 738 425 712 380 706 623 209 483 433 780 416 457 438 682 760 580 611 349
+[77] 910 640 257 464 306 312 132 559 772</code></pre>
 </div>
 </div>
 <hr>

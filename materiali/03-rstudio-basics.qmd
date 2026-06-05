@@ -1,5 +1,5 @@
 ---
-title: "Basi di RStudio"
+title: "3. Basi di RStudio"
 author: "[Matteo Manente](https://manentematteo.github.io/)"
 embed-resources: true
 format: 
@@ -10,7 +10,7 @@ format:
     toc-location: left
     number-sections: false
     highlight-style: github
-type: "Tutorial"
+date: 06.03.2026
 ---
 
 # Lo Scenario

@@ -1,0 +1,29 @@
+---
+title: "Supplementary Materials"
+
+---
+
+<br>
+
+## Meta-analisi
+
+<a href="supplementary/book_Borenstein_2009.pdf" download="book_Borenstein_2009.pdf" class="btn btn-primary">
+  Libro sulle Meta-Analisi - Borenstein, 2009 (pdf)
+</a>
+
+<a href="supplementary/borenstein_paper_2023.pdf" download="borenstein_paper_2023.pdf" class="btn btn-primary">
+  "Heterogeneity in meta-analysis" - Borenstein, 2023 (pdf)
+</a>
+
+
+<br>
+
+## RStudio
+
+<a href="supplementary/introduction2r.pdf" download="introduction2r.pdf" class="btn btn-primary">
+  Manuale introduttivo a RStudio - Callegher & Gambarota (pdf)
+</a>
+
+
+
+

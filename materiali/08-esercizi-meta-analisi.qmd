@@ -1,0 +1,43 @@
+---
+title: "8. Esercizi Meta-Analisi"
+author: "[Matteo Manente](https://manentematteo.github.io/)"
+date: 06.05.2026
+---
+
+<br>
+
+Questa sezione raccoglie esercizi pratici con `metafor`.
+
+Gli esercizi guidano passo passo nella stima, visualizzazione e interpretazione dei risultati meta-analitici.
+
+<br>
+
+## 1. Math anxiety e achievement
+
+Meta-analisi sulla relazione tra ansia matematica e rendimento matematico.
+
+<a href="esercizi-meta-analisi/08-metafor-barroso2021.qmd" class="btn btn-primary">
+  Apri esercizio
+</a>
+
+<br><br>
+
+## 2. Intelligenza emotiva e performance accademica
+
+Meta-analisi sulla relazione tra intelligenza emotiva e performance accademica.
+
+<a href="esercizi-meta-analisi/09-metafor-maccann2020.qmd" class="btn btn-primary">
+  Apri esercizio
+</a>
+
+<br><br>
+
+## 3. Esercitazione finale
+
+Esercitazione sull'efficacia della psicoterapia per la depressione.
+
+<a href="esercizi-meta-analisi/esercitazione-finale-psicoterapia-depressione.qmd" class="btn btn-primary">
+  Apri esercitazione
+</a>
+
+

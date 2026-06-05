@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-type',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-title","listing-author"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -222,6 +222,12 @@ window.Quarto = {
     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">Order By</option>
       <option value="index" data-direction="asc">Default</option>
+      <option value="listing-date-sort" data-direction="asc">
+        Date - Oldest
+      </option>
+      <option value="listing-date-sort" data-direction="desc">
+        Date - Newest
+      </option>
       <option value="listing-title-sort" data-direction="asc">
         Title
       </option>
@@ -248,165 +254,139 @@ window.Quarto = {
 </th>
 
 <th>
-type
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
 </th>
 
 </tr>
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-file-modified-sort="1780563107325" data-listing-reading-time-sort="1" data-listing-word-count-sort="14" data-listing-title-sort="Introduzione - Crisi di Replicabilità" data-listing-filename-sort="01-crisi-replicabilita-slides.qmd">
+<tr data-index="0" data-listing-date-sort="1780437600000" data-listing-file-modified-sort="1780652358339" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="14" data-listing-title-sort="1. Introduzione - Crisi di Replicabilità" data-listing-filename-sort="01-crisi-replicabilita-slides.qmd">
 <td>
-<a href="./materiali/01-crisi-replicabilita-slides.html" class="title listing-title">Introduzione - Crisi di Replicabilità</a>
+<a href="./materiali/01-crisi-replicabilita-slides.html" class="title listing-title">1. Introduzione - Crisi di Replicabilità</a>
 </td>
 <td>
 <span class="listing-author"><a href="https://scholar.google.com/citations?hl=en&amp;user=-N7efdEAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Gianmarco Altoè</a></span>
 </td>
 <td>
-<span class="listing-type">Slides</span>
+<span class="listing-date">Jun 3, 2026</span>
 </td>
 
 </tr>
 
-<tr data-index="1" data-listing-file-modified-sort="1780570662087" data-listing-reading-time-sort="1" data-listing-word-count-sort="29" data-listing-title-sort="Meta-Analysis: Supplementary Materials" data-listing-filename-sort="010-supplementary-materials.qmd">
+<tr data-index="1" data-listing-date-sort="1780437600000" data-listing-file-modified-sort="1780652370594" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="893" data-listing-title-sort="2. Systematic Review: Introduzione" data-listing-filename-sort="02-systematic-review-intro.qmd">
 <td>
-<a href="./materiali/010-supplementary-materials.html" class="title listing-title">Meta-Analysis: Supplementary Materials</a>
-</td>
-<td>
-<span class="listing-author"><a href="https://scholar.google.com/citations?hl=en&amp;user=-N7efdEAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Gianmarco Altoè</a></span>
-</td>
-<td>
-<span class="listing-type">Supplementary</span>
-</td>
-
-</tr>
-
-<tr data-index="2" data-listing-file-modified-sort="1780477029447" data-listing-reading-time-sort="5" data-listing-word-count-sort="893" data-listing-title-sort="Systematic Review: Introduzione" data-listing-filename-sort="02-systematic-review-intro.qmd">
-<td>
-<a href="./materiali/02-systematic-review-intro.html" class="title listing-title">Systematic Review: Introduzione</a>
+<a href="./materiali/02-systematic-review-intro.html" class="title listing-title">2. Systematic Review: Introduzione</a>
 </td>
 <td>
 <span class="listing-author"><a href="https://manentematteo.github.io/">Matteo Manente</a></span>
 </td>
 <td>
-<span class="listing-type">Slides</span>
+<span class="listing-date">Jun 3, 2026</span>
 </td>
 
 </tr>
 
-<tr data-index="3" data-listing-file-modified-sort="1780578399791" data-listing-reading-time-sort="16" data-listing-word-count-sort="3009" data-listing-title-sort="Basi di RStudio" data-listing-filename-sort="03-rstudio-basics.qmd">
+<tr data-index="2" data-listing-date-sort="1780437600000" data-listing-file-modified-sort="1780652430226" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16" data-listing-word-count-sort="3009" data-listing-title-sort="3. Basi di RStudio" data-listing-filename-sort="03-rstudio-basics.qmd">
 <td>
-<a href="./materiali/03-rstudio-basics.html" class="title listing-title">Basi di RStudio</a>
+<a href="./materiali/03-rstudio-basics.html" class="title listing-title">3. Basi di RStudio</a>
 </td>
 <td>
 <span class="listing-author"><a href="https://manentematteo.github.io/">Matteo Manente</a></span>
 </td>
 <td>
-<span class="listing-type">Tutorial</span>
+<span class="listing-date">Jun 3, 2026</span>
 </td>
 
 </tr>
 
-<tr data-index="4" data-listing-file-modified-sort="1780481516901" data-listing-reading-time-sort="8" data-listing-word-count-sort="1581" data-listing-title-sort="Esercizi introduttivi a RStudio" data-listing-filename-sort="04-esercizi-introduttivi-rstudio.qmd">
+<tr data-index="3" data-listing-date-sort="1780524000000" data-listing-file-modified-sort="1780652682976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12" data-listing-title-sort="4. Effect Size" data-listing-filename-sort="06-effect-sizes-slides.qmd">
 <td>
-<a href="./materiali/04-esercizi-introduttivi-rstudio.html" class="title listing-title">Esercizi introduttivi a RStudio</a>
-</td>
-<td>
-<span class="listing-author"><a href="https://manentematteo.github.io/">Matteo Manente</a></span>
-</td>
-<td>
-<span class="listing-type">Exercise</span>
-</td>
-
-</tr>
-
-<tr data-index="5" data-listing-file-modified-sort="1780580435422" data-listing-reading-time-sort="1" data-listing-word-count-sort="15" data-listing-title-sort="Dataset scuole" data-listing-filename-sort="05-dat_scuole.qmd">
-<td>
-<a href="./materiali/05-dat_scuole.html" class="title listing-title">Dataset scuole</a>
+<a href="./materiali/06-effect-sizes-slides.html" class="title listing-title">4. Effect Size</a>
 </td>
 <td>
 <span class="listing-author"><a href="https://dpss.psy.unipd.it/~massimiliano.pastore/index.html">Massimiliano Pastore</a></span>
 </td>
 <td>
-<span class="listing-type">Datset</span>
+<span class="listing-date">Jun 4, 2026</span>
 </td>
 
 </tr>
 
-<tr data-index="6" data-listing-file-modified-sort="1780476572712" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Esercizio Data Nightmare" data-listing-filename-sort="05-esercizio-data-nightmare.qmd">
+<tr data-index="4" data-listing-date-sort="1780524000000" data-listing-file-modified-sort="1780652706338" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12" data-listing-title-sort="5. Meta-Analisi: Introduzione Teorica" data-listing-filename-sort="07-meta-analisi-teoria-slides.qmd">
 <td>
-<a href="./materiali/05-esercizio-data-nightmare.html" class="title listing-title">Esercizio Data Nightmare</a>
-</td>
-<td>
-<span class="listing-author"><a href="https://enricotoffalini.github.io/">Enrico Toffalini</a></span>
-</td>
-<td>
-<span class="listing-type">Exercise</span>
-</td>
-
-</tr>
-
-<tr data-index="7" data-listing-file-modified-sort="1780580453351" data-listing-reading-time-sort="1" data-listing-word-count-sort="12" data-listing-title-sort="Effect Size" data-listing-filename-sort="06-effect-sizes-slides.qmd">
-<td>
-<a href="./materiali/06-effect-sizes-slides.html" class="title listing-title">Effect Size</a>
-</td>
-<td>
-<span class="listing-author"><a href="https://dpss.psy.unipd.it/~massimiliano.pastore/index.html">Massimiliano Pastore</a></span>
-</td>
-<td>
-<span class="listing-type">Slides</span>
-</td>
-
-</tr>
-
-<tr data-index="8" data-listing-file-modified-sort="1780580074200" data-listing-reading-time-sort="1" data-listing-word-count-sort="12" data-listing-title-sort="Meta-Analisi: Introduzione Teorica" data-listing-filename-sort="07-meta-analisi-teoria-sildes.qmd">
-<td>
-<a href="./materiali/07-meta-analisi-teoria-sildes.html" class="title listing-title">Meta-Analisi: Introduzione Teorica</a>
+<a href="./materiali/07-meta-analisi-teoria-slides.html" class="title listing-title">5. Meta-Analisi: Introduzione Teorica</a>
 </td>
 <td>
 <span class="listing-author"><a href="https://scholar.google.com/citations?hl=en&amp;user=-N7efdEAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Gianmarco Altoè</a></span>
 </td>
 <td>
-<span class="listing-type">Slides</span>
+<span class="listing-date">Jun 4, 2026</span>
 </td>
 
 </tr>
 
-<tr data-index="9" data-listing-file-modified-sort="1780578533955" data-listing-reading-time-sort="7" data-listing-word-count-sort="1317" data-listing-title-sort="Esercizio Meta-Analisi: Math anxiety e achievement" data-listing-filename-sort="08-metafor-barroso2021.qmd">
+<tr data-index="5" data-listing-date-sort="1780610400000" data-listing-file-modified-sort="1780654111473" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12" data-listing-title-sort="6. Meta-Analisi Bayesiane" data-listing-filename-sort="09-meta-analisi-bayes-slides.qmd">
 <td>
-<a href="./materiali/08-metafor-barroso2021.html" class="title listing-title">Esercizio Meta-Analisi: Math anxiety e achievement</a>
+<a href="./materiali/09-meta-analisi-bayes-slides.html" class="title listing-title">6. Meta-Analisi Bayesiane</a>
+</td>
+<td>
+<span class="listing-author"><a href="https://dpss.psy.unipd.it/~massimiliano.pastore/index.html">Massimiliano Pastore</a></span>
+</td>
+<td>
+<span class="listing-date">Jun 5, 2026</span>
+</td>
+
+</tr>
+
+<tr data-index="6" data-listing-date-sort="1780524000000" data-listing-file-modified-sort="1780654819868" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="58" data-listing-title-sort="7. Esercizi RStudio" data-listing-filename-sort="esercizi-rstudio.qmd">
+<td>
+<a href="./materiali/esercizi-rstudio.html" class="title listing-title">7. Esercizi RStudio</a>
 </td>
 <td>
 <span class="listing-author"><a href="https://manentematteo.github.io/">Matteo Manente</a></span>
 </td>
 <td>
-<span class="listing-type">Exercise</span>
+<span class="listing-date">Jun 4, 2026</span>
 </td>
 
 </tr>
 
-<tr data-index="10" data-listing-file-modified-sort="1780578524391" data-listing-reading-time-sort="7" data-listing-word-count-sort="1316" data-listing-title-sort="Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica" data-listing-filename-sort="09-metafor-maccann2020.qmd">
+<tr data-index="7" data-listing-date-sort="1780610400000" data-listing-file-modified-sort="1780654868024" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="68" data-listing-title-sort="8. Esercizi Meta-Analisi" data-listing-filename-sort="08-esercizi-meta-analisi.qmd">
 <td>
-<a href="./materiali/09-metafor-maccann2020.html" class="title listing-title">Esercizio Meta-Analisi: Intelligenza emotiva e performance accademica</a>
+<a href="./materiali/08-esercizi-meta-analisi.html" class="title listing-title">8. Esercizi Meta-Analisi</a>
 </td>
 <td>
 <span class="listing-author"><a href="https://manentematteo.github.io/">Matteo Manente</a></span>
 </td>
 <td>
-<span class="listing-type">Exercise</span>
+<span class="listing-date">Jun 5, 2026</span>
 </td>
 
 </tr>
 
-<tr data-index="11" data-listing-file-modified-sort="1780477104047" data-listing-reading-time-sort="2" data-listing-word-count-sort="334" data-listing-title-sort="Esercitazione finale" data-listing-filename-sort="esercitazione-finale-psicoterapia-depressione.qmd">
+<tr data-index="8" data-listing-file-modified-sort="1780654634324" data-listing-reading-time-sort="1" data-listing-word-count-sort="19" data-listing-title-sort="Dataset per esercizi" data-listing-filename-sort="05-datasets.qmd">
 <td>
-<a href="./materiali/esercitazione-finale-psicoterapia-depressione.html" class="title listing-title">Esercitazione finale</a>
+<a href="./materiali/05-datasets.html" class="title listing-title">Dataset per esercizi</a>
 </td>
 <td>
-<span class="listing-author"><a href="https://manentematteo.github.io/">Matteo Manente</a></span>
+<span class="listing-author">&nbsp;</span>
 </td>
 <td>
-<span class="listing-type">Exercise</span>
+<span class="listing-date">&nbsp;</span>
+</td>
+
+</tr>
+
+<tr data-index="9" data-listing-file-modified-sort="1780656121375" data-listing-reading-time-sort="1" data-listing-word-count-sort="40" data-listing-title-sort="Supplementary Materials" data-listing-filename-sort="091-supplementary-materials.qmd">
+<td>
+<a href="./materiali/091-supplementary-materials.html" class="title listing-title">Supplementary Materials</a>
+</td>
+<td>
+<span class="listing-author">&nbsp;</span>
+</td>
+<td>
+<span class="listing-date">&nbsp;</span>
 </td>
 
 </tr>

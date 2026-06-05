@@ -1,0 +1,13 @@
+---
+title: "6. Meta-Analisi Bayesiane"
+author: "[Massimiliano Pastore](https://dpss.psy.unipd.it/~massimiliano.pastore/index.html)"
+date: 06.05.2026
+---
+
+<br>
+
+Slide sulle meta-analisi bayesiane
+
+<a href="slides/meta-analisi-bayes.pdf" download="meta-analisi-bayes.pdf" class="btn btn-primary">
+  Scarica Slides (pdf)
+</a>

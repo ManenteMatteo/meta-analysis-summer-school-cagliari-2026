@@ -1,0 +1,16 @@
+---
+title: "Dataset per esercizi"
+---
+
+<br>
+
+Dataset utilizzati per gli esercizi.
+
+<a href="datasets/dat_scuole.csv" download="dat_scuole.csv" class="btn btn-primary">
+  Scarica dat_scuole.csv
+</a>
+
+
+<a href="datasets/data_depression_therapy.csv" download="data_depression_therapy.csv" class="btn btn-primary">
+  Scarica dat_depression_therapy.csv
+</a>

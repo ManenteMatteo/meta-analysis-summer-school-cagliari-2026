@@ -1,0 +1,13 @@
+---
+title: "5. Meta-Analisi: Introduzione Teorica"
+author: "[Gianmarco Altoè](https://scholar.google.com/citations?hl=en&user=-N7efdEAAAAJ&view_op=list_works&sortby=pubdate)"
+date: 06.04.2026
+---
+
+<br>
+
+Slide teoriche sulla meta-analisi.
+
+<a href="slides/meta-analisi-teoria-slides.pdf" download="meta-analisi-teoria-slides.pdf" class="btn btn-primary">
+  Scarica Slides (pdf)
+</a>

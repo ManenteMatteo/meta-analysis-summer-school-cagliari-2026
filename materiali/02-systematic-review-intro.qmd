@@ -1,5 +1,5 @@
 ---
-title: "Systematic Review: Introduzione"
+title: "2. Systematic Review: Introduzione"
 author: "[Matteo Manente](https://manentematteo.github.io/)"
 format:
   revealjs:
@@ -8,7 +8,7 @@ format:
     incremental: false
     toc: false
 editor: visual
-type: "Slides"
+date: 06.03.2026
 ---
 
 ## Che cos'è una Systematic Review?

@@ -1,0 +1,34 @@
+---
+title: "7. Esercizi RStudio"
+author: "[Matteo Manente](https://manentematteo.github.io/)"
+date: 06.04.2026
+---
+
+<br>
+
+Questa sezione raccoglie gli esercizi pratici introduttivi su RStudio.
+
+Gli esercizi sono pensati per familiarizzare con oggetti, vettori, matrici, dataframe, importazione dati e funzioni di base.
+
+<br>
+
+## 1. Esercizi introduttivi a RStudio
+
+Esercizi su oggetti, vettori, matrici, dataframe e funzioni utili.
+
+<a href="esercizi-rstudio/04-esercizi-introduttivi-rstudio.qmd" class="btn btn-primary">
+  Apri esercizi
+</a>
+
+<br><br>
+
+## 2. Esercizio Data Nightmare
+
+Esercizio pratico sulla pulizia e gestione di un dataset problematico.
+
+<a href="esercizi-rstudio/05-esercizio-data-nightmare.qmd" class="btn btn-primary">
+  Apri esercizio
+</a>
+
+
+

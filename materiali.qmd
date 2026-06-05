@@ -2,9 +2,19 @@
 title: "Materiali"
 listing:
   type: table
-  contents: materiali
-  sort: "filename"
-  fields: [title, author, type]
+  contents:
+    - materiali/01-crisi-replicabilita-slides.qmd
+    - materiali/02-systematic-review-intro.qmd
+    - materiali/03-rstudio-basics.qmd
+    - materiali/05-datasets.qmd
+    - materiali/06-effect-sizes-slides.qmd
+    - materiali/07-meta-analisi-teoria-slides.qmd
+    - materiali/08-esercizi-meta-analisi.qmd
+    - materiali/09-meta-analisi-bayes-slides.qmd
+    - materiali/091-supplementary-materials.qmd
+    - materiali/esercizi-rstudio.qmd
+  sort: "title asc"
+  fields: [title, author, date]
 ---
 
 <br>
