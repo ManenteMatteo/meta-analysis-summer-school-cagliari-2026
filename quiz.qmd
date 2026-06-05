@@ -1,13 +1,19 @@
 ---
-title: "Sondaggio introduttivo"
+title: ""
 ---
 
 <br>
 
-[Link al sondaggio](https://www.menti.com/al7px7584rbz)
+## Feedback Finale
+
+[Questionario anonimo](https://forms.gle/DAT2PXmXqcwnEGy28)
+
 
 <br>
 
-## Mentimeter
+## Sondaggio Introduttivo
 
-<center>![](images/quiz_qr.png){width="370"}</center>
+[Sondaggio Mentimeter](https://www.menti.com/al7px7584rbz)
+
+
+

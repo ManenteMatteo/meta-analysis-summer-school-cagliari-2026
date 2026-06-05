@@ -35,18 +35,18 @@
     "text": "Meta-analisi in R\n\nmetafor: pacchetto R per meta-analisi\nQuarto: documenti riproducibili, siti e slide"
   },
   {
-    "objectID": "quiz.html",
-    "href": "quiz.html",
-    "title": "Sondaggio introduttivo",
-    "section": "",
-    "text": "Link al sondaggio"
+    "objectID": "quiz.html#feedback-finale",
+    "href": "quiz.html#feedback-finale",
+    "title": "Summer School | Meta-Analisi",
+    "section": "Feedback Finale",
+    "text": "Feedback Finale\nQuestionario anonimo"
   },
   {
-    "objectID": "quiz.html#mentimeter",
-    "href": "quiz.html#mentimeter",
-    "title": "Sondaggio introduttivo",
-    "section": "Mentimeter",
-    "text": "Mentimeter"
+    "objectID": "quiz.html#sondaggio-introduttivo",
+    "href": "quiz.html#sondaggio-introduttivo",
+    "title": "Summer School | Meta-Analisi",
+    "section": "Sondaggio Introduttivo",
+    "text": "Sondaggio Introduttivo\nSondaggio Mentimeter"
   },
   {
     "objectID": "materiali.html",
@@ -476,18 +476,32 @@
     "text": "5. Funzioni utili\n\n5.1. Gestione del Workspace e Importazione\n\n# Usa la combinazione delle funzioni `rm()` e `ls()` con la sintassi `rm(list=ls())` per cancellare tutti gli oggetti dal tuo ambiente di lavoro (Environment).\n\n\n# Ipotizza di aver salvato i dati della lezione precedente in un file chiamato \"dati_lezione.RData\". Scrivi il comando usando `load()` per caricarlo nel tuo ambiente.\n\n\n# Usa la funzione `library()` per caricare il pacchetto necessario per leggere file Excel (ad esempio `readxl`) prima di importare i dati.\n\n\n# Importa il dataset `dat_scuole.csv` usando la funzione `read.csv()` e salvalo nell'oggetto `dati_csv`.\n\n\n# Importa il dataset chiamato `dat_scuole.xlsx` usando la funzione appropriata (es. `read_excel()` o `read.xlsx()`) e salvalo nell'oggetto `dati_excel`.\n\n\n# Usa la funzione `str()` sull'oggetto appena creato per ispezionarne la struttura interna. Quante variabili ci sono e di che tipo sono?\n\n\n\n\n5.2. Generazione e Manipolazione Dati\n\n# Genera un vettore chiamato `ansia_grezza` con i seguenti punteggi: `4.567`, `5.123`, `3.987`, `6.452`. \n\n\n# Usa la funzione `length()` per verificare quanti punteggi sono contenuti nel vettore `ansia_grezza`.\n\n\n# Sovrascrivi il vettore usando la funzione `round()` per arrotondare tutti i punteggi a 1 solo decimale.\n\n\n# Usa la funzione `seq()` per creare un vettore chiamato `id_soggetti` che contenga una sequenza numerica da 101 a 150.\n\n\n# Usa la funzione `rep()` per generare un vettore chiamato `condizione` in cui l'etichetta \"Trattamento\" e l'etichetta \"Controllo\" vengono ripetute ciascuna per 25 volte.\n\n\n# Usa `sample()` per estrarre casualmente 5 partecipanti (numeri da 1 a 50) per un'intervista qualitativa di follow-up, assicurandoti che lo stesso partecipante non possa essere estratto due volte (senza reinserimento).\n\n\n\n\n5.3. Funzioni Statistiche e Distribuzioni Normali\n\n# Simula i punteggi di un test di Estroversione per 1000 soggetti. Sapendo che il test ha una media normativa di 50 e una deviazione standard di 10, usa `rnorm()` per generare la distribuzione e salvala nell'oggetto `estroversione_simulata`.\n\n\n# Un soggetto ha ottenuto un punteggio di 35 nel test di Estroversione. Utilizzando `pnorm()`, calcola la probabilità di incontrare nella popolazione un soggetto con un punteggio uguale o inferiore al suo.\n\n\n# Vuoi selezionare solo i partecipanti che rientrano nel 5% superiore della distribuzione (il 95° percentile) per un training specifico. Usa `qnorm()` per scoprire quale punteggio esatto fa da soglia, sapendo sempre che la media è 50 e la deviazione standard è 10.\n\n\n# Usa la funzione `replicate()` per ripetere 4 volte l'operazione `sample(1:100, 10)`. Osserva l'output: che tipo di struttura dati ha generato R?\n\n\n# Usa la funzione `curve()` per disegnare la distribuzione normale del test di estroversione. *(Suggerimento: scrivi `dnorm(x, mean = 50, sd = 10)` come primo argomento, e imposta l'asse x da 20 a 80 usando i parametri `from` e `to`)*."
   },
   {
-    "objectID": "materiali/05-datasets.html",
-    "href": "materiali/05-datasets.html",
+    "objectID": "materiali/05-datasets.html#dataset-esercizi",
+    "href": "materiali/05-datasets.html#dataset-esercizi",
     "title": "Dataset per esercizi",
-    "section": "",
-    "text": "Dataset utilizzati per gli esercizi.\n Scarica dat_scuole.csv \n Scarica dat_depression_therapy.csv"
+    "section": "Dataset esercizi",
+    "text": "Dataset esercizi\n Scarica dat_scuole.csv \n Scarica dat_depression_therapy.csv"
+  },
+  {
+    "objectID": "materiali/05-datasets.html#dataset-meta-analisi-bayesiane",
+    "href": "materiali/05-datasets.html#dataset-meta-analisi-bayesiane",
+    "title": "Dataset per esercizi",
+    "section": "Dataset Meta-Analisi Bayesiane",
+    "text": "Dataset Meta-Analisi Bayesiane\n Scarica lionetti_2015.rda \n Scarica lionetti_2019.rda \n Scarica deluca_2023.rda"
   },
   {
     "objectID": "materiali/091-supplementary-materials.html#meta-analisi",
     "href": "materiali/091-supplementary-materials.html#meta-analisi",
     "title": "Supplementary Materials",
     "section": "Meta-analisi",
-    "text": "Meta-analisi\n Libro sulle Meta-Analisi - Borenstein, 2009 (pdf) \n “Heterogeneity in meta-analysis” - Borenstein, 2023 (pdf)"
+    "text": "Meta-analisi\n Libro sulle Meta-Analisi - Borenstein, 2009 (pdf) \n Heterogeneity in meta-analysis - Borenstein, 2023 (pdf)"
+  },
+  {
+    "objectID": "materiali/091-supplementary-materials.html#meta-analisi-bayesiane---articoli",
+    "href": "materiali/091-supplementary-materials.html#meta-analisi-bayesiane---articoli",
+    "title": "Supplementary Materials",
+    "section": "Meta-analisi Bayesiane - Articoli",
+    "text": "Meta-analisi Bayesiane - Articoli\n Attachment in institutionalized children - Lionetti et al., 2015 (pdf) \n Sensory Processing Sensitivity & personality traits - Lionetti et al., 2019 (pdf) \n Non-Suicidal Self-Injury during adolescence - De Luca et al., 2023 (pdf)"
   },
   {
     "objectID": "materiali/091-supplementary-materials.html#rstudio",
@@ -495,6 +509,13 @@
     "title": "Supplementary Materials",
     "section": "RStudio",
     "text": "RStudio\n Manuale introduttivo a RStudio - Callegher & Gambarota (pdf)"
+  },
+  {
+    "objectID": "materiali/091-supplementary-materials.html#multiverse-meta-analysis",
+    "href": "materiali/091-supplementary-materials.html#multiverse-meta-analysis",
+    "title": "Supplementary Materials",
+    "section": "Multiverse Meta-Analysis",
+    "text": "Multiverse Meta-Analysis\nSlides"
   },
   {
     "objectID": "materiali/01-crisi-replicabilita-slides.html",
@@ -690,7 +711,7 @@
     "href": "index.html#contenuti",
     "title": "Scuola Estiva sulle Meta-Analisi | Cagliari 2026",
     "section": "Contenuti",
-    "text": "Contenuti\n\n\nSondaggio\nAlcune domande per conoscerci meglio.\n\n\nMateriali\nSlides delle lezioni, Tutorial RStudio & Esercizi\n\n\nRisorse\nRisorse utili per Systematic Review/Meta-Analisi"
+    "text": "Contenuti\n\n\nQuestionari\nSondaggio introduttivo & feedback finale\n\n\nMateriali\nSlides delle lezioni, Tutorial RStudio & Esercizi\n\n\nRisorse\nRisorse utili per Systematic Review/Meta-Analisi"
   },
   {
     "objectID": "index.html#per-iniziare",

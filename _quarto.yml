@@ -20,7 +20,7 @@ website:
       - href: index.qmd
         text: Home
       - href: quiz.qmd
-        text: Sondaggio
+        text: Questionari
       - href: materiali.qmd
         text: Materiali
       - href: setup.qmd

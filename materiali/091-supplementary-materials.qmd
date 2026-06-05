@@ -1,5 +1,7 @@
 ---
 title: "Supplementary Materials"
+toc: true
+toc-title: "Indice"
 
 ---
 
@@ -12,17 +14,42 @@ title: "Supplementary Materials"
 </a>
 
 <a href="supplementary/borenstein_paper_2023.pdf" download="borenstein_paper_2023.pdf" class="btn btn-primary">
-  "Heterogeneity in meta-analysis" - Borenstein, 2023 (pdf)
+  Heterogeneity in meta-analysis - Borenstein, 2023 (pdf)
 </a>
 
 
 <br>
+
+
+## Meta-analisi Bayesiane - Articoli
+
+<a href="supplementary/Lionetti_et_al_2015a.pdf" download="Lionetti_et_al_2015a.pdf" class="btn btn-primary">
+  Attachment in institutionalized children - Lionetti et al., 2015 (pdf)
+</a>
+
+<a href="supplementary/Lionetti_et_al_2019.pdf" download="Lionetti_et_al_2019.pdf" class="btn btn-primary">
+  Sensory Processing Sensitivity & personality traits - Lionetti et al., 2019 (pdf)
+</a>
+
+<a href="supplementary/DeLuca_et_al_2023.pdf" download="DeLuca_et_al_2023.pdf" class="btn btn-primary">
+  Non-Suicidal Self-Injury during adolescence - De Luca et al., 2023 (pdf)
+</a>
+
+
+<br>
+
 
 ## RStudio
 
 <a href="supplementary/introduction2r.pdf" download="introduction2r.pdf" class="btn btn-primary">
   Manuale introduttivo a RStudio - Callegher & Gambarota (pdf)
 </a>
+
+<br>
+
+## Multiverse Meta-Analysis
+
+[Slides](supplementary/csa_2026_slides.html)
 
 
 

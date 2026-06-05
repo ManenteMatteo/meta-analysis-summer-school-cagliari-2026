@@ -40,9 +40,9 @@ L'obiettivo è fornire una base pratica per passare da una **domanda di ricerca*
 
 :::::: grid
 ::: g-col-4
-### [Sondaggio](quiz.qmd)
+### [Questionari](quiz.qmd)
 
-Alcune domande per conoscerci meglio.
+Sondaggio introduttivo & feedback finale
 :::
 
 ::: g-col-4

@@ -4,7 +4,7 @@ title: "Dataset per esercizi"
 
 <br>
 
-Dataset utilizzati per gli esercizi.
+## Dataset esercizi
 
 <a href="datasets/dat_scuole.csv" download="dat_scuole.csv" class="btn btn-primary">
   Scarica dat_scuole.csv
@@ -14,3 +14,25 @@ Dataset utilizzati per gli esercizi.
 <a href="datasets/data_depression_therapy.csv" download="data_depression_therapy.csv" class="btn btn-primary">
   Scarica dat_depression_therapy.csv
 </a>
+
+
+<br>
+
+## Dataset Meta-Analisi Bayesiane  
+
+<a href="datasets/lionetti_2015.rda" download="lionetti_2015.rda" class="btn btn-primary">
+  Scarica lionetti_2015.rda
+</a>
+
+
+<a href="datasets/lionetti_2019.rda" download="lionetti_2019.rda" class="btn btn-primary">
+  Scarica lionetti_2019.rda
+</a>
+
+
+
+<a href="datasets/deluca_2023.rda" download="deluca_2023.rda" class="btn btn-primary">
+  Scarica deluca_2023.rda
+</a>
+
+
